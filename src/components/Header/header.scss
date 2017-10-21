@@ -13,17 +13,18 @@
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   padding-bottom: 42px;
+  position: relative;
   &-title {
     @include bordered-bottom;
 
     font-weight: 400;
     font-size: 22px;
-    line-height: 27px;
     letter-spacing: 0.07px;
     .container-fluid {
       @include bordered-sides;
       padding-top: 50px;
-      min-height: 30px;
+      min-height: 80px;
+      line-height: 27px;
     }
     a {
       color: $white;
@@ -43,14 +44,23 @@
   &-date-location {
     @include bordered-bottom;
 
-    line-height: 38px;
+    line-height: 43px;
     letter-spacing: 0.05px;
     .container-fluid {
       @include bordered-sides;
-      padding-top: 5px;
+      display: flex;
+      padding-right: 0;
+      .buy-tickets {
+        margin-left: auto;
+      }
     }
     strong {
       font-weight: 700;
     }
+  }
+  .header-menu {
+    position: absolute;
+    right: 0;
+    z-index: 1;
   }
 }

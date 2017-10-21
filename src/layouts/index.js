@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 import config from '../../data/SiteConfig';
 import 'flexboxgrid/css/index.css';
 import './index.scss';
+import './fontello.css';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import favicon from '../../static/64.png'
 
 export default class MainLayout extends React.Component {
   render() {

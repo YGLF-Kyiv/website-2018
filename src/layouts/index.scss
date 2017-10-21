@@ -37,9 +37,10 @@ body {
 
 .container-fluid {
   position: relative;
-  width: calc(100% - 240px);
+  width: calc(100% - 200px);
   padding: 0 18px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 

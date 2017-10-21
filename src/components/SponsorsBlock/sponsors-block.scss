@@ -2,7 +2,6 @@
 @import '../../shared/styles/mixins';
 
 .sponsors-block {
-  margin-bottom: 90px;
   position: relative;
   &-name {
     @include block-name;
