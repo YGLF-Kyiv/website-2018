@@ -1,0 +1,56 @@
+@import '../shared/styles/colors';
+
+body {
+  font-family: SofiaPro, Helvetica Neue, sans-serif;
+  font-weight: 100;
+  color: $white;
+  background: $blue;
+  font-size: 17px;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(/fonts/Sofia-Pro-Medium.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(/fonts/Sofia-Pro-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(/fonts/Sofia-Pro-Bold.otf);
+  font-weight: 700;
+}
+
+
+
+.container {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.container-fluid {
+  position: relative;
+  width: calc(100% - 240px);
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+
+.lines-bg {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=') repeat;
+}
+
+.green-line {
+  width: 100%;
+  border-bottom: 1px solid $green;
+  height: 0;
+  opacity: 0.3;
+}
+

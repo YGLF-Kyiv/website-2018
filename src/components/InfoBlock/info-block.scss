@@ -1,0 +1,23 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.info-block {
+  &-name {
+    @include block-name;
+  }
+  &-text {
+    h2 {
+      @include block-header;
+    }
+    p {
+      @include block-text;
+      padding-left: 125px;
+      margin: 22px 0 45px;
+      width: 540px;
+      line-height: 40px;
+    }
+    &-button {
+      padding-left: 125px;
+    }
+  }
+}

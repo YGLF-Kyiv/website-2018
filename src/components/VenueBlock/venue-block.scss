@@ -1,0 +1,35 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.venue-block {
+  margin-bottom: 90px;
+  position: relative;
+  &-img {
+    position: absolute;
+    right: -70px;
+    max-width: 50%;
+    top: 41px;
+  }
+  &-name {
+    @include block-name;
+  }
+  &-text {
+    h2 {
+      @include block-header;
+    }
+    p {
+      @include block-text;
+      padding-left: 90px;
+      margin: 29px 0 41px;
+      width: 440px;
+      line-height: 30px;
+    }
+    &-button {
+      padding-left: 90px;
+      margin-top: 55px;
+      a {
+        @include underlined-link
+      }
+    }
+  }
+}

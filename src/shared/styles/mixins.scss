@@ -1,0 +1,58 @@
+@mixin block-name {
+  height: 30px;
+  span {
+    display: inline-block;
+    height: 90px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 0;
+    transform: translate(5px, 8px);
+    i {
+      font-family: "Libre Baskerville", serif;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-size: 13px;
+      display: inline-block;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 1px solid $white;
+      line-height: 15px;
+    }
+  }
+}
+
+@mixin block-header {
+  color: $green;
+  font-size: 45px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 4.55px;
+  -webkit-font-smoothing: antialiased;
+  transform: translateY(4px);
+}
+
+@mixin block-text {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1.7px;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin underlined-link {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.17px;
+  -webkit-font-smoothing: antialiased;
+  color: $white;
+  padding: 13px 0;
+  text-decoration: none;
+  border-bottom: 1px solid $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateY(-6px);
+  &:hover {
+    color: $green;
+    border-bottom: 1px solid $green;
+  }
+}

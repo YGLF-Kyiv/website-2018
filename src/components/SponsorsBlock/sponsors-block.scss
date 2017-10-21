@@ -1,0 +1,28 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.sponsors-block {
+  margin-bottom: 90px;
+  position: relative;
+  &-name {
+    @include block-name;
+  }
+  &-text {
+    h2 {
+      @include block-header;
+    }
+    p {
+      @include block-text;
+      padding-left: 90px;
+      margin: 44px 0 33px;
+      width: 515px;
+      line-height: 40px;
+    }
+    &-button {
+      padding-left: 90px;
+      a {
+        @include underlined-link
+      }
+    }
+  }
+}

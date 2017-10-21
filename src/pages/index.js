@@ -1,18 +1,22 @@
 import React from 'react'
-import logo from '../../static/logo-1024.jpg'
-import "./index.css";
+import "./index.scss";
+import Intro from '../components/Intro/Intro';
+import InfoBlock from '../components/InfoBlock/InfoBlock';
+import VenueBlock from '../components/VenueBlock/VenueBlock';
+import SponsorsBlock from '../components/SponsorsBlock/SponsorsBlock';
 
-const IndexPage = () => (
-  <div>
-    <img
-      src={logo}
-      style={{
-        margin: '0 auto',
-        display: 'flex',
-        width: '400',
-      }}
-    />
-  </div>
-);
+export default class Header extends React.Component {
+  render() {
+    return (
+      <div className="page-index">
+        <Intro/>
+        <div className="articles lines-bg">
+          <InfoBlock />
+          <VenueBlock />
+          <SponsorsBlock />
 
-export default IndexPage
+        </div>
+      </div>
+    );
+  }
+}

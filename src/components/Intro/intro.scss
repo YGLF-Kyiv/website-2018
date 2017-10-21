@@ -1,0 +1,91 @@
+@import '../../shared/styles/colors';
+
+@mixin stretch {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.intro {
+  width: 100%;
+  height: 616px;
+  position: relative;
+  overflow: hidden;
+  &-img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: none;
+      max-height: none;
+      margin: 0;
+    }
+  }
+  &-stripes {
+    z-index: 2;
+    @include stretch;
+    background-image: linear-gradient(
+        0deg,
+        $blue 0, $blue 44px,
+        rgba(57,68,237,0.9) 44px, rgba(57,68,237,0.9) 88px,
+        rgba(57,68,237,0.8) 88px, rgba(57,68,237,0.8) 132px,
+        rgba(57,68,237,0.7) 132px, rgba(57,68,237,0.7) 176px,
+        rgba(57,68,237,0.6) 176px, rgba(57,68,237,0.6) 220px,
+        rgba(57,68,237,0.5) 220px, rgba(57,68,237,0.5) 264px,
+        rgba(57,68,237,0.4) 264px, rgba(57,68,237,0.4) 308px,
+        rgba(57,68,237,0.3) 308px, rgba(57,68,237,0.3) 374px, /**/
+        rgba(57,68,237,0.4) 374px, rgba(57,68,237,0.4) 396px,
+        rgba(57,68,237,0.5) 396px, rgba(57,68,237,0.5) 418px,
+        rgba(57,68,237,0.4) 418px, rgba(57,68,237,0.4) 440px,
+        rgba(57,68,237,0.3) 440px, rgba(57,68,237,0.3) 484px,
+        rgba(57,68,237,0.1) 484px, rgba(57,68,237,0.1) 528px,
+        transparent 528px, transparent 572px,
+        rgba(57,68,237,0.04) 572px, rgba(57,68,237,0.04) 616px,
+        transparent
+    );
+    .green-line {
+      position: absolute;
+      left: 0;
+    }
+    .line-1 {
+      bottom: 0;
+    }
+    .line-2 {
+      bottom: 44px;
+    }
+    .line-3 {
+      bottom: 88px;
+    }
+  }
+  &-anounce {
+    @include stretch;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-top: 119px;
+      margin-bottom: 14px;
+      margin-left: 20px;
+    }
+    p {
+      font-weight: 700;
+      letter-spacing: 0.05px;
+      line-height: 45px;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+}
