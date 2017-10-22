@@ -8,7 +8,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <HeaderMenu />
+        {/*<HeaderMenu />*/}
         <div className="header-title">
           <div className="container-fluid">
             <Link to="/">
@@ -18,12 +18,12 @@ export default class Header extends React.Component {
         </div>
         <div className="header-description">
           <div className="container-fluid">
-            The largest conference in the middle east, Made by developers for developers. Soon in Kyiv
+            YGLF is a community event built by developers for developers
           </div>
         </div>
         <div className="header-date-location">
           <div className="container-fluid">
-            <strong>24-25 May 2018</strong>, Bel étage | Kyiv, Ukraine
+            <strong>24-25 May 2018</strong>, Kyiv, Ukraine
             <BuyTicketsButton />
           </div>
         </div>

@@ -8,12 +8,12 @@ export default class SocialIcons extends React.Component {
   render() {
     const data = [
       {
-        type: 'instagram',
-        url: 'https://www.instagram.com/yglfconf',
+        type: 'twitter',
+        url: 'https://twitter.com/yglf_kyiv',
       },
       {
         type: 'facebook',
-        url: 'https://www.facebook.com/YouGottaLoveFrontend',
+        url: 'https://www.facebook.com/yglf.kyiv',
       },
     ];
     const icons = data.map(iconData =>

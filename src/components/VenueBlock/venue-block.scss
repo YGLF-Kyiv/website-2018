@@ -5,9 +5,11 @@
   position: relative;
   &-img {
     position: absolute;
-    right: -70px;
-    max-width: 50%;
+    right: -5px;
+    max-width: 40%;
     top: 41px;
+    max-height: 430px;
+    border: 1px solid $green;
   }
   &-name {
     @include block-name;

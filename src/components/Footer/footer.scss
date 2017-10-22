@@ -4,15 +4,13 @@
   background: $footer-bg;
   box-shadow: 3px -25px 67px 0 rgba(0,0,0,0.12);
   color: $footer-blue;
-  min-height: 471px;
-  > .container {
-    > .row:first-child {
-      padding-bottom: 55px;
-      border-bottom: 1px solid $footer-blue;
-    }
-    > .row:nth-child(2) {
-      padding-top: 40px;
-    }
+  &-subscribe {
+    padding-bottom: 55px;
+    border-bottom: 1px solid $footer-blue;
+  }
+  &-contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   strong {
     padding-top: 80px;

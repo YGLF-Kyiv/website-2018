@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './venue-block.scss';
-import venuePhoto from '../../../static/venue.png';
+import venuePhoto from '../../../static/venue.jpg';
 
 export default class VenueBlock extends Component {
   render() {
@@ -8,23 +8,26 @@ export default class VenueBlock extends Component {
       <div className="venue-block">
         <img className="venue-block-img" src={venuePhoto} alt="The Venue" />
         <div className="container container-fluid">
-          <div className="venue-block-name">
-          <span>
-            2 <i>Awesome Spaces</i>
-          </span>
-          </div>
+          {/*<div className="venue-block-name">*/}
+            {/*<span>*/}
+              {/*2 <i>Awesome Spaces</i>*/}
+            {/*</span>*/}
+          {/*</div>*/}
           <div className="venue-block-text">
             <h2>The Venue</h2>
             <p>
-              This year the conference will take place, once again, at the elegant Cameri Theathre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. The Cameri holds over dozens of yearly productions, inlcuding a touring company. Classical and modern will meet under an urban wrap, for another unforgettable conference.
+              YGLF will take place at Bel étage - a venue in the centre of the city. There’s a beautiful restaurant to serve lunch for all attendees, a two-storey auditorium and an amazing roof, where we plan to have snacks and coffee during the day.
+            </p>
+            <p>
+              Located in the Down town, it’s easy to get there from any hotel, and it’s surrounded by dozens of restaurants and coffee shops.
             </p>
             <p>
               <strong>Bel étage</strong><br />
-              Shota Rustaveli St, 16а, Kyiv, Ukraine
+              Shota Rustaveli St, 16a, Kyiv, Ukraine
             </p>
-            <div className="venue-block-text-button">
-              <a href="" className="get-directions">Get Directions</a>
-            </div>
+            {/*<div className="venue-block-text-button">*/}
+              {/*<a href="" className="get-directions">Get Directions</a>*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default class Header extends React.Component {
         <div className="articles lines-bg">
           <InfoBlock />
           <VenueBlock />
-          <SponsorsBlock />
+          {/*<SponsorsBlock />*/}
         </div>
       </div>
     );
