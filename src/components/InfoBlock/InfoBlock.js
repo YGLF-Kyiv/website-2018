@@ -25,9 +25,9 @@ export default class InfoBlock extends Component {
           <p>
             We hope you'll enjoy our efforts, community involvement and - of course - all the knowledge that will be shared.
           </p>
-          <div className="info-block-text-button">
-            <BuyTicketsButton />
-          </div>
+          {/*<div className="info-block-text-button">*/}
+            {/*<BuyTicketsButton />*/}
+          {/*</div>*/}
         </div>
       </div>
     );

@@ -3,6 +3,7 @@ import './footer.scss';
 import Subscribe from '../Subscribe/Subscribe';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import Link from 'gatsby-link';
+import config from '../../../data/SiteConfig';
 
 export default class Footer extends React.Component {
   render() {
@@ -70,8 +71,8 @@ export default class Footer extends React.Component {
               {/*</div>*/}
             </div>
             <div className="col-lg-5 col-xs-12">
-              <a className="footer-mailto" href="mailto:hello@yglf.com.ua">
-                hello@yglf.com.ua
+              <a className="footer-mailto" href={`mailto:${config.email}`}>
+                { config.email }
               </a>
               <SocialIcons />
             </div>

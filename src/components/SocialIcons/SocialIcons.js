@@ -1,5 +1,6 @@
 import React from 'react';
 import './social-icons.scss';
+import config from '../../../data/SiteConfig';
 
 const getClassByType = type => `icon-${type}`;
 
@@ -9,11 +10,11 @@ export default class SocialIcons extends React.Component {
     const data = [
       {
         type: 'twitter',
-        url: 'https://twitter.com/yglf_kyiv',
+        url: `https://twitter.com/${config.userTwitter}`,
       },
       {
         type: 'facebook',
-        url: 'https://www.facebook.com/yglf.kyiv',
+        url: `https://www.facebook.com/${config.siteFBAppID}`,
       },
     ];
     const icons = data.map(iconData =>

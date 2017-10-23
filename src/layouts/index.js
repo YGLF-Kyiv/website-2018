@@ -18,25 +18,20 @@ export default class MainLayout extends React.Component {
 
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <meta name="description" content="Tel Aviv Front End Conference | October 30-31, 2017" />
+          <meta name="description" content={config.siteDescription} />
 
-          <meta property="og:title" content="You Gotta Love Frontend Conference"/>
-          <meta property="og:url" content="http://yougottalovefrontend.com"/>
-          <meta property="og:description"
-            content="Tel Aviv Front End Conference | October 30-31, 2017"/>
+          <meta property="og:title" content="You Gotta Love Frontend Conference" />
+          <meta property="og:url" content={`http://${config.siteUrl}`} />
+          <meta property="og:description" content={config.siteDescription} />
           <meta property="og:type" content="website"/>
-          <meta property="og:image"
-            content="http://yougottalovefrontend.com/social/share-facebook.png"/>
+          <meta property="og:image" content="http://yougottalovefrontend.com/fb-share.png"/>
 
           <meta name="twitter:card" content="summary_large_image"/>
-          <meta name="twitter:site" content="@YGLF_Conf"/>
-          <meta name="twitter:creator" content="@YGLF_Conf"/>
-          <meta name="twitter:title" content="You Gotta Love Frontend Conference"/>
-          <meta name="twitter:description"
-            content="Tel Aviv Front End Conference | October 30-31, 2017"/>
-          <meta name="twitter:image:src"
-            content="http://yougottalovefrontend.com/social/share-twitter.png"/>
-
+          <meta name="twitter:site" content={`@${config.userTwitter}`} />
+          <meta name="twitter:creator" content={`@${config.userTwitter}`} />
+          <meta name="twitter:title" content={config.siteTitle} />
+          <meta name="twitter:description" content={config.siteDescription} />
+          <meta name="twitter:image:src" content="http://yougottalovefrontend.com/twitter-share.png"/>
 
           <link rel="dns-prefetch" href="//use.typekit.net" />
           <link rel="dns-prefetch" href="//cdn.trackjs.com" />
