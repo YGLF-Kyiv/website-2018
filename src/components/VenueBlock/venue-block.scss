@@ -5,10 +5,9 @@
   position: relative;
   &-img {
     position: absolute;
-    right: -5px;
-    max-width: 40%;
+    left: 580px;
     top: 41px;
-    max-height: 430px;
+    height: 450px;
     border: 1px solid $green;
   }
   &-name {
@@ -31,6 +30,30 @@
       a {
         @include underlined-link
       }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .venue-block {
+    .container {
+      position: static;
+    }
+    &-img {
+      right: -5px;
+      left: auto;
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .venue-block {
+    &-img {
+      position: static;
+      width: 440px;
+      margin-left: 90px;
+      margin-top: 20px;
+      height: auto;
     }
   }
 }

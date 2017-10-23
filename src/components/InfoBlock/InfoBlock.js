@@ -14,13 +14,13 @@ export default class InfoBlock extends Component {
         <div className="info-block-text">
           {/*<h2>Meet Our Speakers</h2>*/}
           <p>
-            This non-profit conference is aimed at delivering high quality content on the hottest topics that Frontend developers who want to be on the cutting edge need to know.
+            This non-profit conference is aimed at delivering high quality content on the hottest topics that cutting edge Frontend developers need to know.
           </p>
           <p>
-            For the first time ever YGLF is coming to Kyiv, the amazing European capital city of Ukraine with the 24/7 sign on it.
+            For the first time ever, YGLF  is coming to Kyiv, the amazing European capital city of Ukraine.
           </p>
           <p>
-            This is the first international Front End conference on such a scale. People called us crazy, but by bringing internationally recognized speakers, we’re going to break the wall for huge East European Frontend community.
+            This is our first international Front End conference on such a scale. People called us crazy, but by bringing internationally recognized speakers, we’re going to break the wall that separates the  huge East European Frontend community from the rest of the world.
           </p>
           <p>
             We hope you'll enjoy our efforts, community involvement and - of course - all the knowledge that will be shared.
