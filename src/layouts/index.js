@@ -24,14 +24,14 @@ export default class MainLayout extends React.Component {
           <meta property="og:url" content={`http://${config.siteUrl}`} />
           <meta property="og:description" content={config.siteDescription} />
           <meta property="og:type" content="website"/>
-          <meta property="og:image" content="http://yougottalovefrontend.com/fb-share.png"/>
+          <meta property="og:image" content={`http://${config.siteUrl}/fb-share.png`} />
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:site" content={`@${config.userTwitter}`} />
           <meta name="twitter:creator" content={`@${config.userTwitter}`} />
           <meta name="twitter:title" content={config.siteTitle} />
           <meta name="twitter:description" content={config.siteDescription} />
-          <meta name="twitter:image:src" content="http://yougottalovefrontend.com/twitter-share.png"/>
+          <meta name="twitter:image:src" content={`http://${config.siteUrl}/twitter-share.png`} />
 
           <link rel="dns-prefetch" href="//use.typekit.net" />
           <link rel="dns-prefetch" href="//cdn.trackjs.com" />
