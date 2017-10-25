@@ -1,7 +1,7 @@
 @import '../../shared/styles/colors';
 @import '../../shared/styles/mixins';
 
-.info-block {
+.speakers-block {
   &-name {
     @include block-name;
   }
@@ -19,6 +19,9 @@
     &-button {
       padding-left: 125px;
       margin-top: 40px;
+      > a {
+        @include animated-button
+      }
     }
   }
 }

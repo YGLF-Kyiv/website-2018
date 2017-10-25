@@ -15,7 +15,9 @@ export default class VenueBlock extends Component {
           {/*</div>*/}
           <div className="venue-block-text">
             <h2>The Venue</h2>
-            <img className="venue-block-img" src={venuePhoto} alt="The Venue" />
+            <div className="venue-block-img">
+              <img src={venuePhoto} alt="The Venue" />
+            </div>
             <p>
               YGLF  will take place at  Bel étage - a venue in the centre of the city. There’s a beautiful restaurant serving lunch for all attendees, a two-storey  auditorium, and an amazing roof, where there will be  snacks and coffee during the day.
             </p>

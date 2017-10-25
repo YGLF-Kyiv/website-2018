@@ -5,10 +5,20 @@
   position: relative;
   &-img {
     position: absolute;
-    left: 580px;
+    left: 600px;
     top: 41px;
     height: 450px;
+    width: 800px;
     border: 1px solid $green;
+    background: #C0DBFF url(/venue.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    img {
+      display: none;
+    }
   }
   &-name {
     @include block-name;
@@ -19,9 +29,9 @@
     }
     p {
       @include block-text;
-      padding-left: 90px;
+      padding-left: 120px;
       margin: 29px 0 41px;
-      width: 440px;
+      width: 450px;
       line-height: 30px;
     }
     &-button {
@@ -50,10 +60,10 @@
   .venue-block {
     &-img {
       position: static;
-      width: 440px;
-      margin-left: 90px;
+      width: 450px;
+      height: 253px;
+      margin-left: 120px;
       margin-top: 20px;
-      height: auto;
     }
   }
 }

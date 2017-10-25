@@ -3,7 +3,7 @@ import "./index.scss";
 import Intro from '../components/Intro/Intro';
 import InfoBlock from '../components/InfoBlock/InfoBlock';
 import VenueBlock from '../components/VenueBlock/VenueBlock';
-import SponsorsBlock from '../components/SponsorsBlock/SponsorsBlock';
+import SpeakersBlock from '../components/SpeakersBlock/SpeakersBlock';
 
 export default class Header extends React.Component {
   render() {
@@ -12,8 +12,8 @@ export default class Header extends React.Component {
         <Intro/>
         <div className="articles lines-bg">
           <InfoBlock />
+          <SpeakersBlock />
           <VenueBlock />
-          {/*<SponsorsBlock />*/}
         </div>
       </div>
     );
