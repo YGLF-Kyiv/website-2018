@@ -11,14 +11,9 @@
     }
     p {
       @include block-text;
-      padding-left: 120px;
-      margin: 25px 0;
-      width: 450px;
-      line-height: 33px;
     }
     &-button {
-      padding-left: 125px;
-      margin-top: 40px;
+      @include block-button;
     }
   }
 }

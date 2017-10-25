@@ -7,13 +7,20 @@
 @mixin bordered-bottom {
   border-bottom: 1px solid $green;
 }
+@mixin remove-side-borders {
+  border-left: none;
+  border-right: none;
+}
+$bottom-padding: 42px;
 
 .header {
   width: 100%;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 42px;
+  padding-bottom: $bottom-padding;
   position: relative;
+  display: flex;
+  flex-direction: column;
   &-title {
     @include bordered-bottom;
 
@@ -50,17 +57,80 @@
       @include bordered-sides;
       display: flex;
       padding-right: 0;
-      .buy-tickets {
-        margin-left: auto;
-      }
     }
     strong {
       font-weight: 700;
     }
   }
-  .header-menu {
+  .buy-tickets {
     position: absolute;
-    right: 0;
-    z-index: 1;
+    right: 100px;
+    bottom: $bottom-padding + 1px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    &-title {
+      .container-fluid {
+        // uncomment when menu is visible
+        //padding-top: 15px;
+        //min-height: 45px;
+        //line-height: 27px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .header {
+    .buy-tickets {
+      right: 45px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    text-align: center;
+    &-title {
+      order: 1;
+      .container-fluid {
+        @include remove-side-borders;
+        padding: 21px 0 14px;
+        min-height: 0;
+        a {
+          font-weight: 100;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+    &-description {
+      order: 3;
+      border-bottom: none;
+      .container-fluid {
+        @include remove-side-borders;
+        line-height: 23px;
+        padding: 16px 0;
+      }
+    }
+    &-date-location {
+      order: 2;
+      .container-fluid {
+        @include remove-side-borders;
+        padding: 0;
+        justify-content: center;
+      }
+    }
+    .buy-tickets {
+      order: 4;
+      position: relative;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin: 15px auto 0;
+    }
   }
 }

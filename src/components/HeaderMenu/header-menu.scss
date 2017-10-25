@@ -1,4 +1,5 @@
 @import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
 
 .header-menu {
   width: 582px;
@@ -8,6 +9,13 @@
   border-left: 1px solid $green;
   line-height: 47px;
   height: 80px;
+
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  &-expand {
+    display: none;
+  }
   &-inner {
     padding: 0 15px;
     display: flex;
@@ -26,5 +34,58 @@
         color: $green
       }
     }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .header-menu {
+    position: static;
+    width: 100%;
+    border-left: none;
+    padding-top: 0;
+    height: 40px;
+    border-bottom: 1px solid $green;
+    &-inner {
+      @include container-fluid;
+      border-top: none;
+      border-right: 1px solid $green;
+      border-left: 1px solid $green;
+    }
+  }
+}
+@media screen and (max-width: 764px) {
+  .header-menu {
+    height: 48px;
+    line-height: 48px;
+    &-expand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-btn {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4.5px;
+        cursor: pointer;
+        color: $white;
+        user-select: none;
+        text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.19);
+        display: inline-block;
+        padding: 0;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+    &-inner {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-menu {
+    border-bottom: none;
   }
 }

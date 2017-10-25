@@ -1,46 +1,6 @@
 @import '../../shared/styles/colors';
 
-@mixin block-name {
-  height: 30px;
-  span {
-    display: inline-block;
-    height: 90px;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 0;
-    transform: translate(5px, 8px);
-    i {
-      font-family: "Libre Baskerville", serif;
-      font-style: italic;
-      font-weight: 400;
-      letter-spacing: 3px;
-      font-size: 13px;
-      display: inline-block;
-      margin-left: 10px;
-      padding-left: 10px;
-      border-left: 1px solid $white;
-      line-height: 15px;
-    }
-  }
-}
-
-@mixin block-header {
-  color: $green;
-  font-size: 45px;
-  line-height: 42px;
-  font-weight: 400;
-  letter-spacing: 4.55px;
-  -webkit-font-smoothing: antialiased;
-  transform: translateY(4px);
-}
-
-@mixin block-text {
-  font-size: 15px;
-  font-weight: 100;
-  letter-spacing: 1.7px;
-  -webkit-font-smoothing: antialiased;
-}
-
+// Links and buttons
 @mixin underlined-link {
   font-size: 13px;
   font-weight: 600;
@@ -58,7 +18,6 @@
     border-bottom: 1px solid $green;
   }
 }
-
 @mixin animated-button {
   position: relative;
   display: inline-block;
@@ -83,6 +42,9 @@
   -ms-transition: 150ms ease-out;
   -moz-transition: 150ms ease-out;
   -webkit-transition: 150ms ease-out;
+  -webkit-box-shadow: 15px 9px 20px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 15px 9px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 15px 9px 20px 0 rgba(0, 0, 0, 0.15);
   &:hover {
     color: $blue;
   }
@@ -99,5 +61,80 @@
   }
   &:hover:before {
     right: 0;
+  }
+}
+
+
+// containers
+@mixin container {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@mixin container-fluid {
+  position: relative;
+  width: calc(100% - 200px);
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @media screen and (max-width: 764px) {
+    width: calc(100% - 90px);
+  }
+}
+
+
+// Blocks
+@mixin block-name {
+  height: 30px;
+  span {
+    display: inline-block;
+    height: 90px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 0;
+    transform: translate(5px, 8px);
+    i {
+      font-family: "Libre Baskerville", serif;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-size: 13px;
+      display: inline-block;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 1px solid $white;
+      line-height: 15px;
+    }
+  }
+}
+@mixin block-header {
+  color: $green;
+  font-size: 45px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 4.55px;
+  -webkit-font-smoothing: antialiased;
+  transform: translateY(4px);
+}
+@mixin block-text {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1.7px;
+  -webkit-font-smoothing: antialiased;
+  width: 450px;
+  padding-left: 120px;
+  margin: 25px 0;
+  line-height: 33px;
+  @media screen and (max-width: 764px) {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+@mixin block-button {
+  padding-left: 120px;
+  margin-top: 40px;
+  @media screen and (max-width: 764px) {
+    padding-left: 0;
   }
 }

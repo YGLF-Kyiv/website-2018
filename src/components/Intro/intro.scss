@@ -18,17 +18,16 @@
     width: 100%;
     height: 100%;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background: #C0DBFF url(/city.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     img {
-      flex-shrink: 0;
-      min-width: 100%;
-      min-height: 100%;
-      max-width: none;
-      max-height: none;
-      margin: 0;
+      display: none;
     }
   }
   &-stripes {
@@ -37,20 +36,20 @@
     background-image: linear-gradient(
         0deg,
         $blue 0, $blue 44px,
-        rgba(57,68,237,0.9) 44px, rgba(57,68,237,0.9) 88px,
-        rgba(57,68,237,0.8) 88px, rgba(57,68,237,0.8) 132px,
-        rgba(57,68,237,0.7) 132px, rgba(57,68,237,0.7) 176px,
-        rgba(57,68,237,0.6) 176px, rgba(57,68,237,0.6) 220px,
-        rgba(57,68,237,0.5) 220px, rgba(57,68,237,0.5) 264px,
-        rgba(57,68,237,0.4) 264px, rgba(57,68,237,0.4) 308px,
-        rgba(57,68,237,0.3) 308px, rgba(57,68,237,0.3) 374px, /**/
-        rgba(57,68,237,0.4) 374px, rgba(57,68,237,0.4) 396px,
-        rgba(57,68,237,0.5) 396px, rgba(57,68,237,0.5) 418px,
-        rgba(57,68,237,0.4) 418px, rgba(57,68,237,0.4) 440px,
-        rgba(57,68,237,0.3) 440px, rgba(57,68,237,0.3) 484px,
-        rgba(57,68,237,0.1) 484px, rgba(57,68,237,0.1) 528px,
+        rgba(57, 68, 237, 0.9) 44px, rgba(57, 68, 237, 0.9) 88px,
+        rgba(57, 68, 237, 0.8) 88px, rgba(57, 68, 237, 0.8) 132px,
+        rgba(57, 68, 237, 0.7) 132px, rgba(57, 68, 237, 0.7) 176px,
+        rgba(57, 68, 237, 0.6) 176px, rgba(57, 68, 237, 0.6) 220px,
+        rgba(57, 68, 237, 0.5) 220px, rgba(57, 68, 237, 0.5) 264px,
+        rgba(57, 68, 237, 0.4) 264px, rgba(57, 68, 237, 0.4) 308px,
+        rgba(57, 68, 237, 0.3) 308px, rgba(57, 68, 237, 0.3) 374px, /**/
+        rgba(57, 68, 237, 0.4) 374px, rgba(57, 68, 237, 0.4) 396px,
+        rgba(57, 68, 237, 0.5) 396px, rgba(57, 68, 237, 0.5) 418px,
+        rgba(57, 68, 237, 0.4) 418px, rgba(57, 68, 237, 0.4) 440px,
+        rgba(57, 68, 237, 0.3) 440px, rgba(57, 68, 237, 0.3) 484px,
+        rgba(57, 68, 237, 0.1) 484px, rgba(57, 68, 237, 0.1) 528px,
         transparent 528px, transparent 572px,
-        rgba(57,68,237,0.04) 572px, rgba(57,68,237,0.04) 616px,
+        rgba(57, 68, 237, 0.04) 572px, rgba(57, 68, 237, 0.04) 616px,
         transparent
     );
     .green-line {
@@ -74,7 +73,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    img {
+    &-logo {
       margin-top: 119px;
       margin-bottom: 14px;
       margin-left: 20px;
@@ -86,6 +85,39 @@
       -webkit-font-smoothing: antialiased;
       text-align: center;
       margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+    height: 308px;
+    position: relative;
+    overflow: hidden;
+    &-stripes {
+      background-image: linear-gradient(
+        0deg,
+        $blue 0, $blue 44px,
+        rgba(57, 68, 237, 0.9) 44px, rgba(57, 68, 237, 0.9) 88px,
+        rgba(57, 68, 237, 0.7) 88px, rgba(57, 68, 237, 0.7) 132px,
+        rgba(57, 68, 237, 0.6) 132px, rgba(57, 68, 237, 0.6) 176px,
+        rgba(57, 68, 237, 0.4) 176px, rgba(57, 68, 237, 0.4) 220px,
+        rgba(57, 68, 237, 0.3) 220px, rgba(57, 68, 237, 0.3) 264px,
+        rgba(57, 68, 237, 0.1) 264px, rgba(57, 68, 237, 0.1) 308px,
+        transparent 308px, transparent
+      );
+      .green-line {
+        display: none;
+      }
+    }
+    &-anounce {
+      &-logo {
+        width: 272px;
+        margin-top: 58px;
+        margin-bottom: -7px;
+        margin-left: 11px;
+      }
     }
   }
 }

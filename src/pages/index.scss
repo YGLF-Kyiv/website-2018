@@ -2,17 +2,14 @@
 
 .page-index {
   overflow: hidden;
-  .articles {
-    margin-top: 45px;
-    padding-bottom: 70px;
-    .speakers-block {
-      margin-top: 150px;
-    }
-    .venue-block {
-      margin-top: 150px;
-    }
-    .sponsors-block {
-      margin-top: 150px;
-    }
+  padding-bottom: 70px;
+  .speakers-block {
+    margin-top: 150px;
+  }
+  .venue-block {
+    margin-top: 150px;
+  }
+  .sponsors-block {
+    margin-top: 150px;
   }
 }

@@ -6,6 +6,9 @@ export default class HeaderMenu extends React.Component {
   render() {
     return (
       <div className="header-menu">
+        <div className="header-menu-expand">
+          <a href="#" className="header-menu-expand-btn">Menu</a>
+        </div>
         <div className="header-menu-inner">
           <Link activeClassName="-active" to="">Home</Link>
           <Link activeClassName="-active" to="/speakers">Speakers</Link>

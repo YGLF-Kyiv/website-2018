@@ -5,11 +5,13 @@ import 'flexboxgrid/css/index.css';
 import './index.scss';
 import './fontello.css';
 import Header from '../components/Header/Header';
+import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import Footer from '../components/Footer/Footer';
+import Intro from '../components/Intro/Intro';
 
 export default class MainLayout extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children, location: { pathname } } = this.props;
     return (
       <div className="app">
         <Helmet>
@@ -17,7 +19,7 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
 
           <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
           <meta name="description" content={config.siteDescription} />
 
           <meta property="og:title" content="You Gotta Love Frontend Conference" />
@@ -42,7 +44,9 @@ export default class MainLayout extends React.Component {
 
           <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />
         </Helmet>
+        {/*<HeaderMenu />*/}
         <Header />
+        <Intro/>
         <div className="body">
           {children()}
         </div>

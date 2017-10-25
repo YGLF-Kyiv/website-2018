@@ -1,13 +1,7 @@
 @import '../shared/styles/colors';
+@import '../shared/styles/mixins';
 
-body {
-  font-family: SofiaPro, Helvetica Neue, sans-serif;
-  font-weight: 100;
-  color: $white;
-  background: $blue;
-  font-size: 17px;
-}
-
+// Font faces
 @font-face {
   font-family: SofiaPro;
   src: url(/fonts/Sofia-Pro-Medium.otf);
@@ -26,23 +20,14 @@ body {
   font-weight: 700;
 }
 
-
-
+// Shared classes
 .container {
-  position: relative;
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 18px;
+  @include container;
 }
 
 .container-fluid {
-  position: relative;
-  width: calc(100% - 200px);
-  padding: 0 18px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  @include container-fluid
 }
-
 
 .lines-bg {
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=') repeat;
@@ -55,3 +40,36 @@ body {
   opacity: 0.3;
 }
 
+
+// Main layout
+body {
+  font-family: SofiaPro, Helvetica Neue, sans-serif;
+  font-weight: 100;
+  color: $white;
+  background: $blue;
+  font-size: 17px;
+}
+
+@media (max-width: 480px) {
+  body {
+    .app {
+      display: flex;
+      flex-direction: column;
+      > .header-menu {
+        order: 1;
+      }
+      > .intro {
+        order: 2;
+      }
+      > .header {
+        order: 3;
+      }
+      > .body {
+        order: 10;
+      }
+      > .footer {
+        order: 100;
+      }
+    }
+  }
+}
