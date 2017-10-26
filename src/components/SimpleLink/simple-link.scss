@@ -1,0 +1,8 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.simple-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
