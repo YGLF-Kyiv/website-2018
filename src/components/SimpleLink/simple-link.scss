@@ -1,0 +1,9 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.simple-link {
+    color: $green;
+  &:hover {
+    color: $white;
+  }
+}
