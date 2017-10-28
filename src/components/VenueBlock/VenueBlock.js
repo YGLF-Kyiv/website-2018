@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './venue-block.scss';
-import venuePhoto from '../../../static/venue.jpg';
 
 export default class VenueBlock extends Component {
   render() {
@@ -15,9 +14,7 @@ export default class VenueBlock extends Component {
           {/*</div>*/}
           <div className="venue-block-text">
             <h2>The Venue</h2>
-            <div className="venue-block-img">
-              <img src={venuePhoto} alt="The Venue" />
-            </div>
+            <div className="venue-block-img" />
             <p>
               YGLF  will take place at  Bel étage - a venue in the centre of the city. There’s a beautiful restaurant serving lunch for all attendees, a two-storey  auditorium, and an amazing roof, where there will be  snacks and coffee during the day.
             </p>
