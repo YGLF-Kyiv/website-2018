@@ -46,7 +46,6 @@ export default class MainLayout extends React.Component {
         </Helmet>
         {/*<HeaderMenu />*/}
         <Header />
-        <Intro/>
         <div className="body">
           {children()}
         </div>
