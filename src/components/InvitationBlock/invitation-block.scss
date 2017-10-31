@@ -1,0 +1,49 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.invitation-block {
+  &-name {
+    @include block-name;
+  }
+  &-text {
+    h2 {
+      @include block-header;
+    }
+    p {
+      @include block-text;
+    }
+    &-button {
+      @include block-button;
+    }
+  }
+  &-video {
+    width: 450px;
+    padding-bottom: 56%;
+    height: 0;
+    position: relative;
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .invitation-block {
+    &-video {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .invitation-block {
+    &-video {
+      margin-left: -90px;
+      width: calc(100% + 180px);
+      padding-bottom: calc(56% + 180px*0.56);
+    }
+  }
+}

@@ -1,12 +1,10 @@
 import React from 'react';
+import InvitationBlock from '../components/InvitationBlock/InvitationBlock';
 
 export default function Template({data}) {
   return (
-    <div className="container">
-      <h1>{data.invitation.name}</h1>
-      <iframe src={data.invitation.video}
-              width="560" height="315" frameBorder="0" allowFullScreen></iframe>
-      <p>{data.invitation.text}</p>
+    <div className="lines-bg">
+      <InvitationBlock data={data} />
     </div>
   );
 }
