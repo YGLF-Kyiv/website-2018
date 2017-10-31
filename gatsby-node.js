@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       result.data.allInvitation.edges.map(({ node }) => {
         // console.log(JSON.stringify(node, null, 4));
         createPage({
-          path: `invitiation/${node.path}`,
+          path: `invitation/${node.path}`,
           component: path.resolve(`./src/templates/invitation.js`),
           context: {
             path: node.path,
