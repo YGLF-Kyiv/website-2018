@@ -7,7 +7,6 @@ import './fontello.css';
 import Header from '../components/Header/Header';
 import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import Footer from '../components/Footer/Footer';
-import Intro from '../components/Intro/Intro';
 
 export default class MainLayout extends React.Component {
   render() {
