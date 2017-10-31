@@ -1,5 +1,6 @@
 @import '../shared/styles/colors';
 @import '../shared/styles/mixins';
+@import '../shared/styles/helpers';
 
 // Font faces
 @font-face {
@@ -43,15 +44,20 @@
 
 // Main layout
 body {
-  font-family: SofiaPro, Helvetica Neue, sans-serif;
   font-weight: 100;
   color: $white;
   background: $blue;
   font-size: 17px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  color: $white;
+body, h1, h2, h3, h4, h5, h6, p, link {
+  font-family: SofiaPro, Helvetica Neue, sans-serif;
+}
+
+.body {
+  h1, p {
+    color: $white;
+  }
 }
 
 @media (max-width: 480px) {

@@ -6,6 +6,7 @@
     @include block-name;
   }
   &-text {
+    margin-bottom: 100px;
     h2 {
       @include block-header;
     }
@@ -29,6 +30,11 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  .signing-up {
+    font-weight: bold;
+    font-style: italic;
   }
 }
 
