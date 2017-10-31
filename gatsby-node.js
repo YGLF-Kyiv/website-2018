@@ -26,6 +26,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           path: `invitation/${node.path}`,
           component: path.resolve(`./src/templates/invitation.js`),
+          layout: 'simple',
           context: {
             path: node.path,
           },
