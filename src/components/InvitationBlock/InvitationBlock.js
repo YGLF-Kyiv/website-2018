@@ -11,12 +11,10 @@ export default class InvitationBlock extends Component {
           <p>
             We’ve made a very personal invitation asking you to speak at You Gotta Love Frontend Conference in Kyiv, Ukraine.
           </p>
-          <p>
-            <span className="invitation-block-video">
-              <iframe src={data.invitation.video}
-                width="450" height="253" frameBorder="0" allowFullScreen></iframe>
-            </span>
-          </p>
+          <div className="invitation-block-video">
+            <iframe src={data.invitation.video}
+              width="450" height="253" frameBorder="0" allowFullScreen></iframe>
+          </div>
         </div>
 
         <div className="invitation-block-text">
