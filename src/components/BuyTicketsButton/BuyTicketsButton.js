@@ -1,17 +1,15 @@
 import React from 'react';
 import './buy-tickets-button.scss';
+import { gaTrack } from '../../utils/ga';
 
 export default class Header extends React.Component {
   render() {
     const sendBi = () => {
-      if (window.ga) {
-        window.ga('send', {
-          hitType: 'event',
-          eventCategory: 'purchase',
-          eventAction: 'click',
-          eventLabel: 'Buy Tickets',
-        });
-      }
+      gaTrack({
+        eventCategory: 'purchase',
+        eventAction: 'click',
+        eventLabel: 'Buy Tickets',
+      });
     };
     return (
       <a
