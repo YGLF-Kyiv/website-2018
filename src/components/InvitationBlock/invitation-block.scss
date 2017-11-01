@@ -54,3 +54,13 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .invitation-block {
+    &-video {
+      margin-left: -70px;
+      width: calc(100% + 140px);
+      padding-bottom: calc(56% + 140px*0.56);
+    }
+  }
+}
