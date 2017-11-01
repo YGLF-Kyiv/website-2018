@@ -30,7 +30,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           context: {
             path: node.path,
           },
-        })
+        });
+        createPage({
+          path: `invitation/${node.path}/video`,
+          component: path.resolve(`./src/templates/invitation.js`),
+          layout: 'simple',
+          context: {
+            path: node.path,
+            track: true,
+          },
+        });
       });
       resolve()
     })

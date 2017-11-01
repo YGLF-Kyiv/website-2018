@@ -1,7 +1,55 @@
 import React, { Component } from 'react';
 import './invitation-block.scss';
+import { gaTrack } from '../../utils/ga';
+import { isInBrowser } from '../../utils/common';
+
+const VIDEO_ELEMENT_ID = 'invitation-video';
 
 export default class InvitationBlock extends Component {
+
+  player = null;
+  playStartTracked = false;
+
+  componentWillMount() {
+    const { shouldTrack } = this.props;
+
+    if (shouldTrack) {
+      this.startYoutubeTracking();
+    }
+  }
+
+  startYoutubeTracking() {
+    const { data } = this.props;
+    const videoId = data.invitation.video.split('/').pop();
+
+    if (isInBrowser()) {
+      window.onYouTubeIframeAPIReady = () => {
+        window.player = this.player = new YT.Player(VIDEO_ELEMENT_ID, {
+          videoId: videoId,
+          events: {
+            onStateChange: (event) => {
+              if (event.data === YT.PlayerState.PLAYING && !this.playStartTracked) {
+                gaTrack({
+                  eventCategory: 'invitation',
+                  eventAction: 'video-started',
+                  eventLabel: data.invitation.name,
+                });
+                this.playStartTracked = true;
+              }
+              if (event.data === YT.PlayerState.ENDED) {
+                gaTrack({
+                  eventCategory: 'invitation',
+                  eventAction: 'video-fully-played',
+                  eventLabel: data.invitation.name,
+                });
+              }
+            },
+          },
+        })
+      };
+    }
+  }
+
   render() {
     const { data } = this.props;
     return (
@@ -12,8 +60,9 @@ export default class InvitationBlock extends Component {
             We’ve made a very personal invitation asking you to speak at You Gotta Love Frontend Conference in Kyiv, Ukraine.
           </p>
           <div className="invitation-block-video">
-            <iframe src={data.invitation.video}
-              width="450" height="253" frameBorder="0" allowFullScreen></iframe>
+            <div id={VIDEO_ELEMENT_ID}>
+              <iframe src={data.invitation.video} frameBorder="0" allowFullScreen></iframe>
+            </div>
           </div>
         </div>
 
