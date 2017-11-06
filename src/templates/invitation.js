@@ -46,6 +46,5 @@ export const pageQuery = graphql`
       path
       video
       name
-      text
     }
   }`;

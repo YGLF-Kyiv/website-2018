@@ -48,7 +48,7 @@ module.exports = {
         credential: require("./firebase-key.json"),
 
         // your firebase database root url
-        databaseURL: "https://yglf-9f8cc.firebaseio.com/",
+        databaseURL: "https://yglf-bb9f8.firebaseio.com/",
 
         // you can have multiple "types" that point to different paths
         types: [
