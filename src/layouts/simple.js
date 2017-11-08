@@ -12,7 +12,7 @@ export default class MainLayout extends React.Component {
     return (
       <div className="app">
         <Helmet />
-        <Header />
+        <Header showButton={false} />
         <div className="body">
           {children()}
         </div>

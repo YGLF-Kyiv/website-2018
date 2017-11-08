@@ -1,0 +1,13 @@
+@import '../shared/styles/mixins';
+
+.page-successful-purchase {
+  overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  h2 {
+    @include block-header;
+  }
+  p {
+    @include block-text;
+  }
+}

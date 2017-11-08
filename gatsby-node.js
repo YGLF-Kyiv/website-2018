@@ -45,3 +45,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     })
   })
 };
+
+exports.onCreatePage = ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators;
+
+  return new Promise((resolve) => {
+    if (page.path.match(/^\/successful-purchase/)) {
+      page.layout = "simple";
+      createPage(page)
+    }
+
+    resolve()
+  })
+};

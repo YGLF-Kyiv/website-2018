@@ -10,4 +10,5 @@ module.exports = {
   googleAnalyticsID: 'UA-107799328-1', // GA tracking ID.
   userTwitter: 'yglf_kyiv',
   email: 'hello@yglf.com.ua',
+  ticketsUrl: 'https://2event.com/ru/events/1037785',
 };

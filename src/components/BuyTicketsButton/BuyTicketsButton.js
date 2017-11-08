@@ -1,23 +1,25 @@
 import React from 'react';
 import './buy-tickets-button.scss';
 import { gaTrack } from '../../utils/ga';
+import config from '../../../data/SiteConfig';
 
-export default class Header extends React.Component {
+export default class BuyTicketsButton extends React.Component {
+  trackClick() {
+    gaTrack({
+      eventCategory: 'purchase',
+      eventAction: 'click',
+      eventLabel: 'Buy Tickets',
+    });
+  }
+
   render() {
-    const sendBi = () => {
-      gaTrack({
-        eventCategory: 'purchase',
-        eventAction: 'click',
-        eventLabel: 'Buy Tickets',
-      });
-    };
     return (
       <a
         target="_blank"
-        href=""
+        href={config.ticketsUrl}
         className="buy-tickets drop-shadow-small"
         rel="noopener noreferrer"
-        onClick={sendBi}
+        onClick={this.trackClick}
       >
         Buy Tickets
       </a>

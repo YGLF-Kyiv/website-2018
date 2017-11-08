@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './info-block.scss';
 import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton';
-import SimpleLink from '../SimpleLink/SimpleLink';
 
 export default class InfoBlock extends Component {
   render() {
@@ -26,15 +25,15 @@ export default class InfoBlock extends Component {
           <p>
             We hope you'll enjoy our efforts, community involvement and - of course - all the knowledge that will be shared.
           </p>
-          {/*<div className="info-block-text-button">*/}
-          <p>
-            Early birds tickets will be available in a few days.
-            Add us on <SimpleLink text="Twitter" url="https://twitter.com/yglf_kyiv" />
-            &nbsp;and <SimpleLink text="Facebook" url="https://www.facebook.com/yglf.kyiv" />
-            &nbsp;to be updated.
-          </p>
-            {/*<BuyTicketsButton />*/}
-          {/*</div>*/}
+          {/*<p>*/}
+            {/*Early birds tickets will be available in a few days.*/}
+            {/*Add us on <SimpleLink text="Twitter" url="https://twitter.com/yglf_kyiv" />*/}
+            {/*&nbsp;and <SimpleLink text="Facebook" url="https://www.facebook.com/yglf.kyiv" />*/}
+            {/*&nbsp;to be updated.*/}
+          {/*</p>*/}
+          <div className="info-block-text-button">
+            <BuyTicketsButton />
+          </div>
         </div>
       </div>
     );
