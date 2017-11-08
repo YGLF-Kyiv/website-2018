@@ -12,11 +12,15 @@ export default class MainLayout extends React.Component {
     return (
       <div className="app">
         <Helmet />
-        <Header showButton={false} />
-        <div className="body">
+        <div className="app-header">
+          <Header showButton={false} />
+        </div>
+        <div className="app-body">
           {children()}
         </div>
-        <Footer />
+        <div className="app-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

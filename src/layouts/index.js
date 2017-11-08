@@ -14,13 +14,17 @@ export default class MainLayout extends React.Component {
     return (
       <div className="app">
         <Helmet />
-        {/*<HeaderMenu />*/}
-        <Header />
-        <Intro/>
-        <div className="body">
+        <div className="app-header">
+          {/*<HeaderMenu />*/}
+          <Header />
+          <Intro/>
+        </div>
+        <div className="app-body">
           {children()}
         </div>
-        <Footer />
+        <div className="app-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

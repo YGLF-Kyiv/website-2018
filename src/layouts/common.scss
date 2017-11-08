@@ -54,31 +54,47 @@ body, h1, h2, h3, h4, h5, h6, p, link {
   font-family: SofiaPro, Helvetica Neue, sans-serif;
 }
 
-.body {
-  h1, p {
-    color: $white;
+html, body, #___gatsby {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 110px;
+  box-sizing: border-box;
+  &-body {
+    h1, p {
+      color: $white;
+    }
+  }
+  &-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
+
+
 
 @media (max-width: 480px) {
   body {
     .app {
-      display: flex;
-      flex-direction: column;
-      > .header-menu {
-        order: 1;
-      }
-      > .intro {
-        order: 2;
-      }
-      > .header {
-        order: 3;
-      }
-      > .body {
-        order: 10;
-      }
-      > .footer {
-        order: 100;
+      padding-bottom: 110px;
+      .app-header {
+        display: flex;
+        flex-direction: column;
+        > .header-menu {
+          order: 1;
+        }
+        > .intro {
+          order: 2;
+        }
+        > .header {
+          order: 3;
+        }
       }
     }
   }
