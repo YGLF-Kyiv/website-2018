@@ -45,11 +45,11 @@ export default class Footer extends React.Component {
                 {/*<Link to="/sponsors">Sponsors</Link>*/}
                 {/*<Link to="/schedule">Schedule</Link>*/}
                 <a
-                  href="http://2016.yougottalovefrontend.com/"
+                  href="https://yougottalovefrontend.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  YGLF 2016
+                  YGLF 2017
                 </a>
                 <Link to="/code-of-conduct">Code Of Conduct</Link>
               </div>

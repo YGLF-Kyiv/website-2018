@@ -49,10 +49,18 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.onCreatePage = ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
+  const isPageSimple = function() {
+    // these pages don't have the intro block
+    const simplePages = ['successful-purchase', 'code-of-conduct'];
+    return simplePages.find((simplePage) => {
+      return page.path.match(new RegExp(`/${simplePage}`));
+    })
+  };
+
   return new Promise((resolve) => {
-    if (page.path.match(/^\/successful-purchase/)) {
+    if (isPageSimple()) {
       page.layout = "simple";
-      createPage(page)
+      createPage(page);
     }
 
     resolve()

@@ -14,10 +14,7 @@ export default class Header extends React.Component {
         </div>
         <div className="intro-anounce">
           <img className="intro-anounce-logo" src={logo} alt="YGLF KYIV"/>
-          <p>
-            COMING SOON<br/>
-            24-25 May 2018 | Kyiv, Ukraine
-          </p>
+          <p>24-25 May 2018 | Kyiv, Ukraine</p>
         </div>
       </div>
     );
