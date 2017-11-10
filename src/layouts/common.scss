@@ -54,15 +54,28 @@ body, h1, h2, h3, h4, h5, h6, p, link {
   font-family: SofiaPro, Helvetica Neue, sans-serif;
 }
 
+h3 {
+  color: $white;
+  letter-spacing: .53px;
+  line-height: var(--cell);
+  font-size: 30px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  transform: translateY(9px);
+}
+
 html, body, #___gatsby {
   height: 100%;
   margin: 0;
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   position: relative;
-  padding-bottom: 110px;
   box-sizing: border-box;
   &-body {
     h1, p {
