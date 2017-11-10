@@ -27,8 +27,7 @@ export default class Footer extends React.Component {
               {/*</p>*/}
               {/*<Subscribe />*/}
             {/*</div>*/}
-            {/*<div className="col-lg-5 col-xs-12"> put back when there is a subscribe section or more links */}
-            <div className="col-lg-7 col-xs-12">
+            <div className="col-lg-5 col-xs-12">
               <strong>Find your way</strong>
               <div className="footer-links">
                 <Link to="/">Home</Link>
