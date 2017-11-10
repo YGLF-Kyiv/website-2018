@@ -1,0 +1,29 @@
+@import '../shared/styles/mixins';
+
+.page-code-of-conduct {
+  overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  h2 {
+    @include block-header;
+  }
+  p {
+    @include block-text;
+  }
+  > section {
+    h3 {
+      padding-left: 120px;
+    }
+  }
+}
+
+
+@media (max-width: 764px) {
+  .page-code-of-conduct {
+    > section {
+      h3 {
+        padding-left: 0;
+      }
+    }
+  }
+}
