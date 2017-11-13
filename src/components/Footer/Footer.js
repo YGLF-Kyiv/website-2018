@@ -51,7 +51,9 @@ export default class Footer extends React.Component {
                 >
                   YGLF 2017
                 </a>
+                <Link to="/diversity">Diversity Tickets</Link>
                 <Link to="/code-of-conduct">Code Of Conduct</Link>
+                <Link to="/sponsorship">Sponsorship</Link>
               </div>
             </div>
           </div>
