@@ -55,8 +55,8 @@ export default class SponsorshipPage extends React.Component {
               these create white noise, and no one really cares.
             </p>
             <p>
-              We want to change this in a positive way to increase the possibility that your money
-              will work for your goals. We know our audience and we know how to connect your brand
+              We want to change this positively to increase the possibility that your money
+              will work for your goals. We know our audience, and we know how to connect your brand
               with these people.
             </p>
           </section>
@@ -71,10 +71,10 @@ export default class SponsorshipPage extends React.Component {
                 show your infrastructure (like how easy it is to deploy 'hello world' inside your environment);
               </li>
               <li>
-                show interesting tasks you solve (we believe that getting Fibonacci sequence isn't one of those);
+                show exciting tasks that you solve (we believe that getting Fibonacci sequence isn't one of those);
               </li>
               <li>
-                show how you care about the code quality, reviews, TDD practices.
+                explain how you care about the code quality, reviews, TDD practices.
               </li>
             </ul>
 
