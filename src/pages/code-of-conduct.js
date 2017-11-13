@@ -2,7 +2,7 @@ import React from 'react'
 import "./code-of-conduct.scss";
 import { gaTrack } from '../utils/ga';
 
-export default class SuccessfulPurchasePage extends React.Component {
+export default class CodeOfConductPage extends React.Component {
 
   componentWillMount() {
     gaTrack({

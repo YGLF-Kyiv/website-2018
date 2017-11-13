@@ -51,7 +51,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 
   const isPageSimple = function() {
     // these pages don't have the intro block
-    const simplePages = ['successful-purchase', 'code-of-conduct'];
+    const simplePages = ['successful-purchase', 'code-of-conduct', 'diversity', 'sponsorship'];
     return simplePages.find((simplePage) => {
       return page.path.match(new RegExp(`/${simplePage}`));
     })
