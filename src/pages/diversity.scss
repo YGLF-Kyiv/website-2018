@@ -11,24 +11,30 @@
   p {
     @include block-text;
   }
-  section {
-    .link-wix-logo {
-      display: flex;
-      width: 300px;
-      margin-left: 120px;
-      > img {
-        width: 100%;
-        height: 100%;
-      }
+  .link-wix-logo {
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+    float: right;
+    > img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
+@media (max-width: 1000px) {
+  .page-diversity-tickets {
+    .link-wix-logo {
+      float: none;
+    }
+  }
+}
 
 @media (max-width: 764px) {
   .page-diversity-tickets {
     > section {
-      h3, h2, .link-wix-logo {
+      h3, h2 {
         padding-left: 0;
         margin-left: 0;
       }
