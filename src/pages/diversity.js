@@ -21,6 +21,9 @@ export default class DiversityTicketsPage extends React.Component {
     return (
       <div className="page-diversity-tickets lines-bg">
         <div className="container container-fluid">
+          <SimpleLink url="https://www.wix.engineering/" className="link-wix-logo">
+            <img className="wix-engineering-logo" src={wixEngineering} alt="WIX Engineering"/>
+          </SimpleLink>
 
           <section>
             <h2>Diversity Tickets</h2>
@@ -40,14 +43,13 @@ export default class DiversityTicketsPage extends React.Component {
             </p>
             <p>
               Please apply for the tickets through <SimpleLink rel="" target="" url={URL_EMAIL} text={TEXT_EMAIL} />&nbsp;
-              (name and email only) before January 15, 2018. After submission closes, 40 lucky people will be
-              randomly selected randomly and contacted through the e-mail address which they submitted.
-              The e-mail will hold, with which they can purchase their discounted diversity ticket.
+              (send us your name and email only) before January 15, 2018.
             </p>
-
-            <SimpleLink url="https://www.wix.engineering/" className="link-wix-logo">
-              <img className="wix-engineering-logo" src={wixEngineering} alt="WIX Engineering"/>
-            </SimpleLink>
+            <p>
+              After submission closes, 40 lucky people will be selected randomly and contacted
+              through the e-mail address which they submitted. The e-mail will hold a coupon code,
+              with which they can purchase their discounted diversity ticket.
+            </p>
           </section>
         </div>
       </div>
