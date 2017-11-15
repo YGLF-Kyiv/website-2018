@@ -1,63 +1,63 @@
-const config = require("./data/SiteConfig");
+const config = require('./data/SiteConfig');
 
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: `You Gotta Love Frontend Conference`,
+    title: 'You Gotta Love Frontend Conference',
     siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-sass',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
         short_name: config.siteTitle,
         description: config.siteDescription,
         start_url: config.pathPrefix,
-        display: "minimal-ui",
+        display: 'minimal-ui',
         icons: [
           {
-            src: "/logos/logo-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
+            src: '/logos/logo-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
           },
           {
-            src: "/logos/logo-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
+            src: '/logos/logo-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
           }
         ]
       },
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: config.googleAnalyticsID,
         anonymize: true
       }
     },
     {
-      resolve: `gatsby-source-firebase`,
+      resolve: 'gatsby-source-firebase',
       options: {
         // point to the firebase private key downloaded
-        credential: require("./firebase-key.json"),
+        credential: require('./firebase-key.json'),
 
         // your firebase database root url
-        databaseURL: "https://yglf-bb9f8.firebaseio.com/",
+        databaseURL: 'https://yglf-bb9f8.firebaseio.com/',
 
-        // you can have multiple "types" that point to different paths
+        // you can have multiple 'types' that point to different paths
         types: [
           {
-            // this type will become `allWorkshop` in graphql
-            type: "Invitation",
+            // this type will become 'allWorkshop' in graphql
+            type: 'Invitation',
 
             // the path to get the records from
-            path: "invitations",
+            path: 'invitations',
 
             // probably don't want your entire database, use the query option
             // to limit however you'd like
@@ -66,8 +66,8 @@ module.exports = {
             // This allows you to map your data to data that GraphQL likes:
             // 1. Turn your lists into actual arrays
             // 2. Fix keys that GraphQL hates. It doesn't allow number keys
-            //    like "0", you'll get this error pretty often:
-            //    Error: Names must match /^[_a-zA-Z][_a-zA-Z0-9]*$/ but "0" does not
+            //    like '0', you'll get this error pretty often:
+            //    Error: Names must match /^[_a-zA-Z][_a-zA-Z0-9]*$/ but '0' does not
             // 3. Remove stuff you don't need.
             //
             // Feel free to mutate, we sent you a copy anyway.
@@ -89,8 +89,8 @@ module.exports = {
 
           // if your data is really simple, this should be fine too
           // {
-          //   type: "CourseDescriptions",
-          //   path: "text/courseDescriptions",
+          //   type: 'CourseDescriptions',
+          //   path: 'text/courseDescriptions',
           // }
         ]
       }

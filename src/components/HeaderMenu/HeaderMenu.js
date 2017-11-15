@@ -1,7 +1,7 @@
 import React from 'react';
 import './header-menu.scss';
-import Link from "gatsby-link";
-import classNames from "classnames";
+import Link from 'gatsby-link';
+import classNames from 'classnames';
 
 const MENU_ITEMS = [
   { title: 'Home', to: '' },
@@ -22,7 +22,7 @@ export default class HeaderMenu extends React.Component {
   }
 
   renderList() {
-    return MENU_ITEMS.map((item) => (
+    return MENU_ITEMS.map(item => (
       <Link
         activeClassName="-active"
         to={item.to}
@@ -30,7 +30,7 @@ export default class HeaderMenu extends React.Component {
         onClick={this.closeMenu}
         className={classNames({ '-disabled': item.disabled })}
       >
-        { item.title }
+        {item.title}
       </Link>
     ));
   }
@@ -52,16 +52,16 @@ export default class HeaderMenu extends React.Component {
     return (
       <div className={classNames('header-menu', { '-expanded': menuExpanded })}>
         <div className="header-menu-expand">
-          <a href="#" className="header-menu-expand-btn" onClick={this.toggleMenu}>
-            { menuExpanded ? 'Back' : 'Menu' }
+          <a
+            href="#"
+            className="header-menu-expand-btn"
+            onClick={this.toggleMenu}
+          >
+            {menuExpanded ? 'Back' : 'Menu'}
           </a>
         </div>
-        <div className="header-menu-inner">
-          { this.renderList() }
-        </div>
-        <div className="header-menu-overlay">
-          { this.renderList() }
-        </div>
+        <div className="header-menu-inner">{this.renderList()}</div>
+        <div className="header-menu-overlay">{this.renderList()}</div>
       </div>
     );
   }

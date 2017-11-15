@@ -5,11 +5,10 @@ import { gaTrack } from '../utils/ga';
 import { isInBrowser } from '../utils/common';
 
 export default class InvitationTemplate extends React.Component {
-
   componentWillMount() {
     const shouldTrack = this.props.pathContext.track;
     const { data } = this.props;
-    if(shouldTrack) {
+    if (shouldTrack) {
       gaTrack({
         eventCategory: 'invitation',
         eventAction: 'open',
@@ -23,7 +22,7 @@ export default class InvitationTemplate extends React.Component {
     if (isInBrowser()) {
       const tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
+      tag.src = 'https://www.youtube.com/iframe_api';
       const firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
@@ -41,10 +40,11 @@ export default class InvitationTemplate extends React.Component {
 
 export const pageQuery = graphql`
   query InvitiationByPath($path: String!) {
-  invitation(path: { eq: $path } ) {
+    invitation(path: { eq: $path }) {
       id
       path
       video
       name
     }
-  }`;
+  }
+`;

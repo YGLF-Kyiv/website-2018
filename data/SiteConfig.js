@@ -11,4 +11,10 @@ module.exports = {
   userTwitter: 'yglf_kyiv',
   email: 'hello@yglf.com.ua',
   ticketsUrl: 'https://2event.com/ru/events/1037785',
+  sitemapPages: [
+    '/',
+    '/diversity',
+    '/sponsorship',
+    '/code-of-conduct',
+  ],
 };

@@ -1,8 +1,8 @@
 const path = require('path');
-
-// exports.onCreateNode = ({ node }) => {
-//   console.log(node.internal.type)
-// };
+const fs = require('fs-extra-promise');
+const sm = require('sitemap');
+const _ = require('lodash/fp');
+const config = require('./data/SiteConfig');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
@@ -29,6 +29,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           layout: 'simple',
           context: {
             path: node.path,
+            ignoreInSitemap: true,
           },
         });
         createPage({
@@ -38,6 +39,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           context: {
             path: node.path,
             track: true,
+            ignoreInSitemap: true,
           },
         });
       });
@@ -65,4 +67,25 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 
     resolve()
   })
+};
+
+function generateSiteMap() {
+  const sitemap = sm.createSitemap({
+    hostname: `http://${config.siteUrl}`,
+    cacheTime: '60000',
+    urls: config.sitemapPages.map((p) => ({
+      url: p,
+      changefreq: 'daily',
+      priority: 0.7
+    })),
+  });
+  console.log('Generating sitemap.xml');
+  fs.writeFileSync(
+    `${__dirname}/public/sitemap.xml`,
+    sitemap.toString()
+  )
+}
+
+exports.onPostBuild = () => {
+  generateSiteMap();
 };

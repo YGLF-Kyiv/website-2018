@@ -1,9 +1,8 @@
-import React from 'react'
-import "./successful-purchase.scss";
+import React from 'react';
+import './successful-purchase.scss';
 import { gaTrack } from '../utils/ga';
 
 export default class SuccessfulPurchasePage extends React.Component {
-
   componentWillMount() {
     gaTrack({
       eventCategory: 'purchase',
@@ -17,7 +16,10 @@ export default class SuccessfulPurchasePage extends React.Component {
       <div className="page-successful-purchase lines-bg">
         <div className="container container-fluid">
           <h2>Thank you!</h2>
-          <p>See you in Kyiv in May! <br /><em>YGLF | Kyiv Team</em>.</p>
+          <p>
+            See you in Kyiv in May! <br />
+            <em>YGLF | Kyiv Team</em>.
+          </p>
         </div>
       </div>
     );

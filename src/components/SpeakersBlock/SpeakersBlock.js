@@ -13,10 +13,12 @@ export default class InfoBlock extends Component {
         <div className="speakers-block-text">
           <h2>Call For Papers</h2>
           <p>
-            Kyiv and all of the Frontend communities here are amazing. Audience is technically strong and thankful for new knowledge.
+            Kyiv and all of the Frontend communities here are amazing. Audience
+            is technically strong and thankful for new knowledge.
           </p>
           <p>
-            If you are eager to share your experience and useful insights, apply to become a speaker.
+            If you are eager to share your experience and useful insights, apply
+            to become a speaker.
           </p>
           <div className="speakers-block-text-button">
             <a

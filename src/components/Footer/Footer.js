@@ -20,14 +20,14 @@ export default class Footer extends React.Component {
       <div className="footer">
         <div className="container container-fluid">
           <div className="row footer-subscribe">
-            {/*<div className="col-lg-7 col-xs-12">*/}
-              {/*<strong>Subscribe</strong>*/}
-              {/*<p>*/}
-                {/*Exciting things ahead,<br />  stay tuned for more information.*/}
-              {/*</p>*/}
-              {/*<Subscribe />*/}
+            {/*<div className="col-lg-6 col-xs-12">*/}
+            {/*<strong>Subscribe</strong>*/}
+            {/*<p>*/}
+            {/*Exciting things ahead,<br />  stay tuned for more information.*/}
+            {/*</p>*/}
+            {/*<Subscribe />*/}
             {/*</div>*/}
-            <div className="col-lg-5 col-xs-12">
+            <div className="col-md-6 col-xs-12">
               <strong>Find your way</strong>
               <div className="footer-links">
                 <Link to="/">Home</Link>
@@ -39,11 +39,6 @@ export default class Footer extends React.Component {
                 >
                   Buy Tickets
                 </a>
-                {/*<Link to="/about">About</Link>*/}
-                {/*<Link to="/speakers">Speakers</Link>*/}
-                {/*<Link to="/workshops">Workshops</Link>*/}
-                {/*<Link to="/sponsors">Sponsors</Link>*/}
-                {/*<Link to="/schedule">Schedule</Link>*/}
                 <a
                   href="https://yougottalovefrontend.com/"
                   target="_blank"
@@ -58,33 +53,33 @@ export default class Footer extends React.Component {
             </div>
           </div>
           <div className="row footer-contacts">
-            <div className="col-md-7 col-xs-12">
-              {/*<div className="created-by">*/}
-                {/*<span>*/}
-                  {/*Designed by{' '}*/}
-                  {/*<a*/}
-                    {/*href="http://highondesign.wix.com/"*/}
-                    {/*target="_blank"*/}
-                    {/*rel="noopener noreferrer"*/}
-                  {/*>*/}
-                    {/*WixStudio*/}
-                  {/*</a>,*/}
-                {/*</span>{' '}*/}
-                  {/*<span>*/}
-                  {/*Coded by{' '}*/}
-                    {/*<a*/}
-                      {/*href="https://github.com/paveliko"*/}
-                      {/*target="_blank"*/}
-                      {/*rel="noopener noreferrer"*/}
-                    {/*>*/}
-                    {/*Pavel Rapoport*/}
-                  {/*</a>*/}
-                {/*</span>*/}
-              {/*</div>*/}
-            </div>
-            <div className="col-md-5 col-xs-12">
+            {/*<div className="col-md-6 col-xs-12">*/}
+            {/*<div className="created-by">*/}
+            {/*<span>*/}
+            {/*Designed by{' '}*/}
+            {/*<a*/}
+            {/*href="http://highondesign.wix.com/"*/}
+            {/*target="_blank"*/}
+            {/*rel="noopener noreferrer"*/}
+            {/*>*/}
+            {/*WixStudio*/}
+            {/*</a>,*/}
+            {/*</span>{' '}*/}
+            {/*<span>*/}
+            {/*Coded by{' '}*/}
+            {/*<a*/}
+            {/*href="https://github.com/paveliko"*/}
+            {/*target="_blank"*/}
+            {/*rel="noopener noreferrer"*/}
+            {/*>*/}
+            {/*Pavel Rapoport*/}
+            {/*</a>*/}
+            {/*</span>*/}
+            {/*</div>*/}
+            {/*</div>*/}
+            <div className="col-md-6 col-xs-12">
               <a className="footer-mailto" href={`mailto:${config.email}`}>
-                { config.email }
+                {config.email}
               </a>
               <SocialIcons />
             </div>

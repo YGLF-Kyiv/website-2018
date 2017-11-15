@@ -8,7 +8,6 @@ export default class Header extends React.Component {
     showButton: true,
   };
 
-
   render() {
     const { showButton } = this.props;
     return (
@@ -27,12 +26,11 @@ export default class Header extends React.Component {
         </div>
         <div className="header-date-location">
           <div className="container-fluid">
-            <strong>24-25 May 2018</strong><span>,&nbsp;</span>Bel étage | Kyiv, Ukraine
+            <strong>24-25 May 2018</strong>
+            <span>,&nbsp;</span>Bel étage | Kyiv, Ukraine
           </div>
         </div>
-        { showButton && (
-          <BuyTicketsButton />
-        ) }
+        {showButton && <BuyTicketsButton />}
       </div>
     );
   }

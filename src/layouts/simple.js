@@ -17,9 +17,7 @@ export default class MainLayout extends React.Component {
           <HeaderMenu />
           <Header showButton={false} />
         </div>
-        <div className="app-body">
-          {children()}
-        </div>
+        <div className="app-body">{children()}</div>
         <div className="app-footer">
           <Footer />
         </div>

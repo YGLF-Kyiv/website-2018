@@ -13,13 +13,17 @@ export default class SponsorsBlock extends Component {
         <div className="sponsors-block-text">
           <h2>Sponsors</h2>
           <p>
-            YGLF is a community event made by developers, for developers. In being so it provides an unmatched opportunity for a connection between the great Israeli frontend community and the companies that help shape the web. We would like to thank our partners who are helping us to make this great event happen.
+            YGLF is a community event made by developers, for developers. In
+            being so it provides an unmatched opportunity for a connection
+            between the great Israeli frontend community and the companies that
+            help shape the web. We would like to thank our partners who are
+            helping us to make this great event happen.
           </p>
           <div className="sponsors-block-text-button">
             <a href="">Become a sponsor</a>
           </div>
         </div>
-        <div className="sponsors-block-logos"></div>
+        <div className="sponsors-block-logos" />
       </div>
     );
   }

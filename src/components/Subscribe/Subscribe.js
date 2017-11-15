@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import './subscribe.scss';
 
 class Subscribe extends Component {
-
   render() {
     return (
-      <form
-        action=""
-        method="post"
-        className="subscribe-form"
-      >
+      <form action="" method="post" className="subscribe-form">
         <div className="subscribe">
           <input
             type="email"
