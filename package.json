@@ -26,7 +26,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "postbuild": "mv public docs",
+    "postbuild": "rm -r docs && mv public docs",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi=false --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
