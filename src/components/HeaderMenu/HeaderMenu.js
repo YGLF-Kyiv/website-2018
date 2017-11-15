@@ -18,6 +18,7 @@ export default class HeaderMenu extends React.Component {
       menuExpanded: false,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   renderList() {
@@ -26,6 +27,7 @@ export default class HeaderMenu extends React.Component {
         activeClassName="-active"
         to={item.to}
         key={item.title}
+        onClick={this.closeMenu}
         className={classNames({ '-disabled': item.disabled })}
       >
         { item.title }
@@ -37,6 +39,11 @@ export default class HeaderMenu extends React.Component {
     e.preventDefault();
     this.setState({
       menuExpanded: !this.state.menuExpanded,
+    });
+  }
+  closeMenu() {
+    this.setState({
+      menuExpanded: false,
     });
   }
 
