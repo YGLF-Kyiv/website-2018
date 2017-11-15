@@ -24,7 +24,6 @@ $bottom-padding: 42px;
   &-title {
     @include bordered-bottom;
 
-    font-weight: 400;
     font-size: 22px;
     letter-spacing: 0.07px;
     .container-fluid {
@@ -34,29 +33,30 @@ $bottom-padding: 42px;
       line-height: 27px;
     }
     a {
+      font-weight: 100;
       color: $white;
       text-decoration: none;
     }
   }
   &-description {
     @include bordered-bottom;
-
-    line-height: 38px;
+    line-height: 40px;
     letter-spacing: 0.27px;
     .container-fluid {
+      padding-top: 4px;
       @include bordered-sides;
-      padding-top: 6px;
     }
   }
   &-date-location {
     @include bordered-bottom;
 
-    line-height: 43px;
+    line-height: 40px;
     letter-spacing: 0.05px;
     .container-fluid {
       @include bordered-sides;
-      display: flex;
-      padding-right: 0;
+      display: block;
+      padding-right: 200px;
+      padding-top: 4px;
     }
     strong {
       font-weight: 700;
@@ -64,19 +64,19 @@ $bottom-padding: 42px;
   }
   .buy-tickets {
     position: absolute;
-    right: 100px;
+    right: 85px;
     bottom: $bottom-padding + 1px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .header {
     &-title {
       .container-fluid {
         // uncomment when menu is visible
-        //padding-top: 15px;
-        //min-height: 45px;
-        //line-height: 27px;
+        padding-top: 15px;
+        min-height: 45px;
+        line-height: 27px;
       }
     }
   }
@@ -122,6 +122,11 @@ $bottom-padding: 42px;
         @include remove-side-borders;
         padding: 0;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+        span {
+          display: none;
+        }
       }
     }
     .buy-tickets {

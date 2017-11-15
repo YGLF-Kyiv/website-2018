@@ -33,7 +33,7 @@ export default class Header extends React.Component {
         <link rel="shortcut icon" href="64.png" />
         <link rel="icon" href="favicon.ico" />
 
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />
+        {/*<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />*/}
       </Helmet>
     );
   }

@@ -2,6 +2,8 @@
 @import '../../shared/styles/mixins';
 
 .info-block {
+  height: 720px;
+  overflow: hidden;
   &-name {
     @include block-name;
   }
@@ -14,6 +16,14 @@
     }
     &-button {
       @include block-button;
+      margin-top: 66px;
     }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .info-block {
+    height: auto;
+    padding-bottom: 45px !important;
   }
 }

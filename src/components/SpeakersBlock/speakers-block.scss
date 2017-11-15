@@ -2,6 +2,8 @@
 @import '../../shared/styles/mixins';
 
 .speakers-block {
+  height: 450px;
+  overflow: hidden;
   &-name {
     @include block-name;
   }
@@ -11,7 +13,6 @@
     }
     p {
       @include block-text;
-      margin: 25px 0;
       line-height: 33px;
     }
     &-button {
@@ -20,5 +21,12 @@
         @include animated-button
       }
     }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .speakers-block {
+    height: auto;
+    padding-bottom: 45px !important;
   }
 }

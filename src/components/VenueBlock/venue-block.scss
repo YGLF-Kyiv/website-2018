@@ -3,9 +3,11 @@
 
 .venue-block {
   position: relative;
+  height: 630px;
+  overflow: hidden;
   &-img {
     position: absolute;
-    left: 600px;
+    left: 650px;
     top: 41px;
     height: 450px;
     width: 800px;
@@ -29,10 +31,10 @@
     }
     p {
       @include block-text;
-      margin: 29px 0 41px;
     }
     &-button {
       @include block-button;
+      margin-top: 57px;
       a {
         @include underlined-link
       }
@@ -54,6 +56,8 @@
 
 @media (max-width: 1160px) {
   .venue-block {
+    height: auto;
+    padding-bottom: 45px !important;
     &-img {
       position: static;
       width: 450px;

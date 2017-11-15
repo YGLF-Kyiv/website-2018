@@ -7,11 +7,11 @@ export default class VenueBlock extends Component {
       <div className="venue-block">
 
         <div className="container container-fluid">
-          {/*<div className="venue-block-name">*/}
-            {/*<span>*/}
-              {/*2 <i>Awesome Spaces</i>*/}
-            {/*</span>*/}
-          {/*</div>*/}
+          <div className="venue-block-name">
+            <span>
+              2 <i>Awesome Spaces</i>
+            </span>
+          </div>
           <div className="venue-block-text">
             <h2>The Venue</h2>
             <div className="venue-block-img" />
@@ -26,9 +26,13 @@ export default class VenueBlock extends Component {
               <strong>Bel étage</strong><br />
               Shota Rustaveli St, 16a, Kyiv, Ukraine
             </p>
-            {/*<div className="venue-block-text-button">*/}
-              {/*<a href="" className="get-directions">Get Directions</a>*/}
-            {/*</div>*/}
+            <div className="venue-block-text-button">
+              <a
+                href="https://www.google.com/maps/place/Bel+%C3%A9tage+Concert+Club/@50.4391815,30.517754,17z"
+                className="get-directions"
+                target="_blank"
+              >Get Directions</a>
+            </div>
           </div>
         </div>
       </div>

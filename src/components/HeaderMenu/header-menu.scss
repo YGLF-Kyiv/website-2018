@@ -2,8 +2,8 @@
 @import '../../shared/styles/mixins';
 
 .header-menu {
-  width: 582px;
-  margin-right: 102px;
+  width: 700px;
+  margin-right: 87px;
   padding-top: 39px;
   box-sizing: border-box;
   border-left: 1px solid $green;
@@ -35,10 +35,17 @@
       }
     }
   }
+  &-overlay {
+    display: none;
+  }
+  a.-disabled {
+    pointer-events: none;
+    text-decoration: line-through;
+  }
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .header-menu {
     position: static;
     width: 100%;
@@ -54,7 +61,7 @@
     }
   }
 }
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 900px) {
   .header-menu {
     height: 48px;
     line-height: 48px;
@@ -62,6 +69,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 110;
+      position: relative;
       &-btn {
         font-size: 14px;
         font-weight: 700;
@@ -80,6 +89,55 @@
     }
     &-inner {
       display: none;
+    }
+    &.-expanded {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      left: 0;
+      background-color: rgba(57, 68, 237, 1);
+      height: auto;
+      z-index: 100;
+      .header-menu-expand {
+        border-bottom: 1px solid $green;
+      }
+      .header-menu-overlay {
+        z-index: 105;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 1;
+        -webkit-transition: opacity 250ms;
+        transition: opacity 250ms;
+        transition-delay: 50ms;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        a {
+          text-align: center;
+          display: block;
+          line-height: 30px;
+          font-size: 30px;
+          font-weight: 400;
+          color: $green;
+          border-bottom: 1px solid $green;
+          padding: 40px 0;
+          -webkit-font-smoothing: antialiased;
+          letter-spacing: 0.95px;
+          background-color: $blue;
+          overflow: hidden;
+          &:hover {
+            color: $white;
+            background: $green;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
     }
   }
 }

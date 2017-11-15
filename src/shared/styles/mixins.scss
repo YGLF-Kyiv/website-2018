@@ -24,7 +24,7 @@
   display: inline-block;
   font-weight: 700;
   line-height: 45px;
-  height: 43px;
+  height: 44px;
   padding: 0 0;
   font-size: 13px;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 
 @mixin container-fluid {
   position: relative;
-  width: calc(100% - 200px);
+  width: calc(100% - 170px);
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -88,7 +88,7 @@
 
 // Blocks
 @mixin block-name {
-  height: 30px;
+  height: 45px;
   span {
     display: inline-block;
     height: 90px;
@@ -101,7 +101,6 @@
       font-style: italic;
       font-weight: 400;
       letter-spacing: 3px;
-      font-size: 13px;
       display: inline-block;
       margin-left: 10px;
       padding-left: 10px;
@@ -114,11 +113,12 @@
 @mixin block-header {
   color: $green;
   font-size: 45px;
-  line-height: 42px;
+  line-height: 45px;
   font-weight: 400;
   letter-spacing: 4.55px;
   -webkit-font-smoothing: antialiased;
-  transform: translateY(4px);
+  transform: translateY(10px);
+  margin: 0;
 }
 
 @mixin block-text {
@@ -128,7 +128,7 @@
   -webkit-font-smoothing: antialiased;
   width: 450px;
   padding-left: 120px;
-  margin: 25px 0;
+  margin: 24px 0 26px;
   line-height: 33px;
   @media screen and (max-width: 764px) {
     padding-left: 0;
@@ -136,9 +136,14 @@
   }
 }
 
+@mixin block-text-big {
+  @include block-text;
+  width: auto;
+  padding-right: 120px;
+}
+
 @mixin block-button {
   padding-left: 120px;
-  margin-top: 40px;
   @media screen and (max-width: 764px) {
     padding-left: 0;
   }
