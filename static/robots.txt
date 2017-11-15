@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /invitation/
+
+Sitemap: http://yglf.com.ua/sitemap.xml
