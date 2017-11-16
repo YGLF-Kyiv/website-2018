@@ -17,3 +17,7 @@ gatsby build
 ```
 gatsby serve
 ```
+
+4. Build for prod (make sure you have the docs folder, create it if you don't)
+```npm run build```
+Then copy the generated contents from docs folder to yglf-kyiv.github.io repo and commit + push
