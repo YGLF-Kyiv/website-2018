@@ -5,7 +5,6 @@ import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton';
 
 export default class Header extends React.Component {
   render() {
-    const { showButton } = this.props;
     return (
       <div className="header">
         <div className="header-title">
