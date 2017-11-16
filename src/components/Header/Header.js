@@ -4,10 +4,6 @@ import Link from 'gatsby-link';
 import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton';
 
 export default class Header extends React.Component {
-  static defaultProps = {
-    showButton: true,
-  };
-
   render() {
     const { showButton } = this.props;
     return (
@@ -30,7 +26,7 @@ export default class Header extends React.Component {
             <span>,&nbsp;</span>Bel étage | Kyiv, Ukraine
           </div>
         </div>
-        {showButton && <BuyTicketsButton />}
+        <BuyTicketsButton />
       </div>
     );
   }
