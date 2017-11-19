@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           path: `invitation/${node.path}`,
           component: path.resolve(`./src/templates/invitation.js`),
-          layout: 'simple',
+          layout: 'invitation',
           context: {
             path: node.path,
             ignoreInSitemap: true,
@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           path: `invitation/${node.path}/video`,
           component: path.resolve(`./src/templates/invitation.js`),
-          layout: 'simple',
+          layout: 'invitation',
           context: {
             path: node.path,
             track: true,
