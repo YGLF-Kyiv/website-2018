@@ -15,6 +15,7 @@ export default class SimpleLink extends React.Component {
   static defaultProps = {
     target: '_blank',
     rel: 'noopener noreferrer',
+    className: '',
   };
 
   render() {

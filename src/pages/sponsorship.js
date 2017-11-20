@@ -1,5 +1,6 @@
 import React from 'react';
 import './sponsorship.scss';
+import SimpleLink from '../components/SimpleLink/SimpleLink';
 import { gaTrack } from '../utils/ga';
 
 export default class SponsorshipPage extends React.Component {
@@ -12,6 +13,9 @@ export default class SponsorshipPage extends React.Component {
   }
 
   render() {
+    const URL_EMAIL = 'mailto:hello@yglf.com.ua?subject=Sponsorship';
+    const TEXT_EMAIL = 'CONTACT US REGARDING SPONSORSHIP OPPORTUNITIES';
+
     return (
       <div className="page-sponsorship lines-bg">
         <div className="container container-fluid">
@@ -48,7 +52,7 @@ export default class SponsorshipPage extends React.Component {
               as it should.
             </p>
             <p>
-              You logo everywhere, a boring booth with quiz, games and a lot of
+              Your logo everywhere, a boring booth with quiz, games and a lot of
               wasted paper — all these create white noise, and no one really
               cares.
             </p>
@@ -120,6 +124,10 @@ export default class SponsorshipPage extends React.Component {
               devs on board, to promote your brand to the very targeted and
               smart audience and to get a really professional feedback about
               your product.
+            </p>
+
+            <p className="_full-width">
+              <SimpleLink className="white" rel="" target="" url={URL_EMAIL} text={TEXT_EMAIL} />
             </p>
           </section>
         </div>

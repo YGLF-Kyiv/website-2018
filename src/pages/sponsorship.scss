@@ -11,6 +11,9 @@
   ul {
     @include block-text;
   }
+  ._full-width {
+    width: 100%;
+  }
 }
 
 

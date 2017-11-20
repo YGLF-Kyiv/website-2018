@@ -3,7 +3,16 @@
 
 .simple-link {
     color: $green;
+    outline: none;
   &:hover {
     color: $white;
+  }
+  &.white {
+    font-weight: 100;
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+  &:hover {
+    border-bottom: 1px solid transparent;
   }
 }
