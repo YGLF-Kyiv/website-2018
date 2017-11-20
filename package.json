@@ -5,6 +5,7 @@
   "author": "",
   "dependencies": {
     "classnames": "^2.2.5",
+    "createjs": "^1.0.1",
     "firebase-tools": "^3.13.1",
     "flexboxgrid": "^6.3.1",
     "fs-extra-promise": "^1.0.1",

@@ -90,6 +90,16 @@
     &-inner {
       display: none;
     }
+    &-overlay {
+      display: flex;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 250ms;
+      transition-delay: 50ms;
+      a {
+        transform: scaleY(0);
+      }
+    }
     &.-expanded {
       position: fixed;
       bottom: 0;
@@ -103,14 +113,10 @@
         border-bottom: 1px solid $green;
       }
       .header-menu-overlay {
+        opacity: 1;
         z-index: 105;
-        display: flex;
         justify-content: center;
         flex-direction: column;
-        opacity: 1;
-        -webkit-transition: opacity 250ms;
-        transition: opacity 250ms;
-        transition-delay: 50ms;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -129,9 +135,18 @@
           letter-spacing: 0.95px;
           background-color: $blue;
           overflow: hidden;
+          transition: transform 150ms;
+          transform-origin: 50% 50% 0;
+          transform: scaleY(1);
           &:hover {
             color: $white;
             background: $green;
+          }
+
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+              transition-delay: #{200+($i*50)}ms;
+            }
           }
           &:last-child {
             border-bottom: none;
@@ -145,5 +160,14 @@
 @media screen and (max-width: 480px) {
   .header-menu {
     border-bottom: none;
+    &.-expanded {
+      .header-menu-overlay {
+        a {
+          padding: 25px 0;
+          line-height: 25px;
+          font-size: 25px;
+        }
+      }
+    }
   }
 }

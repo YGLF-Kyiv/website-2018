@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import classNames from 'classnames';
 
 const MENU_ITEMS = [
-  { title: 'Home', to: '' },
+  { title: 'Home', to: '/' },
   { title: 'Speakers', to: '/speakers', disabled: true },
   { title: 'Schedule', to: '/schedule', disabled: true },
   { title: 'Diversity Tickets', to: '/diversity' },
@@ -60,8 +60,8 @@ export default class HeaderMenu extends React.Component {
             {menuExpanded ? 'Back' : 'Menu'}
           </a>
         </div>
-        <div className="header-menu-inner">{this.renderList()}</div>
-        <div className="header-menu-overlay">{this.renderList()}</div>
+        <div className="header-menu-inner">{ this.renderList() }</div>
+        <div className="header-menu-overlay">{ this.renderList() }</div>
       </div>
     );
   }

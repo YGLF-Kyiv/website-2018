@@ -1,0 +1,12 @@
+.intro {
+  border-bottom: 1px solid rgba(5, 207, 157, .3);
+  height: 681px;
+}
+
+@media (max-width: 756px) {
+  .intro {
+    height: 224px;
+    padding-top: 40px;
+    border-bottom: 0 none;
+  }
+}
