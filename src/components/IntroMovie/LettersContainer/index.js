@@ -5,7 +5,7 @@ class LettersContainer {
     this.movieClip = movieClip;
     this.callback = callback;
     this.isMobile = window.innerWidth < 768;
-    this.font = '300 ' + (this.isMobile ? '16' : '45') + 'px sofia-pro';
+    this.font = '300 ' + (this.isMobile ? '16' : '45') + 'px SofiaPro';
     this.container = this.createLettersContainer();
     this.animationComplete = false;
     this.initAnimations();
@@ -119,7 +119,7 @@ class LettersContainer {
     lettersContainer.width = currentX;
     lettersContainer.height = maxHeight;
     lettersContainer.regX = currentX / 2;
-    lettersContainer.regY = maxHeight / 2 + (this.isMobile ? -4 : -19);
+    lettersContainer.regY = maxHeight / 2 + (this.isMobile ? -4 : -36);
 
     return lettersContainer;
   }

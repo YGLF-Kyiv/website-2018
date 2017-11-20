@@ -1,11 +1,9 @@
 import React from 'react';
 import config from '../../../data/SiteConfig';
 import Helmet from 'react-helmet';
-import FontLoader from '../../utils/font-loader';
 
 export default class Header extends React.Component {
   render() {
-    FontLoader.load();
     return (
       <Helmet>
         <title>{config.siteTitle}</title>
@@ -48,7 +46,6 @@ export default class Header extends React.Component {
         <link rel="icon" href="favicon.ico" />
 
         <script src="/libs/createjs.min.js" />
-        <script src="//use.typekit.net/ijf7pgu.js" />
 
         {/*<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />*/}
       </Helmet>

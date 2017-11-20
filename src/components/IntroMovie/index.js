@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import IntroStage from './IntroStage';
 import IntroMovieClip from './IntroMovieClip';
-import FontLoader from '../../utils/font-loader';
 
 import './Intro.css';
 
@@ -37,11 +36,6 @@ class Intro extends Component {
   }
 
   initIntroMovie() {
-    if (!FontLoader.loaded) {
-      FontLoader.addLoadCallback(this.initIntroMovie.bind(this));
-      return;
-    }
-    console.log('init movie');
     setTimeout(() => {
       this.introMovieClip = new IntroMovieClip(this.introStage.stage, () => {
         this.introStage.bind();
