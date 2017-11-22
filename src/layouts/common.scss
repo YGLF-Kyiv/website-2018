@@ -95,6 +95,12 @@ html, body, #___gatsby {
 }
 
 
+.drop-shadow {
+  -webkit-box-shadow: 40px 17px 30px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 40px 17px 30px 0 rgba(0,0,0,.15);
+  box-shadow: 40px 17px 30px 0 rgba(0,0,0,.15);
+}
+
 
 @media (max-width: 480px) {
   body {

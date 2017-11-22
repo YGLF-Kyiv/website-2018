@@ -1,7 +1,7 @@
 @import '../../shared/styles/colors';
 @import '../../shared/styles/mixins';
 
-.speakers-block {
+.speakers-intro-block {
   height: 450px;
   overflow: hidden;
   &-name {
@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 764px) {
-  .speakers-block {
+  .speakers-intro-block {
     height: auto;
     padding-bottom: 45px !important;
   }

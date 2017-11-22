@@ -1,0 +1,43 @@
+{
+  "all":[
+    {
+      "first_name":"Lea",
+      "last_name":"Verou",
+      "position":"Human-Computer Interaction Reseacher",
+      "company":"MIT CSAIL",
+      "description":"Lea is a Human-Computer Interaction Researcher at MIT CSAIL. She wrote CSS Secrets for O’Reilly and has worked as Developer Advocate at W3C. Lea has also started lots of open source projects and web applications. Lea is one of the few misfits who loves code and design equally.",
+      "image_src":"lea_verou",
+      "social_icons": {
+        "userTwitter": "LeaVerou",
+        "siteGHAppID": "leaverou",
+        "linkedIn": "leaverou"
+      }
+    },
+    {
+      "first_name":"Vitaly",
+      "last_name":"Friedman",
+      "position":"Co-founder",
+      "company":"Smashing Magazine",
+      "description":"Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded Smashing Magazine, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all Smashing books. He currently works as editor-in-chief of Smashing Magazine in the lovely city of Freiburg, Germany.",
+      "image_src":"vitaly_friedman",
+      "social_icons": {
+        "userTwitter": "smashingmag",
+        "siteGHAppID": "vitalyfriedman",
+        "linkedIn": "vitalyfriedman"
+      }
+    },
+    {
+      "first_name":"Chen Hui",
+      "last_name":"Jing",
+      "position":"Founder, Director & Design Lead",
+      "company":"Wismut Labs",
+      "description":"Hui Jing is a self-taught designer and developer from Singapore. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
+      "image_src":"chen_hui_jing",
+      "social_icons": {
+        "userTwitter": "hj_chen",
+        "siteGHAppID": "huijing",
+        "linkedIn": "huijingchen"
+      }
+    }
+  ]
+}
