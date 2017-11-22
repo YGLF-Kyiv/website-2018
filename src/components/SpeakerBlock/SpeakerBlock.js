@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SocialIcons from '../SocialIcons/SocialIcons';
+import { isInBrowser } from '../../utils/common';
 import { isChrome } from '../../utils/environment';
 import LazyLoad from 'react-lazyload';
 import './speaker-block.scss';
@@ -17,26 +18,28 @@ export default class Speaker extends Component {
   }
 
   setImageSize() {
-    let width = 438;
+    if (isInBrowser()) {
+      let width = 438;
 
-    if (window.innerWidth > 1200) {
-      width = 438;
-    } else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
-      width = 318;
-    } else if (window.innerWidth >= 800 && window.innerWidth < 992) {
-      width = 260;
-    } else if (window.innerWidth >= 460 && window.innerWidth < 800) {
-      width = 170;
-    } else if (window.innerWidth < 460) {
-      width = window.innerWidth - 120;
+      if (window.innerWidth > 1200) {
+        width = 438;
+      } else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
+        width = 318;
+      } else if (window.innerWidth >= 800 && window.innerWidth < 992) {
+        width = 260;
+      } else if (window.innerWidth >= 460 && window.innerWidth < 800) {
+        width = 170;
+      } else if (window.innerWidth < 460) {
+        width = window.innerWidth - 120;
+      }
+
+      let imageSize = {
+        width: width,
+        height: width / (440 / 495),
+      };
+
+      this.setState({ imageSize });
     }
-
-    let imageSize = {
-      width: width,
-      height: width / (440 / 495),
-    };
-
-    this.setState({ imageSize });
   }
 
   componentDidMount() {
@@ -56,7 +59,7 @@ export default class Speaker extends Component {
   render() {
     const { speaker } = this.props;
     const imageExtension = isChrome() ? 'webp' : 'jpg';
-    const windowWidth = window.innerWidth;
+    const windowWidth = isInBrowser() ? window.innerWidth : null;
 
     return (
       <div className="speaker">
