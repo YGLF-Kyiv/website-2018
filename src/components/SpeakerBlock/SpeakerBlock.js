@@ -106,9 +106,10 @@ export default class Speaker extends Component {
         </div>
         { (windowWidth <= 768 && windowWidth >= 460) && (
           <div className="speaker-info-description">
-            <p className="speaker-description">
-              {speaker.description}
-            </p>
+            <p
+              className="speaker-description"
+              dangerouslySetInnerHTML={{__html: speaker.description}}
+            />
           </div>
         )}
       </div>
