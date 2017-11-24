@@ -34,6 +34,11 @@ export default class SocialIcons extends React.Component {
         showIcon: urls.siteGHAppID,
         type: 'github',
         url: `https://www.github.com/${urls.siteGHAppID}`
+      },
+      {
+        showIcon: urls.linkedIn,
+        type: 'linkedin',
+        url: `https://www.linkedin.com/in/${urls.linkedIn}`
       }
     ];
 

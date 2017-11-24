@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes as toBe } from 'react';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import { isInBrowser } from '../../utils/common';
 import { isChrome } from '../../utils/environment';
@@ -6,6 +6,15 @@ import LazyLoad from 'react-lazyload';
 import './speaker-block.scss';
 
 export default class Speaker extends Component {
+  static propTypes = {
+    speaker: toBe.object,
+    imageSize: toBe.object,
+  };
+
+  static defaultProps = {
+    imageSize: null,
+  }
+
   constructor(props) {
     super(props);
 
@@ -38,7 +47,7 @@ export default class Speaker extends Component {
         height: width / (440 / 495),
       };
 
-      this.setState({ imageSize });
+      this.setState({ imageSize: this.props.imageSize ? this.props.imageSize : imageSize });
     }
   }
 
@@ -63,6 +72,11 @@ export default class Speaker extends Component {
 
     return (
       <div className="speaker">
+        <a
+          href=""
+          name={`${speaker.first_name}-${speaker.last_name}`}
+          className="-no-outline anchor"
+        />
         <div className="main-speaker-info">
           <LazyLoad height={this.state.imageSize.height} offset={150}>
             <img
@@ -75,21 +89,18 @@ export default class Speaker extends Component {
           <SocialIcons urls={speaker.social_icons} />
           <div className="speaker-info">
             <h2>
-            <span className="speaker-first-name">
-              {speaker.first_name}
-            </span>{' '}
+              <span className="speaker-first-name">
+                {speaker.first_name}
+              </span>{' '}
               <span className="speaker-last-name">{speaker.last_name}</span>
             </h2>
-            <span className="speaker-position">
-            {speaker.position}
-          </span>
-            <span className="speaker-company">
-            {speaker.company}
-          </span>
+            { speaker.position && <span className="speaker-position">{speaker.position}</span> }
+            { speaker.company && <span className="speaker-company">{speaker.company}</span> }
             { (windowWidth > 768 || windowWidth < 460) && (
-              <p className="speaker-description">
-               {speaker.description}
-              </p>
+              <p
+                className="speaker-description"
+                dangerouslySetInnerHTML={{__html: speaker.description}}
+              />
             )}
           </div>
         </div>

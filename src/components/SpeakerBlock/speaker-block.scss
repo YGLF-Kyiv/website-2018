@@ -74,6 +74,10 @@
     line-height: 33px;
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
+    > a {
+      color: $green;
+      outline: none !important;
+    }
   }
 
   &:nth-child(2n) {

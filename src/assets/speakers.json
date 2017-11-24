@@ -3,7 +3,7 @@
     {
       "first_name":"Lea",
       "last_name":"Verou",
-      "position":"Human-Computer Interaction Reseacher",
+      "position":"Human-Computer Interaction Researcher",
       "company":"MIT CSAIL",
       "description":"Lea is a Human-Computer Interaction Researcher at MIT CSAIL. She wrote CSS Secrets for O’Reilly and has worked as Developer Advocate at W3C. Lea has also started lots of open source projects and web applications. Lea is one of the few misfits who loves code and design equally.",
       "image_src":"lea_verou",
@@ -39,5 +39,16 @@
         "linkedIn": "huijingchen"
       }
     }
-  ]
+  ],
+  "highlighted": {
+    "first_name":"Lea",
+    "last_name":"Verou",
+    "description":"Lea is one of the few misfits who love code and design equally. She is the author of bestselling advanced CSS book <a href='http://shop.oreilly.com/product/0636920031123.do' target='__blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a href='https://www.w3.org/' target='__blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a href='https://www.w3.org/Style/CSS/members.en.php3' target='__blank'>CSS Working Group</a>.",
+    "image_src":"lea_verou",
+    "social_icons": {
+      "userTwitter": "LeaVerou",
+      "siteGHAppID": "leaverou",
+      "linkedIn": "leaverou"
+    }
+  }
 }
