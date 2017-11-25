@@ -1,25 +1,11 @@
 import React, { Component } from 'react';
 import './info-block.scss';
 import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton';
-import SpeakerBlock from '../../components/SpeakerBlock/SpeakerBlock';
-import speakerData from '../../assets/speakers.json';
 
 export default class InfoBlock extends Component {
   render() {
     return (
       <div className="info-block container container-fluid">
-
-        <div className="highlighted-speaker">
-          <h3>Highlighted Speaker</h3>
-          <SpeakerBlock
-            speaker={speakerData.highlighted}
-            imageSize={{width: '220', height: '247'}}
-          />
-          <a href="/speakers" className="button-speakers">
-            See All Speakers
-          </a>
-        </div>
-
         {/*<div className="info-block-name">*/}
         {/*<span>*/}
         {/*1 <i>Amazing Talks</i>*/}

@@ -14,7 +14,7 @@
       color: $green;
       letter-spacing: 1.55px;
       -webkit-font-smoothing: antialiased;
-      transform: translateY(10px);
+      transform: translateY(20px);
     }
     .speaker {
       margin-bottom: 0;
@@ -22,7 +22,6 @@
         right: 45px !important;
       }
       .speaker-info {
-        padding-left: 50px !important;
         h2 {
           padding: 0;
           margin-left: 0;
@@ -36,7 +35,17 @@
     .button-speakers {
       @include underlined-link;
       width: 135px;
-      align-self: center;
+      margin-left: 120px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .page-index {
+    .highlighted-speaker {
+      .button-speakers {
+        margin-left: 0;
+      }
     }
   }
 }

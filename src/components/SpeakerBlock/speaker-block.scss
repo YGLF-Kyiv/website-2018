@@ -74,10 +74,6 @@
     line-height: 33px;
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
-    > a {
-      color: $green;
-      outline: none !important;
-    }
   }
 
   &:nth-child(2n) {
@@ -155,7 +151,7 @@
   }
 }
 
-@media (max-width: 459px) {
+@media (max-width: 480px) {
   .speaker,
   .main-speaker-info {
     flex-direction: column !important;
