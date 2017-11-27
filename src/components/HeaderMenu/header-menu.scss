@@ -92,7 +92,6 @@
     }
     &-overlay {
       display: flex;
-      pointer-events: none;
       opacity: 0;
       transition: opacity 250ms;
       transition-delay: 50ms;

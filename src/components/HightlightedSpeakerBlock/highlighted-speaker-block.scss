@@ -1,0 +1,128 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.highlighted-speaker-block {
+  height: 675px;
+  h2 {
+    @include block-header;
+  }
+  &-cols {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &-img {
+    position: relative;
+    margin-top: 45px;
+    img {
+      width: 440px;
+    }
+
+    .social-icons {
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: absolute;
+      right: -45px;
+      top: 8px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        height: 35px;
+        cursor: pointer;
+        &:hover i {
+          color: $green;
+        }
+      }
+    }
+  }
+  &-text {
+    padding-right: 60px;
+    margin-right: auto;
+    h3 {
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 2px;
+      -webkit-font-smoothing: antialiased;
+      margin-bottom: 0;
+      .speaker-first-name,
+      .speaker-last-name {
+        color: $white;
+        display: block;
+        line-height: 45px;
+      }
+    }
+    p {
+      @include block-text;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .highlighted-speaker-block {
+    height: 540px;
+    &-img {
+      img {
+        width: 318px;
+      }
+    }
+    &-text {
+      p {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .highlighted-speaker-block {
+    height: 585px;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .highlighted-speaker-block {
+    &-img {
+      img {
+        width: 260px;
+      }
+    }
+    &-text {
+      padding-right: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .highlighted-speaker-block {
+    padding-top: 45px !important;
+    height: auto;
+    padding-bottom: 90px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .highlighted-speaker-block {
+    &-img {
+      img {
+        width: 170px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .highlighted-speaker-block {
+    padding-bottom: 50px !important;
+    &-cols {
+      flex-direction: column;
+    }
+    &-img {
+      margin-bottom: 22px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "callForPapers": {
+    "number": "1",
+    "subtitle": "Amazing Talks",
+    "title": "Call For Papers",
+    "p": [
+      "This year YGLF is hosting amazing speakers from all around the world. Listed below are our keynote speakers. For the full lineup you can visit our speakers page. Make sure to check back regularly, as this is just the beginning, there is a lot more to come!"
+    ],
+    "actionButton": {
+      "href": "mailto:hello@yglf.com.ua?subject=Call%20For%20Papers",
+      "text": "Apply"
+    }
+  },
+  "meetSpeakers": {
+    "number": "1",
+    "subtitle": "Amazing Talks",
+    "title": "Meet Our Speakers",
+    "p": [
+      "Kyiv and all of the Frontend communities here are amazing. Audience is technically strong and thankful for new knowledge. If you are eager to share your experience and useful insights, apply to become a speaker."
+    ],
+    "actionButton": {
+      "href": "https://2event.com/ru/events/1037785",
+      "text": "Buy Tickets",
+      "target": "__blank"
+    }
+  }
+}
