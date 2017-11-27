@@ -51,27 +51,30 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.onCreatePage = ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
-  const isPageSimple = function() {
-    // these pages don't have the intro block
-    const simplePages = [
-      'successful-purchase',
-      'code-of-conduct',
-      'diversity',
-      'sponsorship',
-      'speakers'
-    ];
-    return simplePages.find((simplePage) => {
-      return page.path.match(new RegExp(`/${simplePage}`));
-    })
-  };
+  // Using the simple template for all pages now
+  // const isPageSimple = function() {
+  //   // these pages don't have the intro block
+  //   const simplePages = [
+  //     'successful-purchase',
+  //     'code-of-conduct',
+  //     'diversity',
+  //     'sponsorship',
+  //     'speakers'
+  //   ];
+  //   return simplePages.find((simplePage) => {
+  //     return page.path.match(new RegExp(`/${simplePage}`));
+  //   })
+  // };
 
   return new Promise((resolve) => {
-    if (isPageSimple()) {
-      page.layout = "simple";
-      createPage(page);
-    }
+    // if (isPageSimple()) {
+    //   page.layout = "simple";
+    //   createPage(page);
+    // }
 
-    resolve()
+    page.layout = "simple";
+    createPage(page);
+    resolve();
   })
 };
 
