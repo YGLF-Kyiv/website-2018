@@ -3,7 +3,7 @@ import './speakers.scss';
 import { gaTrack } from '../utils/ga';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
 import SpeakerBlock from '../components/SpeakerBlock/SpeakerBlock';
-import speakersData from '../assets/speakers.json';
+import speakersData from '../../data/speakers.json';
 import speakersIntroData from '../assets/speakersIntro.json';
 
 export default class SpeakersPage extends React.Component {

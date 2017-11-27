@@ -8,12 +8,9 @@ import './speaker-block.scss';
 export default class Speaker extends Component {
   static propTypes = {
     speaker: toBe.object,
-    small: toBe.bool,
   };
 
-  static defaultProps = {
-    small: false,
-  }
+  static defaultProps = {};
 
   constructor(props) {
     super(props);
@@ -27,12 +24,11 @@ export default class Speaker extends Component {
   }
 
   setImageSize() {
-    const { small } = this.props;
     if (isInBrowser()) {
       let width = 438;
 
       if (window.innerWidth > 1200) {
-        width = small ? 318 : 438;
+        width = 438;
       } else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
         width = 318;
       } else if (window.innerWidth >= 800 && window.innerWidth < 992) {
@@ -67,17 +63,12 @@ export default class Speaker extends Component {
   }
 
   render() {
-    const { speaker, small } = this.props;
+    const { speaker } = this.props;
     const imageExtension = isChrome() ? 'webp' : 'jpg';
     const windowWidth = isInBrowser() ? window.innerWidth : null;
 
     return (
       <div className="speaker">
-        <a
-          href=""
-          name={`${speaker.first_name}-${speaker.last_name}`}
-          className="-no-outline anchor"
-        />
         <div className="main-speaker-info">
           <LazyLoad height={this.state.imageSize.height} offset={150}>
             <img
@@ -87,7 +78,7 @@ export default class Speaker extends Component {
               alt={`${speaker.first_name} ${speaker.last_name}`}
             />
           </LazyLoad>
-          { !small && <SocialIcons urls={speaker.social_icons} /> }
+          <SocialIcons urls={speaker.social_icons} />
           <div className="speaker-info">
             <h2>
               <span className="speaker-first-name">

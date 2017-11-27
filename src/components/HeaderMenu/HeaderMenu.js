@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 const MENU_ITEMS = [
   { title: 'Home', to: '/' },
-  { title: 'Speakers', to: '/speakers' },
+  { title: 'Speakers', to: '/speakers', disabled: true },
   { title: 'Schedule', to: '/schedule', disabled: true },
   { title: 'Diversity Tickets', to: '/diversity' },
   { title: 'Sponsors', to: '/sponsorship' },

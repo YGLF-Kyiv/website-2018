@@ -4,48 +4,4 @@
 .page-index {
   overflow: hidden;
   padding-bottom: 90px;
-
-  .highlighted-speaker {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    margin: 0 auto 100px;
-    > h3 {
-      color: $green;
-      letter-spacing: 1.55px;
-      -webkit-font-smoothing: antialiased;
-      transform: translateY(20px);
-    }
-    .speaker {
-      margin-bottom: 0;
-      .social-icons {
-        right: 45px !important;
-      }
-      .speaker-info {
-        h2 {
-          padding: 0;
-          margin-left: 0;
-          .speaker-first-name,
-          .speaker-last-name {
-            display: inline-block;
-          }
-        }
-      }
-    }
-    .button-speakers {
-      @include underlined-link;
-      width: 135px;
-      margin-left: 120px;
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .page-index {
-    .highlighted-speaker {
-      .button-speakers {
-        margin-left: 0;
-      }
-    }
-  }
 }
