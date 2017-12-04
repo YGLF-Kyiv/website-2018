@@ -34,6 +34,14 @@ export default class HighlightedSpeakerBlock extends Component {
               <span className="speaker-last-name">{data.last_name}</span>
             </h3>
             <p dangerouslySetInnerHTML={{__html: data.highlightedDescription}} />
+            <div className="highlighted-speaker-block-text-button">
+              <a
+                className="see-all-speakers-button"
+                href="/speakers"
+              >
+                See All Speakers
+              </a>
+            </div>
           </div>
         </div>
       </div>
