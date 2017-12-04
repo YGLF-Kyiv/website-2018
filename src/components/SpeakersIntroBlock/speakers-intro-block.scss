@@ -2,7 +2,7 @@
 @import '../../shared/styles/mixins';
 
 .speakers-intro-block {
-  height: 450px;
+  height: 405px;
   overflow: hidden;
   &-name {
     @include block-name;
@@ -17,6 +17,7 @@
     }
     &-button {
       @include block-button;
+      padding-top: 10px;
       > a {
         @include animated-button
       }
@@ -28,5 +29,15 @@
   .speakers-intro-block {
     height: auto;
     padding-bottom: 115px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .speakers-intro-block {
+    &-text {
+      &-button {
+        padding-top: 13px;
+      }
+    }
   }
 }

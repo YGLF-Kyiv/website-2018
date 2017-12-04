@@ -22,11 +22,9 @@ export default class SpeakersPage extends React.Component {
           <SpeakersIntroBlock data={speakersIntroData.meetSpeakers} />
         </div>
         <div className="speakers">
-          <div className="container container-fluid">
-            { speakersData.all.map((speaker, index) => {
-              return <SpeakerBlock speaker={speaker} key={index} />
-            })}
-          </div>
+          { speakersData.all.map((speaker, index) => {
+            return <SpeakerBlock data={speaker} key={index} />
+          })}
         </div>
       </div>
     );

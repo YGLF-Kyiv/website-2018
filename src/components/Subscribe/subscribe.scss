@@ -1,74 +1,5 @@
 @import '../../shared/styles/colors';
 
-.subscribe {
-  display: flex;
-  flex-direction: row;
-  width: 282px;
-}
-
-.subscribe input,
-.subscribe button {
-  border-radius: 0;
-  border: 1px solid $footer-blue;
-  color: $blue;
-  font-size: 13px;
-}
-
-.subscribe input {
-  padding: 8px;
-  width: 233px;
-  margin: 0;
-  font-weight: 400;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: 0;
-  border-right: 0 none;
-}
-
-.subscribe button {
-  color: $footer-blue;
-  background-color: $green;
-  letter-spacing: 2px;
-  padding: 8px 15px;
-  margin: 0;
-  font-weight: 700;
-  cursor: pointer;
-  width: 49px;
-}
-
-.subscribe button i {
-  font-size: 14px;
-  display: none;
-}
-
-.subscribe button:hover {
-  background-color: $blue;
-  color: $white;
-}
-
-.subscribe.animate input {
-  -webkit-animation: animateInputWidth 0.5s ease-out;
-  animation: animateInputWidth 0.5s ease-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.subscribe.animate button {
-  -webkit-animation: animateButtonWidth 0.5s ease-out;
-  animation: animateButtonWidth 0.5s ease-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  background-color: var(--yglf-blue);
-  color: var(--yglf-white);
-}
-
-.subscribe.animate:not(.success) button span {
-  display: none;
-}
-
-.subscribe.animate:not(.success) button i {
-  display: inline-block;
-}
 
 @-webkit-keyframes animateButtonWidth {
   0% {
@@ -78,7 +9,6 @@
     width: 282px;
   }
 }
-
 @-webkit-keyframes animateInputWidth {
   0% {
     width: 282px;
@@ -91,9 +21,92 @@
   }
 }
 
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  width: 282px;
+
+  &-token {
+    position: absolute;
+    left: -5000px;
+  }
+
+  input,
+  button {
+    border-radius: 0;
+    border: 1px solid $footer-blue;
+    color: $blue;
+    font-size: 13px;
+  }
+
+  input {
+    padding: 8px;
+    width: 233px;
+    margin: 0;
+    font-weight: 400;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    border-right: 0 none;
+  }
+
+  button {
+    color: $footer-blue;
+    background-color: $green;
+    letter-spacing: 2px;
+    padding: 8px 15px;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+    width: 49px;
+  }
+
+  button i {
+    font-size: 14px;
+    display: none;
+  }
+
+  button:hover {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &.animate input {
+    -webkit-animation: animateInputWidth 0.5s ease-out;
+    animation: animateInputWidth 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  &.animate button {
+    -webkit-animation: animateButtonWidth 0.5s ease-out;
+    animation: animateButtonWidth 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background-color: var(--yglf-blue);
+    color: var(--yglf-white);
+  }
+
+  &.animate:not(.success) button span {
+    display: none;
+  }
+
+  &.animate:not(.success) button i {
+    display: inline-block;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .subscribe-form {
+    margin-bottom: 45px;
+  }
+}
+
 @media (max-width: 320px) {
-  .subscribe {
+  .subscribe-form {
     width: 230px;
+    margin-bottom: 20px;
   }
   @-webkit-keyframes animateButtonWidth {
     0% {

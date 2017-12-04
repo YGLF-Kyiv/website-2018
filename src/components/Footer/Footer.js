@@ -20,14 +20,14 @@ export default class Footer extends React.Component {
       <div className="footer">
         <div className="container container-fluid">
           <div className="row footer-subscribe">
-            {/*<div className="col-lg-6 col-xs-12">*/}
-            {/*<strong>Subscribe</strong>*/}
-            {/*<p>*/}
-            {/*Exciting things ahead,<br />  stay tuned for more information.*/}
-            {/*</p>*/}
-            {/*<Subscribe />*/}
-            {/*</div>*/}
-            <div className="col-md-6 col-xs-12">
+            <div className="col-sm-6 col-xs-12">
+            <strong>Subscribe</strong>
+            <p>
+            Exciting things ahead,<br />  stay tuned for more information.
+            </p>
+            <Subscribe />
+            </div>
+            <div className="col-sm-6 col-xs-12">
               <strong>Find your way</strong>
               <div className="footer-links">
                 <Link to="/">Home</Link>
