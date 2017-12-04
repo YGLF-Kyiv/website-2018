@@ -14,11 +14,11 @@ export default class InfoBlock extends Component {
     const { data } = this.props;
     return (
       <div className="speakers-intro-block">
-        <div className="speakers-intro-block-name">
-          <span>
-            {data.number} <i>{data.subtitle}</i>
-          </span>
-        </div>
+        {/*<div className="speakers-intro-block-name">*/}
+          {/*<span>*/}
+            {/*{data.number} <i>{data.subtitle}</i>*/}
+          {/*</span>*/}
+        {/*</div>*/}
         <div className="speakers-intro-block-text">
           <h2>{data.title}</h2>
           {data.p.map((el, index) => {
