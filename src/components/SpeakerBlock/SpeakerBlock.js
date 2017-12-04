@@ -17,6 +17,11 @@ export default class SpeakerBlock extends Component {
     return (
       <div className="speaker-block container container-fluid">
         <div className="speaker-block-cols">
+          <a
+            href=""
+            name={`${data.first_name}-${data.last_name}`}
+            className="-no-outline anchor"
+          />
           <div className="speaker-block-img">
             <LazyLoad offset={150}>
               <img
