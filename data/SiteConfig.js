@@ -13,6 +13,8 @@ module.exports = {
   ticketsUrl: 'https://2event.com/ru/events/1037785',
   sitemapPages: [
     '/',
+    '/speakers',
+    '/tickets',
     '/diversity',
     '/sponsorship',
     '/code-of-conduct',
