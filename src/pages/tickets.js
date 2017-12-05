@@ -6,9 +6,9 @@ import { gaTrack } from '../utils/ga';
 export default class TicketsPage extends React.Component {
   componentWillMount() {
     gaTrack({
-      eventCategory: 'speakers',
-      eventAction: 'speakers',
-      eventLabel: 'Speakers',
+      eventCategory: 'purchase',
+      eventAction: 'tickets-page-redirect',
+      eventLabel: 'tickets-page-redirect',
     });
   }
 
