@@ -17,7 +17,7 @@ class Subscribe extends Component {
           required
         />
         <div className="subscribe-form-token">
-          <input type="text" name="b_6304d25cb6fc721563ac70de3_c5ca8dfcd8" tabindex="-1" value="" />
+          <input type="text" name="b_6304d25cb6fc721563ac70de3_c5ca8dfcd8" tabIndex="-1" value="" />
         </div>
         <button type="submit" name="subscribe">
           <i className="fa fa-spinner fa-pulse fa-3x fa-fw" />

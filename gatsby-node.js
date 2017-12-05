@@ -6,6 +6,7 @@ const config = require('./data/SiteConfig');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
+
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -67,12 +68,11 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
   // };
 
   return new Promise((resolve) => {
-    // if (isPageSimple()) {
-    //   page.layout = "simple";
-    //   createPage(page);
-    // }
-
-    page.layout = "simple";
+    if (page.path.match('/tickets')) {
+      page.layout = 'tickets-redirect';
+    } else {
+      page.layout = 'simple';
+    }
     createPage(page);
     resolve();
   })
