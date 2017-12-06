@@ -1,4 +1,5 @@
 import React from 'react';
+import './invitation.scss';
 import InvitationBlock from '../components/InvitationBlock/InvitationBlock';
 
 import { gaTrack } from '../utils/ga';
@@ -31,7 +32,7 @@ export default class InvitationTemplate extends React.Component {
   render() {
     const { data, pathContext } = this.props;
     return (
-      <div className="lines-bg">
+      <div className="invitation-page lines-bg">
         <InvitationBlock data={data} shouldTrack={pathContext.track} />
       </div>
     );
