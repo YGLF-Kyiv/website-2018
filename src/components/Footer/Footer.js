@@ -77,7 +77,7 @@ export default class Footer extends React.Component {
             {/*</span>*/}
             {/*</div>*/}
             {/*</div>*/}
-            <div className="col-md-6 col-xs-12">
+            <div className="col-md-12 col-xs-12">
               <a className="footer-mailto" href={`mailto:${config.email}`}>
                 {config.email}
               </a>

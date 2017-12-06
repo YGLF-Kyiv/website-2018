@@ -3,7 +3,7 @@ import './index.scss';
 import InfoBlock from '../components/InfoBlock/InfoBlock';
 import VenueBlock from '../components/VenueBlock/VenueBlock';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
-import speakersIntroData from '../assets/speakersIntro.json';
+import speakersIntroData from '../../data/speakersIntro.json';
 import HightlightedSpeakerBlock from '../components/HightlightedSpeakerBlock/HighlightedSpeakerBlock';
 
 export default class IndexPage extends React.Component {
