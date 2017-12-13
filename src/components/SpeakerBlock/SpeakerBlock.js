@@ -14,6 +14,11 @@ export default class SpeakerBlock extends Component {
     data: {},
   }
 
+  get anchor() {
+    const { data: { first_name, last_name } } = this.props;
+    return `${first_name}-${last_name}`.replace(/\s/g, '-');
+  }
+
   render() {
     const {
       first_name,
@@ -32,7 +37,7 @@ export default class SpeakerBlock extends Component {
         <div className="speaker-block-cols">
           <a
             href=""
-            name={`${first_name}-${last_name}`.replace(/\s/g, '-')}
+            name={this.anchor}
             className="-no-outline anchor"
           />
           <div className="speaker-block-img">
