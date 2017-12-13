@@ -3,7 +3,6 @@ import './speaker-block.scss';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/environment';
-import { getAnchorName } from '../../utils/common';
 
 export default class SpeakerBlock extends Component {
 
@@ -17,8 +16,15 @@ export default class SpeakerBlock extends Component {
 
   render() {
     const {
-      data: { first_name, last_name, image_src, social_icons, position, company, description }
-    } = this.props;
+      first_name,
+      last_name,
+      image_src,
+      social_icons,
+      position,
+      company,
+      description
+    } = this.props.data;
+
     const imageExtension = isChrome() ? 'webp' : 'jpg';
 
     return (
@@ -26,7 +32,7 @@ export default class SpeakerBlock extends Component {
         <div className="speaker-block-cols">
           <a
             href=""
-            name={getAnchorName([first_name, last_name])}
+            name={`${first_name}-${last_name}`.replace(/\s/g, '-')}
             className="-no-outline anchor"
           />
           <div className="speaker-block-img">
