@@ -28,6 +28,19 @@
         "siteGHAppID": "bmeurer",
         "linkedIn": "benediktmeurer"
       }
+    },
+    {
+      "first_name":"Chen Hui",
+      "last_name":"Jing",
+      "position":"Design Lead",
+      "company":"Wismut Labs",
+      "description":"Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions. She also co-organises the <a class='simple-link' href='https://singaporecss.github.io' target='__blank'>Talk.CSS Meetup</a>, runs an inspiring <a class='simple-link' href='https://www.chenhuijing.com' target='__blank'>web-dev blog</a> and you have to check out her <a class='simple-link' href='https://www.chenhuijing.com/talks' target='__blank'>list of talks</a> at numerous conferences and meetups.",
+      "image_src":"chen_hui_jing",
+      "social_icons": {
+        "userTwitter": "hj_chen",
+        "siteGHAppID": "huijing",
+        "linkedIn": "huijingchen"
+      }
     }
   ]
 }
