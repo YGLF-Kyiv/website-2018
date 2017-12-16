@@ -23,6 +23,7 @@
       "description":"Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. <br />In 2013 he joined Google to work on the <a class='simple-link' href='https://developers.google.com/v8/' target='__blank'>V8 JavaScript Engine</a> in the Munich office, where he is currently working as tech lead for the Node.js performance team. <br />He spent a rather large amount of his spare time on developing and contributing to open source projects. From 2002 to 2007, he developed and maintained various core parts of the <a class='simple-link' href='https://xfce.org' target='__blank'>Xfce desktop environment</a>, including the new file manager <a class='simple-link' href='https://docs.xfce.org/xfce/thunar/start' target='__blank'>Thunar</a>, which he wrote from scratch. <br />He is also interested in functional programming languages and compiler design. In 2011 he created a <a class='simple-link' href='https://github.com/bmeurer/ocaml-arm/wiki' target='__blank'>brand new ARM port</a> for the <a class='simple-link' href='https://caml.inria.fr/ocaml/' target='__blank'>OCaml</a> native code compiler, and since January 2012 he is now the official maintainer of the <a class='simple-link' href='https://www.arm.com' target='__blank'>ARM</a> port.",
       "highlightedDescription": "Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. At Google he is working on the <a class='simple-link' href='https://developers.google.com/v8/' target='__blank'>V8 JavaScript Engine</a> that powers both Node.js and Chrome, and he is currently leading the Node.js Performance Team.",
       "image_src":"benediktmeurer",
+      "highlighted": true,
       "social_icons": {
         "userTwitter": "bmeurer",
         "siteGHAppID": "bmeurer",
@@ -35,7 +36,9 @@
       "position":"Design Lead",
       "company":"Wismut Labs",
       "description":"Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions. She also co-organises the <a class='simple-link' href='https://singaporecss.github.io' target='__blank'>Talk.CSS Meetup</a>, runs an inspiring <a class='simple-link' href='https://www.chenhuijing.com' target='__blank'>web-dev blog</a> and you have to check out her <a class='simple-link' href='https://www.chenhuijing.com/talks' target='__blank'>list of talks</a> at numerous conferences and meetups.",
+      "highlightedDescription": "Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
       "image_src":"chen_hui_jing",
+      "highlighted": true,
       "social_icons": {
         "userTwitter": "hj_chen",
         "siteGHAppID": "huijing",
