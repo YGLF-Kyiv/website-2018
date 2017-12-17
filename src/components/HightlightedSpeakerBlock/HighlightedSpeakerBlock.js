@@ -21,17 +21,17 @@ export default class HighlightedSpeakerBlock extends Component {
           <div className="highlighted-speaker-block-img">
             <LazyLoad offset={150}>
               <img
-                src={`/speakers/${data.image_src}.${imageExtension}`}
-                className="drop-shadow"
-                alt={`${data.first_name} ${data.last_name}`}
+                src={`${data.imageSrc}.${imageExtension}`}
+                className="-drop-shadow"
+                alt={`${data.firstName} ${data.lastName}`}
               />
             </LazyLoad>
-            <SocialIcons urls={data.social_icons} />
+            <SocialIcons data={data.social} />
           </div>
           <div className="highlighted-speaker-block-text">
             <h3>
-              <span className="speaker-first-name">{data.first_name}</span>{' '}
-              <span className="speaker-last-name">{data.last_name}</span>
+              <span className="speaker-first-name">{data.firstName}</span>{' '}
+              <span className="speaker-last-name">{data.lastName}</span>
             </h3>
             <p dangerouslySetInnerHTML={{__html: data.highlightedDescription}} />
             <div className="highlighted-speaker-block-text-button">

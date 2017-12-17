@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.scss';
-import InfoBlock from '../components/InfoBlock/InfoBlock';
-import VenueBlock from '../components/VenueBlock/VenueBlock';
+// import InfoBlock from '../components/InfoBlock/InfoBlock';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
-import speakersIntroData from '../assets/speakersIntro.json';
+import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
+import OrderedBlockData from '../../data/orderedBlock.js';
 import HightlightedSpeakerBlock from '../components/HightlightedSpeakerBlock/HighlightedSpeakerBlock';
 
 export default class IndexPage extends React.Component {
@@ -11,11 +11,13 @@ export default class IndexPage extends React.Component {
     return (
       <div className="page-index lines-bg">
         <HightlightedSpeakerBlock />
-        <InfoBlock />
+        {/* <InfoBlock /> */}
         <div className="container container-fluid">
-          <SpeakersIntroBlock data={speakersIntroData.callForPapers} />
+          <SpeakersIntroBlock data={OrderedBlockData.callForPapers} />
         </div>
-        <VenueBlock />
+        <div className="container container-fluid">
+          <OrderedBlock data={OrderedBlockData.venue} />
+        </div>
       </div>
     );
   }

@@ -1,9 +1,9 @@
-{
+module.exports = {
   "callForPapers": {
     "number": "1",
     "subtitle": "Amazing Talks",
     "title": "Call For Papers",
-    "p": [
+    "description": [
       "This year YGLF is hosting amazing speakers from all around the world. Listed below are our keynote speakers. For the full lineup you can visit our speakers page. Make sure to check back regularly, as this is just the beginning, there is a lot more to come!"
     ],
     "actionButton": {
@@ -15,7 +15,7 @@
     "number": "1",
     "subtitle": "Amazing Talks",
     "title": "Meet Our Speakers",
-    "p": [
+    "description": [
       "Kyiv and all of the Frontend communities here are amazing. Audience is technically strong and thankful for new knowledge. If you are eager to share your experience and useful insights, apply to become a speaker."
     ],
     "actionButton": {

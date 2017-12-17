@@ -2,20 +2,20 @@
 
 // Links and buttons
 @mixin underlined-link {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 1.17px;
   -webkit-font-smoothing: antialiased;
-  color: $white;
-  padding: 13px 0;
+  color: $green;
+  border-bottom: 1px solid $green;
+  padding: 12px 0;
   text-decoration: none;
-  border-bottom: 1px solid $white;
   text-transform: uppercase;
   cursor: pointer;
   transform: translateY(-6px);
   &:hover {
-    color: $green;
-    border-bottom: 1px solid $green;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
 }
 
