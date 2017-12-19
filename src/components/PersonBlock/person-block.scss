@@ -2,6 +2,7 @@
 @import '../../shared/styles/mixins';
 
 .person-block {
+  box-sizing: border-box;
   h2 {
     @include block-header;
   }
@@ -12,7 +13,7 @@
   &-img {
     position: relative;
     margin-top: 45px;
-    img {
+    > img {
       width: 440px;
       border: 1px solid $green;
     }
@@ -24,7 +25,7 @@
       right: -45px;
       top: 8px;
 
-      a {
+      > a {
         text-decoration: none;
         color: $white;
         height: 35px;
@@ -36,9 +37,9 @@
     }
   }
   &-text {
-    padding-right: 60px;
+    padding: 0 60px 50px 0;
     margin-right: auto;
-    h3 {
+    > h3 {
       font-size: 45px;
       font-weight: 400;
       line-height: 45px;
@@ -52,7 +53,7 @@
         line-height: 45px;
       }
     }
-    p {
+    > p {
       @include block-text;
     }
   }
@@ -68,12 +69,6 @@
     display: block;
     line-height: 24px;
   }
-  &:nth-child(1) {
-    height: 765px;
-  }
-  &:nth-child(2) {
-    height: 945px;
-  }
 
   &:nth-child(2n+1) {
     .person-block-cols {
@@ -87,7 +82,7 @@
       }
     }
     .person-block-text {
-      h3 {
+      > h3 {
         padding-left: 230px;
       }
     }
@@ -96,11 +91,11 @@
     margin: 0;
   }
 
-
   &.-small-blocks {
-    height: 400px !important;
+    width: 100%;
+    box-sizing: border-box;
     .person-block-img {
-      img {
+      > img {
         width: 234px;
         border: 1px solid $green;
       }
@@ -111,43 +106,42 @@
 @media screen and (max-width: 1250px) {
   .person-block {
     &-img {
-      img {
+     > img {
         width: 318px;
       }
     }
     &-text {
-      p {
+      > p {
         width: auto;
       }
-    }
-    &:nth-child(1) {
-      height: 720px;
-    }
-    &:nth-child(2) {
-      height: 810px;
     }
   }
 }
 
 @media screen and (max-width: 1150px) {
   .person-block {
-    &:nth-child(1) {
-      height: 855px;
+    &:nth-child(2n+1) {
+      &.-small-blocks {
+        .person-block-text {
+          padding-right: 40px;
+          p {
+            padding-left: 70px;
+          }
+        };
+        .person-block-text h3 {
+          padding-left: 170px;
+        }
+      }
     }
-    &:nth-child(2) {
-      height: 945px;
-    }
-  }
-}
-
-
-@media screen and (max-width: 1080px) {
-  .person-block {
-    &:nth-child(1) {
-      height: 945px;
-    }
-    &:nth-child(2) {
-      height: 1080px;
+    &:nth-child(2n) {
+      &.-small-blocks {
+        .person-block-text {
+          padding-right: 40px;
+          > p {
+            padding-left: 70px;
+          }
+        }
+      }
     }
   }
 }
@@ -156,7 +150,7 @@
 @media screen and (max-width: 990px) {
   .person-block {
     &-img {
-      img {
+      > img {
         width: 260px;
       }
     }
@@ -169,42 +163,47 @@
       .person-block-text {
         padding-right: 0;
         padding-left: 60px;
-        h3 {
+        > h3 {
           padding-left: 170px;
         }
       }
-    }
-    &:nth-child(1) {
-      height: 810px;
-    }
-    &:nth-child(2) {
-      height: 945px;
     }
   }
 }
 
 @media screen and (max-width: 900px) {
   .person-block {
-
-    &:nth-child(1),
-    &:nth-child(2) {
-      height: auto;
-    }
-    padding-bottom: 90px !important;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (max-width: 800px) {
   .person-block {
     &-img {
-      img {
+      > img {
         width: 170px;
+      }
+    }
+    &:nth-child(2n+1) {
+      .person-block-text h3 {
+        padding-left: 50px !important;
+      }
+    }
+    &.-small-blocks {
+      padding: 0 20px;
+      .person-block-text {
+        padding: 0 0 0 20px !important;
+        > h3,
+        > p {
+          padding: 0 !important;
+        }
+
       }
     }
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .person-block {
     padding-bottom: 50px !important;
     &-cols {
@@ -212,15 +211,39 @@
     }
     &-img {
       margin-bottom: 25px;
-      img {
+      > img {
         width: 100%;
       }
     }
     &:nth-child(2n+1) {
       .person-block-text {
         padding-left: 0;
-        h3 {
+        > h3 {
           padding-left: 0;
+        }
+      }
+    }
+
+    &.-small-blocks {
+      .about-page-header {
+        display: flex;
+        flex-direction: column;
+        .about-page-header-image {
+          width: 100% !important;
+          > img {
+            width: 100%;
+          }
+        }
+      }
+      .person-block-img {
+        width: 234px;
+      }
+      .person-block-text {
+        padding: 0;
+        > h3,
+        > p {
+          padding: 0 !important;
+          margin: 0;
         }
       }
     }

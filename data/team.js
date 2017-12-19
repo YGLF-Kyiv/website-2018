@@ -3,10 +3,9 @@ module.exports = {
     {
       "firstName": "Yuri",
       "lastName": "Tkachenko",
-      "position": "Tech Lead",
+      "position": " ",
       "imageSrc": "/team/yuri_tkachenko",
-      "imageFormat": "portrait",
-      "description": "Description. At the second run of the conference, we gladly hosted Lea Verou along with other world-class Frontend gurus.",
+      "description": "Front-end engineer, <a class='simple-link' href='http://kyivjs.org/' target='__blank'>@kyivjs</a> co-organizer, community guy, nonprofessional drums player, learning double bass as hobby too.",
       "social": [
         {
           "type": "github",
@@ -17,32 +16,22 @@ module.exports = {
     {
       "firstName": "Sergey",
       "lastName": "Frolov",
-      "position": "Application Developer",
+      "position": " ",
       "imageSrc": "/team/sergey_frolov",
-      "imageFormat": "portrait",
-      "description": "Description. At the second run of the conference, we gladly hosted Lea Verou along with other world-class Frontend gurus.",
+      "description": "Front-end engineer, <a class='simple-link' href='http://kyivjs.org/' target='__blank'>@kyivjs</a> co-organizer, <a class='simple-link' href='http://telegram.me/beerjskyiv/' target='__blank'>@beerjskyiv</a> organizer, <a class='simple-link' href='http://telegram.me/angularkyiv/' target='__blank'>@angularkyiv</a> co-organizer, coffee lover, digital nomad.",
       "social": [
         {
           "type": "twitter",
-          "url": "https://twitter.com/RavivTom"
+          "url": "https://twitter.com/allfayn"
         },
-        {
-          "type": "github",
-          "url": "https://github.com/tomrav"
-        },
-        {
-          "type": "linkedin",
-          "url": "https://www.linkedin.com/in/tom-raviv-2486a943/"
-        }
       ]
     },
     {
       "firstName": "Andrei",
       "lastName": "Sierkov",
-      "position": "Front-end Developer",
+      "position": " ",
       "imageSrc": "/team/andrei_sierkov",
-      "imageFormat": "portrait",
-      "description": "Description. At the second run of the conference, we gladly hosted Lea Verou along with other world-class Frontend gurus.",
+      "description": "Front-end developer, beginner speaker, coffee lover and dancer.",
       "social": [
         {
           "type": "telegram",
@@ -59,12 +48,37 @@ module.exports = {
       ]
     },
     {
+      "firstName": "Polina",
+      "lastName": "Popovychuk",
+      "position": " ",
+      "imageSrc": "/team/polina_popovychuk",
+      "description": "Operations fairy.",
+      "social": [
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/polinchik"
+        }
+      ]
+    },
+    {
+      "firstName": "Kate",
+      "lastName": "Pozdnysheva",
+      "position": " ",
+      "imageSrc": "/team/kate_pozdnysheva",
+      "description": "Project manager who has a great experience of organizing completely different (large and small) technological events in Yandex.",
+      "social": [
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/kate-pozdnysheva-bb79b8bb/"
+        }
+      ]
+    },
+    {
       "firstName": "Marina",
       "lastName": "Sol",
-      "position": "Front-end Developer",
+      "position": " ",
       "imageSrc": "/team/marina_sol",
-      "imageFormat": "portrait",
-      "description": "Former music student, current software engineering student. Digital nomad and art lover.",
+      "description": "Former music student, current software engineering student. Front-end developer, digital nomad and art lover.",
       "social": [
         {
           "type": "facebook",
@@ -75,46 +89,6 @@ module.exports = {
           "url": "https://www.linkedin.com/in/marina-marina/"
         }
       ]
-    },
-    {
-      "firstName": "Polina",
-      "lastName": "Popovychuk",
-      "position": "Application Developer",
-      "imageSrc": "/team/polina_popovychuk",
-      "imageFormat": "portrait",
-      "description": "Description. At the second run of the conference, we gladly hosted Lea Verou along with other world-class Frontend gurus.",
-      "social": [
-        {
-          "type": "linkedin",
-          "url": "https://www.linkedin.com/in/annafridman/"
-        },
-        {
-          "type": "facebook",
-          "url": "https://www.facebook.com/fridman.anna"
-        }
-      ]
-    },
-    {
-      "firstName": "Kate",
-      "lastName": "Pozdnysheva",
-      "position": "???",
-      "imageSrc": "/team/kate_pozdnysheva",
-      "imageFormat": "portrait",
-      "description": "Description. At the second run of the conference, we gladly hosted Lea Verou along with other world-class Frontend gurus.",
-      "social": [
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/kindofone"
-        },
-        {
-          "type": "github",
-          "url": "https://github.com/kindofone"
-        },
-        {
-          "type": "linkedin",
-          "url": "https://www.linkedin.com/in/yogevahuvia/"
-        }
-      ]
-    },
+    }
   ]
 };
