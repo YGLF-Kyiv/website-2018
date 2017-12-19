@@ -34,7 +34,7 @@ export default class Footer extends React.Component {
             <div className="col-sm-6 col-xs-12">
             <strong>Subscribe</strong>
             <p>
-            Exciting things ahead,<br />  stay tuned for more information.
+            Exciting things ahead,<br />stay tuned for more information.
             </p>
             <Subscribe />
             </div>
