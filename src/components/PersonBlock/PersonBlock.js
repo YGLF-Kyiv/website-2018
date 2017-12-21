@@ -7,7 +7,6 @@ import { isChrome } from '../../utils/environment';
 export default class PersonBlock extends Component {
   static propTypes = {
     data: toBe.object,
-    isSamll: toBe.bool,
   };
 
   static defaultProps = {
