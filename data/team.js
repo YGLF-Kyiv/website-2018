@@ -34,8 +34,8 @@ module.exports = {
       "description": "Front-end developer, beginner speaker, coffee lover and dancer.",
       "social": [
         {
-          "type": "telegram",
-          "url": "https://t.me/viattik"
+          "type": "facebook",
+          "url": "https://www.facebook.com/andrii.sierkov"
         },
         {
           "type": "github",
