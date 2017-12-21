@@ -81,6 +81,14 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .about-page {
+    .container {
+      max-width: 900px;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about-page {
     .info-block-image {
@@ -114,6 +122,13 @@
 }
 
 @media screen and (max-width: 990px) {
+  .about-page-past-section {
+    padding: 0 0 70px 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 765px) {
   .about-page {
     > .container {
       width: auto;
@@ -139,6 +154,12 @@
       > .about-page-past {
         margin: 0;
       }
+      .team-list {
+        padding: 0 0 80px 0;
+      }
+    }
+    .about-page-past-section {
+      padding-left: 0;
     }
   }
 
@@ -156,29 +177,31 @@
         width: 100%;
       }
     }
-  }
-
-  .about-page-header-text {
-    width: 100% !important;
-    > h1 {
-      margin: 10px 0 10px 5px !important;
-    }
-    > p {
+    .about-page-header-text {
       width: 100% !important;
-      font-size: 15px;
-      letter-spacing: 1.05px;
-      line-height: 30px;
-      padding-top: 0;
+      > h1 {
+        margin: 10px 0 10px 5px !important;
+      }
+      > p {
+        width: 100% !important;
+        font-size: 15px;
+        letter-spacing: 1.05px;
+        line-height: 30px;
+        padding-top: 0;
+      }
+      .buy-tickets {
+        display: inline-block;
+      }
     }
-    .buy-tickets {
-      display: inline-block;
-    }
-  }
+    .about-page-past {
+      .about-page-past-section {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        .btn-underline {
 
-  .about-page-past {
-    .about-page-past-section {
-      padding-right: 0;
-      width: 100%;
+        }
+      }
     }
   }
 }

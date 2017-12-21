@@ -52,7 +52,7 @@ module.exports = {
       "lastName": "Popovychuk",
       "position": " ",
       "imageSrc": "/team/polina_popovychuk",
-      "description": "Operations fairy.",
+      "description": "Being in events, planning and organizing for years, making ppl happy and productive at my everyday job, calligraphy enthusiast, snowboard rider, book warm and dog lover.",
       "social": [
         {
           "type": "facebook",
@@ -65,7 +65,7 @@ module.exports = {
       "lastName": "Pozdnysheva",
       "position": " ",
       "imageSrc": "/team/kate_pozdnysheva",
-      "description": "Project manager who has a great experience of organizing completely different (large and small) technological events in Yandex.",
+      "description": "Project manager who has a great experience of organizing completely different (large and small) technological events at Yandex.",
       "social": [
         {
           "type": "linkedin",
