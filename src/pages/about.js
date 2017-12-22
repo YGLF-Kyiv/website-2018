@@ -6,7 +6,6 @@ import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
 import PersonBlock from '../components/PersonBlock/PersonBlock';
 
 import { gaTrack } from '../utils/ga';
-import { isChrome } from '../utils/environment';
 
 import teamData from '../../data/team.js';
 import OrderedBlockData from '../../data/orderedBlock.js';
@@ -22,30 +21,20 @@ export default class AboutPage extends React.Component {
   }
 
   render() {
-    const imageExtension = isChrome() ? 'webp' : 'png';
-
     return (
       <div className="about-page bg lines-bg">
-        <div className="about-page-header">
-          <div className="about-page-header-image -drop-shadow">
-            <LazyLoad>
-              <img
-                src={`/about-header-photo.${imageExtension}`}
-                alt="about"
-              />
-            </LazyLoad>
-          </div>
-          <div className="about-page-header-text">
-            <h1 className="atitle">About</h1>
-            <p>
-              The largest international frontend
-              conference in the Middle East is happening for the forth time.
-              <small>24-25 May, Kyiv</small>
-            </p>
-          </div>
-        </div>
-
         <div className="container">
+          <div className="header">
+            <div className="header-text">
+              <h1>About</h1>
+              <p>
+                The largest international frontend
+                conference in the Middle East is happening for the forth time.
+                <small>24-25 May, Kyiv</small>
+              </p>
+            </div>
+          </div>
+
           <OrderedBlock data={OrderedBlockData.whoWeAre} />
 
           <div className="about-page-past">

@@ -6,49 +6,32 @@
     padding-top: 29px;
   }
 
-  .about-page-header {
-    max-height: 585px;
+  .header {
     display: -ms-flexbox;
     display: flex;
     padding: 90px 0;
-    .about-page-header-image {
-      width: 50%;
-      max-height: 100%;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid $green;
-      > img {
-        height: 100%;
+    .header-text {
+      > h1 {
+        font-size: 111px;
+        font-weight: 400;
+        color: $green !important;
+        padding-bottom: 40px;
+        -webkit-font-smoothing: antialiased;
       }
-    }
-  }
-
-  .about-page-header-text {
-    width: 50%;
-    position: relative;
-    padding-top: 65px;
-    > h1 {
-      font-size: 111px;
-      font-weight: 400;
-      color: $green !important;
-      margin-left: -35px;
-      padding-bottom: 40px;
-      -webkit-font-smoothing: antialiased;
-    }
-    > p {
-      margin: 0 auto;
-      font-size: 28px;
-      font-weight: 300;
-      letter-spacing: 1.22px;
-      line-height: 56px;
-      width: 450px;
-      -webkit-font-smoothing: antialiased;
-      > small {
-        margin-top: 35px;
-        font-size: 14px;
-        letter-spacing: 3.93px;
-        display: block;
-        text-transform: uppercase;
+      > p {
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: 1.22px;
+        line-height: 56px;
+        width: 450px;
+        -webkit-font-smoothing: antialiased;
+        > small {
+          margin-top: 35px;
+          font-size: 14px;
+          letter-spacing: 3.93px;
+          display: block;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -91,17 +74,12 @@
 
 @media screen and (max-width: 1024px) {
   .about-page {
-    .info-block-image {
-      padding-top: 0;
-    }
-    .about-page-header-text {
+    .header-text {
       h1 {
         font-size: 90px;
-        margin-left: -28px;
         letter-spacing: 1.71px;
       }
       p {
-        width: 300px;
         font-size: 26px;
         padding-top: 0;
       }
@@ -121,6 +99,14 @@
   }
 }
 
+@media screen and (min-width: 990px) {
+  .about-page {
+    .header-text > p {
+      padding-left: 120px;
+    }
+  }
+}
+
 @media screen and (max-width: 990px) {
   .about-page-past-section {
     padding: 0 0 70px 0 !important;
@@ -131,6 +117,13 @@
 @media screen and (max-width: 990px) and (min-width: 765px) {
   .about-page {
     > .container {
+      > .header {
+        margin: 0 60px;
+        > .header-text > p {
+          width: auto;
+          padding-right: 100px;
+        }
+      }
       width: auto;
       > .ordered-block,
       > .about-page-past {
@@ -154,54 +147,40 @@
       > .about-page-past {
         margin: 0;
       }
-      .team-list {
+      > .header {
+        .header-text {
+          width: 100% !important;
+          > h1 {
+            margin: 10px 0 10px 5px !important;
+          }
+          > p {
+            width: 100% !important;
+            font-size: 15px;
+            letter-spacing: 1.05px;
+            line-height: 30px;
+            padding-top: 0;
+          }
+          .buy-tickets {
+            display: inline-block;
+          }
+        }
+        .about-page-past {
+          .about-page-past-section {
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            .btn-underline {
+
+            }
+          }
+        }
+      }
+      > .team-list {
         padding: 0 0 80px 0;
       }
     }
     .about-page-past-section {
       padding-left: 0;
-    }
-  }
-
-  .about-page-header {
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 90px 15px 80px !important;
-    max-height: none !important;
-    .about-page-header-image {
-      width: 100% !important;
-      position: relative;
-      overflow: visible !important;
-      height: 326px;
-      > img {
-        width: 100%;
-      }
-    }
-    .about-page-header-text {
-      width: 100% !important;
-      > h1 {
-        margin: 10px 0 10px 5px !important;
-      }
-      > p {
-        width: 100% !important;
-        font-size: 15px;
-        letter-spacing: 1.05px;
-        line-height: 30px;
-        padding-top: 0;
-      }
-      .buy-tickets {
-        display: inline-block;
-      }
-    }
-    .about-page-past {
-      .about-page-past-section {
-        padding-right: 0;
-        padding-left: 0;
-        width: 100%;
-        .btn-underline {
-
-        }
-      }
     }
   }
 }
