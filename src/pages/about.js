@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.scss';
-import LazyLoad from 'react-lazyload';
 
 import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
 import PersonBlock from '../components/PersonBlock/PersonBlock';
@@ -28,8 +27,8 @@ export default class AboutPage extends React.Component {
             <div className="header-text">
               <h1>About</h1>
               <p>
-                The largest international frontend
-                conference in the Middle East is happening for the forth time.
+                The largest international frontend conference in Ukraine originated from Tel-Aviv
+                is happening for the fourth time.
                 <small>24-25 May, Kyiv</small>
               </p>
             </div>
@@ -39,7 +38,7 @@ export default class AboutPage extends React.Component {
 
           <div className="about-page-past">
             <div className="about-page-past-section">
-              <p>In 2017 at the third run of the conference we gladly hosted world-class Frontend gurus who gave amazing talks.</p>
+              <p>In 2017 at the third run of the conference, we gladly hosted world-class Frontend gurus who gave terrific talks.</p>
               <a
                 href="https://www.youtube.com/watch?v=kTUs0mu0HHk&list=PLII-CO3Ff0qYaPv6MvFsFzy8LSqPY6KOj"
                 target="_blank"

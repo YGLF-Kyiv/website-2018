@@ -49,7 +49,7 @@ module.exports = {
     "title": "This Year",
     "description": [
       // "YGLF is a community event built by developers for developers. This non-profit conference is aimed at delivering high quality content, regarding relevant topics, that any Frontend admirer would love to hear. Bringing in internationally recognized speakers and attendees, with the young and vibrant atmosphere Startup nation has to offer, YGLF creates a buzzling bustle of software engineers from around the globe. And as usual, a hefty lunch, refreshing beer and plenty of coffee breaks spark the most interesting conversations between colleagues and strangers alike."
-      "This non-profit conference is aimed at delivering high quality content on the hottest topics that cutting edge Frontend developers need to know.",
+      "This non-profit conference is aimed at delivering high-quality content on the hottest topics that cutting edge Frontend developers need to know.",
       "For the first time ever, YGLF is coming to Kyiv, the amazing European capital city of Ukraine.",
       "This is our first international Front End conference on such a scale. People called us crazy, but by bringing internationally recognized speakers, we’re going to break the wall that separates the huge East European Frontend community from the rest of the world.",
       "We hope you'll enjoy our efforts, community involvement and - of course - all the knowledge that will be shared."
@@ -61,7 +61,7 @@ module.exports = {
     "subtitle": "Good Vibes",
     "title": "The Team",
     "description": [
-      "A small group of super dedicated people, working hard around the clock to make the most stunning conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Don't hesistate to come and talk to us, if you need any assitance."
+      "A small group of super dedicated people, working hard around the clock to make the most stunning conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Don't hesitate to come and talk to us, if you need any assistance."
     ],
     "actionButton": {}
   }
