@@ -6,6 +6,17 @@ import Link from 'gatsby-link';
 import config from '../../../data/SiteConfig';
 import { gaTrack } from '../../utils/ga';
 
+const SOCIAL_ICONS_DATA = [
+  {
+    type: 'twitter',
+    url: `https://twitter.com/${config.userTwitter}`,
+  },
+  {
+    type: 'facebook',
+    url: `https://www.facebook.com/${config.siteFBAppID}`,
+  },
+];
+
 export default class Footer extends React.Component {
   trackClick() {
     gaTrack({
@@ -49,6 +60,7 @@ export default class Footer extends React.Component {
                 <Link to="/diversity">Diversity Tickets</Link>
                 <Link to="/code-of-conduct">Code Of Conduct</Link>
                 <Link to="/sponsorship">Sponsorship</Link>
+                <Link to="/about">About</Link>
               </div>
             </div>
           </div>
@@ -81,7 +93,7 @@ export default class Footer extends React.Component {
               <a className="footer-mailto" href={`mailto:${config.email}`}>
                 {config.email}
               </a>
-              <SocialIcons />
+              <SocialIcons data={SOCIAL_ICONS_DATA} />
             </div>
           </div>
         </div>

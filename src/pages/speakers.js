@@ -2,9 +2,9 @@ import React from 'react';
 import './speakers.scss';
 import { gaTrack } from '../utils/ga';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
-import SpeakerBlock from '../components/SpeakerBlock/SpeakerBlock';
+import PersonBlock from '../components/PersonBlock/PersonBlock';
 import speakersData from '../../data/speakers.json';
-import speakersIntroData from '../assets/speakersIntro.json';
+import speakersIntroData from '../../data/speakersIntro.js';
 
 export default class SpeakersPage extends React.Component {
   componentWillMount() {
@@ -23,7 +23,7 @@ export default class SpeakersPage extends React.Component {
         </div>
         <div className="speakers">
           { speakersData.all.map((speaker, index) => {
-            return <SpeakerBlock data={speaker} key={index} />
+            return <PersonBlock data={speaker} key={index} />
           })}
         </div>
       </div>
