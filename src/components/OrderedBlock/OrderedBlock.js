@@ -11,7 +11,7 @@ export default class OrderedBlock extends Component {
       additionalInfo: {},
       link: {},
     },
-  }
+  };
 
   render() {
     const {number, subtitle, title, description, additionalInfo, link, img} = this.props.data;

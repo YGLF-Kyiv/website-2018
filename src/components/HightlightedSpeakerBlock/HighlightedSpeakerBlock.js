@@ -4,7 +4,6 @@ import speakerData from '../../../data/speakers.json';
 import _ from 'lodash/fp';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
-import { isChrome } from '../../utils/environment';
 
 export default class HighlightedSpeakerBlock extends Component {
   render() {
@@ -12,7 +11,6 @@ export default class HighlightedSpeakerBlock extends Component {
       _.filter(_.property('highlighted')),
       _.sample
     ])(speakerData.all);
-    const imageExtension = isChrome() ? 'webp' : 'jpg';
 
     return (
       <div className="highlighted-speaker-block container container-fluid">
@@ -21,7 +19,7 @@ export default class HighlightedSpeakerBlock extends Component {
           <div className="highlighted-speaker-block-img">
             <LazyLoad offset={150}>
               <img
-                src={`${data.imageSrc}.${imageExtension}`}
+                src={`${data.imageSrc}.jpg`}
                 className="-drop-shadow"
                 alt={`${data.firstName} ${data.lastName}`}
               />

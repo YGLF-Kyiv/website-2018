@@ -2,7 +2,6 @@ import React, { Component, PropTypes as toBe } from 'react';
 import './person-block.scss';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
-import { isChrome } from '../../utils/environment';
 
 export default class PersonBlock extends Component {
   static propTypes = {
@@ -30,7 +29,6 @@ export default class PersonBlock extends Component {
       description,
     } = this.props.data;
 
-    const imageExtension = isChrome() ? 'webp' : 'jpg';
     const className = 'person-block container container-fluid';
     const smallClass = this.props.isSmall ? '-small-blocks' : '';
 
@@ -45,7 +43,7 @@ export default class PersonBlock extends Component {
           <div className="person-block-img">
             <LazyLoad offset={150}>
               <img
-                src={`${imageSrc}.${imageExtension}`}
+                src={`${imageSrc}.jpg`}
                 className="-drop-shadow"
                 alt={`${firstName} ${lastName}`}
               />
