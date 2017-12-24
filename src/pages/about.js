@@ -1,4 +1,6 @@
 import React from 'react';
+import _ from 'lodash/fp';
+
 import './about.scss';
 
 import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
@@ -51,7 +53,7 @@ export default class AboutPage extends React.Component {
           </div>
           <OrderedBlock data={OrderedBlockData.team} />
           <div className="team-list">
-            { teamData.all.map((speaker, index) => {
+            { _.shuffle(teamData.all).map((speaker, index) => {
               return <PersonBlock data={speaker} key={index} isSmall />
             })}
           </div>
