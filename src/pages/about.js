@@ -6,7 +6,7 @@ import './about.scss';
 import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
 import PersonBlock from '../components/PersonBlock/PersonBlock';
 
-import { gaTrack } from '../utils/ga';
+import { gaTrack } from '../shared/utils/ga';
 
 import teamData from '../../data/team.js';
 import OrderedBlockData from '../../data/orderedBlock.js';

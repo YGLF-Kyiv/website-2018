@@ -1,7 +1,7 @@
 import React from 'react';
 import './diversity.scss';
 import SimpleLink from '../components/SimpleLink/SimpleLink';
-import { gaTrack } from '../utils/ga';
+import { gaTrack } from '../shared/utils/ga';
 import wixEngineering from '../../static/wix-engineering.png';
 
 export default class DiversityTicketsPage extends React.Component {

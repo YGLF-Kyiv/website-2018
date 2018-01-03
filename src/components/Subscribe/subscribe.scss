@@ -40,7 +40,7 @@
   }
 
   input {
-    padding: 8px;
+    padding: 0 8px;
     width: 233px;
     margin: 0;
     font-weight: 400;
@@ -59,16 +59,19 @@
     font-weight: 700;
     cursor: pointer;
     width: 49px;
-  }
-
-  button i {
-    font-size: 14px;
-    display: none;
-  }
-
-  button:hover {
-    background-color: $blue;
-    color: $white;
+    line-height: 1;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+    i {
+      font-size: 14px;
+      display: none;
+    }
+    > span {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &.animate input {

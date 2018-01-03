@@ -1,6 +1,6 @@
 import React from 'react';
 import './buy-tickets-button.scss';
-import { gaTrack } from '../../utils/ga';
+import { gaTrack } from '../../shared/utils/ga';
 import config from '../../../data/SiteConfig';
 
 export default class BuyTicketsButton extends React.Component {

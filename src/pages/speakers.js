@@ -1,6 +1,6 @@
 import React from 'react';
 import './speakers.scss';
-import { gaTrack } from '../utils/ga';
+import { gaTrack } from '../shared/utils/ga';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
 import PersonBlock from '../components/PersonBlock/PersonBlock';
 import speakersData from '../../data/speakers.json';

@@ -7,7 +7,7 @@ import Helmet from '../components/Helmet/Helmet';
 import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import IntroMovie from '../components/IntroMovie/index';
 import Footer from '../components/Footer/Footer';
-import { isInBrowser } from '../utils/common';
+import { isInBrowser } from '../shared/utils/common';
 
 export default class MainLayout extends React.Component {
   render() {

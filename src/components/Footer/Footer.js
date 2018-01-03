@@ -4,7 +4,7 @@ import Subscribe from '../Subscribe/Subscribe';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import Link from 'gatsby-link';
 import config from '../../../data/SiteConfig';
-import { gaTrack } from '../../utils/ga';
+import { gaTrack } from '../../shared/utils/ga';
 
 const SOCIAL_ICONS_DATA = [
   {
