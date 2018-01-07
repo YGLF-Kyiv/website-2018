@@ -3,4 +3,9 @@
 .page-speakers {
   padding-top: 45px;
   padding-bottom: 45px;
+
+  h2 {
+    @include block-header;
+    margin-bottom: 17px;
+  }
 }

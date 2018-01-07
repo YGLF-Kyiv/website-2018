@@ -10,18 +10,5 @@ module.exports = {
       "href": "mailto:hello@yglf.com.ua?subject=Call%20For%20Papers",
       "text": "Apply"
     }
-  },
-  "meetSpeakers": {
-    "number": "1",
-    "subtitle": "Amazing Talks",
-    "title": "Meet Our Speakers",
-    "description": [
-      "Kyiv and all of the Frontend communities here are amazing. Audience is technically strong and thankful for new knowledge. If you are eager to share your experience and useful insights, apply to become a speaker."
-    ],
-    "actionButton": {
-      "href": "https://2event.com/ru/events/1037785",
-      "text": "Buy Tickets",
-      "target": "__blank"
-    }
   }
 }
