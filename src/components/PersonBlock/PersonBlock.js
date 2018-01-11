@@ -13,11 +13,6 @@ export default class PersonBlock extends Component {
     isSmall: false,
   }
 
-  get anchor() {
-    const { data: { firstName, lastName } } = this.props;
-    return `${firstName}-${lastName}`.replace(/\s/g, '-');
-  }
-
   render() {
     const {
       firstName,
@@ -27,6 +22,7 @@ export default class PersonBlock extends Component {
       position,
       company,
       description,
+      anchor,
     } = this.props.data;
 
     const className = 'person-block container container-fluid';
@@ -35,11 +31,7 @@ export default class PersonBlock extends Component {
     return (
       <div className={`${className} ${smallClass}`}>
         <div className="person-block-cols">
-          <a
-            href=""
-            name={this.anchor}
-            className="-no-outline anchor"
-          />
+          <a href="" name={anchor} className="-no-outline anchor" />
           <div className="person-block-img">
             <LazyLoad offset={150}>
               <img
