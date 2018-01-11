@@ -7,6 +7,7 @@
       "company":"MIT CSAIL",
       "description":"Lea is currently busy researching how to make web programming easier at <a class='simple-link' href='http://www.csail.mit.edu/' target='__blank'>MIT CSAIL</a>. She is the author of bestselling advanced CSS book <a class='simple-link' href='http://shop.oreilly.com/product/0636920031123.do' target='__blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a class='simple-link' href='https://www.w3.org/' target='__blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a class='simple-link' href='https://www.w3.org/Style/CSS/members.en.php3' target='__blank'>CSS Working Group</a>. Lea has also started <a class='simple-link' href='https://github.com/leaverou' target='__blank'>several popular open source projects and web applications</a>, such as <a class='simple-link' href='https://mavo.io/' target='__blank'>Mavo</a>, <a class='simple-link' href='http://prismjs.com/' target='__blank'>Prism</a>, and <a class='simple-link' href='http://leaverou.github.io/prefixfree/' target='__blank'>-prefix-free</a> and maintains a technical blog at <a class='simple-link' href='http://lea.verou.me/' target='__blank'>lea.verou.me</a>. She holds a MSc in Computer Science from MIT. Despite her academic pursuits in Computer Science, Lea is one of the few misfits who love code and design equally.",
       "imageSrc":"/speakers/lea_verou",
+      "anchor": "Lea-Verou",
       "highlighted": true,
       "highlightedDescription": "Lea is currently busy researching how to make web programming easier at <a class='simple-link' href='http://www.csail.mit.edu/' target='__blank'>MIT CSAIL</a>. She is the author of bestselling advanced CSS book <a class='simple-link' href='http://shop.oreilly.com/product/0636920031123.do' target='__blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a class='simple-link' href='https://www.w3.org/' target='__blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a class='simple-link' href='https://www.w3.org/Style/CSS/members.en.php3' target='__blank'>CSS Working Group</a>.",
       "social": [
@@ -32,6 +33,7 @@
       "description":"Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. <br />In 2013 he joined Google to work on the <a class='simple-link' href='https://developers.google.com/v8/' target='__blank'>V8 JavaScript Engine</a> in the Munich office, where he is currently working as tech lead for the Node.js performance team. <br />He spent a rather large amount of his spare time on developing and contributing to open source projects. From 2002 to 2007, he developed and maintained various core parts of the <a class='simple-link' href='https://xfce.org' target='__blank'>Xfce desktop environment</a>, including the new file manager <a class='simple-link' href='https://docs.xfce.org/xfce/thunar/start' target='__blank'>Thunar</a>, which he wrote from scratch. <br />He is also interested in functional programming languages and compiler design. In 2011 he created a <a class='simple-link' href='https://github.com/bmeurer/ocaml-arm/wiki' target='__blank'>brand new ARM port</a> for the <a class='simple-link' href='https://caml.inria.fr/ocaml/' target='__blank'>OCaml</a> native code compiler, and since January 2012 he is now the official maintainer of the <a class='simple-link' href='https://www.arm.com' target='__blank'>ARM</a> port.",
       "highlightedDescription": "Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. At Google he is working on the <a class='simple-link' href='https://developers.google.com/v8/' target='__blank'>V8 JavaScript Engine</a> that powers both Node.js and Chrome, and he is currently leading the Node.js Performance Team.",
       "imageSrc":"/speakers/benedikt_meurer",
+      "anchor": "Benedikt-Meurer",
       "highlighted": true,
       "social": [
         {
@@ -51,11 +53,12 @@
     {
       "firstName":"Chen Hui",
       "lastName":"Jing",
-      "position":"Design Lead",
-      "company":"Wismut Labs",
+      "position":"Senior Front-end Developer",
+      "company":"Jewel Paymentech",
       "description":"Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions. She also co-organises the <a class='simple-link' href='https://singaporecss.github.io' target='__blank'>Talk.CSS Meetup</a>, runs an inspiring <a class='simple-link' href='https://www.chenhuijing.com' target='__blank'>web-dev blog</a> and you have to check out her <a class='simple-link' href='https://www.chenhuijing.com/talks' target='__blank'>list of talks</a> at numerous conferences and meetups.",
       "highlightedDescription": "Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
       "imageSrc":"/speakers/chen_hui_jing",
+      "anchor": "Chen-Hui-Jing",
       "highlighted": true,
       "social": [
         {
@@ -69,6 +72,31 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/huijingchen/"
+        }
+      ]
+    },
+    {
+      "firstName":"Tomasz",
+      "lastName":"Łakomy",
+      "position":"Software Engineer",
+      "company":"Egnyte Poland",
+      "description":"Tomasz is a Software Engineer at Egnyte Poland. Co-organiser of React Poznań Meetup, JavaScript tinkerer who enjoys sharing his knowledge with other developers. His interests include VR, AR, React, app performance and making cheesiest jokes known to humanity.",
+      "highlightedDescription":"Tomasz is a Software Engineer at Egnyte Poland. Co-organiser of React Poznań Meetup, JavaScript tinkerer who enjoys sharing his knowledge with other developers. His interests include VR, AR, React, app performance and making cheesiest jokes known to humanity.",
+      "imageSrc":"/speakers/tomasz_lakomy",
+      "anchor": "Tomasz-Lakomy",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/tlakomy"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/tlakomy"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/tomasz-łakomy-12b2a258/"
         }
       ]
     }
