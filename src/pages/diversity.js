@@ -47,19 +47,11 @@ export default class DiversityTicketsPage extends React.Component {
           <section>
             <h3>How to apply</h3>
             <p>
-              We will have a sweepstake, sponsored by Wix Engineering, for
-              discounted diversity tickets at $50 per ticket.
+              Submission closed at January 15, 2018.<br/>
+              We had a sweepstake, sponsored by Wix Engineering, for discounted diversity tickets at $50 per ticket.
             </p>
             <p>
-              Please apply for the tickets through{' '}
-              <SimpleLink rel="" target="" url={URL_EMAIL} text={TEXT_EMAIL} />&nbsp;
-              (send us your name and email only) before January 15, 2018.
-            </p>
-            <p>
-              After submission closes, 40 lucky people will be selected randomly
-              and contacted through the e-mail address which they submitted. The
-              e-mail will hold a coupon code, with which they can purchase their
-              discounted diversity ticket.
+              After submission 40 lucky people were selected randomly and contacted through the e-mail address which they submitted. 
             </p>
           </section>
         </div>
