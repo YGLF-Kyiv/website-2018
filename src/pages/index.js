@@ -15,9 +15,6 @@ export default class IndexPage extends React.Component {
         <div className="container container-fluid">
           <SpeakersIntroBlock data={OrderedBlockData.callForPapers} />
         </div>
-        <div className="container container-fluid">
-          <OrderedBlock data={OrderedBlockData.venue} />
-        </div>
       </div>
     );
   }
