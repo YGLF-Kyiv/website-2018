@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
         <HightlightedSpeakerBlock />
         {/* <InfoBlock /> */}
         <div className="container container-fluid">
-          <SpeakersIntroBlock data={OrderedBlockData.callForPapers} />
+          <SpeakersIntroBlock data={OrderedBlockData.lightningTalks} />
         </div>
         <div className="container container-fluid">
           <OrderedBlock data={OrderedBlockData.venue} />

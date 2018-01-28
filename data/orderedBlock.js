@@ -11,6 +11,19 @@ module.exports = {
       "text": "Apply"
     }
   },
+  "lightningTalks": {
+    "number": "1",
+    "subtitle": "Amazing Talks",
+    "title": "Lightning Talks",
+    "description": [
+      "This year YGLF is hosting amazing speakers from all around the world. Apart from the main program, we are going to have Lightning Talks block.",
+      "Don't hesitate to share your knowledge and experience."
+    ],
+    "actionButton": {
+      "href": "mailto:hello@yglf.com.ua?subject=Lightning%20Talks%20Proposal",
+      "text": "Apply"
+    }
+  },
   "meetSpeakers": {
     "number": "1",
     "subtitle": "Amazing Talks",
