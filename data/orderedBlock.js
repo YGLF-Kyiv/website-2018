@@ -16,7 +16,7 @@ module.exports = {
     "subtitle": "Amazing Talks",
     "title": "Lightning Talks",
     "description": [
-      "This year YGLF is hosting amazing speakers from all around the world. Apart from the main program, we are going to have Lightning Talks block.",
+      "This year YGLF is hosting amazing speakers from all around the world. Apart from the main program, we are going to have Lightning Talks block, 7 minutes per talk.",
       "Don't hesitate to share your knowledge and experience."
     ],
     "actionButton": {
