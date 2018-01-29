@@ -99,6 +99,52 @@
           "url": "https://www.linkedin.com/in/tomasz-łakomy-12b2a258/"
         }
       ]
+    },
+    {
+      "firstName": "Johannes",
+      "lastName": "Ewald",
+      "position": "Core Team Member",
+      "company": "Webpack",
+      "description": "Passionate <a href='https: //github.com/jhnns' target='__blank'>Open Source developer</a>. Founded <a href='https://peerigon.com/' target='__blank'>a company</a> with his friends to develop challenging web projects with JavaScript. Loves music and nature. Member of the <a href='http://webpack.github.io/'>webpack</a> core team.",
+      "highlightedDescription": "Passionate <a href='https: //github.com/jhnns' target='__blank'>Open Source developer</a>. Founded <a href='https://peerigon.com/' target='__blank'>a company</a> with his friends to develop challenging web projects with JavaScript. Loves music and nature. Member of the <a href='http://webpack.github.io/'>webpack</a> core team.",
+      "imageSrc": "/speakers/johannes_ewald",
+      "anchor": "Johannes-Ewald",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/jhnnns"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/jhnns"
+        }
+      ]
+    },
+    {
+      "firstName": "Juho",
+      "lastName": "Vepsäläinen",
+      "position": "Core Team Member",
+      "company": "Webpack",
+      "description": "Juho Vepsäläinen is behind the <a href='https://survivejs.com/' target='__blank'>SurviveJS</a> effort. In addition to being a core developer of <a href='http://webpack.github.io/' target='__blank'>Webpack</a>, he has been active in the open source scene since the early 2000s. Blue Arrow Awards <a href='https://survivejs.com/blog/blue-arrow-awards-winner-2017/'>winner</a>.",
+      "highlightedDescription": "Juho Vepsäläinen is behind the <a href='https://survivejs.com/' target='__blank'>SurviveJS</a> effort. In addition to being a core developer of <a href='http://webpack.github.io/' target='__blank'>Webpack</a>, he has been active in the open source scene since the early 2000s. Blue Arrow Awards <a href='https://survivejs.com/blog/blue-arrow-awards-winner-2017/'>winner</a>.",
+      "imageSrc": "/speakers/juho_vepsalainen",
+      "anchor": "Juho-Vepsalainen",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/bebraw"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/bebraw"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/juhovepsalainen/"
+        }
+      ]
     }
   ]
 }
