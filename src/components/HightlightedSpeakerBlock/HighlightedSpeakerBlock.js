@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './highlighted-speaker-block.scss';
-import speakerData from '../../../data/speakers.json';
+import speakersData from '../../../data/speakers.json';
 import _ from 'lodash/fp';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
@@ -10,7 +10,7 @@ export default class HighlightedSpeakerBlock extends Component {
     const data = _.flow([
       _.filter(_.property('highlighted')),
       _.sample
-    ])(speakerData.all);
+    ])(speakersData.all);
 
     return (
       <div className="highlighted-speaker-block container container-fluid">
