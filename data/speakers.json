@@ -99,6 +99,31 @@
           "url": "https://www.linkedin.com/in/tomasz-łakomy-12b2a258/"
         }
       ]
+    },
+    {
+      "firstName":"Vitaly",
+      "lastName":"Friedman",
+      "position":"Editor-in-Chief",
+      "company":"Smashing Magazine",
+      "description":"Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded <a class='simple-link' href='https://smashingmagazine.com' target='__blank'>Smashing Magazine</a>, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all <a class='simple-link' href='https://shop.smashingmagazine.com' target='__blank'>Smashing Books</a>.",
+      "highlightedDescription": "Vitaly Friedman loves beautiful content and does not give up easily. He currently works as editor-in-chief of <a class='simple-link' href='https://smashingmagazine.com' target='__blank'>Smashing Magazine</a> in the lovely city of Freiburg, Germany. Vitaly is the author, co-author and editor of all <a class='simple-link' href='https://shop.smashingmagazine.com' target='__blank'>Smashing Books</a>.",
+      "imageSrc":"/speakers/vitaly_friedman",
+      "anchor": "Vitaly-Friedman",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/smashingmag"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/vitalyfriedman"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/vitalyfriedman/"
+        }
+      ]
     }
   ]
 }
