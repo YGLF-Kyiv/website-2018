@@ -1,7 +1,7 @@
 import React from 'react';
 import './diversity.scss';
 import SimpleLink from '../components/SimpleLink/SimpleLink';
-import { gaTrack } from '../utils/ga';
+import { gaTrack } from '../shared/utils/ga';
 import wixEngineering from '../../static/wix-engineering.png';
 
 export default class DiversityTicketsPage extends React.Component {
@@ -46,20 +46,14 @@ export default class DiversityTicketsPage extends React.Component {
 
           <section>
             <h3>How to apply</h3>
-            <p>
-              We will have a sweepstake, sponsored by Wix Engineering, for
-              discounted diversity tickets at $50 per ticket.
+
+            <p>Submission has closed on January 15, 2018.<br />
+              We had a sweepstake sponsored by Wix Engineering for discounted diversity tickets at
+              $50 per ticket.
             </p>
             <p>
-              Please apply for the tickets through{' '}
-              <SimpleLink rel="" target="" url={URL_EMAIL} text={TEXT_EMAIL} />&nbsp;
-              (send us your name and email only) before January 15, 2018.
-            </p>
-            <p>
-              After submission closes, 40 lucky people will be selected randomly
-              and contacted through the e-mail address which they submitted. The
-              e-mail will hold a coupon code, with which they can purchase their
-              discounted diversity ticket.
+              After submission 40 lucky people were randomly selected and contacted through the
+              e-mail address which they had submitted.
             </p>
           </section>
         </div>

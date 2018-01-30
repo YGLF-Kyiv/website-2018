@@ -1,6 +1,6 @@
 import React from 'react';
 import './successful-purchase.scss';
-import { gaTrack } from '../utils/ga';
+import { gaTrack } from '../shared/utils/ga';
 
 export default class SuccessfulPurchasePage extends React.Component {
   componentWillMount() {

@@ -4,7 +4,6 @@ import speakerData from '../../../data/speakers.json';
 import _ from 'lodash/fp';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
-import { isChrome } from '../../utils/environment';
 
 export default class HighlightedSpeakerBlock extends Component {
   render() {
@@ -12,7 +11,6 @@ export default class HighlightedSpeakerBlock extends Component {
       _.filter(_.property('highlighted')),
       _.sample
     ])(speakerData.all);
-    const imageExtension = isChrome() ? 'webp' : 'jpg';
 
     return (
       <div className="highlighted-speaker-block container container-fluid">
@@ -21,17 +19,17 @@ export default class HighlightedSpeakerBlock extends Component {
           <div className="highlighted-speaker-block-img">
             <LazyLoad offset={150}>
               <img
-                src={`/speakers/${data.image_src}.${imageExtension}`}
-                className="drop-shadow"
-                alt={`${data.first_name} ${data.last_name}`}
+                src={`${data.imageSrc}.jpg`}
+                className="-drop-shadow"
+                alt={`${data.firstName} ${data.lastName}`}
               />
             </LazyLoad>
-            <SocialIcons urls={data.social_icons} />
+            <SocialIcons data={data.social} />
           </div>
           <div className="highlighted-speaker-block-text">
             <h3>
-              <span className="speaker-first-name">{data.first_name}</span>{' '}
-              <span className="speaker-last-name">{data.last_name}</span>
+              <span className="speaker-first-name">{data.firstName}</span>{' '}
+              <span className="speaker-last-name">{data.lastName}</span>
             </h3>
             <p dangerouslySetInnerHTML={{__html: data.highlightedDescription}} />
             <div className="highlighted-speaker-block-text-button">

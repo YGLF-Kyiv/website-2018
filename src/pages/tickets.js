@@ -1,7 +1,7 @@
 import React from 'react';
 import config from '../../data/SiteConfig';
-import { isInBrowser } from '../utils/common';
-import { gaTrack } from '../utils/ga';
+import { isInBrowser } from '../shared/utils/common';
+import { gaTrack } from '../shared/utils/ga';
 
 export default class TicketsPage extends React.Component {
   componentWillMount() {

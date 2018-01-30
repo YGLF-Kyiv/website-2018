@@ -2,8 +2,8 @@ import React from 'react';
 import './invitation.scss';
 import InvitationBlock from '../components/InvitationBlock/InvitationBlock';
 
-import { gaTrack } from '../utils/ga';
-import { isInBrowser } from '../utils/common';
+import { gaTrack } from '../shared/utils/ga';
+import { isInBrowser } from '../shared/utils/common';
 
 export default class InvitationTemplate extends React.Component {
   componentWillMount() {

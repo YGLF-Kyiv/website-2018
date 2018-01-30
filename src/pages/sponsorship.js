@@ -1,7 +1,7 @@
 import React from 'react';
 import './sponsorship.scss';
 import SimpleLink from '../components/SimpleLink/SimpleLink';
-import { gaTrack } from '../utils/ga';
+import { gaTrack } from '../shared/utils/ga';
 
 export default class SponsorshipPage extends React.Component {
   componentWillMount() {

@@ -21,7 +21,7 @@ export default class InfoBlock extends Component {
         {/*</div>*/}
         <div className="speakers-intro-block-text">
           <h2>{data.title}</h2>
-          {data.p.map((el, index) => {
+          {data.description.map((el, index) => {
             return <p key={index}>{el}</p>;
           })}
           <div className="speakers-intro-block-text-button">

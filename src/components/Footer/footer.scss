@@ -66,8 +66,8 @@
     padding-top: 15px;
   }
 
-  &-links a {
-    min-width: 165px;
+  &-links > a {
+    min-width: 145px;
     flex: 1 auto;
     display: inline-block;
     text-decoration: none;
