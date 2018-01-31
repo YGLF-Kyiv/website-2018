@@ -2,6 +2,7 @@ import React from 'react';
 import './header-menu.scss';
 import Link from 'gatsby-link';
 import classNames from 'classnames';
+import { isInBrowser } from '../../shared/utils/common'
 
 const MENU_ITEMS = [
   { title: 'Home', to: '/' },
@@ -22,17 +23,23 @@ export default class HeaderMenu extends React.Component {
   }
 
   renderList() {
-    return MENU_ITEMS.map(item => (
-      <Link
-        activeClassName="-active"
-        to={item.to}
-        key={item.title}
-        onClick={this.closeMenu}
-        className={classNames({ '-disabled': item.disabled })}
-      >
-        {item.title}
-      </Link>
-    ));
+    const isAtHome = isInBrowser() && ['/', ''].includes(document.location.pathname);
+    return MENU_ITEMS.map(item => {
+      // fixing gatsby bug that home link is always highligted
+
+      const unhighlight = item.to === '/' && !isAtHome;
+      return (
+        <Link
+          activeClassName="-active"
+          to={item.to}
+          key={item.title}
+          onClick={this.closeMenu}
+          className={classNames({ '-disabled': item.disabled, '-unhighlight': unhighlight })}
+        >
+          {item.title}
+        </Link>
+      );
+    });
   }
 
   toggleMenu(e) {
