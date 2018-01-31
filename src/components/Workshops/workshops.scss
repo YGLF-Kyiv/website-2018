@@ -1,0 +1,92 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.workshops {
+  h2 {
+    @include block-header;
+    margin-bottom: 46px;
+  }
+
+  h3 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .workshop {
+    display: flex;
+    flex-direction: row;
+    .column {
+      &:last-child {
+        padding-left: 40px;
+      }
+      ul li {
+        padding: 5px 15px;
+        font-weight: 100;
+        font-size: 15px;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+    .workshop-author {
+      font-size: 15px;
+      font-weight: 100;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      line-height: var(--cell);
+      letter-spacing: 2.47px;
+      -webkit-transform: translateY(16px);
+      -ms-transform: translateY(16px);
+      transform: translateY(16px);
+    }
+
+    .workshop-title {
+      margin: 0;
+    }
+
+    .workshop-description {
+      padding-right:  var(--cell);
+      -webkit-transform: translateY(22px);
+      -ms-transform: translateY(22px);
+      transform: translateY(22px);
+      font-size: 15px !important;
+      font-weight: 100;
+      line-height: 33px;
+      letter-spacing: 0.9px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .workshop-desc-list {
+      padding-left: 15px;
+      margin-top: 40px;
+    }
+
+    .workshop-image {
+      img {
+        width: 100%;
+        border: 1px solid $green;
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+
+}
+
+@media (max-width: 1160px) {
+
+}
+@media (max-width: 990px) {
+
+}
+@media screen and (max-width: 764px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
