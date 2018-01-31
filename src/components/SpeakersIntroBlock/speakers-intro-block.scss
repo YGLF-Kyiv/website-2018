@@ -17,7 +17,7 @@
     }
     &-button {
       @include block-button;
-      padding-top: 10px;
+      padding-top: 5px;
       > a {
         @include animated-button
       }

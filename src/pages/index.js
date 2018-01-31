@@ -2,7 +2,6 @@ import React from 'react';
 import './index.scss';
 // import InfoBlock from '../components/InfoBlock/InfoBlock';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
-import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
 import OrderedBlockData from '../../data/orderedBlock.js';
 import HightlightedSpeakerBlock from '../components/HightlightedSpeakerBlock/HighlightedSpeakerBlock';
 
@@ -13,7 +12,7 @@ export default class IndexPage extends React.Component {
         <HightlightedSpeakerBlock />
         {/* <InfoBlock /> */}
         <div className="container container-fluid">
-          <SpeakersIntroBlock data={OrderedBlockData.callForPapers} />
+          <SpeakersIntroBlock data={OrderedBlockData.lightningTalks} />
         </div>
       </div>
     );
