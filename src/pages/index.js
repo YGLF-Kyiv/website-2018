@@ -2,7 +2,6 @@ import React from 'react';
 import './index.scss';
 // import InfoBlock from '../components/InfoBlock/InfoBlock';
 import SpeakersIntroBlock from '../components/SpeakersIntroBlock/SpeakersIntroBlock';
-import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
 import OrderedBlockData from '../../data/orderedBlock.js';
 import HightlightedSpeakerBlock from '../components/HightlightedSpeakerBlock/HighlightedSpeakerBlock';
 
