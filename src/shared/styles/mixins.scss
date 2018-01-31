@@ -84,6 +84,9 @@
   @media screen and (max-width: 764px) {
     width: calc(100% - 90px);
   }
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 60px);
+  }
 }
 
 

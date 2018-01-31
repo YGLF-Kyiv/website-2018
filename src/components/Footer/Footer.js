@@ -50,6 +50,11 @@ export default class Footer extends React.Component {
                 >
                   Buy Tickets
                 </a>
+                <Link to="/about">About</Link>
+                <Link to="/speakers">Speakers</Link>
+                {/*<Link to="/#workshops">Workshops</Link>*/}
+                <Link to="/sponsorship">Sponsorship</Link>
+                <Link to="/diversity">Diversity Tickets</Link>
                 <a
                   href="https://yougottalovefrontend.com/"
                   target="_blank"
@@ -57,39 +62,44 @@ export default class Footer extends React.Component {
                 >
                   YGLF 2017
                 </a>
-                <Link to="/diversity">Diversity Tickets</Link>
                 <Link to="/code-of-conduct">Code Of Conduct</Link>
-                <Link to="/sponsorship">Sponsorship</Link>
-                <Link to="/about">About</Link>
+
               </div>
             </div>
           </div>
           <div className="row footer-contacts">
-            {/*<div className="col-md-6 col-xs-12">*/}
-            {/*<div className="created-by">*/}
-            {/*<span>*/}
-            {/*Designed by{' '}*/}
-            {/*<a*/}
-            {/*href="http://highondesign.wix.com/"*/}
-            {/*target="_blank"*/}
-            {/*rel="noopener noreferrer"*/}
-            {/*>*/}
-            {/*WixStudio*/}
-            {/*</a>,*/}
-            {/*</span>{' '}*/}
-            {/*<span>*/}
-            {/*Coded by{' '}*/}
-            {/*<a*/}
-            {/*href="https://github.com/paveliko"*/}
-            {/*target="_blank"*/}
-            {/*rel="noopener noreferrer"*/}
-            {/*>*/}
-            {/*Pavel Rapoport*/}
-            {/*</a>*/}
-            {/*</span>*/}
-            {/*</div>*/}
-            {/*</div>*/}
-            <div className="col-md-12 col-xs-12">
+            <div className="col-md-6 col-xs-12">
+              <div className="created-by">
+                <span>
+                  Designed by{' '}
+                    <a
+                      href="http://highondesign.wix.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      WixStudio
+                    </a>,
+                </span>{' '}
+                <span>
+                  Coded by{' '}
+                  <a
+                    href="https://www.linkedin.com/in/andriisierkov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Andrei Sierkov
+                  </a>{' & '}
+                  <a
+                    href="https://www.linkedin.com/in/marina-marina/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Marina Sol
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div className="col-md-6 col-xs-12">
               <a className="footer-mailto" href={`mailto:${config.email}`}>
                 {config.email}
               </a>

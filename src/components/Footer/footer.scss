@@ -28,6 +28,9 @@
   &-contacts {
     font-size: 16px;
     padding-top: 30px;
+    .created-by {
+      padding: 0 10px 10px 0;
+    }
   }
   strong {
     text-transform: uppercase;
@@ -68,7 +71,6 @@
 
   &-links > a {
     min-width: 145px;
-    flex: 1 auto;
     display: inline-block;
     text-decoration: none;
     color: var(--yglf-blue);
