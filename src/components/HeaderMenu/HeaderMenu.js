@@ -26,7 +26,6 @@ export default class HeaderMenu extends React.Component {
     const isAtHome = isInBrowser() && ['/', ''].includes(document.location.pathname);
     return MENU_ITEMS.map(item => {
       // fixing gatsby bug that home link is always highligted
-
       const unhighlight = item.to === '/' && !isAtHome;
       return (
         <Link
