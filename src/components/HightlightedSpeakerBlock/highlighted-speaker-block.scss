@@ -62,6 +62,13 @@
         @include underlined-link;
       }
     }
+    a {
+      color: $green;
+      outline: none;
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
 

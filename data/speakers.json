@@ -5,11 +5,11 @@
       "lastName":"Verou",
       "position":"Human-Computer Interaction Researcher",
       "company":"MIT CSAIL",
-      "description":"Lea is currently busy researching how to make web programming easier at <a class='simple-link' href='http://www.csail.mit.edu/' target='__blank'>MIT CSAIL</a>. She is the author of bestselling advanced CSS book <a class='simple-link' href='http://shop.oreilly.com/product/0636920031123.do' target='__blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a class='simple-link' href='https://www.w3.org/' target='__blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a class='simple-link' href='https://www.w3.org/Style/CSS/members.en.php3' target='__blank'>CSS Working Group</a>. Lea has also started <a class='simple-link' href='https://github.com/leaverou' target='__blank'>several popular open source projects and web applications</a>, such as <a class='simple-link' href='https://mavo.io/' target='__blank'>Mavo</a>, <a class='simple-link' href='http://prismjs.com/' target='__blank'>Prism</a>, and <a class='simple-link' href='http://leaverou.github.io/prefixfree/' target='__blank'>-prefix-free</a> and maintains a technical blog at <a class='simple-link' href='http://lea.verou.me/' target='__blank'>lea.verou.me</a>. She holds a MSc in Computer Science from MIT. Despite her academic pursuits in Computer Science, Lea is one of the few misfits who love code and design equally.",
+      "description":"Lea is currently busy researching how to make web programming easier at <a href='http://www.csail.mit.edu/' target='_blank'>MIT CSAIL</a>. She is the author of bestselling advanced CSS book <a href='http://shop.oreilly.com/product/0636920031123.do' target='_blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a href='https://www.w3.org/' target='_blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a href='https://www.w3.org/Style/CSS/members.en.php3' target='_blank'>CSS Working Group</a>. Lea has also started <a href='https://github.com/leaverou' target='_blank'>several popular open source projects and web applications</a>, such as <a href='https://mavo.io/' target='_blank'>Mavo</a>, <a href='http://prismjs.com/' target='_blank'>Prism</a>, and <a href='http://leaverou.github.io/prefixfree/' target='_blank'>-prefix-free</a> and maintains a technical blog at <a href='http://lea.verou.me/' target='_blank'>lea.verou.me</a>. She holds a MSc in Computer Science from MIT. Despite her academic pursuits in Computer Science, Lea is one of the few misfits who love code and design equally.",
       "imageSrc":"/speakers/lea_verou",
       "anchor": "Lea-Verou",
       "highlighted": true,
-      "highlightedDescription": "Lea is currently busy researching how to make web programming easier at <a class='simple-link' href='http://www.csail.mit.edu/' target='__blank'>MIT CSAIL</a>. She is the author of bestselling advanced CSS book <a class='simple-link' href='http://shop.oreilly.com/product/0636920031123.do' target='__blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a class='simple-link' href='https://www.w3.org/' target='__blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a class='simple-link' href='https://www.w3.org/Style/CSS/members.en.php3' target='__blank'>CSS Working Group</a>.",
+      "highlightedDescription": "Lea is currently busy researching how to make web programming easier at <a' href='http://www.csail.mit.edu/' target='_blank'>MIT CSAIL</a>. She is the author of bestselling advanced CSS book <a href='http://shop.oreilly.com/product/0636920031123.do' target='_blank'>CSS Secrets</a> and has worked as a Developer Advocate at <a href='https://www.w3.org/' target='_blank'>W3C</a>. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the <a href='https://www.w3.org/Style/CSS/members.en.php3' target='_blank'>CSS Working Group</a>.",
       "social": [
         {
           "type": "twitter",
@@ -30,8 +30,8 @@
       "lastName":"Meurer",
       "position":"Technical Lead",
       "company":"Google",
-      "description":"Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. <br />In 2013 he joined Google to work on the <a class='simple-link' href='https://developers.google.com/v8/' target='__blank'>V8 JavaScript Engine</a> in the Munich office, where he is currently working as tech lead for the Node.js performance team. <br />He spent a rather large amount of his spare time on developing and contributing to open source projects. From 2002 to 2007, he developed and maintained various core parts of the <a class='simple-link' href='https://xfce.org' target='__blank'>Xfce desktop environment</a>, including the new file manager <a class='simple-link' href='https://docs.xfce.org/xfce/thunar/start' target='__blank'>Thunar</a>, which he wrote from scratch. <br />He is also interested in functional programming languages and compiler design. In 2011 he created a <a class='simple-link' href='https://github.com/bmeurer/ocaml-arm/wiki' target='__blank'>brand new ARM port</a> for the <a class='simple-link' href='https://caml.inria.fr/ocaml/' target='__blank'>OCaml</a> native code compiler, and since January 2012 he is now the official maintainer of the <a class='simple-link' href='https://www.arm.com' target='__blank'>ARM</a> port.",
-      "highlightedDescription": "Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. At Google he is working on the <a class='simple-link' href='https://developers.google.com/v8/' target='__blank'>V8 JavaScript Engine</a> that powers both Node.js and Chrome, and he is currently leading the Node.js Performance Team.",
+      "description":"Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. <br />In 2013 he joined Google to work on the <a href='https://developers.google.com/v8/' target='_blank'>V8 JavaScript Engine</a> in the Munich office, where he is currently working as tech lead for the Node.js performance team. <br />He spent a rather large amount of his spare time on developing and contributing to open source projects. From 2002 to 2007, he developed and maintained various core parts of the <a href='https://xfce.org' target='_blank'>Xfce desktop environment</a>, including the new file manager <a href='https://docs.xfce.org/xfce/thunar/start' target='_blank'>Thunar</a>, which he wrote from scratch. <br />He is also interested in functional programming languages and compiler design. In 2011 he created a <a href='https://github.com/bmeurer/ocaml-arm/wiki' target='_blank'>brand new ARM port</a> for the <a href='https://caml.inria.fr/ocaml/' target='_blank'>OCaml</a> native code compiler, and since January 2012 he is now the official maintainer of the <a href='https://www.arm.com' target='_blank'>ARM</a> port.",
+      "highlightedDescription": "Benedikt is a JavaScript compiler engineer who loves to tinker with different aspects of programming languages. At Google he is working on the <a href='https://developers.google.com/v8/' target='_blank'>V8 JavaScript Engine</a> that powers both Node.js and Chrome, and he is currently leading the Node.js Performance Team.",
       "imageSrc":"/speakers/benedikt_meurer",
       "anchor": "Benedikt-Meurer",
       "highlighted": true,
@@ -55,7 +55,7 @@
       "lastName":"Jing",
       "position":"Senior Front-end Developer",
       "company":"Jewel Paymentech",
-      "description":"Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions. She also co-organises the <a class='simple-link' href='https://singaporecss.github.io' target='__blank'>Talk.CSS Meetup</a>, runs an inspiring <a class='simple-link' href='https://www.chenhuijing.com' target='__blank'>web-dev blog</a> and you have to check out her <a class='simple-link' href='https://www.chenhuijing.com/talks' target='__blank'>list of talks</a> at numerous conferences and meetups.",
+      "description":"Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions. She also co-organises the <a href='https://singaporecss.github.io' target='_blank'>Talk.CSS Meetup</a>, runs an inspiring <a href='https://www.chenhuijing.com' target='_blank'>web-dev blog</a> and you have to check out her <a href='https://www.chenhuijing.com/talks' target='_blank'>list of talks</a> at numerous conferences and meetups.",
       "highlightedDescription": "Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
       "imageSrc":"/speakers/chen_hui_jing",
       "anchor": "Chen-Hui-Jing",
@@ -105,8 +105,8 @@
       "lastName":"Friedman",
       "position":"Editor-in-Chief",
       "company":"Smashing Magazine",
-      "description":"Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded <a class='simple-link' href='https://smashingmagazine.com' target='__blank'>Smashing Magazine</a>, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all <a class='simple-link' href='https://shop.smashingmagazine.com' target='__blank'>Smashing Books</a>.",
-      "highlightedDescription": "Vitaly Friedman loves beautiful content and does not give up easily. He currently works as editor-in-chief of <a class='simple-link' href='https://smashingmagazine.com' target='__blank'>Smashing Magazine</a> in the lovely city of Freiburg, Germany. Vitaly is the author, co-author and editor of all <a class='simple-link' href='https://shop.smashingmagazine.com' target='__blank'>Smashing Books</a>.",
+      "description":"Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded <a href='https://smashingmagazine.com' target='__blank'>Smashing Magazine</a>, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all <a href='https://shop.smashingmagazine.com' target='__blank'>Smashing Books</a>.",
+      "highlightedDescription": "Vitaly Friedman loves beautiful content and does not give up easily. He currently works as editor-in-chief of <a href='https://smashingmagazine.com' target='__blank'>Smashing Magazine</a> in the lovely city of Freiburg, Germany. Vitaly is the author, co-author and editor of all <a href='https://shop.smashingmagazine.com' target='__blank'>Smashing Books</a>.",
       "imageSrc":"/speakers/vitaly_friedman",
       "anchor": "Vitaly-Friedman",
       "highlighted": true,
@@ -122,6 +122,52 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/vitalyfriedman/"
+        }
+      ]
+    },
+    {
+      "firstName": "Johannes",
+      "lastName": "Ewald",
+      "position": "Core Team Member",
+      "company": "Webpack",
+      "description": "Passionate <a href='https://github.com/jhnns' target='_blank'>Open Source developer</a>. Founded <a href='https://peerigon.com/' target='_blank'>a company</a> with his friends to develop challenging web projects with JavaScript. Loves music and nature. Member of the <a href='https://webpack.js.org/' target='_blank'>Webpack</a> core team.",
+      "highlightedDescription": "Passionate <a href='https://github.com/jhnns' target='_blank'>Open Source developer</a>. Founded <a href='https://peerigon.com/' target='_blank'>a company</a> with his friends to develop challenging web projects with JavaScript. Loves music and nature. Member of the <a href='https://webpack.js.org/' target='_blank'>Webpack</a> core team.",
+      "imageSrc": "/speakers/johannes_ewald",
+      "anchor": "Johannes-Ewald",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/jhnnns"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/jhnns"
+        }
+      ]
+    },
+    {
+      "firstName": "Juho",
+      "lastName": "Vepsäläinen",
+      "position": "Core Team Member",
+      "company": "Webpack",
+      "description": "Juho Vepsäläinen is behind the <a href='https://survivejs.com/' target='_blank'>SurviveJS</a> effort. In addition to being a core developer of <a href='https://webpack.js.org/' target='_blank'>Webpack</a>, he has been active in the Open Source scene since the early 2000s. Blue Arrow Awards <a href='https://survivejs.com/blog/blue-arrow-awards-winner-2017/' target='_blank'>winner</a>.",
+      "highlightedDescription": "Juho Vepsäläinen is behind the <a href='https://survivejs.com/' target='_blank'>SurviveJS</a> effort. In addition to being a core developer of <a href='https://webpack.js.org/' target='_blank'>Webpack</a>, he has been active in the Open Source scene since the early 2000s. Blue Arrow Awards <a href='https://survivejs.com/blog/blue-arrow-awards-winner-2017/' target='_blank'>winner</a>.",
+      "imageSrc": "/speakers/juho_vepsalainen",
+      "anchor": "Juho-Vepsalainen",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/bebraw"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/bebraw"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/juhovepsalainen/"
         }
       ]
     }

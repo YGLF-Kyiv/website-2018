@@ -3,6 +3,7 @@
 
 .person-block {
   box-sizing: border-box;
+  min-height: 495px;
   h2 {
     @include block-header;
   }
@@ -149,6 +150,7 @@
 
 @media screen and (max-width: 990px) {
   .person-block {
+    min-height: 0;
     &-img {
       > img {
         width: 260px;
