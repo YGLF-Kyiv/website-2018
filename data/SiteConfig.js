@@ -13,6 +13,7 @@ module.exports = {
   email: 'hello@yglf.com.ua',
   website: 'http://yglf.com.ua',
   ticketsUrl: 'https://2event.com/ru/events/1037785',
+  workshopWebpackUrl: 'https://2event.com/events/1230538',
   sitemapPages: [
     '/',
     '/speakers',

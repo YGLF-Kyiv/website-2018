@@ -7,7 +7,16 @@ module.exports = {
       ],
       "title": "Webpack - The Good Parts",
       "anchor": "Webpack-The-Good-Parts",
-      "imageSrc": "/speakers/juho_vepsalainen",
+      "images": [
+        {
+          "imageSrc": "/speakers/juho_vepsalainen",
+          "title": "Juho Vepsäläinen"
+        },
+        {
+          "imageSrc": "/speakers/johannes_ewald",
+          "title": "Johannes Ewald"
+        }
+      ],
       "description": [
         "In this high-level overview you'll learn how to configure Webpack. Even if you know it already, there might be some surprises in store as you gain insight to the tool you otherwise might miss.",
         "The topics covered include:"

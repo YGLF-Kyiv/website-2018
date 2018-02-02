@@ -4,7 +4,7 @@
 .workshops {
   h2 {
     @include block-header;
-    margin-bottom: 46px;
+    margin-bottom: 62px;
   }
 
   h3 {
@@ -18,6 +18,7 @@
   .workshop {
     display: flex;
     flex-direction: row;
+    padding-left: 124px;
     .column {
       &:last-child {
         padding-left: 40px;
@@ -63,12 +64,17 @@
     }
 
     .workshop-image {
-      img {
+      display: flex;
+      flex-direction: column;
+      > img {
         width: 100%;
         border: 1px solid $green;
         -webkit-transform: translateY(-1px);
         -ms-transform: translateY(-1px);
         transform: translateY(-1px);
+        &:first-child {
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -82,11 +88,33 @@
 
 }
 @media (max-width: 990px) {
-
+  .workshop {
+    padding-left: 0 !important;
+  }
 }
-@media screen and (max-width: 764px) {
-
-}
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 800px) {
+  .workshops {
+    h2 {
+      margin-bottom: 45px;
+    }
+    .workshop {
+      flex-direction: column !important;
+      .column {
+        flex-direction: row;
+        margin: 0;
+        &:last-child {
+          padding-left: 0 !important;
+        }
+        &.workshop-image {
+          width: 100%;
+          margin-bottom: 40px !important;
+          > img {
+            height: 100%;
+            width: 50% !important;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }
