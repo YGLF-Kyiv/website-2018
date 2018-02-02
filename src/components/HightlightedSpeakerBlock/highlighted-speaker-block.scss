@@ -2,7 +2,7 @@
 @import '../../shared/styles/mixins';
 
 .highlighted-speaker-block {
-  height: 720px;
+  height: 675px;
   h2 {
     @include block-header;
   }
@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 1250px) {
   .highlighted-speaker-block {
-    height: 585px;
+    height: 540px;
     &-img {
       img {
         width: 318px;
@@ -90,13 +90,14 @@
 
 @media screen and (max-width: 1150px) {
   .highlighted-speaker-block {
-    height: 630px;
+    height: 540px;
   }
 }
 
 
 @media screen and (max-width: 990px) {
   .highlighted-speaker-block {
+    height: 630px;
     &-img {
       img {
         width: 260px;
@@ -113,13 +114,14 @@
 
 @media screen and (max-width: 860px) {
   .highlighted-speaker-block {
-    height: auto;
+    height: 585px;
     padding-bottom: 90px !important;
   }
 }
 
 @media screen and (max-width: 800px) {
   .highlighted-speaker-block {
+    height: auto;
     &-img {
       img {
         width: 170px;
@@ -130,6 +132,7 @@
 
 @media screen and (max-width: 550px) {
   .highlighted-speaker-block {
+    height: 1170px;
     padding-bottom: 50px !important;
     &-cols {
       flex-direction: column;
