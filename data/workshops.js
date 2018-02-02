@@ -30,6 +30,9 @@ module.exports = {
         "Build analysis",
         "Optimizing the build",
       ],
+      "additionalInfo": [
+        "You can get a double ticket which gives you a significant discount for the conference and the workshop.",
+      ]
     },
   ]
 };

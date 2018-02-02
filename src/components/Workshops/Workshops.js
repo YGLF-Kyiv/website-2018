@@ -9,7 +9,7 @@ import './workshops.scss';
 
 export default class WorkshopBlock extends Component {
   renderWorkshop(workshop) {
-    const { authors, title, description, list, images, anchor } = workshop;
+    const { authors, title, description, list, images, anchor, additionalInfo } = workshop;
     return (
       <div className="workshop" key={title}>
         <a href="" name={anchor} className="-no-outline anchor" />
@@ -38,10 +38,23 @@ export default class WorkshopBlock extends Component {
           <ul className="workshop-desc-list">
             { list.map((item, index) => <li key={index}>{ item }</li>) }
           </ul>
+          <div className="additional-info">
+            { additionalInfo.map((item, index) => {
+              return <p key={index}>{ item }</p>
+            }) }
+          </div>
+          <br />
           <BuyTicketsButton
             href={config.workshopWebpackUrl}
-            eventLabel="Buy Workshop Webpack tickets"
+            eventLabel="Buy Workshop Webpack ticket"
             eventCategory="purchaseWorkshop"
+            text="Buy Workshop Ticket"
+          />
+          <BuyTicketsButton
+            href={config.workshopWebpackAndConfUrl}
+            eventLabel="Buy double ticket"
+            eventCategory="purchaseDouble"
+            text="Buy Double Ticket"
           />
         </div>
       </div>
@@ -52,6 +65,13 @@ export default class WorkshopBlock extends Component {
     return (
       <div className="workshops">
         <h2>Workshops</h2>
+        {/*<a*/}
+          {/*target="_blank"*/}
+          {/*className="double-ticket-button"*/}
+          {/*href={config.workshopWebpackAndConfUrl}*/}
+        {/*>*/}
+          {/*Significant Discount for Conference + Workshop Ticket*/}
+        {/*</a>*/}
         { WorkshopsData.all.map(item => this.renderWorkshop(item)) }
       </div>
     );

@@ -4,7 +4,7 @@
 .workshops {
   h2 {
     @include block-header;
-    margin-bottom: 62px;
+    margin-bottom: 10px;
   }
 
   h3 {
@@ -19,7 +19,14 @@
     display: flex;
     flex-direction: row;
     padding-left: 124px;
+    .buy-tickets {
+      width: auto;
+      padding: 0 20px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
     .column {
+      padding-top: 52px;
       &:last-child {
         padding-left: 40px;
       }
@@ -46,7 +53,8 @@
       margin: 0;
     }
 
-    .workshop-description {
+    .workshop-description,
+    .additional-info {
       padding-right:  var(--cell);
       -webkit-transform: translateY(22px);
       -ms-transform: translateY(22px);
@@ -56,6 +64,10 @@
       line-height: 33px;
       letter-spacing: 0.9px;
       -webkit-font-smoothing: antialiased;
+    }
+
+    .additional-info {
+      margin-bottom: 10px;
     }
 
     .workshop-desc-list {

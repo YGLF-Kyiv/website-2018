@@ -8,12 +8,14 @@ export default class BuyTicketsButton extends React.Component {
     href: toBe.string,
     eventLabel: toBe.string,
     eventCategory: toBe.string,
+    text: toBe.string,
   };
 
   static defaultProps = {
     href: config.ticketsUrl,
     eventLabel: 'Buy Tickets',
     eventCategory: 'purchase',
+    text: 'Buy Tickets',
   };
 
   constructor() {
@@ -31,7 +33,7 @@ export default class BuyTicketsButton extends React.Component {
   }
 
   render() {
-    const { href } = this.props;
+    const { href, text } = this.props;
     return (
       <a
         target="_blank"
@@ -40,7 +42,7 @@ export default class BuyTicketsButton extends React.Component {
         rel="noopener noreferrer"
         onClick={this.trackClick}
       >
-        Buy Tickets
+        { text }
       </a>
     );
   }
