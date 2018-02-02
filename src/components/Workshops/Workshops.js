@@ -9,9 +9,10 @@ import './workshops.scss';
 
 export default class WorkshopBlock extends Component {
   renderWorkshop(workshop) {
-    const { authors, title, description, list, images } = workshop;
+    const { authors, title, description, list, images, anchor } = workshop;
     return (
       <div className="workshop" key={title}>
+        <a href="" name={anchor} className="-no-outline anchor" />
         <div className="workshop-image column">
           { images.map((item, index) => {
             return (
