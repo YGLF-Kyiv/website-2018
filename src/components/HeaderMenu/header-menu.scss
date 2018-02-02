@@ -30,7 +30,7 @@
       display: inline-block;
       letter-spacing: 4.5px;
       font-size: 14px;
-      &.-active,
+      &.-active:not(.-unhighlight),
       &:hover {
         color: $green
       }

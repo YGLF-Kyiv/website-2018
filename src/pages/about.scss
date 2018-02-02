@@ -15,7 +15,10 @@
         font-size: 111px;
         font-weight: 400;
         color: $green !important;
-        padding-bottom: 40px;
+        margin: 0;
+        padding-bottom: 60px;
+        line-height: 120px;
+        height: 120px;
         -webkit-font-smoothing: antialiased;
       }
       > p {
@@ -25,6 +28,8 @@
         line-height: 56px;
         width: 450px;
         -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding-top: 9px;
         > small {
           margin-top: 35px;
           font-size: 14px;
