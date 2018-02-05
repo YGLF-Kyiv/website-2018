@@ -6,7 +6,7 @@ export default class SuccessfulPurchaseWebpackPage extends React.Component {
   componentWillMount() {
     gaTrack({
       eventCategory: 'purchase',
-      eventAction: 'success',
+      eventAction: 'success webpack',
       eventLabel: 'Success Webpack',
     });
   }
