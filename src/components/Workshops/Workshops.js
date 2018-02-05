@@ -47,13 +47,13 @@ export default class WorkshopBlock extends Component {
           <BuyTicketsButton
             href={config.workshopWebpackUrl}
             eventLabel="Buy Workshop Webpack ticket"
-            eventCategory="purchaseWorkshop"
+            eventCategory="purchase"
             text="Buy Workshop Ticket"
           />
           <BuyTicketsButton
             href={config.workshopWebpackAndConfUrl}
-            eventLabel="Buy double ticket"
-            eventCategory="purchaseDouble"
+            eventLabel="Buy Double ticket"
+            eventCategory="purchase"
             text="Buy Double Ticket"
           />
         </div>
