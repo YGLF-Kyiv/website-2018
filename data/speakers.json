@@ -195,6 +195,31 @@
           "url": "https://www.linkedin.com/in/freiksenet/"
         }
       ]
+    },
+    {
+      "firstName": "Denis",
+      "lastName": "Radin",
+      "position": "JavaScript Engineer",
+      "company": "Evolution Gaming",
+      "description": "JavaScript engineer working on photorealistic 3d games at Evolution Gaming. Passionate about performance optimization and code aesthetics, mastering workshop <a href='http://challengingnative.com' target='_blank'>http://challengingnative.com</a>, hosting <a href='https://react.asmterdam.com/' target='_blank'>https://react.asmterdam</a>, <a href='http://amsterdamjs.com/' target='_blank'>http://amsterdamjs.com</a> as well as running super interesting technical <a href='http://pixelscommander.com/' target='_blank'>blog</a>.",
+      "highlightedDescription": "JavaScript engineer working on photorealistic 3d games at Evolution Gaming. Passionate about performance optimization and code aesthetics, mastering workshop <a href='http://challengingnative.com' target='_blank'>http://challengingnative.com</a>, <a href='https://react.asmterdam.com/' target='_blank'>https://react.asmterdam</a>, <a href='http://amsterdamjs.com/' target='_blank'>http://amsterdamjs.com</a>.",
+      "imageSrc": "/speakers/denis_radin",
+      "anchor": "Denis-Radin",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/pixelscommander"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/PixelsCommander"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/denisradin/"
+        }
+      ]
     }
   ]
 }
