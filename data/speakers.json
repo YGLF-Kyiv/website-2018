@@ -170,6 +170,31 @@
           "url": "https://www.linkedin.com/in/juhovepsalainen/"
         }
       ]
+    },
+    {
+      "firstName": "Mikhail",
+      "lastName": "Novikov",
+      "position": "CTO, Co-founder",
+      "company": "Reindex",
+      "description": "Mikhail is a CTO and Co-founder at Reindex. He started <a href='https://www.reindex.io/' target='_blank'>Reindex</a> as a first GraphQL-focused startup in the world and built first GraphQL Backend-as-a-Service. After BaaS closed, Mikhail has been doing GraphQL consulting. He has also been active in GraphQL open source projects, such as Launchpad and graphql-tools. Before Reindex, Mikhail has been doing web development consulting. He jumped onto React train early and never looked back. Even before that, he used to be a developer at several startups, where he programmed recycling robots and messaging apps in the age before WhatsApp and Telegram.",
+      "highlightedDescription": "Mikhail is a CTO and Co-founder at Reindex. He started <a href='https://www.reindex.io/' target='_blank'>Reindex</a> as a first GraphQL-focused startup in  the world and built first GraphQL Backend-as-a-Service. After BaaS closed, Mikhail has been doing GraphQL consulting. He has also been active in GraphQL open source projects, such as Launchpad and graphql-tools. ",
+      "imageSrc": "/speakers/mikhail_novikov",
+      "anchor": "Mikhail-Novikov",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/freiksenet"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/freiksenet"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/freiksenet/"
+        }
+      ]
     }
   ]
 }
