@@ -7,7 +7,8 @@ module.exports = {
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: 'Kyiv Frontend Conference | May 24-25, 2018', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
-  siteFBAppID: 'yglf.kyiv', // FB Application ID for using app insights
+  siteFBAppID: '942305182583127', // FB Application ID for using app insights
+  fbPage: 'yglf.kyiv', // FB page
   googleAnalyticsID: 'UA-107799328-1', // GA tracking ID.
   userTwitter: 'yglf_kyiv',
   email: 'hello@yglf.com.ua',
@@ -17,10 +18,12 @@ module.exports = {
   workshopWebpackAndConfUrl: 'https://2event.com/events/1037785',
   sitemapPages: [
     '/',
+    '/about',
     '/speakers',
+    '/sponsorship',
     '/tickets',
     '/diversity',
-    '/sponsorship',
     '/code-of-conduct',
   ],
 };
+

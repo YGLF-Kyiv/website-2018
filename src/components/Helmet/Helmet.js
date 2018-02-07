@@ -42,6 +42,7 @@ export default class Header extends React.Component {
         />
         <meta name="description" content={config.siteDescription} />
 
+        <meta property="fb:app_id" content={config.siteFBAppID} />
         <meta
           property="og:title"
           content="You Gotta Love Frontend Conference"

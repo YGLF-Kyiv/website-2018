@@ -13,7 +13,7 @@ const SOCIAL_ICONS_DATA = [
   },
   {
     type: 'facebook',
-    url: `https://www.facebook.com/${config.siteFBAppID}`,
+    url: `https://www.facebook.com/${config.fbPage}`,
   },
 ];
 
