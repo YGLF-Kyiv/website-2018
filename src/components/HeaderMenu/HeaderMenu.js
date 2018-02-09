@@ -8,7 +8,7 @@ const MENU_ITEMS = [
   { title: 'Home', to: '/' },
   { title: 'About', to: '/about' },
   { title: 'Speakers', to: '/speakers' },
-  { title: 'Schedule', to: '/schedule', disabled: true },
+  { title: 'Schedule', to: '/schedule' },
   { title: 'Sponsors', to: '/sponsorship' },
 ];
 

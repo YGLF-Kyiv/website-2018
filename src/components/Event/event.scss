@@ -1,0 +1,9 @@
+@import '../../shared/styles/colors';
+
+.event {
+  display: flex;
+  flex: 1 1 auto;
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+}

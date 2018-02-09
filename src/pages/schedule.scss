@@ -1,0 +1,19 @@
+@import '../shared/styles/mixins';
+
+.page-schedule {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  h2 {
+    @include block-header;
+    margin-bottom: 17px;
+  }
+
+  //.person-block-text a {
+  //  color: $green;
+  //  outline: none;
+  //  &:hover {
+  //    color: $white;
+  //  }
+  //}
+}
