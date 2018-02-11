@@ -2,8 +2,97 @@
 
 .event {
   display: flex;
-  flex: 1 1 auto;
-  align-self: flex-end;
-  position: relative;
-  width: 100%;
+  flex-direction: row;
+  min-height: 135px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $grey;
+  .time {
+    line-height: var(--cell);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    -webkit-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    transform: translateY(15px);
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    > .hours {
+      letter-spacing: 0.79px;
+      font-size: 15px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    > .minutes {
+      letter-spacing: 0.64px;
+      font-size: 12px;
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+      display: inline-block;
+    }
+  }
+  .info-wrapper {
+    flex: 1 1 0%;
+    .title-wrapper {
+      display: flex;
+      flex-direction: row;
+      .speaker-img {
+        flex: 0 0 auto;
+        width: 81px;
+        height: 92px;
+        border: 1px solid $green;
+        overflow: hidden;
+        margin: 10px 10px 10px 0;
+        > img {
+          height: 100%;
+        }
+      }
+      .info-description {
+        .title {
+          letter-spacing: 0.79px;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 600;
+          -webkit-font-smoothing: antialiased;
+          line-height: 26px;
+          margin: 0 0 25px 0;
+          -webkit-transform: translateY(25px);
+          -ms-transform: translateY(25px);
+          transform: translateY(25px);
+          color: $white;
+        }
+        .speaker {
+          font-weight: 400;
+          font-size: 14px;
+          -webkit-font-smoothing: antialiased;
+          display: inline-block;
+          opacity: .7;
+          letter-spacing: 0.74px;
+        }
+      }
+    }
+  }
+  .description {
+    letter-spacing: 0.79px;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .event {
+    padding-right: 0;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+    .time {
+      width: 60px;
+      min-width: 60px;
+      max-width: 60px;
+    }
+  }
 }

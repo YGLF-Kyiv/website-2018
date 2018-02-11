@@ -3,17 +3,73 @@
 .page-schedule {
   padding-top: 45px;
   padding-bottom: 45px;
-
-  h2 {
-    @include block-header;
-    margin-bottom: 17px;
+  .ordered-block {
+    margin-top: 45px;
   }
 
-  //.person-block-text a {
-  //  color: $green;
-  //  outline: none;
-  //  &:hover {
-  //    color: $white;
-  //  }
-  //}
+  .days {
+    display: flex;
+    padding-top: 33px;
+    .day {
+      width: 50%;
+      -ms-flex: 1 auto 0%;
+      flex: 1 auto 0%;
+      -webkit-transition: opacity 250ms;
+      -o-transition: opacity 250ms;
+      transition: opacity 250ms;
+      &:hover {
+        opacity: 1;
+      }
+      > .title {
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 2.73;
+        margin: 0 0 3px 0;
+        text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        -webkit-transform: translateY(12px);
+        -ms-transform: translateY(12px);
+        transform: translateY(12px);
+        color: $green;
+      }
+      > .date {
+        font-family: Libre Baskerville, Helvetica, sans-serif ;
+        font-size: 12px;
+        letter-spacing: 2.25;
+        height: 45px;
+        line-height: 45px;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        font-weight: 100;
+        -webkit-font-smoothing: antialiased;
+        color: $green;
+      }
+
+      .events {
+        border-top: 1px solid $green;
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+      }
+
+      &.inactive {
+        > .title,
+        > .day {
+          color: $grey-inactive;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .schedule {
+    .day {
+      width: 100%;
+    }
+    .day.inactive {
+      opacity: 1;
+    }
+  }
 }
