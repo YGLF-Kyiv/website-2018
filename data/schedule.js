@@ -11,7 +11,7 @@ module.exports = {
             "hours": "08",
             "minutes": "00"
           },
-          "title": "Registration & Breakfast",
+          "title": "Registration & Breakfast & Opening Speech",
           "description": [
             "Pick up your badge. Take sometime to enjoy your morning coffee and pastries."
           ]
@@ -26,20 +26,7 @@ module.exports = {
           "speakerId": "1",
           "description": [
             "When I got into Elm as a React developer in 2014, I thought I was signing up to learn a functional programming language. Nobody told me I would end up embracing a programming flow I deventIdn't even know existed back then—a flow where I could spend hourss productively writing front-end code without slowing down to open a browser and visually check my progress.",
-            "What kind of bizarro front-end development world is that? What is it about Elm's design that makes this kind of flow possible, and what assumptions does it challenge about the most effective ways to write front-end code? Does it take a whole different programming language to pull this off, or are there ways to combine existing JavaScript tools to get the same benefits?",
             "We'll explore all of these questions and more in this talk. Come find out!"
-          ]
-        },
-        {
-          "eventId": "3",
-          "time": {
-            "hours": "10",
-            "minutes": "15"
-          },
-          "title": "When East meets West, web typography and how it can inspire modern layouts",
-          "speakerId": "2",
-          "description": [
-            "This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalisation, but opens up a myriad of options for creative and interesting layouts in general as well."
           ]
         },
         {
@@ -50,8 +37,7 @@ module.exports = {
           },
           "title": "Coffee Break",
           "description": [
-            "Time to take a break, have some coffee.",
-            "Feel free to approach our speakerIds and ask more questions."
+            "Time to take a break, have some coffee. Feel free to approach our speakerIds and ask more questions."
           ]
         },
         {
