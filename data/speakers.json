@@ -220,6 +220,27 @@
           "url": "https://www.linkedin.com/in/denisradin/"
         }
       ]
+    },
+    {
+      "firstName": "Andrey",
+      "lastName": "Okonetchnikov",
+      "position": "Front-end developer and UI/UX designer",
+      "company": "",
+      "description": "Andrey is a front-end engineer and UI designer from Russia who lives in Austria and works on modern user interfaces using web technologies. As an active Open Source contributor, he contributed to Webpack, React.js, and Jest; designed the PostCSS official website and created a bunch of logos for other OSS projects.<br/> Andrey is a co-organizer of the ReactVienna community, designer, and co-creator of ColorSnapper. He loves mountain biking, snowboarding, and specialty coffee.",
+      "highlightedDescription": "Andrey is a front-end engineer and UI designer from Russia who lives in Austria and works on modern user interfaces using web technologies. As an active Open Source contributor, he contributed to Webpack, React.js, and Jest; designed the PostCSS official website and created a bunch of logos for other OSS projects.",
+      "imageSrc": "/speakers/andrey_okonetchnikov",
+      "anchor": "Andrey-Okonetchnikov",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/okonetchnikov"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/okonet"
+        }
+      ]
     }
   ]
 }
