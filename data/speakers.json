@@ -241,6 +241,23 @@
           "url": "https://github.com/okonet"
         }
       ]
+    },
+    {
+      "firstName": "Benedek",
+      "lastName": "Gagyi",
+      "position": "Developer",
+      "company": "LogMeIn",
+      "description": "Developer, teacher, sports-fanatic. As a developer, he's working on simplifying online collaboration at <a href='https://www.join.me' target='_blank'>join.me</a> by LogMeIn. As a teacher, he's training people in various frontend related fields at <a href='https://www.training360.com/en' target='_blank'>Training360</a>.<br/>In his free time, he's researching the patterns and algorithms connecting basketball, trail running, and drums.<br/>His devotion to impeccable user interfaces is rivaled only by his constant search for the perfect brew of Chinese tea.",
+      "highlightedDescription": "Developer, teacher, sports-fanatic. As a developer, he's working on simplifying online collaboration at <a href='https://www.join.me' target='_blank'>join.me</a> by LogMeIn. As a teacher, he's training people in various frontend related fields at <a href='https://www.training360.com/en' target='_blank'>Training360</a>.",
+      "imageSrc": "/speakers/benedek_gagyi",
+      "anchor": "Benedek-Gagyi",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/benedekgagyi"
+        }
+      ]
     }
   ]
 }
