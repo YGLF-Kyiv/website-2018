@@ -256,6 +256,10 @@
         {
           "type": "twitter",
           "url": "https://twitter.com/benedekgagyi"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/gagyibenedek"
         }
       ]
     }
