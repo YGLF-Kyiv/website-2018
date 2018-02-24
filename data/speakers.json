@@ -229,6 +229,48 @@
           "url": "https://www.linkedin.com/in/denisradin/"
         }
       ]
+    },
+    {
+      "firstName": "Andrey",
+      "lastName": "Okonetchnikov",
+      "position": "Front-end developer and UI/UX designer",
+      "company": "",
+      "description": "Andrey is a front-end engineer and UI designer from Russia who lives in Austria and works on modern user interfaces using web technologies. As an active Open Source contributor, he contributed to Webpack, React.js, and Jest; designed the PostCSS official website and created a bunch of logos for other OSS projects.<br/> Andrey is a co-organizer of the ReactVienna community, designer, and co-creator of ColorSnapper. He loves mountain biking, snowboarding, and specialty coffee.",
+      "highlightedDescription": "Andrey is a front-end engineer and UI designer from Russia who lives in Austria and works on modern user interfaces using web technologies. As an active Open Source contributor, he contributed to Webpack, React.js, and Jest; designed the PostCSS official website and created a bunch of logos for other OSS projects.",
+      "imageSrc": "/speakers/andrey_okonetchnikov",
+      "anchor": "Andrey-Okonetchnikov",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/okonetchnikov"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/okonet"
+        }
+      ]
+    },
+    {
+      "firstName": "Benedek",
+      "lastName": "Gagyi",
+      "position": "Developer",
+      "company": "LogMeIn",
+      "description": "Developer, teacher, sports-fanatic. As a developer, he's working on simplifying online collaboration at <a href='https://www.join.me' target='_blank'>join.me</a> by LogMeIn. As a teacher, he's training people in various frontend related fields at <a href='https://www.training360.com/en' target='_blank'>Training360</a>.<br/>In his free time, he's researching the patterns and algorithms connecting basketball, trail running, and drums.<br/>His devotion to impeccable user interfaces is rivaled only by his constant search for the perfect brew of Chinese tea.",
+      "highlightedDescription": "Developer, teacher, sports-fanatic. As a developer, he's working on simplifying online collaboration at <a href='https://www.join.me' target='_blank'>join.me</a> by LogMeIn. As a teacher, he's training people in various frontend related fields at <a href='https://www.training360.com/en' target='_blank'>Training360</a>.",
+      "imageSrc": "/speakers/benedek_gagyi",
+      "anchor": "Benedek-Gagyi",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/benedekgagyi"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/gagyibenedek"
+        }
+      ]
     }
   ]
 }
