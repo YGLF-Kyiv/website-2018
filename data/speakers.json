@@ -262,6 +262,27 @@
           "url": "https://github.com/gagyibenedek"
         }
       ]
+    },
+    {
+      "firstName": "Michaela",
+      "lastName": "Lehr",
+      "position": "Front-end Developer and Designer",
+      "company": "GeilDanke",
+      "description": "Michaela is a creative front-end developer and designer. She specializes in UX and WebVR and co-founded the studio <a href='https://geildanke.com/en/' target='_blank'>GeilDanke</a>. In her free time, she travels around the world, practices yoga, and watches way too much Buffy.",
+      "highlightedDescription": "Michaela is a creative front-end developer and designer. She specializes in UX and WebVR and co-founded the studio <a href='https://geildanke.com/en/' target='_blank'>GeilDanke</a>.",
+      "imageSrc": "/speakers/michaela_lehr",
+      "anchor": "Michaela-Lehr",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/FischaelaMeer"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/michaela.lehr"
+        }
+      ]
     }
   ]
 }
