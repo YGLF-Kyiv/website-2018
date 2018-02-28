@@ -231,6 +231,7 @@
       ]
     },
     {
+      "id": 10,
       "firstName": "Andrey",
       "lastName": "Okonetchnikov",
       "position": "Front-end developer and UI/UX designer",
@@ -252,6 +253,7 @@
       ]
     },
     {
+      "id": 11,
       "firstName": "Benedek",
       "lastName": "Gagyi",
       "position": "Developer",
@@ -273,6 +275,7 @@
       ]
     },
     {
+      "id": 12,
       "firstName": "Michaela",
       "lastName": "Lehr",
       "position": "Front-end Developer and Designer",

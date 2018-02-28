@@ -30,9 +30,8 @@ export default class FitToRythm extends React.Component {
   }
 
   componentDidMount() {
-    window.scrollTo(0, 0);
-
-    this.resize();
+    setTimeout(this.resize, 0);
+    setTimeout(this.resize, 500);
 
     window.addEventListener('resize', this.resize);
   }

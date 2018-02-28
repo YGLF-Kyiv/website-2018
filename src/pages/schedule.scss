@@ -13,9 +13,7 @@
       width: 50%;
       -ms-flex: 1 auto 0;
       flex: 1 auto 0;
-      -webkit-transition: all 250ms;
-      -o-transition: all 250ms;
-      transition: all 250ms;
+      transition: all 0.25s;
       .title {
         font-size: 24px;
         font-weight: 100;
@@ -28,9 +26,7 @@
         transform: translateY(16px);
         color: $green;
         line-height: 45px;
-        -webkit-transition: all 250ms;
-        -o-transition: all 250ms;
-        transition: all 250ms;
+        transition: all 0.25s;
       }
       .date {
         font-family: "Libre Baskerville", serif;
@@ -66,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1150px) {
   .page-schedule {
     .container-fluid {
       width: calc(100% - 30px);

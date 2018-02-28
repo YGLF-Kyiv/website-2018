@@ -83,7 +83,7 @@ module.exports = {
     "subtitle": "What's When",
     "title": "Schedule",
     "description": [
-     "YGLF is a 2-day event. Days start at 8:30am with breakfast and a friendly gathering. Talk sessions last 30 minutes, except the longer keynotes and a few other surprises along the day :) Of course, a wealthy lunch, refreshing coffee breaks and quality beers are served throughout the day to make it extra fun!"
+     "YGLF is a 2-day event. Days start with breakfast and a friendly gathering. Talk sessions last 40 minutes, except the longer keynotes and a few other surprises along the day :) Of course, a wealthy lunch, refreshing coffee breaks and quality beers are served throughout the day to make it extra fun!"
     ],
     "actionButton": {}
   },
