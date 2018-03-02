@@ -1,0 +1,82 @@
+@import '../shared/styles/mixins';
+
+.page-schedule {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  .ordered-block {
+    margin-top: 45px;
+  }
+
+  .days {
+    display: flex;
+    .day {
+      width: 50%;
+      -ms-flex: 1 auto 0;
+      flex: 1 auto 0;
+      transition: all 0.25s;
+      .title {
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 2.73px;
+        margin: 0;
+        text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        -webkit-transform: translateY(16px);
+        -ms-transform: translateY(16px);
+        transform: translateY(16px);
+        color: $green;
+        line-height: 45px;
+        transition: all 0.25s;
+      }
+      .date {
+        font-family: "Libre Baskerville", serif;
+        font-size: 12px;
+        letter-spacing: 2.25px;
+        height: 45px;
+        line-height: 45px;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        font-weight: 100;
+        -webkit-font-smoothing: antialiased;
+        color: $green;
+      }
+
+      .events {
+        border-top: 1px solid $green;
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+      }
+
+      &.-inactive {
+        opacity: 0.3;
+        .event {
+          p,
+          h4 {
+            color: $grey-inactive;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .page-schedule {
+    .container-fluid {
+      width: calc(100% - 30px);
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .schedule {
+    .day {
+      width: 100%;
+    }
+    .day.inactive {
+      opacity: 1;
+    }
+  }
+}

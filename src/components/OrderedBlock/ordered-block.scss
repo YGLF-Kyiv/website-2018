@@ -1,10 +1,10 @@
 @import '../../shared/styles/colors';
 @import '../../shared/styles/mixins';
 
-.venue-block {
+.ordered-block {
   position: relative;
-  height: 630px;
   overflow: hidden;
+  padding-bottom: 45px;
   &-img {
     position: absolute;
     left: 650px;
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 1600px) {
-  .venue-block {
+  .ordered-block {
     .container {
       position: static;
     }
@@ -55,9 +55,7 @@
 }
 
 @media (max-width: 1160px) {
-  .venue-block {
-    height: auto;
-    padding-bottom: 45px !important;
+  .ordered-block {
     &-img {
       position: static;
       width: 450px;
@@ -68,14 +66,14 @@
   }
 }
 @media (max-width: 990px) {
-  .venue-block {
+  .ordered-block {
     &-img {
       margin-left: 0;
     }
   }
 }
 @media screen and (max-width: 764px) {
-  .venue-block {
+  .ordered-block {
     &-img {
       width: 100%;
       height: 56%;
@@ -84,7 +82,7 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .venue-block {
+  .ordered-block {
     &-img {
       width: calc(100% + 180px);
       margin-left: -90px;

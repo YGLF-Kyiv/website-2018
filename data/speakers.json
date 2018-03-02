@@ -1,6 +1,7 @@
 {
   "all":[
     {
+      "id": 1,
       "firstName":"Lea",
       "lastName":"Verou",
       "position":"Human-Computer Interaction Researcher",
@@ -26,6 +27,7 @@
       ]
     },
     {
+      "id": 2,
       "firstName":"Benedikt",
       "lastName":"Meurer",
       "position":"Technical Lead",
@@ -51,6 +53,7 @@
       ]
     },
     {
+      "id": 3,
       "firstName":"Chen Hui",
       "lastName":"Jing",
       "position":"Senior Front-end Developer",
@@ -76,6 +79,7 @@
       ]
     },
     {
+      "id": 4,
       "firstName":"Tomasz",
       "lastName":"Łakomy",
       "position":"Software Engineer",
@@ -101,6 +105,7 @@
       ]
     },
     {
+      "id": 5,
       "firstName":"Vitaly",
       "lastName":"Friedman",
       "position":"Editor-in-Chief",
@@ -126,6 +131,7 @@
       ]
     },
     {
+      "id": 6,
       "firstName": "Johannes",
       "lastName": "Ewald",
       "position": "Core Team Member",
@@ -147,6 +153,7 @@
       ]
     },
     {
+      "id": 7,
       "firstName": "Juho",
       "lastName": "Vepsäläinen",
       "position": "Core Team Member",
@@ -172,6 +179,7 @@
       ]
     },
     {
+      "id": 8,
       "firstName": "Mikhail",
       "lastName": "Novikov",
       "position": "CTO, Co-founder",
@@ -197,6 +205,7 @@
       ]
     },
     {
+      "id": 9,
       "firstName": "Denis",
       "lastName": "Radin",
       "position": "JavaScript Engineer",
@@ -222,6 +231,7 @@
       ]
     },
     {
+      "id": 10,
       "firstName": "Andrey",
       "lastName": "Okonetchnikov",
       "position": "Front-end developer and UI/UX designer",
@@ -243,6 +253,7 @@
       ]
     },
     {
+      "id": 11,
       "firstName": "Benedek",
       "lastName": "Gagyi",
       "position": "Developer",
@@ -264,6 +275,7 @@
       ]
     },
     {
+      "id": 12,
       "firstName": "Michaela",
       "lastName": "Lehr",
       "position": "Front-end Developer and Designer",

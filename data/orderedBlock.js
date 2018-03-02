@@ -77,5 +77,14 @@ module.exports = {
       "A small group of super dedicated people, working hard around the clock to make the most stunning conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Don't hesitate to come and talk to us, if you need any assistance."
     ],
     "actionButton": {}
-  }
+  },
+  "schedule": {
+    "number": "1",
+    "subtitle": "What's When",
+    "title": "Schedule",
+    "description": [
+     "YGLF is a 2-day event. Days start with breakfast and a friendly gathering. Talk sessions last 40 minutes, except the longer keynotes and a few other surprises along the day :) Of course, a wealthy lunch, refreshing coffee breaks and quality beers are served throughout the day to make it extra fun!"
+    ],
+    "actionButton": {}
+  },
 }

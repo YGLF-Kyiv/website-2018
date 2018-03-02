@@ -37,7 +37,6 @@
   text-align: center;
   text-decoration: none;
   z-index: 1;
-  cursor: pointer;
   transition: 150ms ease-out;
   -o-transition: 150ms ease-out;
   -ms-transition: 150ms ease-out;
@@ -98,7 +97,7 @@
     height: 90px;
     font-size: 12px;
     font-weight: 600;
-    padding: 5px 0;
+    padding: 5px 8px;
     transform: translate(5px, 8px);
     i {
       font-family: "Libre Baskerville", serif;
