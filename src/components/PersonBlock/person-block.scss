@@ -170,11 +170,6 @@
         }
       }
     }
-    //&.-small-blocks:nth-child(2n+1) {
-    //  .person-block-text {
-    //    padding-left: 70px !important;
-    //  }
-    //}
   }
 }
 
@@ -233,10 +228,10 @@
     &-img {
       margin-bottom: 25px;
       > img {
-        width: 300px !important;
+        width: 234px !important;
       }
       .social-icons {
-        left: 305px !important;
+        left: 240px !important;
       }
     }
     &-text {
@@ -255,12 +250,6 @@
       }
       .person-block-img {
         align-self: center;
-        > img {
-          width: 234px !important;
-        }
-        .social-icons {
-          left: 240px !important;
-        }
       }
       .person-block-text {
         text-align: center;
@@ -279,5 +268,11 @@
         display: inline-block;
       }
     }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .person-block-text > h3 {
+    font-size: 40px;
   }
 }
