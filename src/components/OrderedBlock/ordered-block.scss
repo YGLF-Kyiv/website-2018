@@ -3,9 +3,9 @@
 
 .ordered-block {
   position: relative;
-  overflow: hidden;
   padding-bottom: 45px;
   &-img {
+    box-sizing: border-box;
     position: absolute;
     left: 650px;
     top: 41px;
