@@ -1,13 +1,15 @@
 import React, { PropTypes as toBe, Component } from 'react';
 import './ordered-block.scss';
-import FitToRythm from '../FitToRythm/FitToRythm';
+import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
 export default class OrderedBlock extends Component {
   static propTypes = {
     data: toBe.object,
+    showSubheader: toBe.bool,
   };
 
   static defaultProps = {
+    showSubheader: true,
     data: {
       additionalInfo: {},
       link: {},
@@ -15,16 +17,27 @@ export default class OrderedBlock extends Component {
   };
 
   render() {
-    const {number, subtitle, title, description, additionalInfo, link, img} = this.props.data;
+    const {
+      number,
+      subtitle,
+      title,
+      description,
+      additionalInfo,
+      link,
+      img,
+      showSubheader
+    } = this.props.data;
 
     return (
       <div className="ordered-block">
-        <FitToRythm>
-          <div className="ordered-block-name">
-            <span>
-              {number} <i>{subtitle}</i>
-            </span>
-          </div>
+        <FitToRhythm>
+          {showSubheader && (
+            <div className="ordered-block-name">
+              <span>
+                {number} <i>{subtitle}</i>
+              </span>
+            </div>
+          )}
           <div className="ordered-block-text">
             <h2>{title}</h2>
             {img && (
@@ -51,7 +64,7 @@ export default class OrderedBlock extends Component {
               </div>
             )}
           </div>
-        </FitToRythm>
+        </FitToRhythm>
       </div>
     );
   }

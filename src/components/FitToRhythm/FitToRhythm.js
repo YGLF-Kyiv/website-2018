@@ -2,7 +2,7 @@ import React, { PropTypes as toBe } from 'react';
 
 const RYTHM = 45;
 
-export default class FitToRythm extends React.Component {
+export default class FitToRhythm extends React.Component {
   static propTypes = {
     chidren: toBe.oneOfType([toBe.element]), // add more types
     className: toBe.string,

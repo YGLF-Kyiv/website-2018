@@ -280,7 +280,7 @@
       "lastName": "Lehr",
       "position": "Front-end Developer and Designer",
       "company": "GeilDanke",
-      "description": "Michaela is a creative front-end developer and designer. She specializes in UX and WebVR and co-founded the studio <a href='https://geildanke.com/en/' target='_blank'>GeilDanke</a>. In her free time, she travels around the world, practices yoga, and watches way too much Buffy.",
+      "description": "Michaela is a creative front-end developer and designer. She specializes in UX and WebVR and co-founded the studio <a href='https://geildanke.com/en/' target='_blank'>GeilDanke</a>.<br />In her free time, she travels around the world, practices yoga, and watches way too much Buffy.",
       "highlightedDescription": "Michaela is a creative front-end developer and designer. She specializes in UX and WebVR and co-founded the studio <a href='https://geildanke.com/en/' target='_blank'>GeilDanke</a>.",
       "imageSrc": "/speakers/michaela_lehr",
       "anchor": "Michaela-Lehr",
@@ -293,6 +293,28 @@
         {
           "type": "facebook",
           "url": "https://www.facebook.com/michaela.lehr"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "firstName": "Ronen",
+      "lastName": "Amiel",
+      "position": "Software Developer",
+      "company": "Wix",
+      "description": "Ronen is a software developer at Wix in the Infra team. He’s working on creating high-quality JavaScript tools for developers. Currently, he is busy working on a zero-configuration toolkit, similar to <a href='https://github.com/facebook/create-react-app/' target='_blank'>Create React App</a>, that helps developers bootstrap their projects.<br />Passionate about playing computer games, Ronen started his way by developing his own games with ActionScript. He also loves to understand how things actually work and create simplified versions that show how they are implemented.<br />In his free time, he likes fiddling with functional programming and Haskell in particular, running, rope jumping and playing board games.",
+      "highlightedDescription": "Ronen is a software developer from Israel. In the Infra team at Wix, he’s working on creating high-quality JavaScript tools for developers. Currently, he is busy working on a zero-configuration toolkit, similar to <a href='https://github.com/facebook/create-react-app/' target='_blank'>Create React App</a>, that helps developers bootstrap their projects.<br />Passionate about playing computer games, Ronen started his way by developing his own games with ActionScript. He also loves to understand how things actually work and create simplified versions that show how they are implemented.",
+      "imageSrc": "/speakers/ronen_amiel",
+      "anchor": "Ronen-Amiel",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ronenamiel"
+        },
+        {
+          "type": "facebook",
+          "url": "https://github.com/ronami"
         }
       ]
     }
