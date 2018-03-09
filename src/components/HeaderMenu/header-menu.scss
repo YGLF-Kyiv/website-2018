@@ -21,11 +21,11 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid $green;
-    a {
+    > a {
       outline: none;
       color: $white;
       text-transform: uppercase;
-      font-weight: 100;
+      font-weight: 600;
       -webkit-font-smoothing: antialiased;
       display: inline-block;
       letter-spacing: 4.5px;
