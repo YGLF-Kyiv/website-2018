@@ -4,7 +4,7 @@ import { gaTrack } from '../shared/utils/ga';
 
 import Event from '../components/Event/Event';
 import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
-import FitToRythm from '../components/FitToRythm/FitToRythm';
+import FitToRhythm from '../components/FitToRhythm/FitToRhythm';
 
 import scheduleData from '../../data/schedule.js';
 import speakersData from '../../data/speakers.json';
@@ -47,10 +47,10 @@ export default class SchedulePage extends React.Component {
               key={day.title}
               onMouseOver={this.toggle.bind(this, day.dayId)}
             >
-              <FitToRythm>
+              <FitToRhythm>
                 <h2 className="title">{ day.title }</h2>
                 <p className="date">{ day.date }</p>
-              </FitToRythm>
+              </FitToRhythm>
               <div className="events">
                 { day.events.map(event => <Event data={event} key={event.eventId} />) }
               </div>

@@ -1,6 +1,6 @@
 import React, { PropTypes as toBe } from 'react';
 import LazyLoad from 'react-lazyload';
-import FitToRythm from '../FitToRythm/FitToRythm';
+import FitToRhythm from '../FitToRhythm/FitToRhythm';
 import classNames from 'classnames';
 
 import './event.scss';
@@ -42,9 +42,9 @@ export default class Event extends React.Component {
           <span className="minutes">{ time.minutes }</span>
         </div>
         <div className="info-wrapper">
-          <FitToRythm>
+          <FitToRhythm>
             <div className="info">
-              <FitToRythm className="title-wrapper">
+              <FitToRhythm className="title-wrapper">
                 { speakerName && (
                     <div className="speaker-img">
                       <LazyLoad offset={150}>
@@ -64,14 +64,14 @@ export default class Event extends React.Component {
                     : ''
                   }
                 </div>
-              </FitToRythm>
+              </FitToRhythm>
               { !!description.length && (
                 <div className="description">
                   { description.map(item => <p key={item}>{ item }</p>) }
                 </div>
               ) }
             </div>
-          </FitToRythm>
+          </FitToRhythm>
         </div>
         { !hideReadMore && (
           <a href={`#${anchor}`} onClick={this.toggleReadMore} className="event-read-more">
