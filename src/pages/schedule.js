@@ -4,7 +4,7 @@ import { gaTrack } from '../shared/utils/ga';
 
 import Event from '../components/Event/Event';
 import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
-import FitToRhythm from '../components/FitToRhythm/FitToRhythm';
+import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 
 import scheduleData from '../../data/schedule.js';
 import speakersData from '../../data/speakers.json';
@@ -20,12 +20,13 @@ export default class SchedulePage extends React.Component {
     super(props);
 
     this.state = {
-      activeDay: SCHEDULE[0].dayId,
+      activeDay: SCHEDULE[0],
+      dayOpaque: true,
+      activeSpeaker: null,
     };
-  }
 
-  toggle(activeDay) {
-    this.setState({ activeDay });
+    this.showDay = this.showDay.bind(this);
+    this.hideSpeaker = this.hideSpeaker.bind(this);
   }
 
   componentWillMount() {
@@ -36,29 +37,73 @@ export default class SchedulePage extends React.Component {
     });
   }
 
-  renderDays(schedule) {
+  componentDidMount() {
+    this.showDay();
+  }
+
+  showDay() {
+    setTimeout(() => {
+      this.setState({ dayOpaque: false });
+    }, 100);
+  }
+
+  toggle(activeDay) {
+    this.setState({ activeDay, dayOpaque: true }, this.showDay);
+  }
+
+  showSpeaker(speakerData) {
+    this.setState({ activeSpeaker: speakerData });
+    window.document.body.style.overflow = 'hidden';
+  }
+
+  hideSpeaker() {
+    this.setState({ activeSpeaker: null });
+    window.document.body.style.overflow = 'auto';
+  }
+
+  renderDaysMenu() {
     const { activeDay } = this.state;
     return (
-      <div className="days">
-        { schedule.map(day => {
-          return (
-            <div
-              className={`day ${activeDay === day.dayId ? '' : '-inactive'}`}
-              key={day.title}
-              onMouseOver={this.toggle.bind(this, day.dayId)}
-            >
-              <FitToRhythm>
-                <h2 className="title">{ day.title }</h2>
-                <p className="date">{ day.date }</p>
-              </FitToRhythm>
-              <div className="events">
-                { day.events.map(event => <Event data={event} key={event.eventId} />) }
-              </div>
-            </div>
-          );
-        }) }
+      <ul className="days-menu">
+        { SCHEDULE.map(day => (
+          <li
+            className={`${activeDay === day ? '' : '-inactive'}`}
+            key={day.title}
+            onClick={this.toggle.bind(this, day)}
+          >
+            <h2 className="title">{ day.title }</h2>
+            <p className="date">{ day.date }</p>
+          </li>
+        )) }
+      </ul>
+    );
+  }
+
+  renderDays() {
+    const { activeDay, dayOpaque } = this.state;
+    return (
+      <div
+        className={`day ${dayOpaque ? '-opaque' : ''}`}
+        key={activeDay.title}
+      >
+        <div className="events">
+          { activeDay.events.map(event => (
+            <Event
+              data={event}
+              key={event.eventId}
+              onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
+            />
+          )) }
+        </div>
       </div>
     );
+  }
+
+  renderActiveSpeaker() {
+    const { activeSpeaker } = this.state;
+    return activeSpeaker
+      ? <EventSpeaker data={activeSpeaker} onOverlayClick={this.hideSpeaker} />
+      : null;
   }
 
   render() {
@@ -66,7 +111,9 @@ export default class SchedulePage extends React.Component {
       <div className="page-schedule lines-bg">
         <div className="container container-fluid">
           <OrderedBlock data={OrderedBlockData.schedule} />
-          { this.renderDays(SCHEDULE) }
+          { this.renderDaysMenu() }
+          { this.renderDays() }
+          { this.renderActiveSpeaker() }
         </div>
       </div>
     );

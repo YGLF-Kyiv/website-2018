@@ -100,6 +100,11 @@
           opacity: .7;
           letter-spacing: 0.74px;
           padding: 10px 0 0;
+          color: $white;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -150,10 +155,17 @@
   }
   &.-read-more-hidden {
     .info-wrapper {
-      margin-bottom: 45px;
+      margin-bottom: 0;
       max-height: none;
       &::after {
         display: none;
+      }
+    }
+  }
+  &.-no-description {
+    .title-wrapper {
+      .speaker-img {
+        margin: 0 18px 45px 0;
       }
     }
   }

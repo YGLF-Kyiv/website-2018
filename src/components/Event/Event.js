@@ -8,10 +8,12 @@ import './event.scss';
 export default class Event extends React.Component {
   static propTypes = {
     data: toBe.object, // add more types
+    onSpeakerClick: toBe.func,
   };
 
   static defaultProps = {
     data: {},
+    onSpeakerClick: () => {},
   };
 
   constructor() {
@@ -22,6 +24,13 @@ export default class Event extends React.Component {
     };
 
     this.toggleReadMore = this.toggleReadMore.bind(this);
+    this.onSpeakerClick = this.onSpeakerClick.bind(this);
+  }
+
+  onSpeakerClick(e) {
+    e.preventDefault();
+
+    this.props.onSpeakerClick();
   }
 
   toggleReadMore(e) {
@@ -31,11 +40,14 @@ export default class Event extends React.Component {
   }
 
   render() {
-    const { time, speakerName, imageSrc, anchor, title, company, description, hideReadMore } = this.props.data;
+    const {
+      time, title, company, description, hideReadMore,
+      speakerData: { speakerName, imageSrc, anchor },
+    } = this.props.data;
     const { opened } = this.state;
 
     return (
-      <div className={classNames('event', { '-opened': opened, '-read-more-hidden': hideReadMore })}>
+      <div className={classNames('event', { '-opened': opened, '-read-more-hidden': hideReadMore, '-no-description': !description.length })}>
         <a href="" name={anchor} className="-no-outline anchor" />
         <div className="time auto-height-fix-time">
           <span className="hours">{ time.hours }</span>
@@ -57,9 +69,13 @@ export default class Event extends React.Component {
                   <h4 className="info-description-title">{ title }</h4>
                   { speakerName
                     ? (
-                      <strong className="info-description-speaker">
+                      <a
+                        className="info-description-speaker"
+                        onClick={this.onSpeakerClick}
+                        href={`/speakers#${anchor}`}
+                      >
                         { speakerName } { company && `(${company})` }
-                      </strong>
+                      </a>
                     )
                     : ''
                   }

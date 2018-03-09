@@ -10,12 +10,10 @@ export function constructSchedule(schedule, speakers) {
       const speakerData = speaker
         ? {
           speakerName: speaker ? `${speaker.firstName} ${speaker.lastName}` : null,
-          company: speaker.company,
-          imageSrc: speaker.imageSrc,
-          anchor: speaker.anchor,
+          ...speaker,
         }
         : {};
-      return { ...event, ...speakerData };
+      return { ...event, speakerData };
     });
     return { ...day, events };
   });

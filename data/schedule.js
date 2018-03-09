@@ -47,10 +47,7 @@ module.exports = {
             "minutes": "10"
           },
           "title": "Coffee Break",
-          "description": [
-            "Time to take a break, have some coffee.",
-            "Feel free to approach our speakers and ask more questions."
-          ],
+          "description": [],
           "hideReadMore": true,
         },
         {
@@ -116,10 +113,7 @@ module.exports = {
             "minutes": "40"
           },
           "title": "Coffee Break",
-          "description": [
-            "Time to take a break, have some coffee.",
-            "Feel free to approach our speakers and ask more questions."
-          ],
+          "description": [],
           "hideReadMore": true,
         },
         {
@@ -194,10 +188,8 @@ module.exports = {
             "minutes": "50"
           },
           "title": "Coffee Break",
-          "description": [
-            "Time to take a break, have some coffee.",
-            "Feel free to approach our speakers and ask more questions."
-          ]
+          "description": [],
+          "hideReadMore": true,
         },
         {
           "eventId": 25,
@@ -264,10 +256,7 @@ module.exports = {
             "minutes": "20"
           },
           "title": "Coffee Break",
-          "description": [
-            "Time to take a break, have some coffee.",
-            "Feel free to approach our speakers and ask more questions."
-          ],
+          "description": [],
           "hideReadMore": true,
         },
         {

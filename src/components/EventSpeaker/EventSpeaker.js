@@ -1,19 +1,34 @@
-import React, { Component, PropTypes as toBe } from 'react';
-import './person-block.scss';
+import React, { PropTypes as toBe } from 'react';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
+import classNames from 'classnames';
 
-export default class PersonBlock extends Component {
+import './event-speaker.scss';
+
+export default class EventSpeaker extends React.Component {
   static propTypes = {
-    data: toBe.object,
+    data: toBe.object, // add more types
+    onOverlayClick: toBe.func,
   };
 
   static defaultProps = {
     data: {},
-    isSmall: false,
+    onOverlayClick: () => {},
   };
 
-  render() {
+  constructor() {
+    super();
+
+    this.state = {
+      visible: false,
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ visible: true }), 0);
+  }
+
+  renderSpeaker() {
     const {
       firstName,
       lastName,
@@ -25,14 +40,13 @@ export default class PersonBlock extends Component {
       anchor,
     } = this.props.data;
 
-    const className = 'person-block container container-fluid';
-    const smallClass = this.props.isSmall ? '-small-blocks' : '';
+    const className = 'event-speaker-data';
 
     return (
-      <div className={`${className} ${smallClass}`}>
-        <div className="person-block-cols">
+      <div className={className}>
+        <div className="event-speaker-data-cols">
           <a href="" name={anchor} className="-no-outline anchor" />
-          <div className="person-block-img">
+          <div className="event-speaker-data-img">
             <LazyLoad offset={150}>
               <img
                 src={`${imageSrc}.jpg`}
@@ -42,7 +56,7 @@ export default class PersonBlock extends Component {
             </LazyLoad>
             <SocialIcons data={social} />
           </div>
-          <div className="person-block-text">
+          <div className="event-speaker-data-text">
             <h3>
               <span className="person-first-name">{firstName}</span>{' '}
               <span className="person-last-name">{lastName}</span>
@@ -54,6 +68,16 @@ export default class PersonBlock extends Component {
             <p dangerouslySetInnerHTML={{__html: description}} />
           </div>
         </div>
+      </div>
+    );
+  }
+
+  render() {
+    const { visible } = this.state;
+    return (
+      <div className={classNames('event-speaker', { '-visible': visible })}>
+        <div className="overlay" onClick={this.props.onOverlayClick} />
+        { this.renderSpeaker() }
       </div>
     );
   }
