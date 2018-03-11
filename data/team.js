@@ -82,7 +82,7 @@ module.exports = {
       "lastName": "Pozdnysheva",
       "position": " ",
       "imageSrc": "/team/kate_pozdnysheva",
-      "description": "The project manager who has a great experience of organizing completely different (large and small) technological events at Yandex.",
+      "description": "Project manager who has a great experience of organizing completely different (large and small) technological events at Yandex.",
       "social": [
         {
           "type": "linkedin",
