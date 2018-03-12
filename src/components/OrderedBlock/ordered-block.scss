@@ -35,7 +35,6 @@
     }
     &-button {
       @include block-button;
-      margin-top: 57px;
       > a {
         @include underlined-link;
       }
@@ -61,7 +60,8 @@
       width: 450px;
       height: 253px;
       margin-left: 120px;
-      margin-top: 20px;
+      margin-top: 45px;
+      margin-bottom: 45px;
     }
   }
 }
@@ -76,7 +76,7 @@
   .ordered-block {
     &-img {
       width: 100%;
-      height: 56%;
+      height: auto;
       margin-left: 0;
     }
   }

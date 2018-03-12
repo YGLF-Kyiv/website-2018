@@ -4,7 +4,6 @@
 .workshops {
   h2 {
     @include block-header;
-    margin-bottom: 10px;
   }
 
   h3 {
@@ -26,7 +25,7 @@
       margin-right: 20px;
     }
     .column {
-      padding-top: 52px;
+      padding-top: 45px;
       &:last-child {
         padding-left: 40px;
       }
@@ -44,9 +43,8 @@
       -webkit-font-smoothing: antialiased;
       line-height: var(--cell);
       letter-spacing: 2.47px;
-      -webkit-transform: translateY(16px);
-      -ms-transform: translateY(16px);
-      transform: translateY(16px);
+      margin: 0;
+      padding-top: 46px;
     }
 
     .workshop-title {
@@ -55,10 +53,7 @@
 
     .workshop-description,
     .additional-info {
-      padding-right:  var(--cell);
-      -webkit-transform: translateY(22px);
-      -ms-transform: translateY(22px);
-      transform: translateY(22px);
+      padding-top: 9px;
       font-size: 15px !important;
       font-weight: 100;
       line-height: 33px;
@@ -72,7 +67,6 @@
 
     .workshop-desc-list {
       padding-left: 15px;
-      margin-top: 26px;
     }
 
     .workshop-image {
@@ -100,9 +94,6 @@
 
 @media screen and (max-width: 800px) {
   .workshops {
-    h2 {
-      margin-bottom: 45px;
-    }
     .workshop {
       flex-direction: column !important;
       .column {
@@ -113,7 +104,6 @@
         }
         &.workshop-image {
           width: 100%;
-          margin-bottom: 40px !important;
           > img {
             height: 100%;
             width: 50% !important;

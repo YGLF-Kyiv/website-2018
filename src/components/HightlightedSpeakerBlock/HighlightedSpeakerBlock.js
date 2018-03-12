@@ -4,6 +4,7 @@ import speakersData from '../../../data/speakers.json';
 import _ from 'lodash/fp';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
+import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
 export default class HighlightedSpeakerBlock extends Component {
   render() {
@@ -13,16 +14,18 @@ export default class HighlightedSpeakerBlock extends Component {
     ])(speakersData.all);
 
     return (
-      <div className="highlighted-speaker-block container container-fluid">
+      <FitToRhythm className="highlighted-speaker-block container container-fluid">
         <h2>Highlighted Speaker</h2>
         <div className="highlighted-speaker-block-cols">
           <div className="highlighted-speaker-block-img">
             <LazyLoad offset={150}>
-              <img
-                src={`${data.imageSrc}.jpg`}
-                className="-drop-shadow"
-                alt={`${data.firstName} ${data.lastName}`}
-              />
+              <FitToRhythm>
+                <img
+                  src={`${data.imageSrc}.jpg`}
+                  className="-drop-shadow"
+                  alt={`${data.firstName} ${data.lastName}`}
+                />
+              </FitToRhythm>
             </LazyLoad>
             <SocialIcons data={data.social} />
           </div>
@@ -31,7 +34,9 @@ export default class HighlightedSpeakerBlock extends Component {
               <span className="speaker-first-name">{data.firstName}</span>{' '}
               <span className="speaker-last-name">{data.lastName}</span>
             </h3>
-            <p dangerouslySetInnerHTML={{__html: data.highlightedDescription}} />
+            <FitToRhythm>
+              <p dangerouslySetInnerHTML={{__html: data.highlightedDescription}} />
+            </FitToRhythm>
             <div className="highlighted-speaker-block-text-button">
               <a
                 className="see-all-speakers-button"
@@ -42,7 +47,7 @@ export default class HighlightedSpeakerBlock extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </FitToRhythm>
     );
   }
 }

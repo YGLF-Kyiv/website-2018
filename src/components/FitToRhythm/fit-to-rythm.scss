@@ -1,0 +1,14 @@
+.fit-to-rythm {
+  opacity: 0;
+  transition: opacity 0.15s;
+  & + * {
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  &.-visible {
+    opacity: 1;
+    & + * {
+      opacity: 1;
+    }
+  }
+}

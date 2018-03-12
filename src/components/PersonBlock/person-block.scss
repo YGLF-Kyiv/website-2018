@@ -3,7 +3,6 @@
 
 .person-block {
   box-sizing: border-box;
-  min-height: 495px;
   h2 {
     @include block-header;
   }
@@ -90,6 +89,7 @@
   }
   .anchor {
     margin: 0;
+    padding: 0 0 1px;
   }
 
   &.-small-blocks {
@@ -226,7 +226,7 @@
       flex-direction: column !important;
     }
     &-img {
-      margin-bottom: 25px;
+      margin-bottom: 7px;
       > img {
         width: 234px !important;
       }

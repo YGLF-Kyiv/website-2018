@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LazyLoad from 'react-lazyload';
 
 import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton'
+import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
 import WorkshopsData from '../../../data/Workshops.js';
 import config from '../../../data/SiteConfig';
@@ -11,39 +11,42 @@ export default class WorkshopBlock extends Component {
   renderWorkshop(workshop) {
     const { authors, title, description, list, images, anchor, additionalInfo } = workshop;
     return (
-      <div className="workshop" key={title}>
+      <FitToRhythm className="workshop" key={title}>
         <a href="" name={anchor} className="-no-outline anchor" />
         <div className="workshop-image column">
           { images.map((item, index) => {
             return (
-              <LazyLoad offset={150} key={index}>
-                <img
-                  src={`${item.imageSrc}.jpg`}
-                  className="-drop-shadow"
-                  alt={`${item.title}`}
-                />
-              </LazyLoad>
+              <img
+                src={`${item.imageSrc}.jpg`}
+                className="-drop-shadow"
+                alt={`${item.title}`}
+              />
             ) }
             )
           }
         </div>
         <div className="column">
-          <h3 className="workshop-title">{ title }</h3>
-          { <p className="workshop-author">{ authors.join(', ') }</p> }
-          <div className="workshop-description">
-            { description.map((item, index) => {
-              return <p key={index}>{ item }</p>
-            }) }
-          </div>
-          <ul className="workshop-desc-list">
-            { list.map((item, index) => <li key={index}>{ item }</li>) }
-          </ul>
-          <div className="additional-info">
-            { additionalInfo.map((item, index) => {
-              return <p key={index}>{ item }</p>
-            }) }
-          </div>
-          <br />
+          <FitToRhythm>
+            <h3 className="workshop-title">{ title }</h3>
+            <div className="workshop-author">
+              { authors.map((author) => (
+                <div key={author}>{ author }</div>
+              )) }
+            </div>
+            <div className="workshop-description">
+              { description.map((item, index) => {
+                return <p key={index}>{ item }</p>
+              }) }
+            </div>
+            <ul className="workshop-desc-list">
+              { list.map((item, index) => <li key={index}>{ item }</li>) }
+            </ul>
+            <div className="additional-info">
+              { additionalInfo.map((item, index) => {
+                return <p key={index}>{ item }</p>
+              }) }
+            </div>
+          </FitToRhythm>
           <BuyTicketsButton
             href={config.workshopWebpackUrl}
             eventLabel="Buy Workshop Webpack ticket"
@@ -57,7 +60,7 @@ export default class WorkshopBlock extends Component {
             text="Buy Double Ticket"
           />
         </div>
-      </div>
+      </FitToRhythm>
     )
   }
 

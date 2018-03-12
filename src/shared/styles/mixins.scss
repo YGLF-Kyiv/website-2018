@@ -12,7 +12,8 @@
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  transform: translateY(-6px);
+  display: inline-block;
+  line-height: 20px;
   &:hover {
     color: $white;
     border-bottom: 1px solid $white;
@@ -130,8 +131,8 @@
   letter-spacing: 1.7px;
   -webkit-font-smoothing: antialiased;
   width: 450px;
-  padding-left: 120px;
-  margin: 24px 0 26px;
+  margin: 0;
+  padding: 24px 0 21px 120px;
   line-height: 33px;
   @media screen and (max-width: 990px) {
     padding-left: 0;

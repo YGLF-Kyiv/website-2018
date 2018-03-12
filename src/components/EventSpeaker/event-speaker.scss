@@ -1,0 +1,123 @@
+$speaker-block-size: 580px;
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.event-speaker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.25s ease-in;
+  }
+  &-data {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $blue;
+    width: $speaker-block-size;
+    z-index: 2;
+    padding: 60px;
+    box-sizing: border-box;
+    overflow: scroll;
+    transform: translateX($speaker-block-size);
+    transition: transform 0.25s ease-out;
+    h2 {
+      @include block-header;
+    }
+    &-img {
+      position: relative;
+      margin-bottom: 25px;
+      > img {
+        width: 234px;
+        border: 1px solid $green;
+      }
+
+      .social-icons {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: absolute;
+        left: 240px;
+        top: 8px;
+
+        > a {
+          text-decoration: none;
+          color: $white;
+          height: 35px;
+          cursor: pointer;
+          &:hover i {
+            color: $green;
+          }
+        }
+      }
+    }
+    &-text {
+      padding: 0;
+      margin-right: auto;
+      > h3 {
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 2px;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $white;
+      }
+      > p {
+        @include block-text;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+        a {
+          color: $green;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+    .person-position {
+      margin-top: 45px;
+    }
+    .person-company {
+      margin-bottom: -6px;
+    }
+    .person-position,
+    .person-company {
+      text-transform: uppercase;
+      display: block;
+      line-height: 24px;
+    }
+  }
+  &.-visible {
+    .event-speaker-data {
+      transform: translateX(0);
+    }
+    .overlay {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .event-speaker.-visible {
+    .event-speaker-data {
+      width: 100%;
+      height: 90%;
+      bottom: 0;
+      top: auto;
+    }
+  }
+}

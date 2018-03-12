@@ -7,13 +7,19 @@
     margin-top: 45px;
   }
 
-  .days {
+  .days-menu {
     display: flex;
-    .day {
+    list-style: none;
+    margin: 0;
+    li {
       width: 50%;
       -ms-flex: 1 auto 0;
       flex: 1 auto 0;
       transition: all 0.25s;
+      cursor: pointer;
+      border-bottom: 1px solid $green;
+      height: 90px;
+      box-sizing: border-box;
       .title {
         font-size: 24px;
         font-weight: 100;
@@ -41,23 +47,17 @@
         -webkit-font-smoothing: antialiased;
         color: $green;
       }
-
-      .events {
-        border-top: 1px solid $green;
-        -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-        transform: translateY(-1px);
-      }
-
       &.-inactive {
         opacity: 0.3;
-        .event {
-          p,
-          h4 {
-            color: $grey-inactive;
-          }
-        }
       }
+    }
+  }
+  .day {
+    padding-left: 40px;
+    transition: all 0.25s;
+    opacity: 1;
+    &.-opaque {
+      opacity: 0;
     }
   }
 }
