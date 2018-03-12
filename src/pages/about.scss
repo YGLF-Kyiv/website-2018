@@ -9,7 +9,7 @@
   .header {
     display: -ms-flexbox;
     display: flex;
-    padding: 90px 0;
+    padding: 90px 0 0;
     .header-text {
       > h1 {
         font-size: 111px;
@@ -44,7 +44,7 @@
   .about-page-past {
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 45px;
   }
 
   .about-page-past-section {
@@ -52,13 +52,14 @@
     width: 410px;
     margin-bottom: 45px;
     padding-left: 120px;
-    > p {
+    p {
       font-size: 15px !important;
       font-weight: 100;
       line-height: 33px;
       letter-spacing: 0.9px;
       -webkit-font-smoothing: antialiased;
-      margin-bottom: 28px;
+      margin: -45px 0 0;
+      padding-top: 24px;
     }
     > a {
       @include underlined-link;
@@ -93,13 +94,6 @@
     .about-page-past {
       display: -ms-flexbox;
       display: flex;
-      .about-page-past-section {
-        > p {
-          -webkit-transform: translateY(-22px);
-          -ms-transform: translateY(-22px);
-          transform: translateY(-22px);
-        }
-      }
     }
   }
 }
@@ -114,7 +108,7 @@
 
 @media screen and (max-width: 990px) {
   .about-page-past-section {
-    padding: 0 0 70px 0 !important;
+    padding: 0 !important;
     width: 100% !important;
   }
 }
@@ -123,7 +117,7 @@
   .about-page {
     > .container {
       > .header {
-        margin: 0 60px;
+        margin: 0 60px 45px;
         > .header-text > p {
           width: auto;
           padding-right: 100px;
@@ -137,9 +131,10 @@
     }
     .about-page-past-section {
       padding-left: 0 !important;
+      padding-bottom: 45px;
     }
     .team-list {
-      padding: 0 50px 100px;
+      padding: 0 50px 0;
     }
   }
 }

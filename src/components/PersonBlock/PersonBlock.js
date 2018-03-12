@@ -2,6 +2,7 @@ import React, { Component, PropTypes as toBe } from 'react';
 import './person-block.scss';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
+import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
 export default class PersonBlock extends Component {
   static propTypes = {
@@ -29,17 +30,15 @@ export default class PersonBlock extends Component {
     const smallClass = this.props.isSmall ? '-small-blocks' : '';
 
     return (
-      <div className={`${className} ${smallClass}`}>
+      <FitToRhythm className={`${className} ${smallClass}`}>
         <div className="person-block-cols">
           <a href="" name={anchor} className="-no-outline anchor" />
           <div className="person-block-img">
-            <LazyLoad offset={150}>
-              <img
-                src={`${imageSrc}.jpg`}
-                className="-drop-shadow"
-                alt={`${firstName} ${lastName}`}
-              />
-            </LazyLoad>
+            <img
+              src={`${imageSrc}.jpg`}
+              className="-drop-shadow"
+              alt={`${firstName} ${lastName}`}
+            />
             <SocialIcons data={social} />
           </div>
           <div className="person-block-text">
@@ -54,7 +53,7 @@ export default class PersonBlock extends Component {
             <p dangerouslySetInnerHTML={{__html: description}} />
           </div>
         </div>
-      </div>
+      </FitToRhythm>
     );
   }
 }

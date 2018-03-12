@@ -41,21 +41,25 @@ export default class OrderedBlock extends Component {
           <div className="ordered-block-text">
             <h2>{title}</h2>
             {img && (
-              <div className="ordered-block-img">
-                <img src={img} alt={title} />
-              </div>
+              <FitToRhythm>
+                <div className="ordered-block-img">
+                  <img src={img} alt={title} />
+                </div>
+              </FitToRhythm>
             )}
-            {description.map((el, index) => {
-              return <p key={index}>{el}</p>;
-            })}
-            {additionalInfo && (
+            <FitToRhythm>
+              {description.map((el, index) => {
+                return <p key={index}>{el}</p>;
+              })}
+              {additionalInfo && (
                 <p>
                   <strong>{additionalInfo.title}</strong>
                   <br />
                   {additionalInfo.description}
                 </p>
               )
-            }
+              }
+            </FitToRhythm>
             {link && (
               <div className="ordered-block-text-button">
                 <a href={link.url} target="_blank">

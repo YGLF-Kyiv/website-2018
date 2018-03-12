@@ -1,5 +1,6 @@
 import React, { Component, PropTypes as toBe } from 'react';
 import './speakers-intro-block.scss';
+import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
 export default class InfoBlock extends Component {
   static propTypes = {
@@ -13,17 +14,19 @@ export default class InfoBlock extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="speakers-intro-block">
+      <FitToRhythm className="speakers-intro-block">
         {/*<div className="speakers-intro-block-name">*/}
           {/*<span>*/}
             {/*{data.number} <i>{data.subtitle}</i>*/}
           {/*</span>*/}
         {/*</div>*/}
         <div className="speakers-intro-block-text">
-          <h2>{data.title}</h2>
-          {data.description.map((el, index) => {
-            return <p key={index}>{el}</p>;
-          })}
+          <FitToRhythm>
+            <h2>{data.title}</h2>
+            {data.description.map((el, index) => {
+              return <p key={index}>{el}</p>;
+            })}
+          </FitToRhythm>
           <div className="speakers-intro-block-text-button">
             <a
               href={data.actionButton.href}
@@ -34,7 +37,7 @@ export default class InfoBlock extends Component {
             </a>
           </div>
         </div>
-      </div>
+      </FitToRhythm>
     );
   }
 }
