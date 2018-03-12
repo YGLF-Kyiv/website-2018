@@ -8,6 +8,7 @@ import './event.scss';
 export default class Event extends React.Component {
   static propTypes = {
     data: toBe.object, // add more types
+    date: toBe.number,
     onSpeakerClick: toBe.func,
   };
 
@@ -41,7 +42,13 @@ export default class Event extends React.Component {
 
   render() {
     const {
-      time, title, company, description, showReadMore, className,
+      time,
+      title,
+      company,
+      description,
+      showReadMore,
+      className,
+      duration,
       speakerData: { speakerName, imageSrc, anchor },
     } = this.props.data;
     const { opened } = this.state;
@@ -50,20 +57,21 @@ export default class Event extends React.Component {
       '-read-more-hidden': !showReadMore,
       '-no-description': !description.length
     });
+    const dateTime = `2018-05-${this.props.day}T${time.hours}:${time.minutes}`;
 
     return (
       <div className={computedClass}>
         <a href="" name={anchor} className="-no-outline anchor" />
-        <div className="time auto-height-fix-time">
+        <time className="time auto-height-fix-time" datetime={dateTime}>
           <span className="hours">{ time.hours }</span>
           <span className="minutes">{ time.minutes }</span>
-        </div>
+        </time>
         <div className="info-wrapper">
           <FitToRhythm>
             <div className="info">
               <FitToRhythm className="title-wrapper">
                 { speakerName && (
-                    <div className="speaker-img">
+                    <div className="speaker-img" onClick={this.onSpeakerClick}>
                       <LazyLoad offset={150}>
                         <img src={`${imageSrc}.jpg`} className="-drop-shadow" alt={speakerName}/>
                       </LazyLoad>
@@ -71,7 +79,10 @@ export default class Event extends React.Component {
                   )
                 }
                 <div className="info-description">
-                  <h4 className="info-description-title">{ title }</h4>
+                  <h4 className="info-description-title">
+                    { title }
+                    { duration && <span> ({ duration } mins)</span> }
+                  </h4>
                   { speakerName
                     ? (
                       <a
@@ -96,7 +107,7 @@ export default class Event extends React.Component {
         </div>
         { showReadMore && (
           <a href={`#${anchor}`} onClick={this.toggleReadMore} className="event-read-more">
-            {`READ ${opened ? 'LESS' : 'MORE'}`}
+            {`${opened ? 'LESS' : 'READ MORE'}`}
           </a>
         ) }
       </div>

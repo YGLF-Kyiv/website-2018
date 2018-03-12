@@ -4,6 +4,7 @@ module.exports = {
       "dayId": 1,
       "title": "Day One",
       "date": "May 24th",
+      "day": 24,
       "events": [
         {
           "eventId": 1,
@@ -52,6 +53,7 @@ module.exports = {
             "minutes": "10"
           },
           "title": "Coffee Break",
+          "duration": 30,
           "description": [],
           "showReadMore": false,
         },
@@ -126,6 +128,7 @@ module.exports = {
             "minutes": "40"
           },
           "title": "Coffee Break",
+          "duration": 30,
           "description": [],
           "showReadMore": false,
         },
@@ -152,6 +155,17 @@ module.exports = {
           "speakerId": 7,
           "description": [],
           "showReadMore": false,
+        },
+        {
+          "eventId": 13,
+          "className": "height135",
+          "time": {
+            "hours": "20",
+            "minutes": "00"
+          },
+          "title": "Wix Afterparty",
+          "description": [],
+          "showReadMore": false,
         }
       ]
     },
@@ -159,6 +173,7 @@ module.exports = {
       "dayId": 2,
       "title": "Day Two",
       "date": "May 25th",
+      "day": 25,
       "events": [
         {
           "eventId": 21,
@@ -168,6 +183,7 @@ module.exports = {
             "minutes": "30"
           },
           "title": "Breakfast",
+          "duration": 60,
           "description": [
             "Take some time to enjoy your morning coffee and pastries."
           ],
@@ -208,6 +224,7 @@ module.exports = {
             "minutes": "50"
           },
           "title": "Coffee Break",
+          "duration": 30,
           "description": [],
           "showReadMore": false,
         },
@@ -284,6 +301,7 @@ module.exports = {
             "minutes": "20"
           },
           "title": "Coffee Break",
+          "duration": 30,
           "description": [],
           "showReadMore": false,
         },
@@ -310,6 +328,17 @@ module.exports = {
           "description": [],
           "showReadMore": false,
         },
+        {
+          "eventId": 33,
+          "className": "height135",
+          "time": {
+            "hours": "20",
+            "minutes": "00"
+          },
+          "title": "MyHeritage Afterparty",
+          "description": [],
+          "showReadMore": false,
+        }
       ]
     }
   ]

@@ -3,12 +3,10 @@ import './schedule.scss';
 import { gaTrack } from '../shared/utils/ga';
 
 import Event from '../components/Event/Event';
-import OrderedBlock from '../components/OrderedBlock/OrderedBlock';
 import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 
 import scheduleData from '../../data/schedule.js';
 import speakersData from '../../data/speakers.json';
-import OrderedBlockData from '../../data/orderedBlock';
 
 import { constructSchedule } from '../shared/utils/common';
 
@@ -89,6 +87,7 @@ export default class SchedulePage extends React.Component {
         <div className="events">
           { activeDay.events.map(event => (
             <Event
+              day={activeDay.day}
               data={event}
               key={event.eventId}
               onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
@@ -110,7 +109,7 @@ export default class SchedulePage extends React.Component {
     return (
       <div className="page-schedule lines-bg">
         <div className="container container-fluid">
-          <OrderedBlock data={OrderedBlockData.schedule} />
+          <h2>Schedule</h2>
           { this.renderDaysMenu() }
           { this.renderDays() }
           { this.renderActiveSpeaker() }

@@ -91,6 +91,9 @@
           margin: 0;
           transform: translateY(8px);
           word-break: break-word;
+          > span {
+            font-weight: 100;
+          }
         }
         &-speaker {
           font-weight: 400;
@@ -160,6 +163,7 @@
     .title-wrapper {
       .speaker-img {
         margin: 0 18px 45px 0;
+        cursor: pointer;
       }
     }
   }

@@ -3,6 +3,10 @@
 .page-schedule {
   padding-top: 45px;
   padding-bottom: 45px;
+  h2 {
+    @include block-header;
+    margin: 0 0 45px 35px;
+  }
   .ordered-block {
     margin-top: 45px;
   }
