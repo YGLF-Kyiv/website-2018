@@ -41,13 +41,18 @@ export default class Event extends React.Component {
 
   render() {
     const {
-      time, title, company, description, hideReadMore,
+      time, title, company, description, showReadMore, className,
       speakerData: { speakerName, imageSrc, anchor },
     } = this.props.data;
     const { opened } = this.state;
+    const computedClass = classNames('event', className, {
+      '-opened': opened,
+      '-read-more-hidden': !showReadMore,
+      '-no-description': !description.length
+    });
 
     return (
-      <div className={classNames('event', { '-opened': opened, '-read-more-hidden': hideReadMore, '-no-description': !description.length })}>
+      <div className={computedClass}>
         <a href="" name={anchor} className="-no-outline anchor" />
         <div className="time auto-height-fix-time">
           <span className="hours">{ time.hours }</span>
@@ -82,14 +87,14 @@ export default class Event extends React.Component {
                 </div>
               </FitToRhythm>
               { !!description.length && (
-                <div className="description">
+                <div className={classNames('description', { '-can-show-more': showReadMore })}>
                   { description.map(item => <p key={item}>{ item }</p>) }
                 </div>
               ) }
             </div>
           </FitToRhythm>
         </div>
-        { !hideReadMore && (
+        { showReadMore && (
           <a href={`#${anchor}`} onClick={this.toggleReadMore} className="event-read-more">
             {`READ ${opened ? 'LESS' : 'MORE'}`}
           </a>

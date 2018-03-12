@@ -1,12 +1,12 @@
 @import '../../shared/styles/colors';
 
 .event {
+  position: relative;
   display: flex;
   flex-direction: row;
   min-height: 135px;
   box-sizing: border-box;
   padding-top: 45px;
-  position: relative;
   &:first-child {
     padding-top: 0;
   }
@@ -15,7 +15,7 @@
     content: ' ';
     border-bottom: 1px solid $grey;
     position: absolute;
-    left: 100px;
+    left: 60px;
     right: 45px;
     bottom: 0;
     height: 0;
@@ -25,9 +25,9 @@
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
     transform: translateY(16px);
-    width: 100px;
-    min-width: 100px;
-    max-width: 100px;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     flex: 1 1 0;
     > .hours {
       letter-spacing: 0.79px;
@@ -126,20 +126,14 @@
     color: $green;
     outline: none;
     position: absolute;
-    left: 100px;
+    left: 60px;
     bottom: 35px;
     letter-spacing: 3.51px;
     font-size: 13px;
     -webkit-font-smoothing: antialiased;
-    opacity: 0;
     transition: opacity 0.25s ease-in;
     &:hover {
       color: $white;
-    }
-  }
-  &:hover {
-    .event-read-more {
-      opacity: 1;
     }
   }
   &.-opened {
@@ -169,18 +163,48 @@
       }
     }
   }
+  .anchor {
+    position: absolute;
+  }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 640px) {
   .event {
-    padding-right: 0;
-    -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 0;
-    .time {
-      width: 60px;
-      min-width: 60px;
-      max-width: 60px;
+    padding-top: 0;
+    min-height: 225px;
+    &.height135 {
+      min-height: 135px;
     }
+    &.height270 {
+      min-height: 270px;
+    }
+    &:after {
+      left: 0;
+    }
+    &.-opened {
+      .info-wrapper {
+        padding-bottom: 90px;
+        overflow: visible;
+      }
+      .description.-can-show-more {
+        opacity: 1;
+      }
+    }
+    &:not(-opened) {
+      .description.-can-show-more {
+        opacity: 0;
+      }
+    }
+    .event-read-more {
+      left: 100px;
+    }
+    .info-wrapper {
+      margin-bottom: 0;
+    }
+    .time {
+      max-height: 45px;
+    }
+
   }
 }
