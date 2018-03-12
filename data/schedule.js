@@ -47,7 +47,7 @@ module.exports = {
         },
         {
           "eventId": 4,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "11",
             "minutes": "10"
@@ -85,18 +85,19 @@ module.exports = {
         },
         {
           "eventId": 7,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "13",
             "minutes": "00"
           },
           "title": "Lunch",
+          "duration": 90,
           "description": [],
           "showReadMore": false,
         },
         {
           "eventId": 8,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "14",
             "minutes": "30"
@@ -122,7 +123,7 @@ module.exports = {
         },
         {
           "eventId": 10,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "15",
             "minutes": "40"
@@ -158,7 +159,7 @@ module.exports = {
         },
         {
           "eventId": 13,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "20",
             "minutes": "00"
@@ -218,7 +219,7 @@ module.exports = {
         },
         {
           "eventId": 24,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "10",
             "minutes": "50"
@@ -262,18 +263,19 @@ module.exports = {
         },
         {
           "eventId": 27,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "12",
             "minutes": "40"
           },
           "title": "Lunch",
+          "duration": 90,
           "description": [],
           "showReadMore": false,
         },
         {
           "eventId": 28,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "14",
             "minutes": "10"
@@ -284,7 +286,7 @@ module.exports = {
         },
         {
           "eventId": 29,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "14",
             "minutes": "40"
@@ -295,7 +297,7 @@ module.exports = {
         },
         {
           "eventId": 30,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "15",
             "minutes": "20"
@@ -307,7 +309,7 @@ module.exports = {
         },
         {
           "eventId": 31,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "15",
             "minutes": "50"
@@ -318,7 +320,7 @@ module.exports = {
         },
         {
           "eventId": 32,
-          "className": "heigh135",
+          "className": "heigh90",
           "time": {
             "hours": "16",
             "minutes": "30"
@@ -330,7 +332,7 @@ module.exports = {
         },
         {
           "eventId": 33,
-          "className": "height135",
+          "className": "height90",
           "time": {
             "hours": "20",
             "minutes": "00"
