@@ -185,6 +185,7 @@
     }
     &:after {
       left: 0;
+      right: 10px;
     }
     &.-opened {
       .info-wrapper {
@@ -205,6 +206,7 @@
     }
     .info-wrapper {
       margin-bottom: 0;
+      margin-right: 10px;
     }
     .time {
       max-height: 45px;

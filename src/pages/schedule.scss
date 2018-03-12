@@ -84,3 +84,17 @@
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .page-schedule {
+    h2 {
+      margin-left: 10px;
+    }
+    .days-menu {
+      padding: 0 10px;
+    }
+    .day {
+      padding-left: 10px;
+    }
+  }
+}
