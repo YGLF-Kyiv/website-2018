@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           component: path.resolve(`./src/templates/invitation.js`),
           layout: 'invitation',
           context: {
-            path: node.path,
+            qpath: node.path,
             ignoreInSitemap: true,
           },
         });
@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           component: path.resolve(`./src/templates/invitation.js`),
           layout: 'invitation',
           context: {
-            path: node.path,
+            qpath: node.path,
             track: true,
             ignoreInSitemap: true,
           },
