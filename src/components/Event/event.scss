@@ -21,6 +21,21 @@
     min-height: 90px;
     padding: 5px 0 0 0;
   }
+  &.icon .time::before {
+    font-size: 15px;
+    position: absolute;
+    transform: translateX(-100%);
+    color: #fff;
+  }
+  &.lightning .time::before {
+    content: "⚡";
+  }
+  &.wixparty .time::before {
+    content: "🎉";
+  }
+  &.myheritageparty .time::before {
+    content: "🎉";
+  }
   .time {
     line-height: 45px;
     -webkit-font-smoothing: antialiased;
@@ -78,6 +93,7 @@
         margin: 0 18px 18px 0;
         > img {
           height: 100%;
+          cursor: pointer;
         }
       }
       .info-description {

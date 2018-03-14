@@ -101,7 +101,7 @@ export default class Event extends React.Component {
               </FitToRhythm>
               { !!description.length && (
                 <div className={classNames('description', { '-can-show-more': showReadMore })}>
-                  { description.map(item => <p key={item}>{ item }</p>) }
+                  {description.map(item => <p key={item} dangerouslySetInnerHTML={{ __html: item }} />) }
                 </div>
               ) }
             </div>
