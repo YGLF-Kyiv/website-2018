@@ -81,7 +81,9 @@ export default class Event extends React.Component {
                 <div className="info-description">
                   <h4 className="info-description-title">
                     { title }
-                    { duration && <span className="info-description-time"> { duration }</span>}
+                    { duration && (
+                      <span className="info-description-time"><strong>,</strong> { duration }</span>
+                    ) }
                   </h4>
                   { speakerName
                     ? (
@@ -107,11 +109,12 @@ export default class Event extends React.Component {
         </div>
         { showReadMore && (
           <a
-            href={`#${anchor}`}
+            href=""
+            name={anchor}
             onClick={this.toggleReadMore}
             className={classNames('event-read-more', { '-opened': opened })}
           >
-            {`${opened ? 'LESS' : 'READ MORE'}`}
+            { opened ? 'LESS' : 'READ MORE' }
           </a>
         ) }
       </div>

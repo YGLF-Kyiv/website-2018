@@ -78,7 +78,7 @@ module.exports = {
             "The talk will explore the concept of schema stitching(connecting multiple GraphQL schemas together) from a client - side point of view.Using this approach, developer can merge multiple remote schemas together with a frontend schema.The combined schema is responsible for routing requests to a server and a client-side storage/cache.",
             "The talk will explore both schema stitching implementation and the possible applications.Applications of this approach include prototyping application's GraphQL schema without a server. After prototype stage, the schema can be moved to the server. Another use-case is building frontend-only applications that use multiple public GraphQL APIs."
           ],
-          "showReadMore": false,
+          "showReadMore": true,
         },
         {
           "className": "height270",
@@ -123,7 +123,7 @@ module.exports = {
             "hours": "16",
             "minutes": "40"
           },
-          "speakerId": 2,
+          "speakerId": 12,
           "title": "Lightning: Using New Web APIs For Your Own Pleasure.",
           "description": [
             "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out.So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
@@ -178,7 +178,7 @@ module.exports = {
           "description": [
             "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU ?\". The talk shares some insights / outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser based miners."
           ],
-          "showReadMore": false,
+          "showReadMore": true,
         },
         {
           "className": "",
@@ -340,14 +340,18 @@ module.exports = {
           ]
         },
         {
-          "className": "height90",
+          "className": "",
+          "speakerId": 13,
           "time": {
             "hours": "16",
             "minutes": "40"
           },
-          "title": "TBA",
-          "description": [],
-          "showReadMore": false,
+          "title": "Build your own Webpack (Live coding an ultra-simplified example of a modern module bundler in JavaScript)",
+          "description": [
+            "Most of us don't have to think too much about module bundlers in our day jobs. However, module bundlers are all around us, and if you’re a web developer you are probably using module bundlers on a daily basis.",
+            "Having a good understanding of how popular tools like Webpack or Browserify work can be extremely helpful. In this talk, I will help you understand how most module bundlers work and show you that they’re not as scary as you might think."
+          ],
+          "showReadMore": true,
         },
         {
           "className": "height90",
