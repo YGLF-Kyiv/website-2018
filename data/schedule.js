@@ -25,6 +25,7 @@ module.exports = {
             "hours": "11",
             "minutes": "20"
           },
+          "className": "height90",
           "title": "Opening",
           "description": [],
           "showReadMore": false,
@@ -104,24 +105,26 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "className": "",
           "time": {
             "hours": "16",
             "minutes": "30"
           },
           "speakerId": 2,
-          "title": "<strong>Lightning</strong>: JavaScript: The fairly odd parts",
+          "title": "Lightning: JavaScript: The fairly odd parts",
           "description": [
             "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
           ],
           "showReadMore": true,
         },
         {
+          "className": "",
           "time": {
             "hours": "16",
             "minutes": "40"
           },
           "speakerId": 2,
-          "title": "<strong>Lightning</strong>: Using New Web APIs For Your Own Pleasure.",
+          "title": "Lightning: Using New Web APIs For Your Own Pleasure.",
           "description": [
             "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out.So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
             "So obviously a Bluetooth enabled vibrator was a perfect fit. And it came with a serious use case, too: The slogan of the vibrator was \"Let him control you\", which I found very limiting, so I used the Web Bluetooth API to connect it to the browser, and the Web Audio API, to establish my own slogan: \"Let a video control you\".",
@@ -130,11 +133,12 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "className": "height90",
           "time": {
             "hours": "16",
             "minutes": "50"
           },
-          "title": "<strong>Lightning</strong>: TBA",
+          "title": "Lightning: TBA",
           "description": [
           ]
         },
@@ -188,7 +192,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "",
+          "className": "height90",
           "time": {
             "hours": "19",
             "minutes": "30"
@@ -306,29 +310,32 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "className": "height90",
           "time": {
             "hours": "16",
             "minutes": "10"
           },
-          "title": "<strong>Lightning</strong>: TBA",
+          "title": "Lightning: TBA",
           "description": [
           ]
         },
         {
+          "className": "height90",
           "time": {
             "hours": "16",
             "minutes": "20"
           },
-          "title": "<strong>Lightning</strong>: TBA",
+          "title": "Lightning: TBA",
           "description": [
           ]
         },
         {
+          "className": "height90",
           "time": {
             "hours": "16",
             "minutes": "30"
           },
-          "title": "<strong>Lightning</strong>: TBA",
+          "title": "Lightning: TBA",
           "description": [
           ]
         },
@@ -365,7 +372,6 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "heigh90",
           "time": {
             "hours": "18",
             "minutes": "30"
@@ -379,7 +385,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "",
+          "className": "height90",
           "time": {
             "hours": "19",
             "minutes": "30"
