@@ -85,11 +85,11 @@ export default class SchedulePage extends React.Component {
         key={activeDay.title}
       >
         <div className="events">
-          { activeDay.events.map(event => (
+          { activeDay.events.map((event, key) => (
             <Event
               day={activeDay.day}
               data={event}
-              key={event.eventId}
+              key={key}
               onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
             />
           )) }

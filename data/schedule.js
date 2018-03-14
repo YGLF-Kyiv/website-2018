@@ -7,35 +7,43 @@ module.exports = {
       "day": 24,
       "events": [
         {
-          "eventId": 1,
           "className": "",
           "time": {
-            "hours": "08",
+            "hours": "10",
             "minutes": "00"
           },
-          "title": "Registration & Breakfast & Opening Speech",
+          "duration": "1 hour 20 minutes",
+          "title": "Registration & Breakfast",
           "description": [
             "Pick up your badge. Take some time to enjoy your morning coffee and pastries."
           ],
           "showReadMore": false,
         },
         {
-          "eventId": 2,
           "className": "",
           "time": {
-            "hours": "09",
+            "hours": "11",
+            "minutes": "20"
+          },
+          "title": "Opening",
+          "description": [],
+          "showReadMore": false,
+        },
+        {
+          "className": "",
+          "time": {
+            "hours": "11",
             "minutes": "30"
           },
-          "title": "TBA",
+          "title": "Keynote: TBA",
           "speakerId": 1,
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 3,
           "className": "",
           "time": {
-            "hours": "10",
+            "hours": "12",
             "minutes": "30"
           },
           "title": "Journey through VR and AR with React",
@@ -46,34 +54,35 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "eventId": 4,
           "className": "height90",
           "time": {
-            "hours": "11",
+            "hours": "13",
             "minutes": "10"
           },
           "title": "Coffee Break",
-          "duration": 30,
+          "duration": "30 mins",
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 5,
           "className": "",
           "time": {
-            "hours": "11",
+            "hours": "13",
             "minutes": "40"
           },
-          "title": "TBA",
+          "title": "GraphQL client-side execution",
           "speakerId": 8,
-          "description": [],
+          "description": [
+            "Traditionally, GraphQL clients were focused on client-server communication and caching, with GraphQL query executor on the server. However, it's also possible to run full GraphQL executor on the client side.",
+            "The talk will explore the concept of schema stitching(connecting multiple GraphQL schemas together) from a client - side point of view.Using this approach, developer can merge multiple remote schemas together with a frontend schema.The combined schema is responsible for routing requests to a server and a client-side storage/cache.",
+            "The talk will explore both schema stitching implementation and the possible applications.Applications of this approach include prototyping application's GraphQL schema without a server. After prototype stage, the schema can be moved to the server. Another use-case is building frontend-only applications that use multiple public GraphQL APIs."
+          ],
           "showReadMore": false,
         },
         {
-          "eventId": 6,
           "className": "height270",
           "time": {
-            "hours": "12",
+            "hours": "14",
             "minutes": "20"
           },
           "title": "East meets West: web typography and modern layouts",
@@ -84,33 +93,55 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "eventId": 7,
           "className": "height90",
           "time": {
-            "hours": "13",
+            "hours": "15",
             "minutes": "00"
           },
           "title": "Lunch",
-          "duration": 90,
+          "duration": "1,5 hours",
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 8,
-          "className": "height90",
           "time": {
-            "hours": "14",
+            "hours": "16",
             "minutes": "30"
           },
-          "title": "Lightning talks",
-          "description": [],
-          "showReadMore": false,
+          "speakerId": 2,
+          "title": "<strong>Lightning</strong>: JavaScript: The fairly odd parts",
+          "description": [
+            "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
+          ],
+          "showReadMore": true,
         },
         {
-          "eventId": 9,
+          "time": {
+            "hours": "16",
+            "minutes": "40"
+          },
+          "speakerId": 2,
+          "title": "<strong>Lightning</strong>: Using New Web APIs For Your Own Pleasure.",
+          "description": [
+            "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out.So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
+            "So obviously a Bluetooth enabled vibrator was a perfect fit. And it came with a serious use case, too: The slogan of the vibrator was \"Let him control you\", which I found very limiting, so I used the Web Bluetooth API to connect it to the browser, and the Web Audio API, to establish my own slogan: \"Let a video control you\".",
+            "In my lightning talk you will learn how to use the Web Bluetooth API to connect a Bluetooth enabled device to the browser. Also you will see what is possible with the Web Audio API, especially when it comes to analyzing spoken words."
+          ],
+          "showReadMore": true,
+        },
+        {
+          "time": {
+            "hours": "16",
+            "minutes": "50"
+          },
+          "title": "<strong>Lightning</strong>: TBA",
+          "description": [
+          ]
+        },
+        {
           "className": "",
           "time": {
-            "hours": "15",
+            "hours": "17",
             "minutes": "00"
           },
           "title": "WebAssembly as cross-platform architecture",
@@ -122,34 +153,33 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "eventId": 10,
           "className": "height90",
           "time": {
-            "hours": "15",
+            "hours": "17",
             "minutes": "40"
           },
           "title": "Coffee Break",
-          "duration": 30,
+          "duration": "30 mins",
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 11,
           "className": "",
           "time": {
-            "hours": "16",
+            "hours": "18",
             "minutes": "10"
           },
-          "title": "TBA",
+          "title": "Mining crypto in browser: GPU, WebAssembly, JavaScript and all the good things to try",
           "speakerId": 9,
-          "description": [],
+          "description": [
+            "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU ?\". The talk shares some insights / outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser based miners."
+          ],
           "showReadMore": false,
         },
         {
-          "eventId": 12,
           "className": "",
           "time": {
-            "hours": "16",
+            "hours": "18",
             "minutes": "50"
           },
           "title": "TBA",
@@ -158,7 +188,16 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "eventId": 13,
+          "className": "",
+          "time": {
+            "hours": "19",
+            "minutes": "30"
+          },
+          "title": "Closing & Networking",
+          "description": [],
+          "showReadMore": false,
+        },
+        {
           "className": "height90",
           "time": {
             "hours": "20",
@@ -166,6 +205,7 @@ module.exports = {
           },
           "title": "Wix Afterparty",
           "description": [],
+          "duration": "till the midnight",
           "showReadMore": false,
         }
       ]
@@ -177,36 +217,32 @@ module.exports = {
       "day": 25,
       "events": [
         {
-          "eventId": 21,
           "className": "",
           "time": {
-            "hours": "08",
-            "minutes": "30"
+            "hours": "10",
+            "minutes": "00"
           },
           "title": "Breakfast",
-          "duration": 60,
+          "duration": "1 hour 30 mins",
           "description": [
             "Take some time to enjoy your morning coffee and pastries."
           ],
           "showReadMore": false,
         },
         {
-          "eventId": 22,
-          "className": "",
+          "className": "height90",
           "time": {
-            "hours": "09",
+            "hours": "11",
             "minutes": "30"
           },
           "title": "TBA",
-          "speakerId": 10,
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 23,
           "className": "",
           "time": {
-            "hours": "10",
+            "hours": "12",
             "minutes": "10"
           },
           "title": "The bumpy road to Universal JavaScript",
@@ -218,22 +254,20 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "eventId": 24,
           "className": "height90",
           "time": {
-            "hours": "10",
+            "hours": "12",
             "minutes": "50"
           },
           "title": "Coffee Break",
-          "duration": 30,
+          "duration": "30 mins",
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 25,
           "className": "",
           "time": {
-            "hours": "11",
+            "hours": "13",
             "minutes": "20"
           },
           "title": "Writing Virtual and Augmented Reality Apps With Web Technology",
@@ -247,10 +281,9 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "eventId": 26,
           "className": "",
           "time": {
-            "hours": "12",
+            "hours": "14",
             "minutes": "00"
           },
           "title": "Brave New World: Moving on to ES201X",
@@ -262,10 +295,9 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "eventId": 27,
           "className": "height90",
           "time": {
-            "hours": "12",
+            "hours": "14",
             "minutes": "40"
           },
           "title": "Lunch",
@@ -274,21 +306,36 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "eventId": 28,
-          "className": "height90",
           "time": {
-            "hours": "14",
+            "hours": "16",
             "minutes": "10"
           },
-          "title": "Lightning talks",
-          "description": [],
-          "showReadMore": false,
+          "title": "<strong>Lightning</strong>: TBA",
+          "description": [
+          ]
         },
         {
-          "eventId": 29,
+          "time": {
+            "hours": "16",
+            "minutes": "20"
+          },
+          "title": "<strong>Lightning</strong>: TBA",
+          "description": [
+          ]
+        },
+        {
+          "time": {
+            "hours": "16",
+            "minutes": "30"
+          },
+          "title": "<strong>Lightning</strong>: TBA",
+          "description": [
+          ]
+        },
+        {
           "className": "height90",
           "time": {
-            "hours": "14",
+            "hours": "16",
             "minutes": "40"
           },
           "title": "TBA",
@@ -296,48 +343,59 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "eventId": 30,
           "className": "height90",
           "time": {
-            "hours": "15",
+            "hours": "17",
             "minutes": "20"
           },
           "title": "Coffee Break",
-          "duration": 30,
+          "duration": "30 mins",
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 31,
-          "className": "height90",
+          "className": "",
           "time": {
-            "hours": "15",
+            "hours": "17",
             "minutes": "50"
           },
           "title": "TBA",
+          "speakerId": 10,
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 32,
           "className": "heigh90",
           "time": {
-            "hours": "16",
+            "hours": "18",
             "minutes": "30"
           },
-          "title": "TBA",
+          "title": "Keynote: New Advenures In Front-End, Season 2",
           "speakerId": 5,
+          "description": [
+            "The beast is alive! How do you feel about ASCII-alike CSS Grid layout with polyfluid sizing and ch unit ? Do you feel itchy when it comes to building responsive HTML email layouts ? What about the brave new world of dynamic static site generators and JAM stack? Have you ever tried to work around nested CSS Custom Properties, untamed 3rd-party scripts, shady service workers, multi-dimensional variable fonts and painfully outdated pattern libraries? Well, let’s bring it on!",
+            "If you attended or watched the <a fref='https://www.youtube.com/watch?v=WfKFGGZVp9s'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks.Beware: you will not be able to unlearn what you’ll learn in the session!Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
+          ],
+          "showReadMore": false,
+        },
+        {
+          "className": "",
+          "time": {
+            "hours": "19",
+            "minutes": "30"
+          },
+          "title": "Closing & Networking",
           "description": [],
           "showReadMore": false,
         },
         {
-          "eventId": 33,
           "className": "height90",
           "time": {
             "hours": "20",
             "minutes": "00"
           },
           "title": "MyHeritage Afterparty",
+          "duration": "till the midnight",
           "description": [],
           "showReadMore": false,
         }

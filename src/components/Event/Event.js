@@ -81,7 +81,7 @@ export default class Event extends React.Component {
                 <div className="info-description">
                   <h4 className="info-description-title">
                     { title }
-                    { duration && <span> ({ duration } mins)</span> }
+                    {duration && <span className="info-description-time">{ duration }</span>}
                   </h4>
                   { speakerName
                     ? (

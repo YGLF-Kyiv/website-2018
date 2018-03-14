@@ -92,8 +92,12 @@
           margin: 0;
           transform: translateY(8px);
           word-break: break-word;
-          > span {
-            font-weight: 100;
+        }
+        &-time {
+          font-weight: 100;
+          text-transform: none;
+          ::before {
+            content: ", ";
           }
         }
         &-speaker {
