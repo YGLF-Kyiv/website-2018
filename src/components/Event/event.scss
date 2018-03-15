@@ -25,14 +25,12 @@
     font-size: 15px;
     position: absolute;
     transform: translateX(-100%);
-    color: #fff;
+    color: $white;
   }
   &.lightning .time::before {
     content: "⚡";
   }
-  &.wixparty .time::before {
-    content: "🎉";
-  }
+  &.wixparty .time::before,
   &.myheritageparty .time::before {
     content: "🎉";
   }
@@ -140,8 +138,13 @@
     > p {
       line-height: 32px;
       margin: 15px 0 0;
+      > a {
+        color: $green;
+        &:hover {
+          color: $white;
+        }
+      }
     }
-
   }
   .event-read-more {
     color: $green;
