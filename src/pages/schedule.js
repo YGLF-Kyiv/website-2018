@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import './schedule.scss';
 import { gaTrack } from '../shared/utils/ga';
 
@@ -8,7 +9,7 @@ import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 import scheduleData from '../../data/schedule.js';
 import speakersData from '../../data/speakers.json';
 
-import { constructSchedule } from '../shared/utils/common';
+import { constructSchedule, isInBrowser } from '../shared/utils/common';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
@@ -21,10 +22,13 @@ export default class SchedulePage extends React.Component {
       activeDay: SCHEDULE[0],
       dayOpaque: true,
       activeSpeaker: null,
+      isSticky: false,
     };
 
     this.showDay = this.showDay.bind(this);
     this.hideSpeaker = this.hideSpeaker.bind(this);
+    this.onWindowScroll = this.onWindowScroll.bind(this);
+    this.getDayElTop = this.getDayElTop.bind(this);
   }
 
   componentWillMount() {
@@ -37,6 +41,20 @@ export default class SchedulePage extends React.Component {
 
   componentDidMount() {
     this.showDay();
+    isInBrowser() && window.addEventListener('scroll', this.onWindowScroll);
+  }
+
+  componentWillUnmount() {
+    isInBrowser() && window.removeEventListener('scroll', this.onWindowScroll);
+  }
+
+  getDayElTop() {
+    return this.dayEl.getBoundingClientRect().top;
+  }
+
+  onWindowScroll() {
+    const elementPosition = this.getDayElTop();
+    this.setState({ isSticky: elementPosition < 0 });
   }
 
   showDay() {
@@ -47,6 +65,7 @@ export default class SchedulePage extends React.Component {
 
   toggle(activeDay) {
     this.setState({ activeDay, dayOpaque: true }, this.showDay);
+    window.scrollTo(0, window.scrollY + this.getDayElTop());
   }
 
   showSpeaker(speakerData) {
@@ -60,20 +79,22 @@ export default class SchedulePage extends React.Component {
   }
 
   renderDaysMenu() {
-    const { activeDay } = this.state;
+    const { activeDay, isSticky } = this.state;
     return (
-      <ul className="days-menu">
-        { SCHEDULE.map(day => (
-          <li
-            className={`${activeDay === day ? '' : '-inactive'}`}
-            key={day.title}
-            onClick={this.toggle.bind(this, day)}
-          >
-            <h2 className="title">{ day.title }</h2>
-            <p className="date">{ day.date }</p>
-          </li>
-        )) }
-      </ul>
+      <div className={classNames('days-menu-wrapper', { '-sticky': isSticky })}>
+        <ul className="days-menu">
+          { SCHEDULE.map(day => (
+            <li
+              className={`${activeDay === day ? '' : '-inactive'}`}
+              key={day.title}
+              onClick={this.toggle.bind(this, day)}
+            >
+              <h2 className="title">{ day.title }</h2>
+              <p className="date">{ day.date }</p>
+            </li>
+          )) }
+        </ul>
+      </div>
     );
   }
 
@@ -83,6 +104,7 @@ export default class SchedulePage extends React.Component {
       <div
         className={`day ${dayOpaque ? '-opaque' : ''}`}
         key={activeDay.title}
+        ref={(el) => { this.dayEl = el; }}
       >
         <div className="events">
           { activeDay.events.map((event, key) => (

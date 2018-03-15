@@ -62,7 +62,7 @@ export default class Event extends React.Component {
     return (
       <div className={computedClass}>
         <a href="" name={anchor} className="-no-outline anchor" />
-        <time className="time auto-height-fix-time" datetime={dateTime}>
+        <time className="time auto-height-fix-time" dateTime={dateTime}>
           <span className="hours">{ time.hours }</span>
           <span className="minutes">{ time.minutes }</span>
         </time>

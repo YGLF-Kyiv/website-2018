@@ -1,4 +1,5 @@
 @import '../shared/styles/mixins';
+@import '../shared/styles/colors';
 
 .page-schedule {
   padding-top: 45px;
@@ -11,10 +12,30 @@
     margin-top: 45px;
   }
 
+  .days-menu-wrapper {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+    z-index: 100;
+    &.-sticky {
+      position: fixed;
+      top: 0;
+      background: $blue;
+      .days-menu {
+        width: calc(100% - 170px);
+        max-width: 1150px;
+        box-sizing: border-box;
+        margin: auto;
+      }
+    }
+  }
   .days-menu {
     display: flex;
     list-style: none;
     margin: 0;
+    padding: 0 55px;
     li {
       width: 50%;
       -ms-flex: 1 auto 0;
@@ -57,6 +78,7 @@
     }
   }
   .day {
+    padding-top: 90px;
     padding-left: 40px;
     transition: all 0.25s;
     opacity: 1;
@@ -70,6 +92,13 @@
   .page-schedule {
     .container-fluid {
       width: calc(100% - 30px);
+    }
+    .days-menu-wrapper {
+      &.-sticky {
+        .days-menu {
+          width: calc(100% - 30px);
+        }
+      }
     }
   }
 }
@@ -95,6 +124,13 @@
     }
     .day {
       padding-left: 10px;
+    }
+    .days-menu-wrapper {
+      &.-sticky {
+        .days-menu {
+          width: calc(100% - 60px);
+        }
+      }
     }
   }
 }
