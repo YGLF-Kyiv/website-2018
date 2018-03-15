@@ -384,7 +384,7 @@ module.exports = {
           "speakerId": 5,
           "description": [
             "The beast is alive! How do you feel about ASCII-alike CSS Grid layout with polyfluid sizing and ch unit ? Do you feel itchy when it comes to building responsive HTML email layouts ? What about the brave new world of dynamic static site generators and JAM stack? Have you ever tried to work around nested CSS Custom Properties, untamed 3rd-party scripts, shady service workers, multi-dimensional variable fonts and painfully outdated pattern libraries? Well, let’s bring it on!",
-            "If you attended or watched the <a target=\"_blank\" href='https://www.youtube.com/watch?v=WfKFGGZVp9s'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks.Beware: you will not be able to unlearn what you’ll learn in the session!Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
+            "If you attended or watched the <a target=\"_blank\" href='https://www.youtube.com/watch?v=cUIfBu0mV08'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks.Beware: you will not be able to unlearn what you’ll learn in the session!Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
           ],
           "showReadMore": true,
         },
