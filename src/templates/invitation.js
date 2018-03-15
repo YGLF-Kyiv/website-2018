@@ -40,8 +40,8 @@ export default class InvitationTemplate extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query InvitiationByPath($path: String!) {
-    invitation(path: { eq: $path }) {
+  query InvitiationByPath($qpath: String!) {
+    invitation(path: { eq: $qpath }) {
       id
       path
       video
