@@ -100,31 +100,28 @@ module.exports = {
             "minutes": "00"
           },
           "title": "Lunch",
-          "duration": "1,5 hours",
+          "duration": "1 hour 30 mins",
           "description": [],
           "showReadMore": false,
         },
         {
-          "className": "",
+          "className": "height90 lightning icon",
           "time": {
             "hours": "16",
             "minutes": "30"
           },
-          "speakerId": 2,
-          "title": "Lightning: JavaScript: The fairly odd parts",
+          "title": "TBA",
           "description": [
-            "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
-          ],
-          "showReadMore": true,
+          ]
         },
         {
-          "className": "",
+          "className": "lightning icon",
           "time": {
             "hours": "16",
             "minutes": "40"
           },
           "speakerId": 12,
-          "title": "Lightning: Using New Web APIs For Your Own Pleasure.",
+          "title": "Using New Web APIs For Your Own Pleasure",
           "description": [
             "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out.So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
             "So obviously a Bluetooth enabled vibrator was a perfect fit. And it came with a serious use case, too: The slogan of the vibrator was \"Let him control you\", which I found very limiting, so I used the Web Bluetooth API to connect it to the browser, and the Web Audio API, to establish my own slogan: \"Let a video control you\".",
@@ -133,12 +130,12 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "className": "height90",
+          "className": "height90 lightning icon",
           "time": {
             "hours": "16",
             "minutes": "50"
           },
-          "title": "Lightning: TBA",
+          "title": "TBA",
           "description": [
           ]
         },
@@ -176,7 +173,7 @@ module.exports = {
           "title": "Mining crypto in browser: GPU, WebAssembly, JavaScript and all the good things to try",
           "speakerId": 9,
           "description": [
-            "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU ?\". The talk shares some insights / outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser based miners."
+            "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU?\". The talk shares some insights / outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser based miners."
           ],
           "showReadMore": true,
         },
@@ -202,7 +199,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90",
+          "className": "height90 wixparty icon",
           "time": {
             "hours": "20",
             "minutes": "00"
@@ -305,39 +302,42 @@ module.exports = {
             "minutes": "40"
           },
           "title": "Lunch",
-          "duration": 90,
+          "duration": "1 hour 30 mins",
           "description": [],
           "showReadMore": false,
         },
         {
-          "className": "height90",
+          "className": "height90 lightning icon",
           "time": {
             "hours": "16",
             "minutes": "10"
           },
-          "title": "Lightning: TBA",
+          "title": "TBA",
           "description": [
           ]
         },
         {
-          "className": "height90",
+          "className": "height90 lightning icon",
           "time": {
             "hours": "16",
             "minutes": "20"
           },
-          "title": "Lightning: TBA",
+          "title": "TBA",
           "description": [
           ]
         },
         {
-          "className": "height90",
+          "className": "lightning icon",
           "time": {
             "hours": "16",
             "minutes": "30"
           },
-          "title": "Lightning: TBA",
+          "speakerId": 2,
+          "title": "JavaScript: The fairly odd parts",
           "description": [
-          ]
+            "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
+          ],
+          "showReadMore": true,
         },
         {
           "className": "",
@@ -384,9 +384,9 @@ module.exports = {
           "speakerId": 5,
           "description": [
             "The beast is alive! How do you feel about ASCII-alike CSS Grid layout with polyfluid sizing and ch unit ? Do you feel itchy when it comes to building responsive HTML email layouts ? What about the brave new world of dynamic static site generators and JAM stack? Have you ever tried to work around nested CSS Custom Properties, untamed 3rd-party scripts, shady service workers, multi-dimensional variable fonts and painfully outdated pattern libraries? Well, let’s bring it on!",
-            "If you attended or watched the <a fref='https://www.youtube.com/watch?v=WfKFGGZVp9s'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks.Beware: you will not be able to unlearn what you’ll learn in the session!Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
+            "If you attended or watched the <a target=\"_blank\" href='https://www.youtube.com/watch?v=WfKFGGZVp9s'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks.Beware: you will not be able to unlearn what you’ll learn in the session!Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
           ],
-          "showReadMore": false,
+          "showReadMore": true,
         },
         {
           "className": "height90",
@@ -399,7 +399,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90",
+          "className": "height90 myheritageparty icon",
           "time": {
             "hours": "20",
             "minutes": "00"
