@@ -165,7 +165,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "",
+          "className": "denis-radin",
           "time": {
             "hours": "18",
             "minutes": "10"
@@ -340,7 +340,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "className": "",
+          "className": "ronen-amiel",
           "speakerId": 13,
           "time": {
             "hours": "16",

@@ -19,16 +19,21 @@
     right: 0;
     transform: translateY(0);
     z-index: 100;
+    opacity: 1;
+    transition: opacity .25s;
     &.-sticky {
       position: fixed;
       top: 0;
-      background: $blue;
+      background: rgba(58, 71, 228, 0.9);
       .days-menu {
         width: calc(100% - 170px);
         max-width: 1150px;
         box-sizing: border-box;
         margin: auto;
       }
+    }
+    &.-hidden {
+      opacity: 0;
     }
   }
   .days-menu {
@@ -40,7 +45,7 @@
       width: 50%;
       -ms-flex: 1 auto 0;
       flex: 1 auto 0;
-      transition: all 0.25s;
+      transition: opacity 0.25s;
       cursor: pointer;
       border-bottom: 1px solid $green;
       height: 90px;
@@ -57,7 +62,6 @@
         transform: translateY(16px);
         color: $green;
         line-height: 45px;
-        transition: all 0.25s;
       }
       .date {
         font-family: "Libre Baskerville", serif;
@@ -80,10 +84,10 @@
   .day {
     padding-top: 90px;
     padding-left: 40px;
-    transition: all 0.25s;
+    transition: opacity 0.25s;
     opacity: 1;
-    &.-opaque {
-      opacity: 0;
+    &.day-25 {
+      margin-top: -45px;
     }
   }
 }

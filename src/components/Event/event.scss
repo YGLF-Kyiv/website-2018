@@ -146,7 +146,8 @@
       }
     }
   }
-  .event-read-more {
+  .event-read-more,
+  .event-read-less {
     color: $green;
     outline: none;
     position: absolute;
@@ -155,19 +156,25 @@
     letter-spacing: 3.51px;
     font-size: 13px;
     -webkit-font-smoothing: antialiased;
-    transition: opacity 0.25s ease-in;
+    transition: opacity .25s ease-in;
     &:hover {
       color: $white;
     }
   }
+  .event-read-less {
+    opacity: 0;
+  }
   &.-opened {
     .info-wrapper {
-      max-height: 1000px;
+      max-height: 3000px;
       &::after {
         opacity: 0;
       }
     }
     .event-read-more {
+      opacity: 0;
+    }
+    .event-read-less {
       opacity: 1;
     }
   }
@@ -195,10 +202,11 @@
 
 @media screen and (max-width: 640px) {
   .event {
-    flex-direction: column;
+    display: block;
     padding-top: 0;
     min-height: 225px;
     &.height90 {
+      display: flex;
       flex-direction: row;
     }
     &.height135 {
@@ -206,6 +214,15 @@
     }
     &.height270 {
       min-height: 270px;
+    }
+    &.denis-radin {
+      min-height: 360px;
+    }
+    &.ronen-amiel {
+      min-height: 405px;
+      .info-wrapper {
+        max-height: 270px;
+      }
     }
     &:after {
       left: 0;
@@ -225,15 +242,26 @@
         opacity: 0;
       }
     }
-    .event-read-more {
+    .event-read-more,
+    .event-read-less {
       left: 100px;
     }
     .info-wrapper {
       margin-bottom: 0;
       margin-right: 10px;
+      &::after {
+        display: none;
+      }
+    }
+    &.wixparty {
+      height: 135px;
+    }
+    &.myheritageparty {
+      height: 135px;
     }
     .time {
       max-height: 45px;
+      display: block;
     }
 
   }

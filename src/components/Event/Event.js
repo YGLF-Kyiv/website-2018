@@ -109,16 +109,26 @@ export default class Event extends React.Component {
             </div>
           </FitToRhythm>
         </div>
-        { showReadMore && (
+        { showReadMore && [
           <a
             href=""
             name={anchor}
             onClick={this.toggleReadMore}
-            className={classNames('event-read-more', { '-opened': opened })}
+            className="event-read-more"
+            key="event-read-more"
           >
-            { opened ? 'LESS' : 'READ MORE' }
+            READ MORE
+          </a>,
+          <a
+            href=""
+            name={anchor}
+            onClick={this.toggleReadMore}
+            className="event-read-less"
+            key="event-read-less"
+          >
+            LESS
           </a>
-        ) }
+        ] }
       </div>
     );
   }

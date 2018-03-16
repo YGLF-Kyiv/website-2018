@@ -2,6 +2,7 @@ import React, { PropTypes as toBe } from 'react';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import LazyLoad from 'react-lazyload';
 import classNames from 'classnames';
+import Swipe from 'react-easy-swipe';
 
 import './event-speaker.scss';
 
@@ -22,10 +23,17 @@ export default class EventSpeaker extends React.Component {
     this.state = {
       visible: false,
     };
+    this.close = this.close.bind(this);
   }
 
   componentDidMount() {
     setTimeout(() => this.setState({ visible: true }), 0);
+  }
+
+  close() {
+    this.setState({ visible: false }, () => {
+      setTimeout(this.props.onOverlayClick, 300);
+    });
   }
 
   renderSpeaker() {
@@ -75,10 +83,13 @@ export default class EventSpeaker extends React.Component {
   render() {
     const { visible } = this.state;
     return (
-      <div className={classNames('event-speaker', { '-visible': visible })}>
-        <div className="overlay" onClick={this.props.onOverlayClick} />
+      <Swipe
+        className={classNames('event-speaker', { '-visible': visible })}
+        onSwipeRight={this.close}
+      >
+        <div className="overlay" onClick={this.close} />
         { this.renderSpeaker() }
-      </div>
+      </Swipe>
     );
   }
 }
