@@ -28,6 +28,10 @@ export default class Event extends React.Component {
     this.onSpeakerClick = this.onSpeakerClick.bind(this);
   }
 
+  getElTop() {
+    return this.el.getBoundingClientRect().top;
+  }
+
   onSpeakerClick(e) {
     e.preventDefault();
 
@@ -38,6 +42,7 @@ export default class Event extends React.Component {
     e.preventDefault();
 
     this.setState({ opened: !this.state.opened });
+    window.scrollTo(0, window.scrollY + this.getElTop() - 90);
   }
 
   render() {
@@ -60,7 +65,10 @@ export default class Event extends React.Component {
     const dateTime = `2018-05-${this.props.day}T${time.hours}:${time.minutes}`;
 
     return (
-      <div className={computedClass}>
+      <div
+        className={computedClass}
+        ref={(el) => { this.el = el; }}
+      >
         <a href="" name={anchor} className="-no-outline anchor" />
         <time className="time auto-height-fix-time" dateTime={dateTime}>
           <span className="hours">{ time.hours }</span>
