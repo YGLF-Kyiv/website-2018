@@ -55,6 +55,7 @@ export default class Footer extends React.Component {
                 {/*<Link to="/#workshops">Workshops</Link>*/}
                 <Link to="/sponsorship">Sponsorship</Link>
                 <Link to="/diversity">Diversity Tickets</Link>
+                <Link to="/schedule">Schedule</Link>
                 <a
                   href="https://yougottalovefrontend.com/"
                   target="_blank"
