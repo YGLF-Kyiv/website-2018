@@ -110,7 +110,9 @@ export default class Event extends React.Component {
               { !!description.length && (
                 <div className={classNames('description', { '-can-show-more': showReadMore })}>
                   { description.map(item =>
-                    <p key={item} dangerouslySetInnerHTML={{ __html: item }} />
+                    typeof item === 'string' ?
+                      <p key={item} dangerouslySetInnerHTML={{ __html: item }}/> :
+                      <div key={item} dangerouslySetInnerHTML={item}/>
                   ) }
                 </div>
               ) }

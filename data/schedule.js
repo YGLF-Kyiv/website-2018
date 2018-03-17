@@ -370,10 +370,15 @@ module.exports = {
             "hours": "17",
             "minutes": "50"
           },
-          "title": "TBA",
+          "title": "A common design language: let designers & developers talk to each other",
           "speakerId": 10,
-          "description": [],
-          "showReadMore": false,
+          "description": [
+            "\"Should designers code?\" or \"Should coders design?\"&nbsp;— these 2 eternal questions are being asked for years with no particular answer given.",
+            {"__html": "<ul><li>How to let developers know what typography style or button variance they should be using on this particular screen?</li><li>How to ensure that the whole UI is consistent?</li><li>How to let designers know that some screen design doesn't fit the requirements and needs to be updated?</li></ul>"},
+            "In order to answer those questions designers and developers have to speak the same language.But what language should it be.UI components and pattern libraries can provide this intermediate abstraction and be a common language for both designers and developers.",
+            "During this talk I'll guide you through some frustrations I've experienced as a designer and as a developer when working on different projects.I'll show how the common UI patterns library can solve some of these problems and improve the overall productivity of the team."
+          ],
+          "showReadMore": true,
         },
         {
           "time": {
