@@ -43,14 +43,20 @@ export default class HeaderMenu extends React.Component {
 
   toggleMenu(e) {
     e.preventDefault();
+    this.state.menuExpanded ? this.closeMenu() : this.openMenu();
+  }
+  openMenu() {
     this.setState({
-      menuExpanded: !this.state.menuExpanded,
+      menuExpanded: true,
     });
+    window.document.body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
   }
   closeMenu() {
     this.setState({
       menuExpanded: false,
     });
+    window.document.body.style.overflow = 'auto';
   }
 
   render() {

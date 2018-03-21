@@ -34,6 +34,11 @@
   &.myheritageparty .time::before {
     content: "🎉";
   }
+  &.opaque-line {
+    &::after {
+      opacity: 0.3;
+    }
+  }
   .time {
     line-height: 45px;
     -webkit-font-smoothing: antialiased;
@@ -84,8 +89,8 @@
       transform: translateY(20px);
       .speaker-img {
         flex: 0 0 auto;
-        width: 81px;
-        height: 92px;
+        width: 64px;
+        height: 72px;
         border: 1px solid $green;
         overflow: hidden;
         margin: 0 18px 18px 0;
@@ -219,8 +224,14 @@
     &.denis-radin {
       min-height: 360px;
     }
-    &.ronen-amiel {
-      min-height: 405px;
+    &.michaela-lehr {
+      min-height: 315px;
+    }
+    &.andrey-okonetchnikov {
+      min-height: 315px;
+    }
+    &.ronen-amiel:not(.-opened) {
+      min-height: 360px;
       .info-wrapper {
         max-height: 270px;
       }

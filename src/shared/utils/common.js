@@ -12,7 +12,13 @@ export function constructSchedule(schedule, speakers) {
           ...speaker,
         }
         : {};
-      return { ...event, speakerData };
+      return {
+        ...event,
+        speakerData,
+        anchor: speaker
+          ? `${speaker.anchor}-${day.day}-${event.time.hours}-${event.time.minutes}`
+          : null
+      };
     });
     return { ...day, events };
   });

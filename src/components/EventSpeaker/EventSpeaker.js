@@ -86,6 +86,7 @@ export default class EventSpeaker extends React.Component {
       <Swipe
         className={classNames('event-speaker', { '-visible': visible })}
         onSwipeRight={this.close}
+        tolerance={150}
       >
         <div className="overlay" onClick={this.close} />
         { this.renderSpeaker() }

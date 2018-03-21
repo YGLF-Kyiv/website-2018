@@ -117,6 +117,14 @@ export default class SchedulePage extends React.Component {
         key={day.title}
         ref={(el) => { this.dayEls[day.day] = el; }}
       >
+        {
+          day.day === 25 && (
+            <div className="day-25-header">
+              <h2 className="title">{ day.title }</h2>
+              <p className="date">{ day.date }</p>
+            </div>
+          )
+        }
         <div className="events">
           { day.events.map((event, index) => (
             <div ref={(el) => { if (day.day === 25 && index === day.events.length - 1) { this.lastEventEl = el; } }}>

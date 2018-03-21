@@ -105,7 +105,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90 lightning icon",
+          "className": "height90 lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "30"
@@ -115,7 +115,7 @@ module.exports = {
           ]
         },
         {
-          "className": "lightning icon",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "40"
@@ -266,7 +266,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "",
+          "className": "michaela-lehr",
           "time": {
             "hours": "13",
             "minutes": "20"
@@ -307,7 +307,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90 lightning icon",
+          "className": "height90 lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "10"
@@ -317,7 +317,7 @@ module.exports = {
           ]
         },
         {
-          "className": "height90 lightning icon",
+          "className": "height90 lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "20"
@@ -365,7 +365,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "",
+          "className": "andrey-okonetchnikov",
           "time": {
             "hours": "17",
             "minutes": "50"

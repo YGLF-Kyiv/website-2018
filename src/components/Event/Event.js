@@ -3,6 +3,8 @@ import LazyLoad from 'react-lazyload';
 import FitToRhythm from '../FitToRhythm/FitToRhythm';
 import classNames from 'classnames';
 
+import { isInBrowser } from '../../shared/utils/common';
+
 import './event.scss';
 
 export default class Event extends React.Component {
@@ -26,6 +28,15 @@ export default class Event extends React.Component {
 
     this.toggleReadMore = this.toggleReadMore.bind(this);
     this.onSpeakerClick = this.onSpeakerClick.bind(this);
+    this.scrolltoElTop = this.scrolltoElTop.bind(this);
+  }
+
+  componentDidMount() {
+    const { anchor } = this.props.data;
+    if (isInBrowser() && window.location.hash.replace('#', '') === anchor) {
+      console.log(this.getElTop());
+      setTimeout(this.toggleReadMore, 100);
+    }
   }
 
   getElTop() {
@@ -38,11 +49,15 @@ export default class Event extends React.Component {
     this.props.onSpeakerClick();
   }
 
+  scrolltoElTop() {
+    window.scrollTo(0, window.scrollY + this.getElTop() - 90);
+  }
+
   toggleReadMore(e) {
-    e.preventDefault();
+    e && e.preventDefault();
 
     this.setState({ opened: !this.state.opened });
-    window.scrollTo(0, window.scrollY + this.getElTop() - 90);
+    this.scrolltoElTop();
   }
 
   render() {
@@ -54,7 +69,8 @@ export default class Event extends React.Component {
       showReadMore,
       className,
       duration,
-      speakerData: { speakerName, imageSrc, anchor },
+      anchor,
+      speakerData: { speakerName, imageSrc, anchor: speakerAnchor },
     } = this.props.data;
     const { opened } = this.state;
     const computedClass = classNames('event', className, {
@@ -69,7 +85,6 @@ export default class Event extends React.Component {
         className={computedClass}
         ref={(el) => { this.el = el; }}
       >
-        <a href="" name={anchor} className="-no-outline anchor" />
         <time className="time auto-height-fix-time" dateTime={dateTime}>
           <span className="hours">{ time.hours }</span>
           <span className="minutes">{ time.minutes }</span>
@@ -87,18 +102,20 @@ export default class Event extends React.Component {
                   )
                 }
                 <div className="info-description">
-                  <h4 className="info-description-title">
-                    { title }
-                    { duration && (
-                      <span className="info-description-time"><strong>,</strong> { duration }</span>
-                    ) }
-                  </h4>
+                  <a href={`#${anchor}`}>
+                    <h4 className="info-description-title">
+                      { title }
+                      { duration && (
+                        <span className="info-description-time"><strong>,</strong> { duration }</span>
+                      ) }
+                    </h4>
+                  </a>
                   { speakerName
                     ? (
                       <a
                         className="info-description-speaker"
                         onClick={this.onSpeakerClick}
-                        href={`/speakers#${anchor}`}
+                        href={`/speakers#${speakerAnchor}`}
                       >
                         { speakerName } { company && `(${company})` }
                       </a>
@@ -121,8 +138,7 @@ export default class Event extends React.Component {
         </div>
         { showReadMore && [
           <a
-            href=""
-            name={anchor}
+            href={`#${anchor}`}
             onClick={this.toggleReadMore}
             className="event-read-more"
             key="event-read-more"
@@ -130,8 +146,7 @@ export default class Event extends React.Component {
             READ MORE
           </a>,
           <a
-            href=""
-            name={anchor}
+            href={`#${anchor}`}
             onClick={this.toggleReadMore}
             className="event-read-less"
             key="event-read-less"

@@ -1,6 +1,33 @@
 @import '../shared/styles/mixins';
 @import '../shared/styles/colors';
 
+@mixin day-title {
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 2.73px;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateY(16px);
+  -ms-transform: translateY(16px);
+  transform: translateY(16px);
+  color: $green;
+  line-height: 45px;
+}
+@mixin day-date {
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  letter-spacing: 2.25px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  color: $green;
+}
+
 .page-schedule {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -36,6 +63,18 @@
       opacity: 0;
     }
   }
+  .day-25-header {
+    border-bottom: 1px solid $green;
+    height: 90px;
+    box-sizing: border-box;
+    margin: 0 45px 0 5px;
+    .title {
+      @include day-title;
+    }
+    .date {
+      @include day-date;
+    }
+  }
   .days-menu {
     display: flex;
     list-style: none;
@@ -51,30 +90,10 @@
       height: 90px;
       box-sizing: border-box;
       .title {
-        font-size: 24px;
-        font-weight: 100;
-        letter-spacing: 2.73px;
-        margin: 0;
-        text-transform: uppercase;
-        -webkit-font-smoothing: antialiased;
-        -webkit-transform: translateY(16px);
-        -ms-transform: translateY(16px);
-        transform: translateY(16px);
-        color: $green;
-        line-height: 45px;
+        @include day-title;
       }
       .date {
-        font-family: "Libre Baskerville", serif;
-        font-size: 12px;
-        letter-spacing: 2.25px;
-        height: 45px;
-        line-height: 45px;
-        padding: 0;
-        margin: 0;
-        font-style: italic;
-        font-weight: 100;
-        -webkit-font-smoothing: antialiased;
-        color: $green;
+        @include day-date;
       }
       &.-inactive {
         opacity: 0.3;
@@ -89,15 +108,6 @@
     &.day-25 {
       margin-top: 45px;
       position: relative;
-      &::before {
-        display: block;
-        content: ' ';
-        border-top: 1px solid $grey;
-        position: absolute;
-        top: 45px;
-        left: 45px;
-        right: 45px;
-      }
     }
   }
 }
@@ -133,8 +143,11 @@
     h2 {
       margin-left: 10px;
     }
+    .day-25-header {
+      margin: 0 10px 0 0;
+    }
     .days-menu {
-      padding: 0 10px;
+      padding: 0 25px;
     }
     .day {
       padding-left: 10px;
@@ -145,11 +158,10 @@
         }
       }
     }
-    .days-menu-wrapper {
-      &.-sticky {
-        .days-menu {
-          width: calc(100% - 60px);
-        }
+    .event-speaker-data-img {
+      .social-icons {
+        right: -40px;
+        left: auto;
       }
     }
   }

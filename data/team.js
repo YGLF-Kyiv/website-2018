@@ -3,6 +3,7 @@ module.exports = {
     {
       "firstName": "Polina",
       "lastName": "Popovychuk",
+      "dogName": "Tucha",
       "position": " ",
       "imageSrc": "/team/polina_popovychuk",
       "description": "Being in events, planning and organizing for years, making ppl happy and productive at my everyday job, calligraphy enthusiast, snowboard rider, bookworm and dog lover.",

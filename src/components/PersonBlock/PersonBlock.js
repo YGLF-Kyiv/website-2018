@@ -18,6 +18,7 @@ export default class PersonBlock extends Component {
     const {
       firstName,
       lastName,
+      dogName,
       imageSrc,
       social,
       position,
@@ -45,6 +46,11 @@ export default class PersonBlock extends Component {
             <h3>
               <span className="person-first-name">{firstName}</span>{' '}
               <span className="person-last-name">{lastName}</span>
+              {
+                dogName && (
+                  <span className="person-dog-name">& {dogName}</span>
+                )
+              }
             </h3>
             <p>
               { position && <span className="person-position">{position}</span> }
