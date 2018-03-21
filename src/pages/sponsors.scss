@@ -1,0 +1,92 @@
+@import '../shared/styles/mixins';
+
+.page-sponsors {
+  overflow: hidden;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  h2 {
+    @include block-header;
+    margin-bottom: 45px;
+  }
+  p {
+    @include block-text;
+  }
+  ._full-width {
+    width: 100%;
+  }
+
+  .sponsors-holder {
+    display: flex;
+    .sponsor {
+      box-sixing: border-box;
+      width: 50%;
+      .img-holder {
+        display: flex;
+        width: 100px;
+        max-height: 100px;
+        margin-left: 120px;
+        > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 801px) {
+  .page-sponsors {
+    .sponsors-holder {
+      margin: 0 -10px;
+      .sponsor {
+        padding: 0 10px;
+        .img-holder {
+          margin-left: 80px;
+        }
+        p {
+          width: auto;
+        }
+        p {
+          padding-left: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+  .page-sponsors {
+    .sponsors-holder {
+      margin: 0 -10px;
+      .sponsor {
+        padding: 0 10px;
+        .img-holder {
+          margin-left: 0;
+        }
+        h3, h2, p {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page-sponsors {
+    .sponsors-holder {
+      flex-direction: column;
+      margin: 0;
+      .sponsor {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 45px;
+        .img-holder {
+          margin-left: 0;
+        }
+        h3, h2, p {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+

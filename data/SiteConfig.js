@@ -20,7 +20,7 @@ module.exports = {
     '/',
     '/about',
     '/speakers',
-    '/sponsorship',
+    '/sponsors',
     '/tickets',
     '/diversity',
     '/code-of-conduct',
