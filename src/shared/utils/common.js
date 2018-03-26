@@ -17,7 +17,7 @@ export function constructSchedule(schedule, speakers) {
         speakerData,
         anchor: speaker
           ? `${speaker.anchor}-${day.day}-${event.time.hours}-${event.time.minutes}`
-          : null
+          : `${day.day}-${event.time.hours}-${event.time.minutes}`
       };
     });
     return { ...day, events };
