@@ -15,19 +15,44 @@
     width: 100%;
   }
 
-  .sponsors-holder {
+  .sponsor > .img-holder {
     display: flex;
-    .sponsor {
-      box-sixing: border-box;
+    > img {
+      height: 100%;
+    }
+  }
+
+  .sponsors-holder {
+    overflow: hidden;
+    > .sponsor {
+      box-sizing: border-box;
+      float: left;
       width: 50%;
+      &.-astound,
+      &.-grammarly {
+        min-height: 630px;
+      }
+      &.-jetbrains,
+      &.-my-heritage {
+        min-height: 540px;
+      }
       .img-holder {
-        display: flex;
         width: 100px;
-        max-height: 100px;
+        height: 133px;
         margin-left: 120px;
-        > img {
-          width: 100%;
-        }
+      }
+    }
+  }
+
+  .secondary-sponsors-holder {
+    display: flex;
+    height: 135px;
+    justify-content: space-around;
+    .sponsor {
+      .img-holder {
+        width: 100px;
+        height: 133px;
+        margin-left: 120px;
       }
     }
   }
@@ -57,14 +82,14 @@
   .page-sponsors {
     .sponsors-holder {
       margin: 0 -10px;
-      .sponsor {
-        padding: 0 10px;
-        .img-holder {
-          margin-left: 0;
-        }
-        h3, h2, p {
-          padding-left: 0;
-        }
+    }
+    .sponsor {
+      padding: 0 10px;
+      .img-holder {
+        margin-left: 0;
+      }
+      h3, h2, p {
+        padding-left: 0;
       }
     }
   }
@@ -75,16 +100,16 @@
     .sponsors-holder {
       flex-direction: column;
       margin: 0;
-      .sponsor {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 45px;
-        .img-holder {
-          margin-left: 0;
-        }
-        h3, h2, p {
-          padding-left: 0;
-        }
+    }
+    .sponsor {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 45px;
+      .img-holder {
+        margin-left: 0;
+      }
+      h3, h2, p {
+        padding-left: 0;
       }
     }
   }

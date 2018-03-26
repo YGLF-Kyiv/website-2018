@@ -34,6 +34,15 @@ export default class SponsorshipPage extends React.Component {
                 </div>)
               ) }
             </div>
+            <div className="secondary-sponsors-holder">
+              { sponsorsData.secondary.map(sponsor => (
+                <div className={classNames('sponsor', sponsor.className)} key={sponsor.title}>
+                  <a className="img-holder" href={sponsor.url} target="_blank">
+                    <img src={`${sponsor.imageSrc}.svg`} alt={sponsor.title} />
+                  </a>
+                </div>)
+              ) }
+            </div>
           </section>
         </div>
       </div>
