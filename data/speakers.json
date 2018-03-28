@@ -313,8 +313,30 @@
           "url": "https://twitter.com/ronenamiel"
         },
         {
-          "type": "facebook",
+          "type": "github",
           "url": "https://github.com/ronami"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "firstName": "Bruce",
+      "lastName": "Lawson",
+      "position": "MC @ YGLF",
+      "company": "Wix",
+      "description": "Bruce has been working on accessibility, web standards and browsers since 2001. That's why he looks as bad as he does. He has previously been an assembler programmer, a front-end lead developer, a tarot card reader, volunteer pharmacist in India, English teacher to a Thai princess and a musician in Turkey. You can follow him at <a href='https://twitter.com/brucel' target='_blank'>@brucel</a>, read his ramblings at <a href='http://www.brucelawson.co.uk/' target='_blank'>www.brucelawson.co.uk</a>, or hear his music at <a href='https://soundcloud.com/bruceclawson/' target='_blank'>soundcloud.com</a>.",
+      "highlightedDescription": "Bruce has been working on accessibility, web standards and browsers since 2001. That's why he looks as bad as he does. He has previously been an assembler programmer, a front-end lead developer, a tarot card reader, volunteer pharmacist in India, English teacher to a Thai princess and a musician in Turkey",
+      "imageSrc": "/speakers/bruce_lawson",
+      "anchor": "Bruce-Lawson",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/brucel"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/bruce-lawson-34b44/"
         }
       ]
     }
