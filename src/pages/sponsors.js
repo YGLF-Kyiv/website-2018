@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import _ from 'lodash/fp';
 
 import './sponsors.scss';
 
@@ -23,10 +24,10 @@ export default class SponsorshipPage extends React.Component {
           <section>
             <h2>Sponsors</h2>
             <div className="sponsors-holder">
-              { sponsorsData.all.map(sponsor => (
+              { _.shuffle(sponsorsData.all).map(sponsor => (
                 <div className={classNames('sponsor', sponsor.className)} key={sponsor.title}>
                   <a className="img-holder" href={sponsor.url} target="_blank">
-                    <img src={`${sponsor.imageSrc}.svg`} alt={sponsor.title} />
+                    <img src={sponsor.imageSrc} alt={sponsor.title} />
                   </a>
                   <div className="description">
                     { sponsor.description.map(p => <p>{ p }</p>) }
@@ -35,10 +36,10 @@ export default class SponsorshipPage extends React.Component {
               ) }
             </div>
             <div className="secondary-sponsors-holder">
-              { sponsorsData.secondary.map(sponsor => (
+              { _.shuffle(sponsorsData.secondary).map(sponsor => (
                 <div className={classNames('sponsor', sponsor.className)} key={sponsor.title}>
                   <a className="img-holder" href={sponsor.url} target="_blank">
-                    <img src={`${sponsor.imageSrc}.svg`} alt={sponsor.title} />
+                    <img src={sponsor.imageSrc} alt={sponsor.title} />
                   </a>
                 </div>)
               ) }
