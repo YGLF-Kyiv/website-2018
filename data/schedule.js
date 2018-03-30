@@ -206,7 +206,7 @@ module.exports = {
           },
           "title": "Wix Afterparty",
           "description": [],
-          "duration": "till the midnight",
+          "duration": "till midnight",
           "showReadMore": false,
         }
       ]
@@ -410,7 +410,7 @@ module.exports = {
             "minutes": "00"
           },
           "title": "MyHeritage Afterparty",
-          "duration": "till the midnight",
+          "duration": "till midnight",
           "description": [],
           "showReadMore": false,
         }
