@@ -125,7 +125,7 @@ module.exports = {
           "description": [
             "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out. So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
             "So obviously a Bluetooth enabled vibrator was a perfect fit. And it came with a serious use case, too: The slogan of the vibrator was \"Let him control you\", which I found very limiting, so I used the Web Bluetooth API to connect it to the browser, and the Web Audio API, to establish my own slogan: \"Let a video control you\".",
-            "In my lightning talk, you will learn how to use the Web Bluetooth API to connect a Bluetooth enabled a device to the browser. Also, you will see what is possible with the Web Audio API, especially when it comes to analyzing spoken words."
+            "In my lightning talk, you will learn how to use the Web Bluetooth API to connect a Bluetooth enabled device to the browser. Also, you will see what is possible with the Web Audio API, especially when it comes to analyzing spoken words."
           ],
           "showReadMore": true,
         },
