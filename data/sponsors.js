@@ -6,8 +6,7 @@ module.exports = {
       "url": "https://grammarly.com",
       "imageSrc": "/sponsors/grammarly.svg",
       "description": [
-        "Some text here. Among company’s clients leading global brands such as Adidas, L’Oréal, Under Armour, Jimmy Choo, Lacoste, and Versace.",
-        "The passionate team of 600+ dedicated, diverse industry and technology experts has decades of e-commerce experience and more than 400 site implementations under its belt to address the complex challenges, advancing technologies and unique needs of global markets.",
+        "Some text here. ",
       ],
     },
     {
@@ -16,8 +15,8 @@ module.exports = {
       "url": "https://jetbrains.com",
       "imageSrc": "/sponsors/jetbrains.svg",
       "description": [
-        "Some text here. Among company’s clients leading global brands such as Adidas, L’Oréal, Under Armour, Jimmy Choo, Lacoste, and Versace.",
-        "The passionate team of 600+ dedicated, diverse industry and technology experts has decades of e-commerce experience and more than 400 site implementations under its belt to address the complex challenges, advancing technologies and unique needs of global markets.",
+        "At <a href='https://www.jetbrains.com' target='_blank'>JetBrains</a>, we create tools to help developers be more productive.",
+        "<a href='https://www.jetbrains.com/webstorm' target='_blank'>WebStorm</a> is our IDE for JavaScript developers. Support for React, Angular and Vue, smart code completion and refactorings, a debugger, and lots of integrated tools are just some of the reasons to try WebStorm.",
       ],
     },
     {
@@ -26,8 +25,7 @@ module.exports = {
       "url": "https://myheritage.com",
       "imageSrc": "/sponsors/my_heritage.svg",
       "description": [
-        "Among company’s clients leading global brands such as Adidas, L’Oréal, Under Armour, Jimmy Choo, Lacoste, and Versace.",
-        "The passionate team of 600+ dedicated, diverse industry and technology experts has decades of e-commerce experience and more than 400 site implementations under its belt to address the complex challenges.",
+        "Some text here.",
       ],
     },
     {
@@ -36,8 +34,7 @@ module.exports = {
       "url": "https://wix.engineering",
       "imageSrc": "/sponsors/wix.svg",
       "description": [
-        "Some text here. Among company’s clients leading global brands such as Adidas, L’Oréal, Under Armour, Jimmy Choo, Lacoste, and Versace.",
-        "The passionate team of 600+ dedicated, diverse industry and technology experts has decades of e-commerce experience and more than 400 site implementations under its belt to address the complex challenges, advancing technologies and unique needs of global markets.",
+        "Some text here.",
       ],
     },
     {

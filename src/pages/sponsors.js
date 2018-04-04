@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import _ from 'lodash/fp';
 
 import './sponsors.scss';
+import FitToRhythm from '../components/FitToRhythm/FitToRhythm';
 
 import { gaTrack } from '../shared/utils/ga';
 
@@ -25,14 +26,14 @@ export default class SponsorshipPage extends React.Component {
             <h2>Sponsors</h2>
             <div className="sponsors-holder">
               { _.shuffle(sponsorsData.all).map(sponsor => (
-                <div className={classNames('sponsor', sponsor.className)} key={sponsor.title}>
+                <FitToRhythm className={classNames('sponsor', sponsor.className)} key={sponsor.title}>
                   <a className="img-holder" href={sponsor.url} target="_blank">
                     <img src={sponsor.imageSrc} alt={sponsor.title} />
                   </a>
                   <div className="description">
-                    { sponsor.description.map(p => <p>{ p }</p>) }
+                    { sponsor.description.map(p => <p dangerouslySetInnerHTML={{__html: p}} />) }
                   </div>
-                </div>)
+                </FitToRhythm>)
               ) }
             </div>
             <div className="secondary-sponsors-holder">

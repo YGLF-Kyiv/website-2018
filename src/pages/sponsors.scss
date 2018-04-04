@@ -11,6 +11,13 @@
   p {
     @include block-text;
     padding: 24px 0 21px 0;
+    a {
+      color: $green;
+      outline: none;
+      &:hover {
+        color: $white;
+      }
+    }
   }
   ._full-width {
     width: 100%;
@@ -36,17 +43,10 @@
       box-sizing: border-box;
       width: 50%;
       padding-left: 120px;
-      &.-astound,
-      &.-grammarly {
-        min-height: 630px;
-      }
-      &.-jetbrains,
-      &.-my-heritage {
-        min-height: 540px;
-      }
+      padding-bottom: 45px;
       .img-holder {
         height: 133px;
-        max-width: 50%;
+        width: 50%;
       }
     }
   }
