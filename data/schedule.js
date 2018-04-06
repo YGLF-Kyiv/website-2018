@@ -178,15 +178,17 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "className": "",
+          "className": "juho-vepsalainen",
           "time": {
             "hours": "18",
             "minutes": "50"
           },
-          "title": "TBA",
+          "title": "Case Study - React Finland",
           "speakerId": 7,
-          "description": [],
-          "showReadMore": false,
+          "description": [
+          "Organizing a conference means you require a certain amount of technical infrastructure. We developed a custom website and application for <a target=\"_blank\" href='https://react-finland.fi/'>React Finland</a>. In this talk, you'll learn how we did it and how to achieve a modern frontend architecture using technologies such as Webpack, React, and GraphQL. You will also gain insight on the non-technical aspects including marketing and sales and see how they align with technology."
+          ],
+          "showReadMore": true,
         },
         {
           "className": "height90",
