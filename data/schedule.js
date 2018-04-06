@@ -75,8 +75,8 @@ module.exports = {
           "speakerId": 8,
           "description": [
             "Traditionally, GraphQL clients were focused on client-server communication and caching, with GraphQL query executor on the server. However, it's also possible to run full GraphQL executor on the client side.",
-            "The talk will explore the concept of schema stitching(connecting multiple GraphQL schemas together) from a client - side point of view.Using this approach, developer can merge multiple remote schemas together with a frontend schema.The combined schema is responsible for routing requests to a server and a client-side storage/cache.",
-            "The talk will explore both schema stitching implementation and the possible applications.Applications of this approach include prototyping application's GraphQL schema without a server. After prototype stage, the schema can be moved to the server. Another use-case is building frontend-only applications that use multiple public GraphQL APIs."
+            "The talk will explore the concept of schema stitching (connecting multiple GraphQL schemas together) from a client-side point of view. Using this approach, developer can merge multiple remote schemas together with a frontend schema. The combined schema is responsible for routing requests to a server and a client-side storage/cache.",
+            "The talk will explore both schema stitching implementation and the possible applications. Applications of this approach include prototyping application's GraphQL schema without a server. After prototype stage, the schema can be moved to the server. Another use-case is building frontend-only applications that use multiple public GraphQL APIs."
           ],
           "showReadMore": true,
         },
@@ -89,7 +89,7 @@ module.exports = {
           "title": "East meets West: web typography and modern layouts",
           "speakerId": 3,
           "description": [
-            "This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalisation, but opens up a myriad of options for creative and interesting layouts in general as well."
+            "This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalization, but opens up a myriad of options for creative and interesting layouts in general as well."
           ],
           "showReadMore": true,
         },
@@ -123,9 +123,9 @@ module.exports = {
           "speakerId": 12,
           "title": "Using New Web APIs For Your Own Pleasure",
           "description": [
-            "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out.So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
+            "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out. So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
             "So obviously a Bluetooth enabled vibrator was a perfect fit. And it came with a serious use case, too: The slogan of the vibrator was \"Let him control you\", which I found very limiting, so I used the Web Bluetooth API to connect it to the browser, and the Web Audio API, to establish my own slogan: \"Let a video control you\".",
-            "In my lightning talk you will learn how to use the Web Bluetooth API to connect a Bluetooth enabled device to the browser. Also you will see what is possible with the Web Audio API, especially when it comes to analyzing spoken words."
+            "In my lightning talk, you will learn how to use the Web Bluetooth API to connect a Bluetooth enabled device to the browser. Also, you will see what is possible with the Web Audio API, especially when it comes to analyzing spoken words."
           ],
           "showReadMore": true,
         },
@@ -148,7 +148,7 @@ module.exports = {
           "title": "WebAssembly as cross-platform architecture",
           "speakerId": 11,
           "description": [
-            "With the rise of web-to-native cross-platform solutions like React Native and Electron we got to witness not only their potential but also their shortcomings. Thanks to WebAssembly we now have an alternative that uses a different approach but promises the same results.",
+            "With the rise of web-to-native cross-platform solutions like React Native and Electron, we got to witness not only their potential, but also their shortcomings. Thanks to WebAssembly we now have an alternative that uses a different approach, but promises the same results.",
             "In my talk, I’ll share the lessons the join.me team learned over the last few years while creating and maintaining a cross-platform (web included!) C++ codebase, with special attention to management and team-dynamic aspects. You’ll also see how WebAssembly changes the game and, through a bit of live-coding, how easy it is to get started with it."
           ],
           "showReadMore": true,
@@ -173,7 +173,7 @@ module.exports = {
           "title": "Mining crypto in browser: GPU, WebAssembly, JavaScript and all the good things to try",
           "speakerId": 9,
           "description": [
-            "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU?\". The talk shares some insights / outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser based miners."
+            "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU?\". The talk shares some insights/outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser-based miners."
           ],
           "showReadMore": true,
         },
@@ -250,7 +250,7 @@ module.exports = {
           "speakerId": 6,
           "description": [
             "Since the mid 90s, developers have struggled to build web applications that can be executed both on the client and the server. And still today, even with Node.js and virtual DOM libraries like React, this can be quite challenging.",
-            "In this talk, we'll look at common obstacles and problems that developers face when building this type of web application, including typical performance and security issues. You'll leave the presentation knowing how to build a fast and secure web application than can be rendered on the client and the server.",
+            "In this talk, we'll look at common obstacles and problems that developers face when building this type of web application, including typical performance and security issues. You'll leave the presentation knowing how to build a fast and secure web application that can be rendered on the client and the server.",
           ],
           "showReadMore": true,
         },
@@ -291,7 +291,7 @@ module.exports = {
           "speakerId": 2,
           "description": [
             "With ES2015 the JavaScript specification changed to a yearly release schedule. Since then we already got another three updates, namely ES2016, ES2017 and most recently ES2018. This puts a lot of pressure on JavaScript VMs to not only keep up with implementing all these new proposals, but continuously think about ways to optimize them, so that developers can not only rely on them being available, but also having reasonable performance.",
-            "In this talk I’ll give an update on the state of the ES201X features and their performance in V8, the JavaScript engine that powers both Node.js and Chrome."
+            "In this talk, I’ll give an update on the state of the ES201X features and their performance in V8, the JavaScript engine that powers both Node.js and Chrome."
           ],
           "showReadMore": true,
         },
@@ -375,8 +375,8 @@ module.exports = {
           "description": [
             "\"Should designers code?\" or \"Should coders design?\"&nbsp;— these 2 eternal questions are being asked for years with no particular answer given.",
             {"__html": "<ul><li>How to let developers know what typography style or button variance they should be using on this particular screen?</li><li>How to ensure that the whole UI is consistent?</li><li>How to let designers know that some screen design doesn't fit the requirements and needs to be updated?</li></ul>"},
-            "In order to answer those questions designers and developers have to speak the same language.But what language should it be.UI components and pattern libraries can provide this intermediate abstraction and be a common language for both designers and developers.",
-            "During this talk I'll guide you through some frustrations I've experienced as a designer and as a developer when working on different projects.I'll show how the common UI patterns library can solve some of these problems and improve the overall productivity of the team."
+            "In order to answer those questions designers and developers have to speak the same language. But what language should it be. UI components and pattern libraries can provide this intermediate abstraction and be a common language for both designers and developers.",
+            "During this talk, I'll guide you through some frustrations I've experienced as a designer and as a developer when working on different projects.I'll show how the common UI patterns library can solve some of these problems and improve the overall productivity of the team."
           ],
           "showReadMore": true,
         },
@@ -388,7 +388,7 @@ module.exports = {
           "title": "Keynote: New Advenures In Front-End, Season 2",
           "speakerId": 5,
           "description": [
-            "The beast is alive! How do you feel about ASCII-alike CSS Grid layout with polyfluid sizing and ch unit ? Do you feel itchy when it comes to building responsive HTML email layouts ? What about the brave new world of dynamic static site generators and JAM stack? Have you ever tried to work around nested CSS Custom Properties, untamed 3rd-party scripts, shady service workers, multi-dimensional variable fonts and painfully outdated pattern libraries? Well, let’s bring it on!",
+            "The beast is alive! How do you feel about ASCII-alike CSS Grid layout with polyfluid sizing and ch unit? Do you feel itchy when it comes to building responsive HTML email layouts? What about the brave new world of dynamic static site generators and JAM stack? Have you ever tried to work around nested CSS Custom Properties, untamed 3rd-party scripts, shady service workers, multi-dimensional variable fonts and painfully outdated pattern libraries? Well, let’s bring it on!",
             "If you attended or watched the <a target=\"_blank\" href='https://www.youtube.com/watch?v=cUIfBu0mV08'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks.Beware: you will not be able to unlearn what you’ll learn in the session!Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
           ],
           "showReadMore": true,
