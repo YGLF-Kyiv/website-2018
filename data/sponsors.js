@@ -6,7 +6,10 @@ module.exports = {
       "url": "https://grammarly.com",
       "imageSrc": "/sponsors/grammarly.svg",
       "description": [
-        "Some text here. ",
+        "Grammarly is an AI-powered English writing assistant. Grammarly’s products not only improve grammar, spelling, and punctuation, but also provide word choice and style suggestions to make communication clear, mistake-free, and impactful.\n" +
+        "Over 10 million users rely on Grammarly every day to improve communication in their messages, documents, and social media posts. Grammarly is available in a variety of writing interfaces, including browser, desktop, and mobile keyboards, to help users in both their personal and professional lives.",
+        "Grammarly's most famous corporate clients are Cisco, Dell, Expedia, The Economist, Arizona State University, University of California and others.",
+        "Three Ukrainians founded Grammarly in 2009 and released the first version of the product in Kyiv. Today, Grammarly is a global company with offices in Kyiv, San Francisco, and New York."
       ],
     },
     {
@@ -34,7 +37,8 @@ module.exports = {
       "url": "https://wix.engineering",
       "imageSrc": "/sponsors/wix.svg",
       "description": [
-        "Some text here.",
+        "<a href='https://www.wix.com/' target='_blank'>Wix</a> is a leading cloud-based web development platform with more than 105 million users worldwide. Wix was founded on the belief that the Internet should be accessible to everyone to develop, create, and contribute.",
+        "Our Software Engineering culture is based on developers who love their work, are passionate about technology, and believe that nothing is impossible. We deploy hundreds of times a day and design our software for ease of change. We use TDD with Scala and JS to develop our microservices, encourage C/I, and we give back to the community by speaking at developer events and contributing to Open-Source. Wix's headquarters are in Tel Aviv, Israel with offices in Be'er Sheva, San Francisco, New York, Miami, Berlin, Vilnius, Kiev, and Dnepropetrovsk."
       ],
     },
     {
