@@ -28,7 +28,7 @@ module.exports = {
       "url": "https://myheritage.com",
       "imageSrc": "/sponsors/my_heritage.svg",
       "description": [
-        "Some text here.",
+        "MyHeritage is the leading global destination for family history and DNA testing thanks to cutting-edge products for web, mobile, and desktop. We create innovative technologies that help 93 million global users make amazing discoveries about themselves and their families.",
       ],
     },
     {
