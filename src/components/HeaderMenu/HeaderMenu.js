@@ -9,7 +9,7 @@ const MENU_ITEMS = [
   { title: 'About', to: '/about' },
   { title: 'Speakers', to: '/speakers' },
   { title: 'Schedule', to: '/schedule' },
-  { title: 'Sponsors', to: '/sponsorship' },
+  { title: 'Sponsors', to: '/sponsors' },
 ];
 
 export default class HeaderMenu extends React.Component {
