@@ -105,14 +105,17 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90 lightning icon opaque-line",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "30"
           },
-          "title": "TBA",
+          "speakerId": 2,
+          "title": "JavaScript: The fairly odd parts",
           "description": [
-          ]
+            "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
+          ],
+          "showReadMore": true,
         },
         {
           "className": "lightning icon opaque-line",
@@ -183,10 +186,12 @@ module.exports = {
             "hours": "18",
             "minutes": "50"
           },
-          "title": "TBA",
+          "title": "Case Study - React Finland",
           "speakerId": 7,
-          "description": [],
-          "showReadMore": false,
+          "description": [
+            "Organizing a conference means you require a certain amount of technical infrastructure. We developed a custom website and application for <a target=\"_blank\" href='https://react-finland.fi/'>React Finland</a>. In this talk, you'll learn how we did it and how to achieve a modern frontend architecture using technologies such as Webpack, React, and GraphQL. You will also gain insight on the non-technical aspects including marketing and sales and see how they align with technology."
+          ],
+          "showReadMore": true,
         },
         {
           "className": "height90",
@@ -199,7 +204,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90 wixparty icon",
+          "className": "height90 party icon",
           "time": {
             "hours": "20",
             "minutes": "00"
@@ -327,17 +332,14 @@ module.exports = {
           ]
         },
         {
-          "className": "lightning icon",
+          "className": "height90 lightning",
           "time": {
             "hours": "16",
             "minutes": "30"
           },
-          "speakerId": 2,
-          "title": "JavaScript: The fairly odd parts",
+          "title": "TBA",
           "description": [
-            "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
-          ],
-          "showReadMore": true,
+          ]
         },
         {
           "className": "ronen-amiel",
@@ -404,12 +406,12 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90 myheritageparty icon",
+          "className": "height90 party icon",
           "time": {
             "hours": "20",
             "minutes": "00"
           },
-          "title": "MyHeritage Afterparty",
+          "title": "Beer Afterparty",
           "duration": "till midnight",
           "description": [],
           "showReadMore": false,
