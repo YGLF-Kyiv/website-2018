@@ -30,8 +30,7 @@
   &.lightning .time::before {
     content: "⚡";
   }
-  &.wixparty .time::before,
-  &.myheritageparty .time::before {
+  &.party .time::before {
     content: "🎉";
   }
   &.opaque-line {
@@ -265,10 +264,7 @@
         display: none;
       }
     }
-    &.wixparty {
-      height: 135px;
-    }
-    &.myheritageparty {
+    &.party {
       height: 135px;
     }
     .time {
