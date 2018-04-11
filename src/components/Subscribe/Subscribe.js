@@ -21,7 +21,7 @@ class Subscribe extends Component {
         </div>
         <button type="submit" name="subscribe">
           <i className="fa fa-spinner fa-pulse fa-3x fa-fw" />
-          <span>OK</span>
+          <span>Ok</span>
         </button>
       </form>
     );

@@ -20,7 +20,6 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "",
           "time": {
             "hours": "11",
             "minutes": "20"

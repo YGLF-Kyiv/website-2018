@@ -162,6 +162,7 @@
     font-size: 13px;
     -webkit-font-smoothing: antialiased;
     transition: opacity .25s ease-in;
+    text-transform: uppercase;
     &:hover {
       color: $white;
     }

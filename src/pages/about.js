@@ -50,7 +50,7 @@ export default class AboutPage extends React.Component {
                 rel="noopener noreferrer"
                 className="btn-underline"
               >
-                VIEW 2017 TALKS
+                View 2017 Talks
               </a>
             </div>
           </div>
