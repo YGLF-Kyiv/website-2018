@@ -60,7 +60,6 @@
     font-weight: 700;
     cursor: pointer;
     width: 49px;
-    line-height: 1;
     &:hover {
       background-color: $blue;
       color: $white;
@@ -72,6 +71,7 @@
     > span {
       display: flex;
       justify-content: center;
+      text-transform: uppercase;
     }
   }
 

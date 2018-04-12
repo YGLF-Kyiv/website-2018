@@ -143,7 +143,7 @@ export default class Event extends React.Component {
             className="event-read-more"
             key="event-read-more"
           >
-            READ MORE
+            Read more
           </a>,
           <a
             href={`#${anchor}`}
@@ -151,7 +151,7 @@ export default class Event extends React.Component {
             className="event-read-less"
             key="event-read-less"
           >
-            LESS
+            Less
           </a>
         ] }
       </div>
