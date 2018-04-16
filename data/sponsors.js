@@ -6,7 +6,7 @@ module.exports = {
       "url": "https://grammarly.com",
       "imageSrc": "/sponsors/grammarly.svg",
       "description": [
-        "Grammarly is an AI-powered English writing assistant. Grammarly’s products not only improve grammar, spelling, and punctuation, but also provide word choice and style suggestions to make communication clear, mistake-free, and impactful.\n" +
+        "<a href='https://www.grammarly.com' target='_blank'>Grammarly</a> is an AI-powered English writing assistant. Grammarly’s products not only improve grammar, spelling, and punctuation, but also provide word choice and style suggestions to make communication clear, mistake-free, and impactful.\n" +
         "Over 10 million users rely on Grammarly every day to improve communication in their messages, documents, and social media posts. Grammarly is available in a variety of writing interfaces, including browser, desktop, and mobile keyboards, to help users in both their personal and professional lives.",
         "Grammarly's most famous corporate clients are Cisco, Dell, Expedia, The Economist, Arizona State University, University of California and others.",
         "Three Ukrainians founded Grammarly in 2009 and released the first version of the product in Kyiv. Today, Grammarly is a global company with offices in Kyiv, San Francisco, and New York."
@@ -28,7 +28,7 @@ module.exports = {
       "url": "https://myheritage.com",
       "imageSrc": "/sponsors/my_heritage.svg",
       "description": [
-        "MyHeritage is the leading global destination for family history and DNA testing thanks to cutting-edge products for web, mobile, and desktop. We create innovative technologies that help 93 million global users make amazing discoveries about themselves and their families.",
+        "<a href='https://www.myheritage.com.ua' target='_blank'>MyHeritage</a> is the leading global destination for family history and DNA testing thanks to cutting-edge products for web, mobile, and desktop. We create innovative technologies that help 93 million global users make amazing discoveries about themselves and their families.",
       ],
     },
     {
@@ -47,7 +47,7 @@ module.exports = {
       "url": "https://astoundcommerce.com",
       "imageSrc": "/sponsors/astound_commerce.svg",
       "description": [
-        "Astound Commerce, the world’s largest privately held digital commerce agency, combines strategy, technology, creativity, insight, and a proven methodology to deliver exceptional digital shopping experiences. Among company’s clients leading global brands such as Adidas, L’Oréal, Under Armour, Jimmy Choo, Lacoste, and Versace.",
+        "<a href='https://www.astoundcommerce.com/' target='_blank'>Astound Commerce</a>, the world’s largest privately held digital commerce agency, combines strategy, technology, creativity, insight, and a proven methodology to deliver exceptional digital shopping experiences. Among company’s clients leading global brands such as Adidas, L’Oréal, Under Armour, Jimmy Choo, Lacoste, and Versace.",
         "The passionate team of 600+ dedicated, diverse industry and technology experts has decades of e-commerce experience and more than 400 site implementations under its belt to address the complex challenges, advancing technologies and unique needs of global markets.",
       ],
     },
