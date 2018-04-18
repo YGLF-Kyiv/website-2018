@@ -339,6 +339,28 @@
           "url": "https://www.linkedin.com/in/bruce-lawson-34b44/"
         }
       ]
+    },
+    {
+      "id": 15,
+      "firstName": "Leonid",
+      "lastName": "Khachaturov",
+      "position": "Lead Frontend Developer",
+      "company": "JetBrains",
+      "description": "Leonid is a lead front-end developer at <a href='https://www.jetbrains.com/' target='_blank'>JetBrains</a>. He's busy building team tools for developers: <a href='https://www.jetbrains.com/upsource/' target='_blank'>Upsource, a code review tool</a> and open source libraries — <a href='https://www.jetbrains.org/ring-ui/index.html' target='_blank'>Ring UI</a> and <a href='https://github.com/JetBrains/kotlin-wrappers/tree/master/kotlin-css'>kotlin-css</a>. Unlike most front-end developers, he enjoys not writing any HTML, CSS, or JavaScript, preferring to use Kotlin instead. Born in Russia, he's been living in Munich, Germany for the past 6 years. He listens to music for at least 12 hours a day.",
+      "highlightedDescription": "Leonid is a lead front-end developer at JetBrains. He's busy building team tools for developers: Upsource, a code review tool and open source libraries — Ring UI and kotlin-css.",
+      "imageSrc": "/speakers/leonid_khachaturov",
+      "anchor": "Leonid-Khachaturov",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/leonya"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/leonya"
+        }
+      ]
     }
   ]
 }
