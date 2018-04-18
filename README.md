@@ -10,7 +10,7 @@ gatsby develop
 
 2. Optimized production build generating static HTML and per-route JavaScript code bundles
 ```
-gatsby build
+npm run build
 ```
 
 3. Local HTML server for testing your built site
