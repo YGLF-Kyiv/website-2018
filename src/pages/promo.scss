@@ -38,28 +38,13 @@
     }
 
     .devdo-list {
-      margin-top: 55px;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .page-promo {
-    .devdo-list {
-      grid-row-gap: 50px;
-    }
-
-    .devdo-list {
-      margin-top: 45px;
+      margin-top: 75px;
     }
   }
 }
 
 @media screen and (max-width: 440px) {
   .page-promo {
-    .devdo-list {
-      grid-row-gap: 35px;
-    }
 
     .discuss-button {
       line-height: 20px;

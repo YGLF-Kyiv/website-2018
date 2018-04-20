@@ -1,10 +1,5 @@
 {
   "title":"What Front-end Dev Do?",
-  "actionButton": {
-    "href": "#",
-    "text": "Discuss all approaches at YGLF",
-    "target": "_blank"
-  },
   "items":[
     {
       "id": 1,
