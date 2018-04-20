@@ -6,6 +6,7 @@
 
   .discuss-button {
     @include animated-button;
+    box-sizing: border-box;
     padding: 0 15px;
     width: auto;
   }
@@ -74,7 +75,9 @@
     }
 
     .discuss-button {
-      line-height: 24px;
+      line-height: 20px;
+      height: 48px;
+      padding-top: 6px;
     }
   }
 }
