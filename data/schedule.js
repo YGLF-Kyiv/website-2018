@@ -316,9 +316,14 @@ module.exports = {
             "hours": "16",
             "minutes": "10"
           },
-          "title": "TBA",
+          "speakerId": 16,
+          "title": "React Native: New Age Hack or Stone Age Tool?",
           "description": [
-          ]
+            "React Native is currently a very popular library for writing native applications. It’s super easy to get started with it if you already know React — you can think that you’ve become a mobile developer in less than 15 minutes!",
+            "However, while React Native may make it easy for front-end developers to get started with mobile development, it’s severely lacking in comparison to more established and comprehensive languages like Swift or Kotlin. Compared to Swift or Kotlin, React Native seems like it’s from the Stone Ages!",
+            "So the question is, should you use React Native in production ? In my talk, I will tell you about the pros and cons of React Native."
+          ],
+          "showReadMore": true
         },
         {
           "className": "height90 lightning icon opaque-line",
