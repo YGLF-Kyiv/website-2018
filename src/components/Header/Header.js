@@ -27,7 +27,7 @@ export default class Header extends React.Component {
         <div className="header-date-location">
           <div className="container-fluid">
             <strong>24-25 May 2018</strong>
-            <span>,&nbsp;</span>Bel étage | Kyiv, Ukraine
+            <span>,&nbsp;</span>Parkovy Congress Center | Kyiv, Ukraine
           </div>
         </div>
         {showButton && <BuyTicketsButton />}

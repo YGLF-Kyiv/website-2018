@@ -42,16 +42,16 @@ module.exports = {
     "subtitle": "Awesome Spaces",
     "title": "The Venue",
     "description": [
-      "YGLF will take place at Bel étage - a venue in the centre of the city. There’s a beautiful restaurant serving lunch for all attendees, a two-storey auditorium, and an amazing roof, where there will be snacks and coffee during the day.",
-      "Located in the Downtown, it’s easy to get there from any hotel, and it’s surrounded by dozens of restaurants and coffee shops."
+      "YGLF will take place at the Parkovy Congress Center, modern and unique conference complex. This location has everything needed for high-class event: huge hall that has well thought out infrastructure, possibility to be easily divided into several special zones for all of the needed purposes, best sound and conference equipment suppliers as well as amazing catering partners.",
+      "It is located near the governmental quarter in the beautiful park area, and can be easily reached from any point of the city. Nice view of Kyiv, fresh air and unforgettable atmosphere is a guarantee."
     ],
     "additionalInfo": {
-      "title": "Bel étage",
-      "description": "Shota Rustaveli St, 16a, Kyiv, Ukraine"
+      "title": "Parkovy Congress Center",
+      "description": "Parkova road, 16a, Kyiv, Ukraine"
     },
     "link": {
       "title": "Get Directions",
-      "url": "https://www.google.com/maps/place/Bel+%C3%A9tage+Concert+Club/@50.4391815,30.5188484,18z/data=!3m1!4b1!4m5!3m4!1s0x40d4cefef66ddea3:0x42461c6fe3dca44e!8m2!3d50.4391815!4d30.5199427"
+      "url": "https://goo.gl/maps/NjMeMxWEENK2"
     },
     "img": "venue.jpg",
     "actionButton": {}
