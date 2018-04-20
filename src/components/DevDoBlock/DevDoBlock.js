@@ -1,6 +1,5 @@
 import React, { Component, PropTypes as toBe } from 'react';
 import './devdo-block.scss';
-import YouTube from 'react-youtube';
 import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
 export default class DevDoBlock extends Component {
