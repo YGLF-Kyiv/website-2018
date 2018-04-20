@@ -1,0 +1,157 @@
+@import '../../shared/styles/colors';
+@import '../../shared/styles/mixins';
+
+.devdo-block {
+  box-sizing: border-box;
+
+  &-cols {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &-video {
+    position: relative;
+    margin-top: 45px;
+    > iframe {
+      width: 680px;
+      height: 383px;
+    }
+  }
+  &-text {
+    > h3 {
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 2px;
+      -webkit-font-smoothing: antialiased;
+      margin-bottom: 0;
+      width: min-content;
+    }
+
+    > p {
+      @include block-text;
+      width: auto;
+      padding-left: 0;
+    }
+  }
+
+  &:nth-child(2n) {
+    .devdo-block-text {
+      padding-right: 100px;
+
+      h3 {
+        padding-left: 100px;
+      }
+    }
+  }
+
+  &:nth-child(2n+1) {
+    .devdo-block-cols {
+      flex-direction: row;
+    }
+
+    .devdo-block-text {
+      padding-left: 100px;
+
+      h3 {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .anchor {
+    margin: 0;
+    padding: 0 0 1px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .devdo-block {
+    &-video {
+     > iframe {
+        width: 480px;
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .devdo-block {
+    min-height: 0;
+    &-video {
+      > iframe {
+        width: 320px;
+        height: 180px;
+      }
+    }
+    &:nth-child(2n) {
+      .devdo-block-text {
+        padding-right: 60px
+      }
+    }
+    &:nth-child(2n+1) {
+      .devdo-block-text {
+        padding-left: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 801px) {
+  .devdo-block {
+    padding-bottom: 0;
+
+    &:nth-child(2n) {
+      .devdo-block-text {
+        padding-right: 40px
+      }
+    }
+    &:nth-child(2n+1) {
+      .devdo-block-text {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+  .devdo-block {
+    &-video {
+      > iframe {
+        width: 240px;
+        height: 135px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .devdo-block {
+    padding-bottom: 50px;
+
+    &:nth-child(2n+1) .devdo-block-cols,
+    &-cols {
+      flex-direction: column-reverse;
+    }
+    &-video {
+      margin: 0;
+      > iframe {
+        width: 320px;
+        height: 180px;
+      }
+    }
+    &-text {
+      padding: 0 !important;
+    }
+    .devdo-block-text > h3 {
+      padding-left: 0 !important;
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .devdo-block-text > h3 {
+    font-size: 40px;
+  }
+}

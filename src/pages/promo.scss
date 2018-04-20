@@ -1,0 +1,41 @@
+@import '../shared/styles/mixins';
+
+.page-promo {
+  padding-top: 90px;
+  padding-bottom: 45px;
+
+  h2 {
+    @include block-header;
+    margin-bottom: 17px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1.7px;
+    -webkit-font-smoothing: antialiased;
+    width: 520px;
+    line-height: 45px;
+  }
+
+  .devdo-list {
+    /*display: grid;
+    grid-row-gap: 170px;*/
+  }
+
+  /*.person-block-text a {
+    color: $green;
+    outline: none;
+    &:hover {
+      color: $white;
+    }
+  }*/
+}
+
+@media screen and (max-width: 600px) {
+  .page-promo {
+    p {
+      width: auto;
+    }
+  }
+}
