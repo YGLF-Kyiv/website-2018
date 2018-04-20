@@ -19,7 +19,6 @@
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-source-firebase": "^1.0.0",
     "react-easy-swipe": "0.0.13",
-    "react-youtube": "^7.6.0",
     "sitemap": "^1.13.0"
   },
   "keywords": [
