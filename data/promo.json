@@ -1,0 +1,31 @@
+{
+  "title":"What Front-end Dev Do?",
+  "description":"Video description goes here the world. Listed below are our keynote speakers.",
+  "actionButton": {
+    "href": "#",
+    "text": "Discuss all approaches at YGLF",
+    "target": "_blank"
+  },
+  "items":[
+    {
+      "id": 1,
+      "title":"Catching Bugs",
+      "description":"In this video we will learn the most efficient way to catch bugs in your project.",
+      "video":{
+        "youtubeID":"FX5jFhUyabM",
+        "showInfo": false
+      },
+      "anchor":"catching-bugs"
+    },
+    {
+      "id": 2,
+      "title":"Semi-colons",
+      "description":"In this video we will learn the most efficient way to catch bugs in your project.",
+      "video":{
+        "youtubeID":"Imeq3GeRttw",
+        "showInfo": false
+      },
+      "anchor":"semi-colons"
+    }
+  ]
+}

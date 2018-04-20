@@ -2,59 +2,64 @@
 @import '../../shared/styles/mixins';
 
 .devdo-block {
-  box-sizing: border-box;
-
-  &-cols {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  &-video {
-    position: relative;
-    margin-top: 45px;
-    > iframe {
-      width: 680px;
-      height: 383px;
-    }
-  }
-  &-text {
-    > h3 {
-      font-size: 45px;
-      font-weight: 400;
-      line-height: 45px;
-      letter-spacing: 2px;
-      -webkit-font-smoothing: antialiased;
-      margin-bottom: 0;
-      width: min-content;
-    }
-
-    > p {
-      @include block-text;
-      width: auto;
-      padding-left: 0;
-    }
-  }
+  display: flex;
 
   &:nth-child(2n) {
-    .devdo-block-text {
-      padding-right: 100px;
+    flex-direction: row-reverse;
 
-      h3 {
-        padding-left: 100px;
-      }
+    .devdo-block-video {
+      margin-left: 105px;
     }
   }
 
   &:nth-child(2n+1) {
-    .devdo-block-cols {
-      flex-direction: row;
+    .devdo-block-video {
+      margin-right: 105px;
     }
+  }
 
-    .devdo-block-text {
-      padding-left: 100px;
+  &-video {
+    flex: 2 0 0;
+
+    &-box {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-text {
+    flex: 1 0 0;
+
+    .title-box {
+      display: flex;
+      justify-content: flex-end;
 
       h3 {
+        flex-basis: 0;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 2px;
+        -webkit-font-smoothing: antialiased;
+        margin-top: 5px;
         margin-left: auto;
       }
+    }
+
+    p {
+      @include block-text;
+      font-weight: 500;
+      width: auto;
+      padding: 0;
     }
   }
 
@@ -64,94 +69,56 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
-  .devdo-block {
-    &-video {
-     > iframe {
-        width: 480px;
-        height: 270px;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 990px) {
   .devdo-block {
-    min-height: 0;
-    &-video {
-      > iframe {
-        width: 320px;
-        height: 180px;
-      }
-    }
     &:nth-child(2n) {
-      .devdo-block-text {
-        padding-right: 60px
+      .devdo-block-video {
+        margin-left: 60px;
       }
     }
     &:nth-child(2n+1) {
-      .devdo-block-text {
-        padding-left: 60px;
+      .devdo-block-video {
+        margin-right: 60px;
       }
     }
   }
 }
 
 @media screen and (max-width: 900px) and (max-width: 801px) {
-  .devdo-block {
-    padding-bottom: 0;
+  .devdo-block, .devdo-block:nth-child(2n) {
+    flex-direction: column-reverse;
 
-    &:nth-child(2n) {
-      .devdo-block-text {
-        padding-right: 40px
-      }
+    &:nth-child(2n) .devdo-block-video {
+      margin-left: 0;
     }
-    &:nth-child(2n+1) {
-      .devdo-block-text {
-        padding-left: 40px;
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 800px) and (min-width: 601px) {
-  .devdo-block {
-    &-video {
-      > iframe {
-        width: 240px;
-        height: 135px;
-      }
+    &:nth-child(2n+1) .devdo-block-video {
+      margin-right: 0;
+    }
+
+    .title-box h3 {
+      font-size: 40px;
+      flex-basis: auto;
+    }
+
+    p {
+      margin-bottom: 10px;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   .devdo-block {
-    padding-bottom: 50px;
 
-    &:nth-child(2n+1) .devdo-block-cols,
-    &-cols {
-      flex-direction: column-reverse;
-    }
-    &-video {
-      margin: 0;
-      > iframe {
-        width: 320px;
-        height: 180px;
-      }
-    }
-    &-text {
-      padding: 0 !important;
-    }
-    .devdo-block-text > h3 {
-      padding-left: 0 !important;
-      margin-top: 0;
+    .title-box h3 {
+      font-size: 40px;
+      margin-bottom: 30px;
     }
   }
 }
 
 @media screen and (max-width: 440px) {
   .devdo-block-text > h3 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }

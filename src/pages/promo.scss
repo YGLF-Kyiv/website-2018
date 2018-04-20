@@ -4,38 +4,77 @@
   padding-top: 90px;
   padding-bottom: 45px;
 
-  h2 {
+  .discuss-button {
+    @include animated-button;
+    padding: 0 15px;
+    width: auto;
+  }
+
+  .promo-title {
     @include block-header;
     margin-bottom: 17px;
   }
 
-  p {
-    font-size: 15px;
-    font-weight: 100;
-    letter-spacing: 1.7px;
-    -webkit-font-smoothing: antialiased;
+  .promo-description {
+    @include block-text;
+    font-weight: 500;
+    line-height: 40px;
     width: 520px;
-    line-height: 45px;
+    padding: 0;
+    margin: 65px 0 35px;
   }
 
   .devdo-list {
-    /*display: grid;
-    grid-row-gap: 170px;*/
+    display: grid;
+    grid-row-gap: 150px;
+    margin-top: 90px;
   }
 
-  /*.person-block-text a {
+  .devdo-block-text a {
     color: $green;
     outline: none;
     &:hover {
       color: $white;
     }
-  }*/
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 801px) {
+  .page-promo {
+    .devdo-list {
+      grid-row-gap: 70px;
+    }
+
+    .devdo-list {
+      margin-top: 55px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
   .page-promo {
-    p {
+    .devdo-list {
+      grid-row-gap: 50px;
+    }
+
+    .promo-description {
       width: auto;
+    }
+
+    .devdo-list {
+      margin-top: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .page-promo {
+    .devdo-list {
+      grid-row-gap: 35px;
+    }
+
+    .discuss-button {
+      line-height: 24px;
     }
   }
 }
