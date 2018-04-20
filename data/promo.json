@@ -10,20 +10,14 @@
       "id": 1,
       "title":"Catching Bugs",
       "description":"In this video we will learn the most efficient way to catch bugs in your project.",
-      "video":{
-        "youtubeID":"FX5jFhUyabM",
-        "showInfo": false
-      },
+      "youtubeID":"FX5jFhUyabM",
       "anchor":"catching-bugs"
     },
     {
       "id": 2,
       "title":"Semi-colons",
       "description":"In this video we will learn the most efficient way to catch bugs in your project.",
-      "video":{
-        "youtubeID":"Imeq3GeRttw",
-        "showInfo": false
-      },
+      "youtubeID":"Imeq3GeRttw",
       "anchor":"semi-colons"
     }
   ]

@@ -16,7 +16,7 @@ export default class DevDoBlock extends Component {
     const {
       title,
       description,
-      video
+      youtubeID
     } = this.props.data;
 
     return (
@@ -24,7 +24,7 @@ export default class DevDoBlock extends Component {
         <div className="devdo-block-video">
           <div className="devdo-block-video-box">
             <iframe
-              src={`https://www.youtube.com/embed/${video.youtubeID}?rel=0${!video.showInfo ? '&amp;showinfo=0' : ''}`}
+              src={`https://www.youtube.com/embed/${youtubeID}?rel=0&amp;showinfo=0`}
               frameBorder="0"
               allowFullScreen
             />
