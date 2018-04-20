@@ -36,7 +36,7 @@
     }
   }
 
-  &-text {
+  &-text-box {
     flex: 1 0 0;
 
     .title-box {
@@ -60,6 +60,10 @@
       font-weight: 500;
       width: auto;
       padding: 0;
+    }
+
+    .buy-tickets {
+      margin-top: 25px;
     }
   }
 
@@ -101,8 +105,8 @@
       flex-basis: auto;
     }
 
-    p {
-      margin-bottom: 10px;
+    .buy-tickets {
+      margin-bottom: 25px;
     }
   }
 }
@@ -118,7 +122,9 @@
 }
 
 @media screen and (max-width: 440px) {
-  .devdo-block-text > h3 {
-    font-size: 36px;
+  .devdo-block-text-box { 
+    .devdo-block-text > h3 {
+      font-size: 36px;
+    }
   }
 }

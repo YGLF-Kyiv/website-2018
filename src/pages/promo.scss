@@ -7,22 +7,13 @@
   .discuss-button {
     @include animated-button;
     box-sizing: border-box;
-    padding: 0 15px;
     width: auto;
+    padding: 0 15px;
+    margin-top: 70px;
   }
 
   .promo-title {
     @include block-header;
-    margin-bottom: 17px;
-  }
-
-  .promo-description {
-    @include block-text;
-    font-weight: 500;
-    line-height: 40px;
-    width: 520px;
-    padding: 0;
-    margin: 65px 0 35px;
   }
 
   .devdo-list {
@@ -56,10 +47,6 @@
   .page-promo {
     .devdo-list {
       grid-row-gap: 50px;
-    }
-
-    .promo-description {
-      width: auto;
     }
 
     .devdo-list {

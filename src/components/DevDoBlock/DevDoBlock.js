@@ -1,6 +1,7 @@
 import React, { Component, PropTypes as toBe } from 'react';
-import './devdo-block.scss';
+import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton';
 import FitToRhythm from '../FitToRhythm/FitToRhythm';
+import './devdo-block.scss';
 
 export default class DevDoBlock extends Component {
   static propTypes = {
@@ -29,11 +30,14 @@ export default class DevDoBlock extends Component {
             />
           </div>
         </div>
-        <div className="devdo-block-text">
-          <div className="title-box">
-            <h3>{title}</h3>
+        <div className="devdo-block-text-box">
+          <div className="devdo-block-text">
+            <div className="title-box">
+              <h3>{title}</h3>
+            </div>
+            <p dangerouslySetInnerHTML={{__html: description}} />
           </div>
-          <p dangerouslySetInnerHTML={{__html: description}} />
+          <BuyTicketsButton />
         </div>
       </FitToRhythm>
     );

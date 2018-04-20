@@ -18,10 +18,6 @@ export default class SpeakersPage extends React.Component {
           <h2 className="promo-title">{title}</h2>
         </div>
         <div className="container-fluid container">
-          <p
-            className="promo-description"
-            dangerouslySetInnerHTML={{__html: description}}
-          />
           <a
             href={actionButton.href}
             className="discuss-button"
