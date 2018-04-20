@@ -21,21 +21,21 @@ export default class DevDoBlock extends Component {
 
     return (
       <FitToRhythm className="devdo-block container container-fluid">
-          <div className="devdo-block-video">
-            <div className="devdo-block-video-box">
-              <iframe
-                src={`https://www.youtube.com/embed/${video.youtubeID}?rel=0${!video.showInfo ? '&amp;showinfo=0' : ''}`}
-                frameBorder="0"
-                allowFullScreen
-              />
-            </div>
+        <div className="devdo-block-video">
+          <div className="devdo-block-video-box">
+            <iframe
+              src={`https://www.youtube.com/embed/${video.youtubeID}?rel=0${!video.showInfo ? '&amp;showinfo=0' : ''}`}
+              frameBorder="0"
+              allowFullScreen
+            />
           </div>
-          <div className="devdo-block-text">
-            <div className="title-box">
-              <h3>{title}</h3>
-            </div>
-            <p dangerouslySetInnerHTML={{__html: description}} />
+        </div>
+        <div className="devdo-block-text">
+          <div className="title-box">
+            <h3>{title}</h3>
           </div>
+          <p dangerouslySetInnerHTML={{__html: description}} />
+        </div>
       </FitToRhythm>
     );
   }
