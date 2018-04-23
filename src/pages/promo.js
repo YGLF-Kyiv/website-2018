@@ -17,15 +17,6 @@ export default class SpeakersPage extends React.Component {
         <div className="container-fluid">
           <h2 className="promo-title">{title}</h2>
         </div>
-        <div className="container-fluid container">
-          <a
-            href={actionButton.href}
-            className="discuss-button"
-            target={actionButton.target}
-          >
-            {actionButton.text}
-          </a>
-        </div>
         <div className="devdo-list">
           {items.map((devDoItem) => (
             <DevDoBlock key={devDoItem.id} data={devDoItem} />

@@ -16,11 +16,13 @@ export default class DevDoBlock extends Component {
     const {
       title,
       description,
-      youtubeID
+      youtubeID,
+      anchor
     } = this.props.data;
 
     return (
       <FitToRhythm className="devdo-block container container-fluid">
+        <a href="" name={anchor} className="-no-outline anchor" />
         <div className="devdo-block-video">
           <div className="devdo-block-video-box">
             <iframe
