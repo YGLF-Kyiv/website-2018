@@ -24,6 +24,20 @@ module.exports = {
       "text": "Apply"
     }
   },
+  "volunteering": {
+    "number": "1",
+    "subtitle": "",
+    "title": "Volunteering",
+    "description": [
+      "Any conference is a big delicate mechanism, and that it will work perfectly, we need a large friendly company of volunteers.",
+      "If you are interested, write a free letter why do you want to join us.",
+      "We are waiting for you!"
+    ],
+    "actionButton": {
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeMeQb6fWZti-7uR8zhaZO9KB8yV4S7VXert620uw72SGnW_w/viewform",
+      "text": "Apply"
+    }
+  },
   "meetSpeakers": {
     "number": "1",
     "subtitle": "Amazing Talks",

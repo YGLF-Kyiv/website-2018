@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
         {/* <InfoBlock /> */}
         <div className="container container-fluid">
           <Workshops />
-          <SpeakersIntroBlock data={OrderedBlockData.lightningTalks} />
+          <SpeakersIntroBlock data={OrderedBlockData.volunteering} />
           <OrderedBlock data={OrderedBlockData.venue} showSubheader={false} />
         </div>
       </div>
