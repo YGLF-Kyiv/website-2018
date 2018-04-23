@@ -63,7 +63,10 @@
     }
 
     .buy-tickets {
+      width: auto;
+      white-space: nowrap;
       margin-top: 25px;
+      padding: 0 20px;
     }
   }
 
@@ -126,7 +129,7 @@
 }
 
 @media screen and (max-width: 440px) {
-  .devdo-block-text-box { 
+  .devdo-block-text-box {
     .devdo-block-text > h3 {
       font-size: 36px;
     }
