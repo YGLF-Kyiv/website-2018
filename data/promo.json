@@ -5,15 +5,15 @@
       "id": 1,
       "title":"Catching Bugs",
       "button": "Catch Bugs Efficiently!",
-      "description":"When you need to explain for the not technical people what are you doing regulary at you job, just send them link to this video!",
+      "description":"When you need to explain for the non-technical people what are you doing regulary at you job, just send them a link to this video!",
       "youtubeID":"FX5jFhUyabM",
       "anchor":"catching-bugs"
     },
     {
       "id": 2,
-      "title":"Semi-colons",
+      "title":"Semicolons",
       "button": "BuyTicket(myName);",
-      "description":"This war is like turn on/off air condition clash. At the end nobody wins. Lint to help!",
+      "description":"This war is like a turn on/off air condition clash. At the end nobody wins. Lint to help!",
       "youtubeID":"Imeq3GeRttw",
       "anchor":"semi-colons"
     },
@@ -21,7 +21,7 @@
       "id": 3,
       "title":"Bundle size",
       "button": "Reduce Your Bundle!",
-      "description":"Oh, yes I want this new tiny library! ...how many dependencies, are you kidding me?!",
+      "description":"Oh, yes, I want this new tiny library! ...how many dependencies, are you kidding me?!",
       "youtubeID":"Imeq3GeRttw",
       "anchor":"bundle-size"
     },
@@ -29,7 +29,7 @@
       "id": 4,
       "title":"Holy wars",
       "button": "Come to the Cucumber Side!",
-      "description":"Tales says there was a time where people broke swords choosing beetween jQuery and prototype, Knockout or Backbone — poor ignorant devs, the only thruth is... <br><em>* the bowstring sound, then scream</em>.",
+      "description":"Tales say there was a time when people broke swords choosing between jQuery and Prototype, Knockout or Backbone — poor ignorant devs, the only truth is... <br><em>* the bowstring sound, then scream</em>.",
       "youtubeID":"Imeq3GeRttw",
       "anchor":"holy-wars"
     }
