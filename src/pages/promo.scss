@@ -1,8 +1,7 @@
 @import '../shared/styles/mixins';
 
 .page-promo {
-  padding-top: 90px;
-  padding-bottom: 45px;
+  padding: 90px 0;
 
   .discuss-button {
     @include animated-button;
