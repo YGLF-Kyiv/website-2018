@@ -18,8 +18,7 @@ export default class DevDoBlock extends Component {
       description,
       youtubeID,
       anchor,
-      button,
-      showBuyTicketsButton
+      button
     } = this.props.data;
 
     return (
@@ -41,7 +40,7 @@ export default class DevDoBlock extends Component {
             </div>
             <p dangerouslySetInnerHTML={{__html: description}} />
           </div>
-          {showBuyTicketsButton && <BuyTicketsButton text={button} />}
+          {button && <BuyTicketsButton text={button} />}
         </div>
       </FitToRhythm>
     );
