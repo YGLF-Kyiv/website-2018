@@ -3,14 +3,6 @@
 .page-promo {
   padding: 90px 0;
 
-  .discuss-button {
-    @include animated-button;
-    box-sizing: border-box;
-    width: auto;
-    padding: 0 15px;
-    margin-top: 70px;
-  }
-
   .promo-title {
     @include block-header;
   }
@@ -38,17 +30,6 @@
 
     .devdo-list {
       margin-top: 30px;
-    }
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .page-promo {
-
-    .discuss-button {
-      line-height: 20px;
-      height: 48px;
-      padding-top: 6px;
     }
   }
 }

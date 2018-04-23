@@ -36,9 +36,12 @@ export default class DevDoBlock extends Component {
         <div className="devdo-block-text-box">
           <div className="devdo-block-text">
             <div className="title-box">
-              <h3>{title}</h3>
+              <h3 className="title">{title}</h3>
             </div>
-            <p dangerouslySetInnerHTML={{__html: description}} />
+            <p
+              className="description"
+              dangerouslySetInnerHTML={{__html: description}}
+            />
           </div>
           {button && <BuyTicketsButton text={button} />}
         </div>
