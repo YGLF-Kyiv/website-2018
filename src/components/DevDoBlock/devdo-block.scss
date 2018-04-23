@@ -3,6 +3,7 @@
 
 .devdo-block {
   display: flex;
+  padding-top: 45px;
 
   &:nth-child(2n) {
     flex-direction: row-reverse;
@@ -71,8 +72,9 @@
   }
 
   .anchor {
-    margin: 0;
-    padding: 0 0 1px;
+    position: absolute;
+    top: 0;
+    padding: 0;
   }
 }
 
@@ -94,6 +96,7 @@
 @media screen and (max-width: 900px) and (max-width: 801px) {
   .devdo-block, .devdo-block:nth-child(2n) {
     flex-direction: column-reverse;
+    padding-top: 25px;
 
     &:nth-child(2n) .devdo-block-video {
       margin-left: 0;
