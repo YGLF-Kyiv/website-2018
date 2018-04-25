@@ -6,7 +6,7 @@
       "title":"Catching Bugs",
       "button": "Catch Bugs Efficiently!",
       "description":"When you need to explain for the non-technical people what are you doing regulary at you job, just send them a link to this video!",
-      "youtubeID":"FX5jFhUyabM",
+      "youtubeID":"KIuMYfpbjL0",
       "anchor":"catching-bugs"
     },
     {
@@ -14,24 +14,24 @@
       "title":"Semicolons",
       "button": "BuyTicket(myName);",
       "description":"This war is like a turn on/off air condition clash. At the end nobody wins. Lint to help!",
-      "youtubeID":"Imeq3GeRttw",
+      "youtubeID":"6ezLn-PQ6cs",
       "anchor":"semi-colons"
     },
     {
       "id": 3,
-      "title":"Bundle size",
-      "button": "Reduce Your Bundle!",
-      "description":"Oh, yes, I want this new tiny library! ...how many dependencies, are you kidding me?!",
-      "youtubeID":"Imeq3GeRttw",
-      "anchor":"bundle-size"
+      "title": "Holy wars",
+      "button": "Come to the Cucumber Side!",
+      "description": "Tales say there was a time when people broke swords choosing between jQuery and Prototype, Knockout or Backbone — poor ignorant devs, the only truth is... <br><em>* the bowstring sound, then scream</em>.",
+      "youtubeID": "6NJyzcp8F-U",
+      "anchor": "holy-wars"
     },
     {
       "id": 4,
-      "title":"Holy wars",
-      "button": "Come to the Cucumber Side!",
-      "description":"Tales say there was a time when people broke swords choosing between jQuery and Prototype, Knockout or Backbone — poor ignorant devs, the only truth is... <br><em>* the bowstring sound, then scream</em>.",
-      "youtubeID":"Imeq3GeRttw",
-      "anchor":"holy-wars"
+      "title": "Bundle size",
+      "button": "Reduce Your Bundle!",
+      "description": "Oh, yes, I want this new tiny library! ...how many dependencies, are you kidding me?!",
+      "youtubeID": "KBKN6vqLHFs",
+      "anchor": "bundle-size"
     }
   ]
 }
