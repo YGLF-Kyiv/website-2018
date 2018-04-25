@@ -122,6 +122,19 @@ module.exports = {
             "hours": "16",
             "minutes": "40"
           },
+          "speakerId": 15,
+          "title": "100% Kotlin frontend",
+          "description": [
+            "Kotlin is much more than a hot new language for Android apps or your server's backend, it is also a fun and efficient way to develop the frontend part of your web-based app. I will demonstrate how to develop a React app (with styled-components, of course!) without ever leaving Kotlin."
+          ],
+          "showReadMore": true,
+        },
+        {
+          "className": "lightning icon opaque-line",
+          "time": {
+            "hours": "16",
+            "minutes": "50"
+          },
           "speakerId": 12,
           "title": "Using New Web APIs For Your Own Pleasure",
           "description": [
@@ -130,16 +143,6 @@ module.exports = {
             "In my lightning talk, you will learn how to use the Web Bluetooth API to connect a Bluetooth enabled device to the browser. Also, you will see what is possible with the Web Audio API, especially when it comes to analyzing spoken words."
           ],
           "showReadMore": true,
-        },
-        {
-          "className": "height90 lightning icon",
-          "time": {
-            "hours": "16",
-            "minutes": "50"
-          },
-          "title": "TBA",
-          "description": [
-          ]
         },
         {
           "className": "",
