@@ -3,7 +3,7 @@ import './promo.scss';
 import DevDoBlock from '../components/DevDoBlock/DevDoBlock';
 import PromoData from '../../data/promo.json';
 
-export default class SpeakersPage extends React.Component {
+export default class PromoPage extends React.Component {
   render() {
     const {
       title,
