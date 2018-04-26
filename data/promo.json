@@ -5,7 +5,7 @@
       "id": 1,
       "title":"Catching Bugs",
       "button": "Catch Bugs Efficiently!",
-      "description":"When you need to explain for the non-technical people what are you doing regulary at you job, just send them a link to this video!",
+      "description":"When you need to explain to the non-technical people what are you doing regularly at you job, just send them a link to this video!",
       "youtubeID":"KIuMYfpbjL0",
       "anchor":"catching-bugs"
     },
@@ -13,7 +13,7 @@
       "id": 2,
       "title":"Semicolons",
       "button": "BuyTicket(myName);",
-      "description":"This war is like a turn on/off air condition clash. At the end nobody wins. Lint to help!",
+      "description":"This war is like a turn on/off air conditioning clash. At the end nobody wins. Lint to help!",
       "youtubeID":"6ezLn-PQ6cs",
       "anchor":"semi-colons"
     },
