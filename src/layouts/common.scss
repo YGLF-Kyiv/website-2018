@@ -46,7 +46,6 @@
 body {
   font-weight: 100;
   color: $white;
-  background: $blue;
   font-size: 17px;
 }
 
@@ -81,6 +80,12 @@ html, body, #___gatsby {
   min-height: 100%;
   position: relative;
   box-sizing: border-box;
+  background-color: $blue;
+
+  &.bg-grey {
+    background-color: $grey-bg;
+  }
+
   &-body {
     h1, p {
       color: $white;
