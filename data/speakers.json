@@ -62,7 +62,7 @@
       "highlightedDescription": "Hui Jing is a self-taught designer and developer from Singapore with an inordinate love of CSS. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
       "imageSrc":"/speakers/chen_hui_jing",
       "anchor": "Chen-Hui-Jing",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -88,7 +88,7 @@
       "highlightedDescription":"Tomasz is a Senior Frontend Developer at OLX Group. Co-organiser of React Poznań Meetup, JavaScript tinkerer who enjoys sharing his knowledge with other developers. His interests include VR, AR, React, app performance and making cheesiest jokes known to humanity.",
       "imageSrc":"/speakers/tomasz_lakomy",
       "anchor": "Tomasz-Lakomy",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -140,7 +140,7 @@
       "highlightedDescription": "Passionate <a href='https://github.com/jhnns' target='_blank'>Open Source developer</a>. Founded <a href='https://peerigon.com/' target='_blank'>a company</a> with his friends to develop challenging web projects with JavaScript. Loves music and nature. Member of the <a href='https://webpack.js.org/' target='_blank'>Webpack</a> core team.",
       "imageSrc": "/speakers/johannes_ewald",
       "anchor": "Johannes-Ewald",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -162,7 +162,7 @@
       "highlightedDescription": "Juho Vepsäläinen is behind the <a href='https://survivejs.com/' target='_blank'>SurviveJS</a> effort. In addition to being a core developer of <a href='https://webpack.js.org/' target='_blank'>Webpack</a>, he has been active in the Open Source scene since the early 2000s. Blue Arrow Awards <a href='https://survivejs.com/blog/blue-arrow-awards-winner-2017/' target='_blank'>winner</a>.",
       "imageSrc": "/speakers/juho_vepsalainen",
       "anchor": "Juho-Vepsalainen",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -188,7 +188,7 @@
       "highlightedDescription": "Mikhail is a CTO and Co-founder at Reindex. He started <a href='https://www.reindex.io/' target='_blank'>Reindex</a> as a first GraphQL-focused startup in  the world and built first GraphQL Backend-as-a-Service. After BaaS closed, Mikhail has been doing GraphQL consulting. He has also been active in GraphQL open source projects, such as Launchpad and graphql-tools. ",
       "imageSrc": "/speakers/mikhail_novikov",
       "anchor": "Mikhail-Novikov",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -214,7 +214,7 @@
       "highlightedDescription": "JavaScript engineer working on photorealistic 3d games at Evolution Gaming. Passionate about performance optimization and code aesthetics, mastering workshop <a href='http://challengingnative.com' target='_blank'>http://challengingnative.com</a>, <a href='https://react.amsterdam/' target='_blank'>https://react.amsterdam</a>, <a href='http://amsterdamjs.com/' target='_blank'>http://amsterdamjs.com</a>.",
       "imageSrc": "/speakers/denis_radin",
       "anchor": "Denis-Radin",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -240,7 +240,7 @@
       "highlightedDescription": "Andrey is a front-end engineer and UI designer from Russia who lives in Austria and works on modern user interfaces using web technologies. As an active Open Source contributor, he contributed to Webpack, React.js, and Jest; designed the PostCSS official website and created a bunch of logos for other OSS projects.",
       "imageSrc": "/speakers/andrey_okonetchnikov",
       "anchor": "Andrey-Okonetchnikov",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -262,7 +262,7 @@
       "highlightedDescription": "Developer, teacher, sports-fanatic. As a developer, he's working on simplifying online collaboration at <a href='https://www.join.me' target='_blank'>join.me</a> by LogMeIn. As a teacher, he's training people in various frontend related fields at <a href='https://www.training360.com/en' target='_blank'>Training360</a>.",
       "imageSrc": "/speakers/benedek_gagyi",
       "anchor": "Benedek-Gagyi",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -284,7 +284,7 @@
       "highlightedDescription": "Michaela is a creative front-end developer and designer. She specializes in UX and WebVR and co-founded the studio <a href='https://geildanke.com/en/' target='_blank'>GeilDanke</a>.",
       "imageSrc": "/speakers/michaela_lehr",
       "anchor": "Michaela-Lehr",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -306,7 +306,7 @@
       "highlightedDescription": "Ronen is a software developer from Israel. In the Infra team at Wix, he’s working on creating JavaScript tools for developers. Currently, he is busy working on a zero-configuration toolkit, similar to <a href='https://github.com/facebook/create-react-app/' target='_blank'>Create React App</a>, that helps developers bootstrap their projects.<br />Passionate about playing computer games, Ronen started his way by developing his own games with ActionScript. He also loves to understand how things actually work and create simplified versions that show how they are implemented.",
       "imageSrc": "/speakers/ronen_amiel",
       "anchor": "Ronen-Amiel",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -350,7 +350,7 @@
       "highlightedDescription": "Leonid is a lead front-end developer at JetBrains. He's busy building team tools for developers: Upsource, a code review tool and open source libraries — Ring UI and kotlin-css.",
       "imageSrc": "/speakers/leonid_khachaturov",
       "anchor": "Leonid-Khachaturov",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -372,7 +372,7 @@
       "highlightedDescription": "Gregory is working as Software Engineer and Project Lead at Grammarly. He contributes to Focal and MobX.",
       "imageSrc": "/speakers/gregory_shehet",
       "anchor": "Gregory-Shehet",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
