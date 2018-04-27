@@ -35,10 +35,25 @@ module.exports = {
             "hours": "11",
             "minutes": "30"
           },
-          "title": "Keynote: TBA",
+          "title": "Creating web apps by writing HTML?!",
           "speakerId": 1,
-          "description": [],
-          "showReadMore": false,
+          "description": [
+            'We all know that HTML is easier, more straightforward, and more readable\n' +
+            'than programming, even for people who can do both. There is no control flow\n' +
+            'to think about, no state to manage, no low-level steps to spell out. It just\n' +
+            'works. What if our UI libraries could be used in the same way? Or, taking\n' +
+            'this further, what if it were possible to create entire web applications by\n' +
+            'just writing HTML? Lea has been researching this question for almost a\n' +
+            'decade, a journey which started with releasing a number of successful open\n' +
+            'source libraries, and continued via her multi-year research at MIT which\n' +
+            'explores (and pushes!) the boundaries of what can be done by just writing\n' +
+            'HTML. She coined the term HTML API and was the first person to concretely\n' +
+            'define good design principles for this way of authoring. This talk will take\n' +
+            'you through this this journey, and will culminate in Lea\'s current project,\n' +
+            'Mavo, which aims to make web application building accessible to anyone who\n' +
+            'can write HTML.'
+          ],
+          "showReadMore": true,
         },
         {
           "className": "",
