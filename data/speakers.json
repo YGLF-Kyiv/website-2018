@@ -405,6 +405,32 @@
           "url": "https://github.com/kenwheeler"
         }
       ]
+    },
+    {
+      "id": 18,
+      "firstName": "Sergei",
+      "lastName": "Puzankov",
+      "position": "Team Lead",
+      "company": "MyHeritage",
+      "description": "Sergey is a frontend engineer with more than 15 years of experience in web development. He is working as a team lead for <a href='https://www.myheritage.com/' target='_blank'>MyHeritage</a>, creating high-load and life-changing services. Sergey is passionate about teaching frontend; at <a href='http://frontend-science.com/' target='_blank'>Front-end Science</a> he helps developers become advanced engineers. He loves running, swimming, rock-climbing, and traveling.",
+      "highlightedDescription": "Sergey is a frontend engineer with more than 15 years of experience in web development. He is working as a team lead for <a href='https://www.myheritage.com/' target='_blank'>MyHeritage</a>, creating high-load and life-changing services. Sergey is passionate about teaching frontend; at <a href='http://frontend-science.com/' target='_blank'>Front-end Science</a> he helps developers become advanced engineers. He loves running, swimming, rock-climbing, and traveling.",
+      "imageSrc": "/speakers/sergei_puzankov",
+      "anchor": "Sergei-Puzankov",
+      "highlighted": false,
+      "social": [
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/puzankov/"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/sergey.puzankov.7"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/puzankovcom"
+        }
+      ]
     }
   ]
 }
