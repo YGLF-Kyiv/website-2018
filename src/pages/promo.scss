@@ -39,8 +39,8 @@
 
   .devdo-list {
     display: grid;
-    grid-row-gap: 105px;
-    margin-top: 45px;
+    grid-row-gap: 135px;
+    margin-top: 90px;
   }
 
   .devdo-block-text a {
@@ -55,11 +55,11 @@
 @media screen and (max-width: 900px) and (max-width: 801px) {
   .page-promo {
     .devdo-list {
-      grid-row-gap: 30px;
+      grid-row-gap: 45px;
     }
 
     .devdo-list {
-      margin-top: 30px;
+      margin-top: 90px;
     }
   }
 }
