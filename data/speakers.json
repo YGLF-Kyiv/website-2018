@@ -405,6 +405,50 @@
           "url": "https://github.com/kenwheeler"
         }
       ]
+    },
+    {
+      "id": 18,
+      "firstName": "Denys",
+      "lastName": "Dovhan",
+      "position": "Software Consultant",
+      "company": "Bizico",
+      "description": "Software Consultant, working for Bizico, organizing Chernivtsi JavaScript Community (ChernivtsiJS Conference, BeerJS, Kottans, NodeSchool), coaching and mentoring at DogeCodes React Course, in love with Open Source.",
+      "highlightedDescription": "Software Consultant, working for Bizico, organizing Chernivtsi JavaScript Community (ChernivtsiJS Conference, BeerJS, Kottans, NodeSchool).",
+      "imageSrc": "/speakers/denys_dovhan",
+      "anchor": "Denys-Dovhan",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/denysdovhan"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/denysdovhan"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "firstName": "Abhishek",
+      "lastName": "Gupta",
+      "position": "Frontend developer",
+      "company": "Bankomi",
+      "description": "",
+      "highlightedDescription": "",
+      "imageSrc": "",
+      "anchor": "Abhishek-Gupta",
+      "highlighted": true,
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ag251994"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/webtaculars"
+        }
+      ]
     }
   ]
 }

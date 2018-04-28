@@ -63,6 +63,7 @@ module.exports = {
           },
           "title": "Journey through VR and AR with React",
           "speakerId": 4,
+          "acnhor": "Tomasz-Lakomy-24-12-30",
           "description": [
             "It's time to leave the 2D world of a browser window and venture into the world of enhanced reality JavaScript applications. During the talk, we'll see how to make great VR and AR experiences using just your browser and a bit of React, with live demos included, so we'll get to see them in action!"
           ],
@@ -87,6 +88,7 @@ module.exports = {
           },
           "title": "GraphQL client-side execution",
           "speakerId": 8,
+          "acnhor": "Mikhail-Novikov-24-13-40",
           "description": [
             "Traditionally, GraphQL clients were focused on client-server communication and caching, with GraphQL query executor on the server. However, it's also possible to run full GraphQL executor on the client side.",
             "The talk will explore the concept of schema stitching (connecting multiple GraphQL schemas together) from a client-side point of view. Using this approach, developer can merge multiple remote schemas together with a frontend schema. The combined schema is responsible for routing requests to a server and a client-side storage/cache.",
@@ -102,6 +104,7 @@ module.exports = {
           },
           "title": "East meets West: web typography and modern layouts",
           "speakerId": 3,
+          "acnhor": "Chen-Hui-Jing-24-14-20",
           "description": [
             "This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalization, but opens up a myriad of options for creative and interesting layouts in general as well."
           ],
@@ -125,6 +128,7 @@ module.exports = {
             "minutes": "30"
           },
           "speakerId": 2,
+          "acnhor": "Benedikt-Meurer-24-16-30",
           "title": "JavaScript: The fairly odd parts",
           "description": [
             "JavaScript is the new language of choice for many applications, and it’s certainly a great language for many tasks. But it also has some strange quirks. This lightning talk focuses on some of JavaScript’s weird parts, that you usually don’t run into… unless you try to implement a JavaScript VM that correctly follows the language specification."
@@ -137,12 +141,12 @@ module.exports = {
             "hours": "16",
             "minutes": "40"
           },
-          "speakerId": 15,
-          "title": "100% Kotlin frontend",
+          // "speakerId": 2,
+          "title": "TBA",
           "description": [
-            "Kotlin is much more than a hot new language for Android apps or your server's backend, it is also a fun and efficient way to develop the frontend part of your web-based app. I will demonstrate how to develop a React app (with styled-components, of course!) without ever leaving Kotlin."
+
           ],
-          "showReadMore": true,
+          "showReadMore": false,
         },
         {
           "className": "lightning icon opaque-line",
@@ -150,7 +154,38 @@ module.exports = {
             "hours": "16",
             "minutes": "50"
           },
+          "speakerId": 15,
+          "acnhor": "Leonid-Khachaturov-24-16-40",
+          "title": "100% Kotlin frontend",
+          "description": [
+            "Kotlin is much more than a hot new language for Android apps or your server's backend, it is also a fun and efficient way to develop the frontend part of your web-based app. I will demonstrate how to develop a React app (with styled-components, of course!) without ever leaving Kotlin."
+          ],
+          "showReadMore": true,
+        },
+        {
+          "className": "height90 lightning icon opaque-line",
+          "time": {
+            "hours": "17",
+            "minutes": "00"
+          },
+          "speakerId": 16,
+          "acnhor": "Gregory-Shehet-25-16-10",
+          "title": "React Native: New Age Hack or Stone Age Tool?",
+          "description": [
+            "React Native is currently a very popular library for writing native applications. It’s super easy to get started with it if you already know React — you can think that you’ve become a mobile developer in less than 15 minutes!",
+            "However, while React Native may make it easy for front-end developers to get started with mobile development, it’s severely lacking in comparison to more established and comprehensive languages like Swift or Kotlin. Compared to Swift or Kotlin, React Native seems like it’s from the Stone Ages!",
+            "So the question is, should you use React Native in production ? In my talk, I will tell you about the pros and cons of React Native."
+          ],
+          "showReadMore": true
+        },
+        {
+          "className": "lightning icon opaque-line",
+          "time": {
+            "hours": "17",
+            "minutes": "10"
+          },
           "speakerId": 12,
+          "acnhor": "Michaela-Lehr-24-16-50",
           "title": "Using New Web APIs For Your Own Pleasure",
           "description": [
             "When I first heard about the Web Bluetooth API I was so curious, that I could not wait to try it out. So I asked myself: Which Bluetooth device should I buy? Especially if I do not want to through it away after I was finished experimenting with the API.",
@@ -163,10 +198,11 @@ module.exports = {
           "className": "",
           "time": {
             "hours": "17",
-            "minutes": "00"
+            "minutes": "20"
           },
           "title": "WebAssembly as cross-platform architecture",
           "speakerId": 11,
+          "acnhor": "Benedek-Gagyi-24-17-00",
           "description": [
             "With the rise of web-to-native cross-platform solutions like React Native and Electron, we got to witness not only their potential, but also their shortcomings. Thanks to WebAssembly we now have an alternative that uses a different approach, but promises the same results.",
             "In my talk, I’ll share the lessons the join.me team learned over the last few years while creating and maintaining a cross-platform (web included!) C++ codebase, with special attention to management and team-dynamic aspects. You’ll also see how WebAssembly changes the game and, through a bit of live-coding, how easy it is to get started with it."
@@ -176,8 +212,8 @@ module.exports = {
         {
           "className": "height90",
           "time": {
-            "hours": "17",
-            "minutes": "40"
+            "hours": "18",
+            "minutes": "00"
           },
           "title": "Coffee Break",
           "duration": "30 mins",
@@ -188,10 +224,11 @@ module.exports = {
           "className": "denis-radin",
           "time": {
             "hours": "18",
-            "minutes": "10"
+            "minutes": "30"
           },
           "title": "Mining crypto in browser: GPU, WebAssembly, JavaScript and all the good things to try",
           "speakerId": 9,
+          "acnhor": "Denis-Radin-24-18-10",
           "description": [
             "A year ago an unnamed investor asked me for a consultancy on topic: \"If this is possible to mine crypto in browser using GPU?\". The talk shares some insights/outcome found during the research and gives an idea of what to expect when mining cryptocurrencies using a pool of browser-based miners."
           ],
@@ -200,11 +237,12 @@ module.exports = {
         {
           "className": "",
           "time": {
-            "hours": "18",
-            "minutes": "50"
+            "hours": "19",
+            "minutes": "10"
           },
           "title": "Case Study - React Finland",
           "speakerId": 7,
+          "acnhor": "Juho-Vepsalainen-24-18-50",
           "description": [
             "Organizing a conference means you require a certain amount of technical infrastructure. We developed a custom website and application for <a target=\"_blank\" href='https://react-finland.fi/'>React Finland</a>. In this talk, you'll learn how we did it and how to achieve a modern frontend architecture using technologies such as Webpack, React, and GraphQL. You will also gain insight on the non-technical aspects including marketing and sales and see how they align with technology."
           ],
@@ -214,7 +252,7 @@ module.exports = {
           "className": "height90",
           "time": {
             "hours": "19",
-            "minutes": "30"
+            "minutes": "50"
           },
           "title": "Closing & Networking",
           "description": [],
@@ -258,7 +296,8 @@ module.exports = {
             "hours": "11",
             "minutes": "30"
           },
-          "title": "TBA",
+          "title": "Keynote: TBA",
+          "speakerId": 17,
           "description": [],
           "showReadMore": false,
         },
@@ -270,6 +309,7 @@ module.exports = {
           },
           "title": "The bumpy road to Universal JavaScript",
           "speakerId": 6,
+          "acnhor": "Johannes-Ewald-25-12-10",
           "description": [
             "Since the mid 90s, developers have struggled to build web applications that can be executed both on the client and the server. And still today, even with Node.js and virtual DOM libraries like React, this can be quite challenging.",
             "In this talk, we'll look at common obstacles and problems that developers face when building this type of web application, including typical performance and security issues. You'll leave the presentation knowing how to build a fast and secure web application that can be rendered on the client and the server.",
@@ -295,6 +335,7 @@ module.exports = {
           },
           "title": "Writing Virtual and Augmented Reality Apps With Web Technology",
           "speakerId": 12,
+          "acnhor": "Michaela-Lehr-25-13-20",
           "description": [
             "Writing 3D applications for the browser is possible since some years due to the WebGL API. But since Virtual Reality and Augmented Reality are getting more popular, web developers and designers now have a serious reason to get to know the 3D web, its APIs and design patterns.",
             "In this talk you will learn how to create 3D applications in the browser, using the WebGL and the WebVR API, and popular libraries, like A-Frame and ReactVR. You will also see what is necessary to create a Virtual Reality app that runs on common VR devices, and how to create Augmented Reality applications for Android and iOS phones.",
@@ -311,6 +352,7 @@ module.exports = {
           },
           "title": "Brave New World: Moving on to ES201X",
           "speakerId": 2,
+          "acnhor": "Benedikt-Meurer-25-14-00",
           "description": [
             "With ES2015 the JavaScript specification changed to a yearly release schedule. Since then we already got another three updates, namely ES2016, ES2017 and most recently ES2018. This puts a lot of pressure on JavaScript VMs to not only keep up with implementing all these new proposals, but continuously think about ways to optimize them, so that developers can not only rely on them being available, but also having reasonable performance.",
             "In this talk, I’ll give an update on the state of the ES201X features and their performance in V8, the JavaScript engine that powers both Node.js and Chrome."
@@ -334,38 +376,47 @@ module.exports = {
             "hours": "16",
             "minutes": "10"
           },
-          "speakerId": 16,
-          "title": "React Native: New Age Hack or Stone Age Tool?",
+          "title": "Writing bots for GitHub",
+          "speakerId": 18,
           "description": [
-            "React Native is currently a very popular library for writing native applications. It’s super easy to get started with it if you already know React — you can think that you’ve become a mobile developer in less than 15 minutes!",
-            "However, while React Native may make it easy for front-end developers to get started with mobile development, it’s severely lacking in comparison to more established and comprehensive languages like Swift or Kotlin. Compared to Swift or Kotlin, React Native seems like it’s from the Stone Ages!",
-            "So the question is, should you use React Native in production ? In my talk, I will tell you about the pros and cons of React Native."
-          ],
-          "showReadMore": true
-        },
-        {
-          "className": "height90 lightning icon opaque-line",
-          "time": {
-            "hours": "16",
-            "minutes": "20"
-          },
-          "title": "TBA",
-          "description": [
+            "My talk is going to be about Probot — GitHub's framework for creating bots.",
+            "A bot built with Probot is a NodeJS application that handles GitHub's events.",
+            "Probot allows us to automate and improve GitHub workflow, extend it with tools that we love as far as we wish.",
+            "In my talk, I will show what Probot can do right now and how you can create your own bot."
           ]
         },
         {
           "className": "height90 lightning",
           "time": {
             "hours": "16",
-            "minutes": "30"
+            "minutes": "20"
           },
-          "title": "TBA",
+          "title": "Parcel — New kid on the block (Zero config comparison with Webpack 4)",
+          "speakerId": 19,
           "description": [
+            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a webpack.config file.",
+            "So webpack team recently released a new version of webpack which implements zero config.",
+            "I might help in deciding whether one should head over to Webpack 4 or look towards Parcel and what advantages both have."
+          ]
+        },
+        {
+          "className": "height90 lightning",
+          "time": {
+            "hours": "16",
+            "minutes": "20"
+          },
+          "title": "Parcel — New kid on the block (Zero config comparison with Webpack 4)",
+          "speakerId": 19,
+          "description": [
+            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a webpack.config file.",
+            "So webpack team recently released a new version of webpack which implements zero config.",
+            "I might help in deciding whether one should head over to Webpack 4 or look towards Parcel and what advantages both have."
           ]
         },
         {
           "className": "ronen-amiel",
           "speakerId": 13,
+          "acnhor": "Ronen-Amiel-25-16-40",
           "time": {
             "hours": "16",
             "minutes": "40"
@@ -396,6 +447,7 @@ module.exports = {
           },
           "title": "A common design language: let designers & developers talk to each other",
           "speakerId": 10,
+          "acnhor": "Andrey-Okonetchnikov-25-17-50",
           "description": [
             "\"Should designers code?\" or \"Should coders design?\"&nbsp;— these 2 eternal questions are being asked for years with no particular answer given.",
             {"__html": "<ul><li>How to let developers know what typography style or button variance they should be using on this particular screen?</li><li>How to ensure that the whole UI is consistent?</li><li>How to let designers know that some screen design doesn't fit the requirements and needs to be updated?</li></ul>"},
@@ -411,6 +463,7 @@ module.exports = {
           },
           "title": "Keynote: New Adventures In Front-End, Season 2",
           "speakerId": 5,
+          "acnhor": "Vitaly-Friedman-25-18-30",
           "description": [
             "The beast is alive! How do you feel about ASCII-alike CSS Grid layout with polyfluid sizing and ch unit? Do you feel itchy when it comes to building responsive HTML email layouts? What about the brave new world of dynamic static site generators and JAM stack? Have you ever tried to work around nested CSS Custom Properties, untamed 3rd-party scripts, shady service workers, multi-dimensional variable fonts and painfully outdated pattern libraries? Well, let’s bring it on!",
             "If you attended or watched the <a target=\"_blank\" href='https://www.youtube.com/watch?v=cUIfBu0mV08'>first season</a>, you better tighten up your seatbelts: it's an entirely different session, with a slightly different cast and a dash of dirty little front-end tricks. Beware: you will not be able to unlearn what you’ll learn in the session! Ah, one more thing, take the techniques with a grain of salt — we do not take responsibility for sleepless nights and nightmares caused by the content of this session."
