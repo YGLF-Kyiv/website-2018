@@ -163,7 +163,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
-          "className": "height90 lightning icon opaque-line",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "17",
             "minutes": "00"
@@ -291,7 +291,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90",
+          "className": "",
           "time": {
             "hours": "11",
             "minutes": "10"
@@ -390,10 +390,10 @@ module.exports = {
             "hours": "16",
             "minutes": "20"
           },
-          "title": "Parcel — New kid on the block (Zero config comparison with Webpack 4)",
+          "title": "Parcel-bundler: New kid on the block (Zero config comparison with Webpack 4)",
           "speakerId": 19,
           "description": [
-            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a webpack.config file. So webpack team recently released a new version of webpack which implements zero config.",
+            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a `webpack.config` file. So webpack team recently released a new version of webpack (webpack 4) which implements zero config.",
             "I might help in deciding whether one should head over to Webpack 4 or look towards Parcel and what advantages both have."
           ],
           "showReadMore": true

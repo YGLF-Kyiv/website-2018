@@ -416,7 +416,7 @@
       "highlightedDescription": "Software Consultant, working for Bizico, organizing Chernivtsi JavaScript Community (ChernivtsiJS Conference, BeerJS, Kottans, NodeSchool).",
       "imageSrc": "/speakers/denys_dovhan",
       "anchor": "Denys-Dovhan",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -432,13 +432,13 @@
       "id": 19,
       "firstName": "Abhishek",
       "lastName": "Gupta",
-      "position": "Frontend developer",
+      "position": "Javascript developer",
       "company": "Bankomi",
-      "description": "",
-      "highlightedDescription": "",
-      "imageSrc": "",
+      "description": "Abhishek is building Bankomi which is a real time market data and intelligence platform. He is a Javascript developer and has laid his hands on popular front-end and back-end frameworks. In his free time, he likes to scroll ProductHunt, explore new tools and libraries (currently exploring GraphQL) and watch football.",
+      "highlightedDescription": "Abhishek is building Bankomi which is a real time market data and intelligence platform. He is a Javascript developer and has laid his hands on popular front-end and back-end frameworks.",
+      "imageSrc": "/speakers/abhishek_gupta",
       "anchor": "Abhishek-Gupta",
-      "highlighted": true,
+      "highlighted": false,
       "social": [
         {
           "type": "twitter",
@@ -447,6 +447,10 @@
         {
           "type": "github",
           "url": "https://github.com/webtaculars"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://linkedin.com/in/abhishekgupta2512"
         }
       ]
     },
