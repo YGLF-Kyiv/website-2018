@@ -30,7 +30,7 @@ $speaker-block-size: 580px;
     z-index: 2;
     padding: 60px;
     box-sizing: border-box;
-    overflow: scroll;
+    overflow: auto;
     transform: translateX($speaker-block-size);
     transition: transform 0.25s ease-out;
     h2 {
@@ -103,7 +103,7 @@ $speaker-block-size: 580px;
   }
   &.-visible {
     .event-speaker-data {
-      transform: translateX(0);
+      transform: none;
     }
     .overlay {
       opacity: 0.3;

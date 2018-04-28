@@ -25,10 +25,6 @@ export default class Event extends React.Component {
     this.state = {
       opened: false,
     };
-
-    this.toggleReadMore = this.toggleReadMore.bind(this);
-    this.onSpeakerClick = this.onSpeakerClick.bind(this);
-    this.scrolltoElTop = this.scrolltoElTop.bind(this);
   }
 
   componentDidMount() {
@@ -43,17 +39,17 @@ export default class Event extends React.Component {
     return this.el.getBoundingClientRect().top;
   }
 
-  onSpeakerClick(e) {
+  onSpeakerClick = e => {
     e.preventDefault();
 
     this.props.onSpeakerClick();
   }
 
-  scrolltoElTop() {
+  scrolltoElTop = () => {
     window.scrollTo(0, window.scrollY + this.getElTop() - 90);
   }
 
-  toggleReadMore(e) {
+  toggleReadMore = e => {
     e && e.preventDefault();
 
     this.setState({ opened: !this.state.opened });
