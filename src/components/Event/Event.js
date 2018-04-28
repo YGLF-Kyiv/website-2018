@@ -102,14 +102,12 @@ export default class Event extends React.Component {
                   )
                 }
                 <div className="info-description">
-                  <a href={`#${anchor}`}>
-                    <h4 className="info-description-title">
-                      { title }
-                      { duration && (
-                        <span className="info-description-time"><strong>,</strong> { duration }</span>
-                      ) }
-                    </h4>
-                  </a>
+                  <h4 className="info-description-title">
+                    { title }
+                    { duration && (
+                      <span className="info-description-time"><strong>,</strong> { duration }</span>
+                    ) }
+                  </h4>
                   { speakerName
                     ? (
                       <a

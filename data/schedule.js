@@ -284,7 +284,7 @@ module.exports = {
             "minutes": "00"
           },
           "title": "Breakfast",
-          "duration": "1 hour 30 mins",
+          "duration": "1 hour 10 mins",
           "description": [
             "Take some time to enjoy your morning coffee and pastries."
           ],
@@ -294,7 +294,7 @@ module.exports = {
           "className": "height90",
           "time": {
             "hours": "11",
-            "minutes": "30"
+            "minutes": "10"
           },
           "title": "Keynote: TBA",
           "speakerId": 17,
@@ -371,7 +371,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
-          "className": "height90 lightning icon opaque-line",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "10"
@@ -379,14 +379,13 @@ module.exports = {
           "title": "Writing bots for GitHub",
           "speakerId": 18,
           "description": [
-            "My talk is going to be about Probot — GitHub's framework for creating bots.",
-            "A bot built with Probot is a NodeJS application that handles GitHub's events.",
-            "Probot allows us to automate and improve GitHub workflow, extend it with tools that we love as far as we wish.",
+            "My talk is going to be about Probot — GitHub's framework for creating bots. A bot built with Probot is a NodeJS application that handles GitHub's events. Probot allows us to automate and improve GitHub workflow, extend it with tools that we love as far as we wish.",
             "In my talk, I will show what Probot can do right now and how you can create your own bot."
-          ]
+          ],
+          "showReadMore": true
         },
         {
-          "className": "height90 lightning",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "20"
@@ -394,13 +393,13 @@ module.exports = {
           "title": "Parcel — New kid on the block (Zero config comparison with Webpack 4)",
           "speakerId": 19,
           "description": [
-            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a webpack.config file.",
-            "So webpack team recently released a new version of webpack which implements zero config.",
+            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a webpack.config file. So webpack team recently released a new version of webpack which implements zero config.",
             "I might help in deciding whether one should head over to Webpack 4 or look towards Parcel and what advantages both have."
-          ]
+          ],
+          "showReadMore": true
         },
         {
-          "className": "height90 lightning",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "30"
@@ -408,12 +407,11 @@ module.exports = {
           "title": "DevTools Tips and Tricks",
           "speakerId": 20,
           "description": [
-            "We spend a lot of time debugging our code in a browser. But often we just use console.log.",
-            "In this talk, I will share useful features of DevTools in Chrome and tips and tricks that will help you develop and debug more quickly, easily, and efficiently!"
+            "We spend a lot of time debugging our code in a browser. But often we just use console.log. In this talk, I will share useful features of DevTools in Chrome and tips and tricks that will help you develop and debug more quickly, easily, and efficiently!"
           ]
         },
         {
-          "className": "height90 lightning",
+          "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
             "minutes": "40"
@@ -421,9 +419,9 @@ module.exports = {
           "title": "You gotta love Rx",
           "speakerId": 21,
           "description": [
-            "Video streaming is a breeze with RxJS, but even if you have nothing to do with the video you do streaming every day.",
-            "In my lightning talk, I will show you that even something as trivial as handling DOM events could be a fascinating task if you add Observables to it."
-          ]
+            "Video streaming is a breeze with RxJS, but even if you have nothing to do with the video you do streaming every day. In my lightning talk, I will show you that even something as trivial as handling DOM events could be a fascinating task if you add Observables to it."
+          ],
+          "showReadMore": true
         },
         {
           "className": "ronen-amiel",
