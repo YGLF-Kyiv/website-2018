@@ -403,14 +403,26 @@ module.exports = {
           "className": "height90 lightning",
           "time": {
             "hours": "16",
-            "minutes": "20"
+            "minutes": "30"
           },
-          "title": "Parcel — New kid on the block (Zero config comparison with Webpack 4)",
-          "speakerId": 19,
+          "title": "DevTools Tips and Tricks",
+          "speakerId": 20,
           "description": [
-            "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a webpack.config file.",
-            "So webpack team recently released a new version of webpack which implements zero config.",
-            "I might help in deciding whether one should head over to Webpack 4 or look towards Parcel and what advantages both have."
+            "We spend a lot of time debugging our code in a browser. But often we just use console.log.",
+            "In this talk, I will share useful features of DevTools in Chrome and tips and tricks that will help you develop and debug more quickly, easily, and efficiently!"
+          ]
+        },
+        {
+          "className": "height90 lightning",
+          "time": {
+            "hours": "16",
+            "minutes": "40"
+          },
+          "title": "You gotta love Rx",
+          "speakerId": 21,
+          "description": [
+            "Video streaming is a breeze with RxJS, but even if you have nothing to do with the video you do streaming every day.",
+            "In my lightning talk, I will show you that even something as trivial as handling DOM events could be a fascinating task if you add Observables to it."
           ]
         },
         {
@@ -419,7 +431,7 @@ module.exports = {
           "acnhor": "Ronen-Amiel-25-16-40",
           "time": {
             "hours": "16",
-            "minutes": "40"
+            "minutes": "50"
           },
           "title": "Build your own Webpack (Live coding an ultra-simplified example of a modern module bundler in JavaScript)",
           "description": [
@@ -432,7 +444,7 @@ module.exports = {
           "className": "height90",
           "time": {
             "hours": "17",
-            "minutes": "20"
+            "minutes": "30"
           },
           "title": "Coffee Break",
           "duration": "30 mins",
@@ -442,8 +454,8 @@ module.exports = {
         {
           "className": "andrey-okonetchnikov",
           "time": {
-            "hours": "17",
-            "minutes": "50"
+            "hours": "18",
+            "minutes": "00"
           },
           "title": "A common design language: let designers & developers talk to each other",
           "speakerId": 10,
@@ -459,7 +471,7 @@ module.exports = {
         {
           "time": {
             "hours": "18",
-            "minutes": "30"
+            "minutes": "40"
           },
           "title": "Keynote: New Adventures In Front-End, Season 2",
           "speakerId": 5,
@@ -474,9 +486,9 @@ module.exports = {
           "className": "height90",
           "time": {
             "hours": "19",
-            "minutes": "30"
+            "minutes": "40"
           },
-          "title": "Closing & Networking",
+          "title": "Closing part",
           "description": [],
           "showReadMore": false,
         },
@@ -486,7 +498,7 @@ module.exports = {
             "hours": "20",
             "minutes": "00"
           },
-          "title": "Beer Afterparty",
+          "title": "Craft Beer Afterparty",
           "duration": "till midnight",
           "description": [],
           "showReadMore": false,

@@ -475,6 +475,32 @@
           "url": "https://twitter.com/puzankovcom"
         }
       ]
+    },
+    {
+      "id": 21,
+      "firstName": "Helen",
+      "lastName": "Zhukova",
+      "position": "Frontend developer",
+      "company": "VideoGorillas",
+      "description": "Helen creates user interfaces for Web and mobile mainly for live video streaming and video postproduction for the movie studios. JavaScript is my first love but I am open to any technologies and skills that make my creations the best look and feel. I am a lifelong learner and I love to share my knowledge.",
+      "highlightedDescription": "Helen creates user interfaces for Web and mobile mainly for live video streaming and video postproduction for the movie studios.",
+      "imageSrc": "/speakers/helen_zhukova",
+      "anchor": "Helen-Zhukova",
+      "highlighted": false,
+      "social": [
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/helenzhukova/"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/helen.zhukova.39"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/zhukovka"
+        }
+      ]
     }
   ]
 }
