@@ -505,6 +505,32 @@
           "url": "https://github.com/zhukovka"
         }
       ]
+    },
+    {
+      "id": 22,
+      "firstName": "Oleksandr",
+      "lastName": "Pavlyshch",
+      "position": "Frontend developer",
+      "company": "Astound Commerce",
+      "description": "xxx",
+      "highlightedDescription": "xxx",
+      "imageSrc": "/speakers/oleksandr_pavlyshch",
+      "anchor": "Oleksandr-Pavlyshch",
+      "highlighted": false,
+      "social": [
+        {
+          "type": "linkedin",
+          "url": "https://ua.linkedin.com/in/oleksandr-pavlyshch-5b6b60b6"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/lokdawn80"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/OleksandrPavlyshch"
+        }
+      ]
     }
   ]
 }

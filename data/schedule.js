@@ -35,7 +35,7 @@ module.exports = {
             "hours": "11",
             "minutes": "30"
           },
-          "title": "Creating web apps by writing HTML?!",
+          "title": "Keynote. Creating web apps by writing HTML?!",
           "speakerId": 1,
           "description": [
             'We all know that HTML is easier, more straightforward, and more readable\n' +
@@ -141,12 +141,15 @@ module.exports = {
             "hours": "16",
             "minutes": "40"
           },
-          // "speakerId": 2,
-          "title": "TBA",
+          "speakerId": 22,
+          "title": "CSS Tricks You Gotta Love",
           "description": [
-
+            "When you need to make a complex and beautiful UI, then you have to find new approaches.\n",
+            "In practice, it turns out that complex things are very simple but sometimes not immediately obvious.\n",
+            "I would like to share working methods from my practice.\n",
+            "And you will understand how everything can be simple!"
           ],
-          "showReadMore": false,
+          "showReadMore": true,
         },
         {
           "className": "lightning icon opaque-line",
@@ -296,7 +299,7 @@ module.exports = {
             "hours": "11",
             "minutes": "10"
           },
-          "title": "Keynote: TBA",
+          "title": "Keynote. TBA",
           "speakerId": 17,
           "description": [],
           "showReadMore": false,
@@ -471,7 +474,7 @@ module.exports = {
             "hours": "18",
             "minutes": "40"
           },
-          "title": "Keynote: New Adventures In Front-End, Season 2",
+          "title": "Keynote. New Adventures In Front-End, Season 2",
           "speakerId": 5,
           "anchor": "Vitaly-Friedman-25-18-30",
           "description": [
