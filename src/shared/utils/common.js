@@ -15,9 +15,7 @@ export function constructSchedule(schedule, speakers) {
       return {
         ...event,
         speakerData,
-        anchor: speaker
-          ? `${speaker.anchor}-${day.day}-${event.time.hours}-${event.time.minutes}`
-          : `${day.day}-${event.time.hours}-${event.time.minutes}`
+        anchor: event.anchor || event.title.replace(/\s/g, '-')
       };
     });
     return { ...day, events };
