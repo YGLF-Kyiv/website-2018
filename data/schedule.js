@@ -390,7 +390,7 @@ module.exports = {
             "hours": "16",
             "minutes": "20"
           },
-          "title": "Parcel-bundler: New kid on the block (Zero config comparison with Webpack 4)",
+          "title": "Parcel — bundler: New kid on the block (Zero config comparison with Webpack 4)",
           "speakerId": 19,
           "description": [
             "Parcel is a new web application bundler which doesn’t require a config file whereas in webpack 3, even for a very basic project, we need to configure a `webpack.config` file. So webpack team recently released a new version of webpack (webpack 4) which implements zero config.",
