@@ -83,11 +83,13 @@ export default class SchedulePage extends React.Component {
   showSpeaker(speakerData) {
     this.setState({ activeSpeaker: speakerData });
     window.document.body.style.overflow = 'hidden';
+    window.document.documentElement.style.overflow = 'hidden';
   }
 
   hideSpeaker() {
     this.setState({ activeSpeaker: null });
     window.document.body.style.overflow = 'auto';
+    window.document.documentElement.style.overflow = 'auto';
   }
 
   renderDaysMenu() {
