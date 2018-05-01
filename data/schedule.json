@@ -134,10 +134,8 @@
           "speakerId": 22,
           "title": "CSS Tricks You Gotta Love",
           "description": [
-            "When you need to make a complex and beautiful UI, then you have to find new approaches.\n",
-            "In practice, it turns out that complex things are very simple but sometimes not immediately obvious.\n",
-            "I would like to share working methods from my practice.\n",
-            "And you will understand how everything can be simple!"
+            "When you need to make a complex and beautiful UI, then you have to find new approaches. In practice, it turns out that complex things are very simple but sometimes not immediately obvious.",
+            "I would like to share working methods from my practice. And you will understand how everything can be simple!"
           ],
           "showReadMore": true
         },
@@ -399,6 +397,7 @@
           },
           "title": "DevTools Tips and Tricks",
           "speakerId": 20,
+          "anchor": "DevTools-Tips-and-Tricks",
           "description": [
             "We spend a lot of time debugging our code in a browser. But often we just use console.log. In this talk, I will share useful features of DevTools in Chrome and tips and tricks that will help you develop and debug more quickly, easily, and efficiently!"
           ]
