@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import BuyTicketsButton from '../BuyTicketsButton/BuyTicketsButton'
 import FitToRhythm from '../FitToRhythm/FitToRhythm';
 
-import WorkshopsData from '../../../data/Workshops.js';
+import WorkshopsData from '../../../data/workshops.js';
 import config from '../../../data/SiteConfig';
 import './workshops.scss';
 

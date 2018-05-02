@@ -25,10 +25,10 @@ export function constructSchedule(schedule, speakers) {
 
 function getAnchor(event, name, uniq) {
   if (event.anchor) return event.anchor;
-  if (name) return `${ecnodeAndReplace(name)}-${event.title.split(/\b/)[0]}`
-  return `${ecnodeAndReplace(event.title)}-${uniq}`
+  if (name) return `${encodeAndReplace(name)}-${event.title.split(/\b/)[0]}`
+  return `${encodeAndReplace(event.title)}-${uniq}`
 }
 
-function ecnodeAndReplace(str) {
+function encodeAndReplace(str) {
   return encodeURI(str.replace(/\s/g, '-'))
 }
