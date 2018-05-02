@@ -31,7 +31,7 @@ module.exports = {
         "Optimizing the build",
       ],
       "additionalInfo": [
-        "Workshop will take place @ Wix Kyiv office, Pankivska 14a, 4th Floor on May 26th from 9.00 till 14.00",
+        "Workshop will take place @ Wix Kyiv office, Pankivska 14a, 4th Floor on May 26th from 9.00 till 14.00.",
         "You can get a double ticket which gives you a significant discount for the conference and the workshop.",
       ]
     },
