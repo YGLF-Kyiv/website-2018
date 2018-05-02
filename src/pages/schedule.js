@@ -6,7 +6,7 @@ import { gaTrack } from '../shared/utils/ga';
 import Event from '../components/Event/Event';
 import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 
-import scheduleData from '../../data/schedule.js';
+import scheduleData from '../../data/schedule.json';
 import speakersData from '../../data/speakers.json';
 
 import { constructSchedule, isInBrowser } from '../shared/utils/common';
@@ -82,13 +82,11 @@ export default class SchedulePage extends React.Component {
 
   showSpeaker(speakerData) {
     this.setState({ activeSpeaker: speakerData });
-    window.document.body.style.overflow = 'hidden';
     window.document.documentElement.style.overflow = 'hidden';
   }
 
   hideSpeaker() {
     this.setState({ activeSpeaker: null });
-    window.document.body.style.overflow = 'auto';
     window.document.documentElement.style.overflow = 'auto';
   }
 
