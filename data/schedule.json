@@ -49,7 +49,7 @@
           "showReadMore": true
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "",
           "time": {
             "hours": "12",
@@ -76,7 +76,7 @@
           "showReadMore": false
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "",
           "time": {
             "hours": "13",
@@ -93,7 +93,7 @@
           "showReadMore": true
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "height270",
           "time": {
             "hours": "14",
@@ -199,7 +199,7 @@
           "showReadMore": true
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "",
           "time": {
             "hours": "17",
@@ -241,7 +241,7 @@
           "showReadMore": true
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "",
           "time": {
             "hours": "19",
@@ -313,7 +313,7 @@
           "showReadMore": false
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "",
           "time": {
             "hours": "12",
@@ -341,7 +341,7 @@
           "showReadMore": false
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "michaela-lehr",
           "time": {
             "hours": "13",
@@ -359,7 +359,7 @@
           "showReadMore": true
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "",
           "time": {
             "hours": "14",
@@ -445,7 +445,7 @@
           "showReadMore": true
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "ronen-amiel",
           "speakerId": 13,
           "anchor": "Ronen-Amiel-25-16-40",
@@ -473,7 +473,7 @@
           "showReadMore": false
         },
         {
-          "emoji": "⭐️",
+          "emoji": "✔️",
           "className": "andrey-okonetchnikov",
           "time": {
             "hours": "18",
