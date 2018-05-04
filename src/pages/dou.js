@@ -1,7 +1,12 @@
 import React from 'react';
+import { ticketsWidget } from '../shared/utils/2event';
 import './promo.scss';
 
 export default class DouPage extends React.Component {
+  componentDidMount() {
+    ticketsWidget();
+  }
+
   render() {
     return (
       <div className="page-promo lines-bg">

@@ -13,7 +13,7 @@ module.exports = {
   userTwitter: 'yglf_kyiv',
   email: 'hello@yglf.com.ua',
   website: 'http://yglf.com.ua',
-  ticketsUrl: 'https://2event.com/events/1037785',
+  ticketsUrl: '/tickets/',
   workshopWebpackUrl: 'https://2event.com/events/1230538',
   workshopWebpackAndConfUrl: 'https://2event.com/events/1037785',
   sitemapPages: [

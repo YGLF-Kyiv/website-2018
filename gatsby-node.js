@@ -68,9 +68,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
   // };
 
   return new Promise((resolve) => {
-    if (page.path.match('/tickets')) {
-      page.layout = 'tickets-redirect';
-    } else if (page.path.match('/promo') || page.path.match('/dou')) {
+    if (page.path.match('/promo') || page.path.match('/dou')) {
       page.layout = 'promo';
     } else {
       page.layout = 'simple';

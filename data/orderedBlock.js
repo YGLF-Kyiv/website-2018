@@ -46,7 +46,7 @@ module.exports = {
       "Kyiv and all of the Frontend communities here are amazing. Audience is technically strong and thankful for new knowledge. If you are eager to share your experience and useful insights, apply to become a speaker."
     ],
     "actionButton": {
-      "href": "https://2event.com/ru/events/1037785",
+      "href": "https://2event.com/events/1037785",
       "text": "Buy Tickets",
       "target": "__blank"
     }

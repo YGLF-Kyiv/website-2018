@@ -36,7 +36,6 @@ export default class BuyTicketsButton extends React.Component {
     const { href, text } = this.props;
     return (
       <a
-        target="_blank"
         href={href}
         className="buy-tickets drop-shadow-small"
         rel="noopener noreferrer"
