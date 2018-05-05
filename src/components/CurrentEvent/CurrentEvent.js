@@ -46,7 +46,7 @@ export default class CurrentEvent extends React.Component {
       <div className="current-event">
         { currentEvents.map((item, index) => {
           const { time, title, anchor, speakerData: { speakerName, company } } = item;
-          const isFirst = index === 0;
+          const isFirst = index === 0; // TODO: choose the current event dynamically
           const computedClass = classNames('item',
             { '-now': isFirst, '-next': !isFirst, '-one-line': !speakerName }
           );
