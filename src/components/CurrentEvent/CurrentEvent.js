@@ -22,7 +22,7 @@ export default class CurrentEvent extends React.Component {
 
     if ([firstDay, secondDay].includes(today)) {
       // TODO: get the needed current events
-    } else { // TODO: what to show at before and after May 24-25 and at night?
+    } else { // TODO: what should be shown before and after May 24-25 and at night?
       return [SCHEDULE[0].events[0], SCHEDULE[0].events[15]];
     }
   }
@@ -42,7 +42,7 @@ export default class CurrentEvent extends React.Component {
     const currentEvents = this.getCurrentEvents();
     const md = new MobileDetect();
 
-    return !md.mobile() && (
+    return md.mobile() && (
       <div className="current-event">
         { currentEvents.map((item, index) => {
           const { time, title, anchor, speakerData: { speakerName, company } } = item;
