@@ -38,7 +38,19 @@
       opacity: 0.3;
     }
   }
+  .now {
+    display: none; // show styles are in schedule.scss depending on parent class
+    position: absolute;
+    top: 65px;
+    left: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.79px;
+    font-size: 14px;
+    color: #05CF9D;
+    font-weight: bold;
+  }
   .time {
+    box-sizing: border-box;
     line-height: 45px;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;

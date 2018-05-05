@@ -7,7 +7,7 @@ import WorkshopsData from '../../../data/Workshops.js';
 import config from '../../../data/SiteConfig';
 import './workshops.scss';
 
-export default class WorkshopBlock extends Component {
+export default class Workshop extends Component {
   renderWorkshop(workshop) {
     const { authors, title, description, list, images, anchor, additionalInfo } = workshop;
     return (
@@ -17,6 +17,7 @@ export default class WorkshopBlock extends Component {
           { images.map((item, index) => {
             return (
               <img
+                key={index}
                 src={`${item.imageSrc}.jpg`}
                 className="-drop-shadow"
                 alt={`${item.title}`}

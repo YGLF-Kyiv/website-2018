@@ -1,0 +1,109 @@
+@import '../../shared/styles/colors';
+
+.current-event {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 120px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  background-color: $grey-bg;
+  z-index: 101;
+  .item {
+    &.-one-line {
+      > .time {
+        align-items: center;
+        padding-top: 0 !important;
+      }
+      > .talk {
+        padding-top: 5px;
+      }
+    }
+    &.-now > .time {
+      text-transform: uppercase;
+      letter-spacing: 0.79px;
+      font-size: 14px;
+      color: $green;
+      align-content: flex-start;
+      font-weight: bold;
+      padding-top: 7px;
+    }
+    &.-now,
+    &.-next {
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &.-now {
+      background-color: $grey-bg;
+    }
+    &.-next {
+      background: $blue;
+    }
+
+    .time {
+      padding-left: 20px;
+      width: 70px;
+      box-sizing: border-box;
+      justify-content: flex-start;
+      display: flex;
+      font-weight: 400;
+      height: 100%;
+      align-items: flex-start;
+      padding-top: 9px;
+      > .hours {
+        margin-right: 5px;
+        font-size: 15px;
+      }
+      > .minutes {
+        letter-spacing: 0.64px;
+        font-size: 11px;
+        transform: translateY(-3px);
+        display: inline-block;
+      }
+    }
+    .talk {
+      width: calc(100% - 90px);
+      line-height: 1;
+      > .title,
+      > .speaker {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+      }
+      > .title {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.79px;
+        color: $white;
+        width: 100%;
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+      }
+      > .speaker {
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        opacity: .7;
+        letter-spacing: 0.74px;
+        color: #EAEBF3;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .current-event {
+    flex-direction: row;
+    height: 60px;
+    .now,
+    .next {
+      width: 50%;
+    }
+  }
+}

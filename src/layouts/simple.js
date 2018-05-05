@@ -6,6 +6,7 @@ import Header from '../components/Header/Header';
 import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import Helmet from '../components/Helmet/Helmet';
 import Footer from '../components/Footer/Footer';
+import CurrentEvent from "../components/CurrentEvent/CurrentEvent";
 
 export default class MainLayout extends React.Component {
   render() {
@@ -17,7 +18,10 @@ export default class MainLayout extends React.Component {
           <HeaderMenu />
           <Header />
         </div>
-        <div className="app-body">{children()}</div>
+        <div className="app-body">
+          { children() }
+          <CurrentEvent />
+        </div>
         <div className="app-footer">
           <Footer />
         </div>

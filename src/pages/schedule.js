@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+
 import './schedule.scss';
 import { gaTrack } from '../shared/utils/ga';
 
@@ -19,7 +20,7 @@ export default class SchedulePage extends React.Component {
     super(props);
 
     this.state = {
-      activeDay: SCHEDULE[0].day,
+      activeDay: SCHEDULE[0].day, // TODO: dynamic
       dayOpaque: true,
       activeSpeaker: null,
       isSticky: false,
@@ -128,16 +129,26 @@ export default class SchedulePage extends React.Component {
           )
         }
         <div className="events">
-          { day.events.map((event, index) => (
-            <div ref={(el) => { if (day.day === 25 && index === day.events.length - 1) { this.lastEventEl = el; } }}>
-              <Event
-                day={day.day}
-                data={event}
-                key={index}
-                onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
-              />
-            </div>
-          )) }
+          { day.events.map((event, index) => {
+            const isCurrent = index === 2;
+            return (
+              <div className={classNames("event-holder", { "-isCurrent": isCurrent })}
+                   key={index}
+                   ref={(el) => {
+                     if (day.day === 25 && index === day.events.length - 1) {
+                       this.lastEventEl = el;
+                     }
+                   }}
+              >
+                <Event
+                  day={day.day}
+                  data={event}
+                  key={index}
+                  onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
+                />
+              </div>
+            )
+          }) }
         </div>
       </div>
     ));

@@ -109,6 +109,39 @@
       margin-top: 45px;
       position: relative;
     }
+    .event-holder {
+      z-index: 2;
+      position: relative;
+      .event:after {
+        z-index: 2;
+      }
+    }
+    .event-holder.-isCurrent {
+      background-color: $grey-bg;
+      margin: -1px 0 0 -20px;
+      padding: 1px 0 0 20px;
+      z-index: 5;
+      .info-wrapper:after {
+        background: linear-gradient(to top, $grey-bg 0%, rgba(58, 71, 228, 0) 100%);
+      }
+      .event {
+        .now {
+          display: block;
+        }
+        .time {
+          padding-top: 15px;
+        }
+        &:after {
+          border-color: $grey-bg;
+          z-index: 5;
+        }
+        &.height90 {
+          .now {
+            top: 25px;
+          }
+        }
+      }
+    }
   }
 }
 
