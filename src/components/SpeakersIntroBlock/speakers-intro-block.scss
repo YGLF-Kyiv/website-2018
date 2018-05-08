@@ -2,7 +2,7 @@
 @import '../../shared/styles/mixins';
 
 .speakers-intro-block {
-  overflow-y: hidden;
+  overflow: hidden;
   &-name {
     @include block-name;
   }
