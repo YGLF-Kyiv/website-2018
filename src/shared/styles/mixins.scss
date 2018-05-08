@@ -131,6 +131,10 @@
   @media screen and (max-width: 360px) {
     font-size: 38px;
   }
+
+  @media screen and (max-width: 320px) {
+    font-size: 32px;
+  }
 }
 
 @mixin block-text {
