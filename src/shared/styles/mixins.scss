@@ -125,6 +125,10 @@
   margin: 0;
 
   @media screen and (max-width: 440px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 360px) {
     font-size: 38px;
   }
 }
