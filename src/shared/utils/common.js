@@ -30,25 +30,29 @@ const toMinutes = (h, m) => {
   return Number(h) * 60 + Number(m);
 }
 
-export function getCurrentEvents(SCHEDULE) {
+export function getCurrentEventId(schedule) {
+  const currentEvents = getCurrentEvents(schedule);
+
+  return currentEvents
+    ? currentEvents[0].id
+    : null
+}
+
+export function getCurrentEvents(schedule) {
   const today = DateTime.local().setZone('Europe/Kiev');
   console.log('today.hour', today.hour);
   const yearMonth = { year: 2018, month: 5 };
-  const firstDay = DateTime.fromObject({ ...yearMonth, day: SCHEDULE[0].day}).toLocaleString();
-  const secondDay = DateTime.fromObject({ ...yearMonth, day: SCHEDULE[1].day}).toLocaleString();
+  const firstDay = DateTime.fromObject({ ...yearMonth, day: schedule[0].day}).toLocaleString();
+  const secondDay = DateTime.fromObject({ ...yearMonth, day: schedule[1].day}).toLocaleString();
   const dayIndex = [firstDay, secondDay].indexOf(today.toLocaleString());
 
   return ~dayIndex
-    ? getEventByCurrentTime(SCHEDULE[dayIndex].events)
+    ? getEventByCurrentTime(schedule[dayIndex].events, today)
     : null;
-  // else { // TODO: what should be shown before and after May 24-25 and at night?
-  //   return [SCHEDULE[0].events[0], SCHEDULE[0].events[15]];
-  // }
 }
 
 /* For sticky footer */
-export function getEventByCurrentTime(events) {
-  const {hour, minute} = DateTime.local().setZone('Europe/Kiev');
+export function getEventByCurrentTime(events, {hour, minute}) {
   const currentTime = toMinutes(hour, minute);
   let result = null;
 
@@ -63,7 +67,7 @@ export function getEventByCurrentTime(events) {
 
     if (currentTime >= eventTime
         && currentTime < nextEventTime) {
-      result = [event, nextEvent]
+      result = [event, nextEvent].filter(Boolean)
     }
   });
 

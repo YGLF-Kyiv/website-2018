@@ -7,6 +7,7 @@ module.exports = {
       "day": 24,
       "events": [
         {
+          "id": 1,
           "className": "",
           "time": {
             "hours": "10",
@@ -20,6 +21,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 2,
           "time": {
             "hours": "11",
             "minutes": "20"
@@ -30,6 +32,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 3,
           "className": "",
           "time": {
             "hours": "11",
@@ -56,6 +59,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 4,
           "className": "",
           "time": {
             "hours": "12",
@@ -70,6 +74,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 5,
           "className": "height90",
           "time": {
             "hours": "13",
@@ -81,6 +86,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 6,
           "className": "",
           "time": {
             "hours": "13",
@@ -97,6 +103,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 7,
           "className": "height270",
           "time": {
             "hours": "14",
@@ -111,6 +118,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 8,
           "className": "height90",
           "time": {
             "hours": "15",
@@ -122,6 +130,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 9,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -136,6 +145,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 10,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -149,6 +159,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 11,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -163,6 +174,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 12,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "17",
@@ -179,6 +191,7 @@ module.exports = {
           "showReadMore": true
         },
         {
+          "id": 13,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "17",
@@ -195,6 +208,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 14,
           "className": "",
           "time": {
             "hours": "17",
@@ -210,6 +224,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 15,
           "className": "height90",
           "time": {
             "hours": "18",
@@ -221,6 +236,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 16,
           "className": "denis-radin",
           "time": {
             "hours": "18",
@@ -235,6 +251,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 17,
           "className": "",
           "time": {
             "hours": "19",
@@ -249,6 +266,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 18,
           "className": "height90",
           "time": {
             "hours": "19",
@@ -259,6 +277,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 19,
           "className": "height90 party icon",
           "time": {
             "hours": "20",
@@ -278,6 +297,7 @@ module.exports = {
       "day": 25,
       "events": [
         {
+          "id": 20,
           "className": "",
           "time": {
             "hours": "10",
@@ -291,6 +311,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 21,
           "className": "",
           "time": {
             "hours": "11",
@@ -302,6 +323,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 22,
           "className": "",
           "time": {
             "hours": "12",
@@ -317,6 +339,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 23,
           "className": "height90",
           "time": {
             "hours": "12",
@@ -328,6 +351,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 24,
           "className": "michaela-lehr",
           "time": {
             "hours": "13",
@@ -345,6 +369,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 25,
           "className": "",
           "time": {
             "hours": "14",
@@ -360,6 +385,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 26,
           "className": "height90",
           "time": {
             "hours": "14",
@@ -371,6 +397,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 27,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -385,6 +412,7 @@ module.exports = {
           "showReadMore": true
         },
         {
+          "id": 28,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -399,6 +427,7 @@ module.exports = {
           "showReadMore": true
         },
         {
+          "id": 29,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -411,6 +440,7 @@ module.exports = {
           ]
         },
         {
+          "id": 30,
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
@@ -424,6 +454,7 @@ module.exports = {
           "showReadMore": true
         },
         {
+          "id": 31,
           "className": "ronen-amiel",
           "speakerId": 13,
           "anchor": "Ronen-Amiel-25-16-40",
@@ -439,6 +470,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 32,
           "className": "height90",
           "time": {
             "hours": "17",
@@ -450,6 +482,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 33,
           "className": "andrey-okonetchnikov",
           "time": {
             "hours": "18",
@@ -467,6 +500,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 34,
           "time": {
             "hours": "18",
             "minutes": "40"
@@ -481,6 +515,7 @@ module.exports = {
           "showReadMore": true,
         },
         {
+          "id": 35,
           "className": "height90",
           "time": {
             "hours": "19",
@@ -491,6 +526,7 @@ module.exports = {
           "showReadMore": false,
         },
         {
+          "id": 36,
           "className": "height90 party icon",
           "time": {
             "hours": "20",
