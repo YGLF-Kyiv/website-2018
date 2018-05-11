@@ -10,7 +10,7 @@ import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 import scheduleData from '../../data/schedule.js';
 import speakersData from '../../data/speakers.json';
 
-import { constructSchedule, isInBrowser } from '../shared/utils/common';
+import { constructSchedule, getCurrentEvents, isInBrowser } from '../shared/utils/common';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
@@ -114,6 +114,8 @@ export default class SchedulePage extends React.Component {
   }
 
   renderDays() {
+    const currentEvent = getCurrentEvents(SCHEDULE)[0];
+
     return SCHEDULE.map((day) => (
       <div
         className={`day day-${day.day}`}
@@ -130,15 +132,16 @@ export default class SchedulePage extends React.Component {
         }
         <div className="events">
           { day.events.map((event, index) => {
-            const isCurrent = index === 2;
+            const isCurrent = event.title === currentEvent.title; // Not so good way
+
             return (
               <div className={classNames("event-holder", { "-isCurrent": isCurrent })}
-                   key={index}
-                   ref={(el) => {
-                     if (day.day === 25 && index === day.events.length - 1) {
-                       this.lastEventEl = el;
-                     }
-                   }}
+                 key={index}
+                 ref={(el) => {
+                   if (day.day === 25 && index === day.events.length - 1) {
+                     this.lastEventEl = el;
+                   }
+                 }}
               >
                 <Event
                   day={day.day}

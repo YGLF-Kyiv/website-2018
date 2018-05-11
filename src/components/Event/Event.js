@@ -30,7 +30,6 @@ export default class Event extends React.Component {
   componentDidMount() {
     const { anchor } = this.props.data;
     if (isInBrowser() && window.location.hash.replace('#', '') === anchor) {
-      console.log(this.getElTop());
       setTimeout(this.toggleReadMore, 100);
     }
   }

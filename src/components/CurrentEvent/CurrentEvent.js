@@ -6,26 +6,13 @@ import classNames from 'classnames';
 import scheduleData from './../../../data/schedule.js';
 import speakersData from './../../../data/speakers.json';
 
-import { constructSchedule, isInBrowser } from '../../shared/utils/common';
+import { constructSchedule, getCurrentEvents, isInBrowser } from '../../shared/utils/common';
 
 import './current-event.scss';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
 export default class CurrentEvent extends React.Component {
-
-  getCurrentEvents() {
-    const today = DateTime.local().toLocaleString();
-    const yearMonth = { year: 2018, month: 5 };
-    const firstDay = DateTime.fromObject({ ...yearMonth, day: SCHEDULE[0].day}).toLocaleString();
-    const secondDay = DateTime.fromObject({ ...yearMonth, day: SCHEDULE[1].day}).toLocaleString();
-
-    if ([firstDay, secondDay].includes(today)) {
-      // TODO: get the needed current events
-    } else { // TODO: what should be shown before and after May 24-25 and at night?
-      return [SCHEDULE[0].events[0], SCHEDULE[0].events[15]];
-    }
-  }
 
   navigateToEvent(anchor) {
     if (location.href.includes('schedule')
@@ -39,10 +26,10 @@ export default class CurrentEvent extends React.Component {
   }
 
   render() {
-    const currentEvents = this.getCurrentEvents();
+    const currentEvents = getCurrentEvents(SCHEDULE);
     const md = new MobileDetect();
 
-    return md.mobile() && (
+    return (!md.mobile() && currentEvents) && (
       <div className="current-event">
         { currentEvents.map((item, index) => {
           const { time, title, anchor, speakerData: { speakerName, company } } = item;
