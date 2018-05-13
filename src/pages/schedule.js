@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 import './schedule.scss';
 import { gaTrack } from '../shared/utils/ga';
+import { getToday } from '../shared/utils/common';
 
 import Event from '../components/Event/Event';
 import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
@@ -18,6 +19,8 @@ export default class SchedulePage extends React.Component {
 
   constructor(props) {
     super(props);
+
+    const getToday = getToday();
 
     this.state = {
       activeDay: SCHEDULE[0].day, // TODO: dynamic

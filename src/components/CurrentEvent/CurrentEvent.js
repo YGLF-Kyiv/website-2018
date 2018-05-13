@@ -13,12 +13,15 @@ import './current-event.scss';
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
 export default class CurrentEvent extends React.Component {
-
+ // && window.location.hash.replace('#', '') === anchor
   navigateToEvent(anchor) {
-    if (location.href.includes('schedule')
-      && isInBrowser() && window.location.hash.replace('#', '') === anchor) {
+    if (location.href.includes('schedule') && isInBrowser()) {
       location.hash = `#${anchor}`;
-      const top = document.querySelectorAll(`.${anchor}`)[0].getBoundingClientRect().top;
+
+      const top = document
+        .querySelector(`[data-anchor="${anchor}"]`)
+        .getBoundingClientRect().top;
+
       window.scrollTo(0, window.scrollY + top - 90);
     } else {
       location.href = `${window.location.origin}/schedule#${anchor}`;

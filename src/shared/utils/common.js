@@ -22,6 +22,9 @@ export function constructSchedule(schedule, speakers) {
         //   .replace(/\s/g, '-')
         //   .replace(/\&/g, 'and')
         anchor: getAnchor(event, speakerName, index)
+        // anchor: `${event.id}-` + (event.anchor || event.title)
+        //   .replace(/\s/g, '-')
+        //   .replace(/\&/g, 'and')
       };
     });
     return { ...day, events };
@@ -30,6 +33,10 @@ export function constructSchedule(schedule, speakers) {
 
 const toMinutes = (h, m) => {
   return Number(h) * 60 + Number(m);
+}
+
+export function getToday() {
+  return DateTime.local().setZone('Europe/Kiev');
 }
 
 export function getCurrentEventId(schedule) {
@@ -41,8 +48,7 @@ export function getCurrentEventId(schedule) {
 }
 
 export function getCurrentEvents(schedule) {
-  const today = DateTime.local().setZone('Europe/Kiev');
-  console.log('today.hour', today.hour);
+  const today = getToday();
   const yearMonth = { year: 2018, month: 5 };
   const firstDay = DateTime.fromObject({ ...yearMonth, day: schedule[0].day}).toLocaleString();
   const secondDay = DateTime.fromObject({ ...yearMonth, day: schedule[1].day}).toLocaleString();

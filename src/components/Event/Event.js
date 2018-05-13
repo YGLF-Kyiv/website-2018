@@ -69,7 +69,7 @@ export default class Event extends React.Component {
       speakerData: { speakerName, imageSrc, anchor: speakerAnchor },
     } = this.props.data;
     const { opened } = this.state;
-    const computedClass = classNames('event', anchor, className, {
+    const computedClass = classNames('event', className, {
       '-opened': opened,
       '-read-more-hidden': !showReadMore,
       '-no-description': !description.length
@@ -77,7 +77,7 @@ export default class Event extends React.Component {
     const dateTime = `2018-05-${day}T${time.hours}:${time.minutes}`;
 
     return (
-      <div className={computedClass} ref={(el) => { this.el = el; }}>
+      <div data-anchor={anchor} className={computedClass} ref={(el) => { this.el = el; }}>
         <span className="now">Now</span>
         <time className="time auto-height-fix-time" dateTime={dateTime}>
           <span className="hours">{ time.hours }</span>
