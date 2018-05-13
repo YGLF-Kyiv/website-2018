@@ -3,7 +3,7 @@ import { DateTime } from 'luxon';
 import MobileDetect from 'mobile-detect';
 import classNames from 'classnames';
 
-import scheduleData from './../../../data/schedule.js';
+import scheduleData from './../../../data/schedule.json';
 import speakersData from './../../../data/speakers.json';
 
 import { constructSchedule, getCurrentEvents, isInBrowser } from '../../shared/utils/common';

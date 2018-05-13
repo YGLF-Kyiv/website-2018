@@ -123,6 +123,18 @@
   -webkit-font-smoothing: antialiased;
   transform: translateY(10px);
   margin: 0;
+
+  @media screen and (max-width: 440px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 38px;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 32px;
+  }
 }
 
 @mixin block-text {

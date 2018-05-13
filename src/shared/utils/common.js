@@ -6,20 +6,22 @@ export function isInBrowser() {
 
 export function constructSchedule(schedule, speakers) {
   return schedule.map(day => {
-    const events = day.events.map(event => {
+    const events = day.events.map((event, index) => {
       const speaker = speakers.find(el => el.id === event.speakerId);
+      const speakerName = speaker ? `${speaker.firstName} ${speaker.lastName}` : null
       const speakerData = speaker
         ? {
-          speakerName: speaker ? `${speaker.firstName} ${speaker.lastName}` : null,
+          speakerName,
           ...speaker,
         }
         : {};
       return {
         ...event,
         speakerData,
-        anchor: (event.anchor || event.title)
-          .replace(/\s/g, '-')
-          .replace(/\&/g, 'and')
+        // anchor: (event.anchor || event.title)
+        //   .replace(/\s/g, '-')
+        //   .replace(/\&/g, 'and')
+        anchor: getAnchor(event, speakerName, index)
       };
     });
     return { ...day, events };
@@ -72,4 +74,14 @@ export function getEventByCurrentTime(events, {hour, minute}) {
   });
 
   return result;
+}
+
+function getAnchor(event, name, uniq) {
+  if (event.anchor) return event.anchor;
+  if (name) return `${encodeAndReplace(name)}-${event.title.split(/\b/)[0]}`
+  return `${encodeAndReplace(event.title)}-${uniq}`
+}
+
+function encodeAndReplace(str) {
+  return encodeURI(str.replace(/\s/g, '-'))
 }

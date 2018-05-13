@@ -385,28 +385,6 @@
       ]
     },
     {
-      "id": 17,
-      "firstName": "Ken",
-      "lastName": "Wheeler",
-      "position": "Director of Open Source",
-      "company": "Formidable",
-      "description": "Ken is the Director of Open Source at <a href='https://formidable.com/' target='_blank'>Formidable</a>, the author of several popular open source libraries, and a frequent conference speaker often focusing on alternative uses of React.<br>He is the creator of libraries such as <a href='http://formidable.com/open-source/spectacle/' target='_blank'>Spectacle</a>, <a href='https://github.com/FormidableLabs/react-music' target='_blank'>react-music</a>, <a href='https://github.com/FormidableLabs/react-game-kit' target='_blank'>react-game-kit</a> and <a href='https://github.com/FormidableLabs/webpack-dashboard' target='_blank'>Webpack Dashboard</a>. He also maintains a healthy Twitter presence, and enjoys red meat, whiskey and recreational archery.",
-      "highlightedDescription": "Ken is the Director of Open Source at Formidable, the author of several popular open source libraries, and a frequent conference speaker often focusing on alternative uses of React.",
-      "imageSrc": "/speakers/ken_wheeler",
-      "anchor": "Ken-Wheeler",
-      "highlighted": true,
-      "social": [
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/ken_wheeler"
-        },
-        {
-          "type": "github",
-          "url": "https://github.com/kenwheeler"
-        }
-      ]
-    },
-    {
       "id": 18,
       "firstName": "Denys",
       "lastName": "Dovhan",
@@ -503,6 +481,32 @@
         {
           "type": "github",
           "url": "https://github.com/zhukovka"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "firstName": "Oleksandr",
+      "lastName": "Pavlyshch",
+      "position": "Frontend developer",
+      "company": "Astound Commerce",
+      "description": "Oleksandr is a front-end developer with five years of experience. He believes that \"machines must suffer\" and that everything is actually works is simple.",
+      "highlightedDescription": "He believes that \"Machines must suffer\" and that everything is actually works is simple.",
+      "imageSrc": "/speakers/oleksandr_pavlyshch",
+      "anchor": "Oleksandr-Pavlyshch",
+      "highlighted": false,
+      "social": [
+        {
+          "type": "linkedin",
+          "url": "https://ua.linkedin.com/in/oleksandr-pavlyshch-5b6b60b6"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/lokdawn80"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/OleksandrPavlyshch"
         }
       ]
     }
