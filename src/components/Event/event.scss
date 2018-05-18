@@ -21,18 +21,12 @@
     min-height: 90px;
     padding: 5px 0 0 0;
   }
-  &.icon .time::before {
-    font-size: 15px;
+  .emoji {
     position: absolute;
-    transform: translateX(-100%);
-    color: $white;
+    position: absolute;
+    transform: translate(calc(-100% - 5px), 30px);
   }
-  &.lightning .time::before {
-    content: "⚡";
-  }
-  &.party .time::before {
-    content: "🎉";
-  }
+
   &.opaque-line {
     &::after {
       opacity: 0.3;
