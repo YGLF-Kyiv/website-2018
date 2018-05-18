@@ -61,14 +61,16 @@ export function getEventByCurrentTime(events, {hour, minute}) {
   events.forEach((event, i) => {
     const eventTime = toMinutes(event.time.hours, event.time.minutes);
     const nextEvent = events[i + 1];
-    let nextEventTime = Number(eventTime) + 60;
+    let endEventTime;
 
     if (nextEvent) {
-      nextEventTime = toMinutes(nextEvent.time.hours, nextEvent.time.minutes);
+      endEventTime = toMinutes(nextEvent.time.hours, nextEvent.time.minutes);
+    } else {
+      endEventTime = 1440;
     }
 
     if (currentTime >= eventTime
-        && currentTime < nextEventTime) {
+        && currentTime < endEventTime) {
       result = [event, nextEvent].filter(Boolean)
     }
   });
