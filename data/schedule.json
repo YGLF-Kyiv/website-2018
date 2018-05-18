@@ -335,7 +335,7 @@
         },
         {
           "emoji": "🎤",
-          "className": "",
+          "className": "interview icon",
           "time": {
             "hours": "12",
             "minutes": "40"
@@ -393,7 +393,7 @@
         },
         {
           "emoji": "🎤",
-          "className": "",
+          "className": "interview icon",
           "time": {
             "hours": "14",
             "minutes": "40"
@@ -496,7 +496,7 @@
         },
         {
           "emoji": "🎤",
-          "className": "",
+          "className": "interview icon",
           "time": {
             "hours": "17",
             "minutes": "40"
