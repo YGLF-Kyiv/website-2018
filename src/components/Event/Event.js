@@ -66,6 +66,7 @@ export default class Event extends React.Component {
       className,
       duration,
       anchor,
+      emoji,
       speakerData: { speakerName, imageSrc, anchor: speakerAnchor },
     } = this.props.data;
     const { opened } = this.state;
@@ -79,6 +80,10 @@ export default class Event extends React.Component {
     return (
       <div data-anchor={anchor} className={computedClass} ref={(el) => { this.el = el; }}>
         <span className="now">Now</span>
+        {
+          (emoji && emoji !== '✔️') &&
+            <span className="emoji">{emoji}</span>
+        }
         <time className="time auto-height-fix-time" dateTime={dateTime}>
           <span className="hours">{ time.hours }</span>
           <span className="minutes">{ time.minutes }</span>
