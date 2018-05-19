@@ -23,7 +23,7 @@
   }
   .emoji {
     position: absolute;
-    transform: translate(calc(-100% - 5px), 30px);
+    transform: translate(calc(-100% - 5px), 2px);
   }
 
   &.opaque-line {
@@ -33,38 +33,40 @@
   }
   .now {
     display: none; // show styles are in schedule.scss depending on parent class
-    position: absolute;
-    top: 65px;
-    left: 0;
     text-transform: uppercase;
     letter-spacing: 0.79px;
     font-size: 14px;
     color: #05CF9D;
     font-weight: bold;
   }
-  .time {
-    box-sizing: border-box;
-    line-height: 45px;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 100;
-    transform: translateY(16px);
+  .time-box {
     width: 60px;
     min-width: 60px;
     max-width: 60px;
-    flex: 1 1 0;
-    > .hours {
-      letter-spacing: 0.79px;
-      font-size: 15px;
-      display: inline-block;
-      margin-right: 5px;
-    }
-    > .minutes {
-      letter-spacing: 0.64px;
-      font-size: 12px;
-      transform: translateY(-5px);
-      display: inline-block;
+    transform: translateY(16px);
+
+    .time {
+      position: relative;
+      box-sizing: border-box;
+      line-height: 45px;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+      flex: 1 1 0;
+      > .hours {
+        letter-spacing: 0.79px;
+        font-size: 15px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      > .minutes {
+        letter-spacing: 0.64px;
+        font-size: 12px;
+        transform: translateY(-5px);
+        display: inline-block;
+      }
     }
   }
+
   .info-wrapper {
     flex: 1 1 0;
     margin-bottom: 90px;

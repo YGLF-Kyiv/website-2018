@@ -118,27 +118,16 @@
     }
     .event-holder.-isCurrent {
       background-color: $grey-bg;
-      margin: -1px 0 0 -20px;
-      padding: 1px 0 0 20px;
+      margin: -1px 0 0 -40px;
+      padding: 1px 0 0 40px;
       z-index: 5;
       .info-wrapper:after {
         background: linear-gradient(to top, $grey-bg 0%, rgba(58, 71, 228, 0) 100%);
       }
       .event {
-        .now {
-          display: block;
-        }
-        .time {
-          padding-top: 15px;
-        }
         &:after {
           border-color: $grey-bg;
           z-index: 5;
-        }
-        &.height90 {
-          .now {
-            top: 25px;
-          }
         }
       }
     }
@@ -184,6 +173,25 @@
     }
     .day {
       padding-left: 10px;
+
+      .event-holder.-isCurrent {
+        margin: -1px -10px 0 -20px;
+        padding: 1px 10px 0 20px;
+
+        .event {
+          &.emoji {
+            .time-box {
+              margin-left: 23px;
+            }  
+          }
+        }
+
+        .time-box {
+          .now {
+            display: none;
+          }
+        }
+      }
       &.day-25 {
         &::before {
           right: -60px;

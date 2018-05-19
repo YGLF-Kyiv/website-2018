@@ -57,7 +57,6 @@ export default class Event extends React.Component {
 
   render() {
     const {
-      day,
       time,
       title,
       company,
@@ -69,25 +68,29 @@ export default class Event extends React.Component {
       emoji,
       speakerData: { speakerName, imageSrc, anchor: speakerAnchor },
     } = this.props.data;
+    const { day } = this.props;
     const { opened } = this.state;
     const computedClass = classNames('event', className, {
       '-opened': opened,
       '-read-more-hidden': !showReadMore,
-      '-no-description': !description.length
+      '-no-description': !description.length,
+      'emoji': emoji && emoji !== '✔️'
     });
     const dateTime = `2018-05-${day}T${time.hours}:${time.minutes}`;
 
     return (
       <div data-anchor={anchor} className={computedClass} ref={(el) => { this.el = el; }}>
-        <span className="now">Now</span>
-        {
-          (emoji && emoji !== '✔️') &&
-            <span className="emoji">{emoji}</span>
-        }
-        <time className="time auto-height-fix-time" dateTime={dateTime}>
-          <span className="hours">{ time.hours }</span>
-          <span className="minutes">{ time.minutes }</span>
-        </time>
+        <div className="time-box">
+          <span className="now">Now</span>
+          <time className="time auto-height-fix-time" dateTime={dateTime}>
+            {
+              (emoji && emoji !== '✔️') &&
+                <span className="emoji">{emoji}</span>
+            }
+            <span className="hours">{ time.hours }</span>
+            <span className="minutes">{ time.minutes }</span>
+          </time>
+        </div>
         <div className="info-wrapper">
           <FitToRhythm>
             <div className="info">
