@@ -50,8 +50,9 @@ export default class Event extends React.Component {
 
   toggleReadMore = e => {
     e && e.preventDefault();
+    const { description } = this.props.data;
 
-    if (this.props.description && this.props.description.length) {
+    if (description && description.length) {
       this.setState({ opened: !this.state.opened });
     }
 
