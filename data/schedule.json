@@ -226,6 +226,7 @@
           "showReadMore": false
         },
         {
+          "emoji": "✔️",
           "className": "denis-radin",
           "time": {
             "hours": "18",
