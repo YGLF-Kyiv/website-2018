@@ -112,15 +112,14 @@
     .event-holder {
       z-index: 2;
       position: relative;
-      margin: -1px 0 0 -40px;
-      padding: 1px 0 0 40px;
-      transition: 5s background-color;
       .event:after {
         z-index: 2;
       }
     }
     .event-holder.-isCurrent {
       background-color: $grey-bg;
+      margin: -1px 0 0 -40px;
+      padding: 1px 0 0 40px;
       z-index: 5;
       .info-wrapper:after {
         background: linear-gradient(to top, $grey-bg 0%, rgba(58, 71, 228, 0) 100%);
