@@ -51,7 +51,7 @@ export function makeEventDayTimeline(schedule) {
   return schedule
     .find(day => day.day === today)
     .events.map(({ time }) => toSeconds(time.hours, time.minutes))
-    .concat(toSeconds(23, 59, 59) + 1); /* End of the day */
+    .concat(toSeconds(23, 59, 59) + 1);
 }
 
 export function getCurrentMinutes() {
@@ -97,12 +97,12 @@ export function getCurrentEvents(schedule) {
   const dayIndex = [firstDay, secondDay].indexOf(today.toLocaleString());
 
   return ~dayIndex
-    ? getEventByCurrentTime(schedule[dayIndex].events, today)
+    ? getEventByTime(schedule[dayIndex].events, today)
     : null;
 }
 
 /* For sticky footer */
-export function getEventByCurrentTime(events, {hour, minute}) {
+export function getEventByTime(events, {hour, minute}) {
   const currentTime = toMinutes(hour, minute);
   let result = null;
 
@@ -114,7 +114,7 @@ export function getEventByCurrentTime(events, {hour, minute}) {
     if (nextEvent) {
       endEventTime = toMinutes(nextEvent.time.hours, nextEvent.time.minutes);
     } else {
-      endEventTime = 1440;
+      endEventTime = 1440; /* 00:00:00 */
     }
 
     if (currentTime >= eventTime
