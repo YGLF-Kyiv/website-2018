@@ -59,7 +59,7 @@ export default class CurrentEvent extends React.Component {
   }
 
   isSchedulePage() {
-    return location.href.includes('schedule') && isInBrowser();
+    return isInBrowser() && location.href.includes('schedule');
   }
 
   render() {
