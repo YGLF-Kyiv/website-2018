@@ -81,13 +81,12 @@
             "hours": "13",
             "minutes": "40"
           },
-          "title": "GraphQL client-side execution",
+          "title": "GraphQL Clients",
           "speakerId": 8,
           "anchor": "Mikhail-Novikov-24-13-40",
           "description": [
-            "Traditionally, GraphQL clients were focused on client-server communication and caching, with GraphQL query executor on the server. However, it's also possible to run full GraphQL executor on the client side.",
-            "The talk will explore the concept of schema stitching (connecting multiple GraphQL schemas together) from a client-side point of view. Using this approach, developer can merge multiple remote schemas together with a frontend schema. The combined schema is responsible for routing requests to a server and a client-side storage/cache.",
-            "The talk will explore both schema stitching implementation and the possible applications. Applications of this approach include prototyping application's GraphQL schema without a server. After prototype stage, the schema can be moved to the server. Another use-case is building frontend-only applications that use multiple public GraphQL APIs."
+            "Single-page apps should be fast, and for that they usually need to cache their data on client side. Previously, we had to build those clients manually. With GraphQL, we can build clients that do lots of that manual work automatically and work with any GraphQL API.",
+            "This talk will explore why GraphQL makes it easy to build such clients. It'll start from describing how you would usually build a cache on client-side and how it's built in popular GraphQL clients. Talk will explore on what more can be done to build even more powerful tools and what a future GraphQL client would look like."
           ],
           "showReadMore": true
         },
