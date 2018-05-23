@@ -67,9 +67,9 @@ export default class SchedulePage extends React.Component {
     isInBrowser() && window.addEventListener('scroll', this.onWindowScroll);
 
     if (shouldBeScrolled && !this.state.currentEvent) {
-      setTimeout(this.scrollToActiveDay, 100);
+      setTimeout(this.scrollToActiveDay, 700);
     } else if (shouldBeScrolled && this.state.currentEvent) {
-      setTimeout(this.scrollToActiveEvent, 100);
+      setTimeout(this.scrollToActiveEvent, 700);
     }
   }
 
