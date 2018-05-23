@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+
 import './schedule.scss';
 import { gaTrack } from '../shared/utils/ga';
 
@@ -9,7 +10,16 @@ import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 import scheduleData from '../../data/schedule.json';
 import speakersData from '../../data/speakers.json';
 
-import { constructSchedule, isInBrowser } from '../shared/utils/common';
+import {
+  constructSchedule,
+  getCurrentEvent,
+  isInBrowser,
+  getToday,
+  getNextEvent,
+  getActiveDay,
+  isEventDay,
+  nextUpdatesIn
+} from '../shared/utils/common';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
@@ -19,18 +29,28 @@ export default class SchedulePage extends React.Component {
     super(props);
 
     this.state = {
-      activeDay: SCHEDULE[0].day,
+      activeDay: getActiveDay() || 24,
       dayOpaque: true,
       activeSpeaker: null,
       isSticky: false,
       menuHidden: false,
+      currentEvent: getCurrentEvent(SCHEDULE)
     };
 
     this.dayEls = { 24: null, 25: null };
 
+    if (isEventDay()) {
+      nextUpdatesIn(SCHEDULE).forEach(eventTime => {
+        setTimeout(this.updateCurrentEventState.bind(this), eventTime);
+      });
+    }
+
     this.hideSpeaker = this.hideSpeaker.bind(this);
     this.onWindowScroll = this.onWindowScroll.bind(this);
     this.getDayElTop = this.getDayElTop.bind(this);
+    this.scrollToActiveDay = this.scrollToActiveDay.bind(this);
+    this.scrollToActiveEvent = this.scrollToActiveEvent.bind(this);
+    this.updateCurrentEventState = this.updateCurrentEventState.bind(this);
   }
 
   componentWillMount() {
@@ -42,11 +62,25 @@ export default class SchedulePage extends React.Component {
   }
 
   componentDidMount() {
+    const shouldBeScrolled = isInBrowser() && !window.location.hash.substr(1) && isEventDay();
+
     isInBrowser() && window.addEventListener('scroll', this.onWindowScroll);
+
+    if (shouldBeScrolled && !this.state.currentEvent) {
+      setTimeout(this.scrollToActiveDay, 100);
+    } else if (shouldBeScrolled && this.state.currentEvent) {
+      setTimeout(this.scrollToActiveEvent, 100);
+    }
   }
 
   componentWillUnmount() {
     isInBrowser() && window.removeEventListener('scroll', this.onWindowScroll);
+  }
+
+  updateCurrentEventState() {
+    this.setState({
+      currentEvent: getCurrentEvent(SCHEDULE)
+    });
   }
 
   getDayElTop(day) {
@@ -76,8 +110,21 @@ export default class SchedulePage extends React.Component {
   }
 
   toggle(activeDay) {
-    this.setState({ activeDay });
-    window.scrollTo(0, window.scrollY + this.getDayElTop(activeDay));
+    this.setState({ activeDay }, this.scrollToActiveDay);
+  }
+
+  scrollToActiveDay() {
+    window.scrollTo(0, window.scrollY + this.getDayElTop(this.state.activeDay));
+  }
+
+  scrollToActiveEvent() {
+    const { anchor } = getCurrentEvent(SCHEDULE);
+
+    const top = document
+      .querySelector(`[data-anchor="${anchor}"]`)
+      .getBoundingClientRect().top;
+
+      window.scrollTo(0, window.scrollY + top - 90);
   }
 
   showSpeaker(speakerData) {
@@ -126,16 +173,27 @@ export default class SchedulePage extends React.Component {
           )
         }
         <div className="events">
-          { day.events.map((event, index) => (
-            <div ref={(el) => { if (day.day === 25 && index === day.events.length - 1) { this.lastEventEl = el; } }}>
-              <Event
-                day={day.day}
-                data={event}
+          { day.events.map((event, index) => {
+            const isCurrent = this.state.currentEvent && (event.id === this.state.currentEvent.id);
+
+            return (
+              <div className={classNames("event-holder", { "-isCurrent": isCurrent })}
                 key={index}
-                onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
-              />
-            </div>
-          )) }
+                ref={(el) => {
+                  if (day.day === 25 && index === day.events.length - 1) {
+                    this.lastEventEl = el;
+                  }
+                }}
+              >
+                <Event
+                  day={day.day}
+                  data={event}
+                  key={index}
+                  onSpeakerClick={this.showSpeaker.bind(this, event.speakerData)}
+                />
+              </div>
+            )
+          }) }
         </div>
       </div>
     ));

@@ -7,6 +7,7 @@ import Helmet from '../components/Helmet/Helmet';
 import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import IntroMovie from '../components/IntroMovie/index';
 import Footer from '../components/Footer/Footer';
+import CurrentEvent from "../components/CurrentEvent/CurrentEvent";
 import { isInBrowser } from '../shared/utils/common';
 
 export default class MainLayout extends React.Component {
@@ -20,7 +21,10 @@ export default class MainLayout extends React.Component {
           <Header />
           { isInBrowser() && <IntroMovie /> }
         </div>
-        <div className="app-body">{children()}</div>
+        <div className="app-body">
+          { children() }
+          <CurrentEvent />
+        </div>
         <div className="app-footer">
           <Footer />
         </div>
