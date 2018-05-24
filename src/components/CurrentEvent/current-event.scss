@@ -10,6 +10,7 @@
   flex-direction: column;
   background-color: $grey-bg;
   z-index: 101;
+  border: 1px solid #3A4788;
   .item {
     .speaker-img {
       display: none;
@@ -97,7 +98,7 @@
 
 @media screen and (min-width: 1150px) {
   .current-event {
-    width: 50%;
+    width: 70%;
 
     .item {
       &.-now,
