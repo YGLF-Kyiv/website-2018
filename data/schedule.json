@@ -41,13 +41,12 @@
             "hours": "11",
             "minutes": "30"
           },
-          "title": "Keynote. Creating web apps by writing HTML?!",
+          "title": "Keynote. Even More CSS Secrets",
           "speakerId": 1,
           "description": [
-            "We all know that HTML is easier, more straightforward, and more readable than programming, even for people who can do both. There is no control flow to think about, no state to manage, no low-level steps to spell out. It just works.",
-            "What if our UI libraries could be used in the same way? Or, taking this further, what if it were possible to create entire web applications by just writing HTML?",
-            "Lea has been researching this question for almost a decade, a journey which started with releasing a number of successful open source libraries, and continued via her multi-year research at MIT which explores (and pushes!) the boundaries of what can be done by just writing HTML. She coined the term HTML API and was the first person to concretely define good design principles for this way of authoring.",
-            "This talk will take you through this this journey, and will culminate in Lea's current project, Mavo, which aims to make web application building accessible to anyone who can write HTML."
+            "CSS Secrets was a series of talks that were loved by audiences all around the globe and led to Lea’s bestselling book “<a href='http://www.amazon.com/CSS-Secrets-Lea-Verou/dp/1449372635?tag=leaverou-20' target='_blank'>CSS&nbsp;Secrets</a>”.",
+            "The premise is simple: Ten surprising yet practical things you didn’t know you could do in CSS, live-coded in Lea’s trademark interactive presentation style. This third installment of the series will include new juicy secrets related to CSS Variables, grid layout, variable fonts, blending modes, SVG, and many other things.",
+            "Prepare to be inspired again as Lea debuts ten all-new feats of advanced CSS wizardry, which will help you understand CSS at a much deeper level."
           ],
           "showReadMore": true
         },
@@ -314,7 +313,7 @@
             "minutes": "00"
           },
           "title": "Breakfast",
-          "duration": "1 hour 10 mins",
+          "duration": "1 hour 20 mins",
           "description": [
             "Take some time to enjoy your morning coffee and pastries."
           ],
@@ -322,23 +321,11 @@
         },
         {
           "id": 21,
-          "emoji": "⭐️",
-          "className": "",
-          "time": {
-            "hours": "11",
-            "minutes": "10"
-          },
-          "title": "TBA",
-          "description": [],
-          "showReadMore": false
-        },
-        {
-          "id": 22,
           "emoji": "✔️",
           "className": "",
           "time": {
-            "hours": "12",
-            "minutes": "10"
+            "hours": "11",
+            "minutes": "20"
           },
           "title": "The bumpy road to Universal JavaScript",
           "speakerId": 6,
@@ -350,25 +337,12 @@
           "showReadMore": true
         },
         {
-          "id": 23,
-          "emoji": "☕️",
-          "className": "height90",
-          "time": {
-            "hours": "12",
-            "minutes": "50"
-          },
-          "title": "Coffee Break",
-          "duration": "30 mins",
-          "description": [],
-          "showReadMore": false
-        },
-        {
-          "id": 24,
+          "id": 22,
           "emoji": "✔️",
           "className": "michaela-lehr",
           "time": {
-            "hours": "13",
-            "minutes": "20"
+            "hours": "12",
+            "minutes": "00"
           },
           "title": "Writing Virtual and Augmented Reality Apps With Web Technology",
           "speakerId": 12,
@@ -382,7 +356,52 @@
           "showReadMore": true
         },
         {
+          "id": 23,
+          "emoji": "🎤",
+          "className": "interview icon",
+          "time": {
+            "hours": "12",
+            "minutes": "40"
+          },
+          "title": "Interview Session with Lea Verou",
+          "speakerId": 14,
+          "duration": "10 minutes",
+          "description": [
+          ],
+          "showReadMore": false
+        },
+        {
+          "id": 24,
+          "emoji": "☕️",
+          "className": "height90",
+          "time": {
+            "hours": "12",
+            "minutes": "50"
+          },
+          "title": "Coffee Break",
+          "duration": "30 mins",
+          "description": [],
+          "showReadMore": false
+        },
+        {
           "id": 25,
+          "emoji": "✔️",
+          "className": "ronen-amiel",
+          "speakerId": 13,
+          "anchor": "Ronen-Amiel-25-16-40",
+          "time": {
+            "hours": "13",
+            "minutes": "20"
+          },
+          "title": "Build your own Webpack (Live coding an ultra-simplified example of a modern module bundler in JavaScript)",
+          "description": [
+            "Most of us don't have to think too much about module bundlers in our day jobs. However, module bundlers are all around us, and if you’re a web developer you are probably using module bundlers on a daily basis.",
+            "Having a good understanding of how popular tools like Webpack or Browserify work can be extremely helpful. In this talk, I will help you understand how most module bundlers work and show you that they’re not as scary as you might think."
+          ],
+          "showReadMore": true
+        },
+        {
+          "id": 26,
           "emoji": "✔️",
           "className": "",
           "time": {
@@ -399,12 +418,26 @@
           "showReadMore": true
         },
         {
-          "id": 26,
+          "id": 27,
+          "emoji": "🎤",
+          "className": "interview icon",
+          "time": {
+            "hours": "14",
+            "minutes": "40"
+          },
+          "title": "Interview Session with Vitaly Friedman",
+          "speakerId": 14,
+          "duration": "10 minutes",
+          "description": [],
+          "showReadMore": false
+        },
+        {
+          "id": 28,
           "emoji": "🍽️",
           "className": "height90",
           "time": {
             "hours": "14",
-            "minutes": "40"
+            "minutes": "50"
           },
           "title": "Lunch",
           "duration": "1 hour 30 mins",
@@ -412,12 +445,12 @@
           "showReadMore": false
         },
         {
-          "id": 27,
+          "id": 29,
           "emoji": "⚡",
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
-            "minutes": "10"
+            "minutes": "20"
           },
           "title": "Writing bots for GitHub",
           "speakerId": 18,
@@ -428,12 +461,12 @@
           "showReadMore": true
         },
         {
-          "id": 28,
+          "id": 30,
           "emoji": "⚡",
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
-            "minutes": "20"
+            "minutes": "30"
           },
           "title": "Parcel — bundler: New kid on the block (Zero config comparison with Webpack 4)",
           "speakerId": 19,
@@ -444,12 +477,12 @@
           "showReadMore": true
         },
         {
-          "id": 29,
+          "id": 31,
           "emoji": "⚡",
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
-            "minutes": "30"
+            "minutes": "40"
           },
           "title": "DevTools Tips and Tricks",
           "speakerId": 20,
@@ -459,12 +492,12 @@
           ]
         },
         {
-          "id": 30,
+          "id": 32,
           "emoji": "⚡",
           "className": "lightning icon opaque-line",
           "time": {
             "hours": "16",
-            "minutes": "40"
+            "minutes": "50"
           },
           "title": "You gotta love Rx",
           "speakerId": 21,
@@ -474,41 +507,11 @@
           "showReadMore": true
         },
         {
-          "id": 31,
-          "emoji": "✔️",
-          "className": "ronen-amiel",
-          "speakerId": 13,
-          "anchor": "Ronen-Amiel-25-16-40",
-          "time": {
-            "hours": "16",
-            "minutes": "50"
-          },
-          "title": "Build your own Webpack (Live coding an ultra-simplified example of a modern module bundler in JavaScript)",
-          "description": [
-            "Most of us don't have to think too much about module bundlers in our day jobs. However, module bundlers are all around us, and if you’re a web developer you are probably using module bundlers on a daily basis.",
-            "Having a good understanding of how popular tools like Webpack or Browserify work can be extremely helpful. In this talk, I will help you understand how most module bundlers work and show you that they’re not as scary as you might think."
-          ],
-          "showReadMore": true
-        },
-        {
-          "id": 32,
-          "emoji": "🍽️",
-          "className": "height90",
-          "time": {
-            "hours": "17",
-            "minutes": "30"
-          },
-          "title": "Coffee Break",
-          "duration": "30 mins",
-          "description": [],
-          "showReadMore": false
-        },
-        {
           "id": 33,
           "emoji": "✔️",
           "className": "andrey-okonetchnikov",
           "time": {
-            "hours": "18",
+            "hours": "17",
             "minutes": "00"
           },
           "title": "A common design language: let designers & developers talk to each other",
@@ -516,7 +519,9 @@
           "anchor": "Andrey-Okonetchnikov-25-17-50",
           "description": [
             "\"Should designers code?\" or \"Should coders design?\"&nbsp;— these 2 eternal questions are being asked for years with no particular answer given.",
-            {"__html": "<ul><li>How to let developers know what typography style or button variance they should be using on this particular screen?</li><li>How to ensure that the whole UI is consistent?</li><li>How to let designers know that some screen design doesn't fit the requirements and needs to be updated?</li></ul>"},
+            {
+              "__html": "<ul><li>How to let developers know what typography style or button variance they should be using on this particular screen?</li><li>How to ensure that the whole UI is consistent?</li><li>How to let designers know that some screen design doesn't fit the requirements and needs to be updated?</li></ul>"
+            },
             "In order to answer those questions designers and developers have to speak the same language. But what language should it be. UI components and pattern libraries can provide this intermediate abstraction and be a common language for both designers and developers.",
             "During this talk, I'll guide you through some frustrations I've experienced as a designer and as a developer when working on different projects. I'll show how the common UI patterns library can solve some of these problems and improve the overall productivity of the team."
           ],
@@ -524,10 +529,37 @@
         },
         {
           "id": 34,
+          "emoji": "🎤",
+          "className": "interview icon",
+          "time": {
+            "hours": "17",
+            "minutes": "40"
+          },
+          "title": "Interview Session with Hui Jing",
+          "speakerId": 14,
+          "duration": "10 minutes",
+          "description": [],
+          "showReadMore": false
+        },
+        {
+          "id": 35,
+          "emoji": "☕️",
+          "className": "height90",
+          "time": {
+            "hours": "17",
+            "minutes": "50"
+          },
+          "title": "Coffee Break",
+          "duration": "30 mins",
+          "description": [],
+          "showReadMore": false
+        },
+        {
+          "id": 36,
           "emoji": "⭐️",
           "time": {
             "hours": "18",
-            "minutes": "40"
+            "minutes": "20"
           },
           "title": "Keynote. New Adventures In Front-End, Season 2",
           "speakerId": 5,
@@ -539,24 +571,24 @@
           "showReadMore": true
         },
         {
-          "id": 35,
+          "id": 37,
           "emoji": "🏁️",
           "className": "height90",
           "time": {
             "hours": "19",
-            "minutes": "40"
+            "minutes": "20"
           },
           "title": "Closing part",
           "description": [],
           "showReadMore": false
         },
         {
-          "id": 36,
+          "id": 38,
           "emoji": "🍻️",
           "className": "height90 party icon",
           "time": {
-            "hours": "20",
-            "minutes": "00"
+            "hours": "19",
+            "minutes": "30"
           },
           "title": "Craft Beer Afterparty",
           "duration": "till midnight",
