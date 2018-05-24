@@ -207,3 +207,16 @@
     }
   }
 }
+
+
+@media screen and (max-width: 320px) {
+  .page-schedule {
+    .days-menu {
+      li {
+        .title {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
