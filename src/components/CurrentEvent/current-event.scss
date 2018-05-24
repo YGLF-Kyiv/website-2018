@@ -11,7 +11,10 @@
   background-color: $grey-bg;
   z-index: 101;
   .item {
-    &.-one-line {
+    .speaker-img {
+      display: none;
+    }
+    /*&.-one-line {
       > .time {
         align-items: center;
         padding-top: 0 !important;
@@ -19,7 +22,7 @@
       > .talk {
         padding-top: 5px;
       }
-    }
+    }*/
     &.-now > .time {
       text-transform: uppercase;
       letter-spacing: 0.79px;
@@ -28,6 +31,7 @@
       align-content: flex-start;
       font-weight: bold;
       padding-top: 7px;
+      padding-right: 7px;
     }
     &.-now,
     &.-next {
@@ -98,11 +102,30 @@
 
 @media screen and (min-width: 1150px) {
   .current-event {
-    flex-direction: row;
-    height: 60px;
-    .now,
-    .next {
-      width: 50%;
+    width: 50%;
+
+    .item {
+      &.-now,
+      &.-next {
+        height: 70px;
+      }
+
+      &.-now > .time,
+      &.-next > .time {
+        padding-top: 12px;
+      }
+      .speaker-img {
+        display: block;
+        flex: 0 0 auto;
+        width: 44px;
+        height: 50px;
+        border: 1px solid $green;
+        overflow: hidden;
+        margin-right: 18px;
+        > img {
+          height: 100%;
+        }
+      }
     }
   }
 }

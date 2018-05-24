@@ -1,21 +1,68 @@
 import React from 'react';
 import { DateTime } from 'luxon';
-import MobileDetect from 'mobile-detect';
 import classNames from 'classnames';
 
 import scheduleData from './../../../data/schedule.json';
 import speakersData from './../../../data/speakers.json';
 
-import { constructSchedule, getCurrentEvents, isInBrowser } from '../../shared/utils/common';
+import {
+  constructSchedule,
+  getCurrentEvents,
+  getCurrentMinutes,
+  toMinutes,
+  isInBrowser,
+  isEventDay
+} from '../../shared/utils/common';
 
 import './current-event.scss';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
 export default class CurrentEvent extends React.Component {
- // && window.location.hash.replace('#', '') === anchor
+
+  constructor() {
+    super();
+
+    this.state = {
+      currentEvents: getCurrentEvents(SCHEDULE)
+    }
+
+    this.updateCurrentEventsState = this.updateCurrentEventsState.bind(this);
+
+    if (isEventDay()) {
+      this.interval = setInterval(this.checkEventState.bind(this), 6000);
+    }
+  }
+
+  checkEventState() {
+    const { currentEvents } = this.state;
+
+    if (currentEvents) {
+      const currentMinutes = getCurrentMinutes();
+      const nextEvent = currentEvents[1];
+
+      if (nextEvent) {
+        const { hours, minutes } = nextEvent.time;
+        const eventMinutes = toMinutes(hours, minutes);
+
+        if (currentMinutes >= eventMinutes) {
+          this.updateCurrentEventsState();
+        }
+      } else {
+        clearInterval(this.interval);
+        this.updateCurrentEventsState();
+      }
+    }
+  }
+
+  updateCurrentEventsState() {
+    this.setState({
+      currentEvents: getCurrentEvents(SCHEDULE)
+    });
+  }
+
   navigateToEvent(anchor) {
-    if (location.href.includes('schedule') && isInBrowser()) {
+    if (this.isSchedulePage()) {
       location.hash = `#${anchor}`;
 
       const top = document
@@ -28,17 +75,21 @@ export default class CurrentEvent extends React.Component {
     }
   }
 
-  render() {
-    const currentEvents = getCurrentEvents(SCHEDULE);
-    const md = new MobileDetect(window.navigator.userAgent);
+  isSchedulePage() {
+    return location.href.includes('schedule') && isInBrowser();
+  }
 
-    return (md.mobile() && currentEvents) && (
+  render() {
+    const { currentEvents } = this.state;
+    return (!this.isSchedulePage() && currentEvents) && (
       <div className="current-event">
         { currentEvents.map((item, index) => {
-          const { time, title, anchor, speakerData: { speakerName, company } } = item;
+          const { time, title, anchor, speakerData: { speakerName, company, imageSrc } } = item;
           const isFirst = index === 0; // TODO: choose the current event dynamically
           const computedClass = classNames('item',
-            { '-now': isFirst, '-next': !isFirst, '-one-line': !speakerName }
+            { '-now': isFirst, '-next': !isFirst
+            // , '-one-line': !speakerName
+          }
           );
           return (
             <div className={computedClass} key={index}>
@@ -48,6 +99,12 @@ export default class CurrentEvent extends React.Component {
                   <div className="time">
                     <span className="hours">{ time.hours }</span>
                     <span className="minutes">{ time.minutes }</span>
+                  </div>
+                )
+              }
+              { speakerName && (
+                  <div className="speaker-img">
+                    <img src={`${imageSrc}.jpg`} className="-drop-shadow" alt={speakerName}/>
                   </div>
                 )
               }

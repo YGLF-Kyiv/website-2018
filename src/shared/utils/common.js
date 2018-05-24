@@ -25,7 +25,7 @@ export function constructSchedule(schedule, speakers) {
   });
 }
 
-const toMinutes = (h, m) => {
+export const toMinutes = (h, m) => {
   return Number(h) * 60 + Number(m);
 }
 
@@ -33,11 +33,33 @@ export function getToday() {
   return DateTime.local().setZone('Europe/Kiev');
 }
 
-export function getCurrentEventId(schedule) {
+export function getActiveDay() {
+  const today = getToday().day;
+  return (today === 24 || today === 25) ? today : false;
+}
+
+export function isEventDay() {
+  return Boolean(getActiveDay());
+}
+
+export function getCurrentMinutes() {
+  const today = getToday();
+  return toMinutes(today.hour, today.minute);
+}
+
+export function getCurrentEvent(schedule) {
   const currentEvents = getCurrentEvents(schedule);
 
   return currentEvents
-    ? currentEvents[0].id
+    ? currentEvents[0]
+    : null
+}
+
+export function getNextEvent(schedule) {
+  const currentEvents = getCurrentEvents(schedule);
+
+  return currentEvents
+    ? currentEvents[1]
     : null
 }
 

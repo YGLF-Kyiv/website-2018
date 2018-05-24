@@ -10,7 +10,15 @@ import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 import scheduleData from '../../data/schedule.json';
 import speakersData from '../../data/speakers.json';
 
-import { constructSchedule, getCurrentEventId, isInBrowser, getToday } from '../shared/utils/common';
+import {
+  constructSchedule,
+  getCurrentEvent,
+  isInBrowser,
+  getToday,
+  getNextEvent,
+  getActiveDay,
+  isEventDay
+} from '../shared/utils/common';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
@@ -19,22 +27,38 @@ export default class SchedulePage extends React.Component {
   constructor(props) {
     super(props);
 
-    const activeDay = getToday().day === 25 ? 25 : 24;
-
     this.state = {
-      activeDay,
+      activeDay: getActiveDay(),
       dayOpaque: true,
       activeSpeaker: null,
       isSticky: false,
       menuHidden: false,
+      currentEvent: getCurrentEvent(SCHEDULE)
     };
 
     this.dayEls = { 24: null, 25: null };
+
+    if (isEventDay()) {
+      this.inverval = setInterval(() => {
+        const newCurrentEvent = getCurrentEvent(SCHEDULE);
+        const { currentEvent } = this.state;
+
+        if (
+            (!currentEvent && newCurrentEvent) ||
+            (currentEvent && newCurrentEvent && (newCurrentEvent.id !== this.state.currentEvent.id))
+          ) {
+          this.setState({ currentEvent: newCurrentEvent });
+        } else if (currentEvent && !getNextEvent(SCHEDULE)) {
+          clearInterval(this.inverval);
+        }
+      }, 6000)
+    }
 
     this.hideSpeaker = this.hideSpeaker.bind(this);
     this.onWindowScroll = this.onWindowScroll.bind(this);
     this.getDayElTop = this.getDayElTop.bind(this);
     this.scrollToActiveDay = this.scrollToActiveDay.bind(this);
+    this.scrollToActiveEvent = this.scrollToActiveEvent.bind(this);
   }
 
   componentWillMount() {
@@ -46,13 +70,14 @@ export default class SchedulePage extends React.Component {
   }
 
   componentDidMount() {
-    const today = getToday();
-    const eventIsToday = today.day === 24 || today.day === 25;
+    const shouldBeScrolled = isInBrowser() && !window.location.hash.substr(1) && isEventDay();
 
     isInBrowser() && window.addEventListener('scroll', this.onWindowScroll);
 
-    if (isInBrowser() && !window.location.hash.substr(1) && eventIsToday) {
+    if (shouldBeScrolled && !this.state.currentEvent) {
       setTimeout(this.scrollToActiveDay, 100);
+    } else if (shouldBeScrolled && this.state.currentEvent) {
+      setTimeout(this.scrollToActiveEvent, 100);
     }
   }
 
@@ -94,6 +119,16 @@ export default class SchedulePage extends React.Component {
     window.scrollTo(0, window.scrollY + this.getDayElTop(this.state.activeDay));
   }
 
+  scrollToActiveEvent() {
+    const { anchor } = getCurrentEvent(SCHEDULE);
+
+    const top = document
+      .querySelector(`[data-anchor="${anchor}"]`)
+      .getBoundingClientRect().top;
+
+      window.scrollTo(0, window.scrollY + top - 90);
+  }
+
   showSpeaker(speakerData) {
     this.setState({ activeSpeaker: speakerData });
     window.document.documentElement.style.overflow = 'hidden';
@@ -125,8 +160,6 @@ export default class SchedulePage extends React.Component {
   }
 
   renderDays() {
-    const currentEventId = getCurrentEventId(SCHEDULE);
-
     return SCHEDULE.map((day) => (
       <div
         className={`day day-${day.day}`}
@@ -143,7 +176,7 @@ export default class SchedulePage extends React.Component {
         }
         <div className="events">
           { day.events.map((event, index) => {
-            const isCurrent = event.id === currentEventId;
+            const isCurrent = this.state.currentEvent && (event.id === this.state.currentEvent.id);
 
             return (
               <div className={classNames("event-holder", { "-isCurrent": isCurrent })}
