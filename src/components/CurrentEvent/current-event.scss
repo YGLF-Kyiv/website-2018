@@ -14,15 +14,6 @@
     .speaker-img {
       display: none;
     }
-    /*&.-one-line {
-      > .time {
-        align-items: center;
-        padding-top: 0 !important;
-      }
-      > .talk {
-        padding-top: 5px;
-      }
-    }*/
     &.-now > .time {
       text-transform: uppercase;
       letter-spacing: 0.79px;
@@ -31,7 +22,6 @@
       align-content: flex-start;
       font-weight: bold;
       padding-top: 7px;
-      padding-right: 7px;
     }
     &.-now,
     &.-next {
@@ -39,6 +29,10 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      &>.time {
+        padding-right: 7px;
+      }
     }
     &.-now {
       background-color: $grey-bg;
@@ -48,6 +42,7 @@
     }
 
     .time {
+      flex-shrink: 0;
       padding-left: 20px;
       width: 70px;
       box-sizing: border-box;
