@@ -29,7 +29,7 @@ export default class SchedulePage extends React.Component {
     super(props);
 
     this.state = {
-      activeDay: getActiveDay(),
+      activeDay: getActiveDay() || 24,
       dayOpaque: true,
       activeSpeaker: null,
       isSticky: false,
