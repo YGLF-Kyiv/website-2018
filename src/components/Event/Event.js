@@ -51,7 +51,10 @@ export default class Event extends React.Component {
   toggleReadMore = e => {
     e && e.preventDefault();
 
-    this.setState({ opened: !this.state.opened });
+    if (this.props.description && this.props.description.length) {
+      this.setState({ opened: !this.state.opened });
+    }
+
     this.scrolltoElTop();
   }
 
