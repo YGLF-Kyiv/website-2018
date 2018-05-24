@@ -17,7 +17,8 @@ import {
   getToday,
   getNextEvent,
   getActiveDay,
-  isEventDay
+  isEventDay,
+  nextUpdatesIn
 } from '../shared/utils/common';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
@@ -39,19 +40,9 @@ export default class SchedulePage extends React.Component {
     this.dayEls = { 24: null, 25: null };
 
     if (isEventDay()) {
-      this.inverval = setInterval(() => {
-        const newCurrentEvent = getCurrentEvent(SCHEDULE);
-        const { currentEvent } = this.state;
-
-        if (
-            (!currentEvent && newCurrentEvent) ||
-            (currentEvent && newCurrentEvent && (newCurrentEvent.id !== this.state.currentEvent.id))
-          ) {
-          this.setState({ currentEvent: newCurrentEvent });
-        } else if (currentEvent && !getNextEvent(SCHEDULE)) {
-          clearInterval(this.inverval);
-        }
-      }, 6000)
+      nextUpdatesIn(SCHEDULE).forEach(eventTime => {
+        setTimeout(this.updateCurrentEventState.bind(this), eventTime);
+      });
     }
 
     this.hideSpeaker = this.hideSpeaker.bind(this);
@@ -59,6 +50,7 @@ export default class SchedulePage extends React.Component {
     this.getDayElTop = this.getDayElTop.bind(this);
     this.scrollToActiveDay = this.scrollToActiveDay.bind(this);
     this.scrollToActiveEvent = this.scrollToActiveEvent.bind(this);
+    this.updateCurrentEventState = this.updateCurrentEventState.bind(this);
   }
 
   componentWillMount() {
@@ -83,6 +75,12 @@ export default class SchedulePage extends React.Component {
 
   componentWillUnmount() {
     isInBrowser() && window.removeEventListener('scroll', this.onWindowScroll);
+  }
+
+  updateCurrentEventState() {
+    this.setState({
+      currentEvent: getCurrentEvent(SCHEDULE)
+    });
   }
 
   getDayElTop(day) {

@@ -11,7 +11,9 @@ import {
   getCurrentMinutes,
   toMinutes,
   isInBrowser,
-  isEventDay
+  isEventDay,
+  nextUpdatesIn,
+  getToday
 } from '../../shared/utils/common';
 
 import './current-event.scss';
@@ -30,28 +32,9 @@ export default class CurrentEvent extends React.Component {
     this.updateCurrentEventsState = this.updateCurrentEventsState.bind(this);
 
     if (isEventDay()) {
-      this.interval = setInterval(this.checkEventState.bind(this), 6000);
-    }
-  }
-
-  checkEventState() {
-    const { currentEvents } = this.state;
-
-    if (currentEvents) {
-      const currentMinutes = getCurrentMinutes();
-      const nextEvent = currentEvents[1];
-
-      if (nextEvent) {
-        const { hours, minutes } = nextEvent.time;
-        const eventMinutes = toMinutes(hours, minutes);
-
-        if (currentMinutes >= eventMinutes) {
-          this.updateCurrentEventsState();
-        }
-      } else {
-        clearInterval(this.interval);
-        this.updateCurrentEventsState();
-      }
+      nextUpdatesIn(SCHEDULE).forEach(eventTime => {
+        setTimeout(this.updateCurrentEventsState.bind(this), eventTime);
+      });
     }
   }
 

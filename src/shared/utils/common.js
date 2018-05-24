@@ -29,6 +29,10 @@ export const toMinutes = (h, m) => {
   return Number(h) * 60 + Number(m);
 }
 
+export const toSeconds = (h, m, s = 0) => {
+  return (Number(h) * 3600) + (Number(m) * 60) + Number(s);
+}
+
 export function getToday() {
   return DateTime.local().setZone('Europe/Kiev');
 }
@@ -42,9 +46,31 @@ export function isEventDay() {
   return Boolean(getActiveDay());
 }
 
+export function makeEventDayTimeline(schedule) {
+  const today = getToday().day;
+  return schedule
+    .find(day => day.day === today)
+    .events.map(({ time }) => toSeconds(time.hours, time.minutes))
+    .concat(toSeconds(23, 59, 59) + 1); /* End of the day */
+}
+
 export function getCurrentMinutes() {
   const today = getToday();
   return toMinutes(today.hour, today.minute);
+}
+
+function getCurrentSeconds() {
+  const { hour, minute, second } = getToday();
+  return toSeconds(hour, minute, second);
+}
+
+export function nextUpdatesIn(schedule) {
+  const timeline = makeEventDayTimeline(schedule);
+  const now = getCurrentSeconds();
+
+  return timeline
+    .filter(time => time > now)
+    .map(time => (time - now) * 1000);
 }
 
 export function getCurrentEvent(schedule) {
