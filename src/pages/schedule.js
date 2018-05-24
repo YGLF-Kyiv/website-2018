@@ -3,7 +3,6 @@ import classNames from 'classnames';
 
 import './schedule.scss';
 import { gaTrack } from '../shared/utils/ga';
-import { getToday } from '../shared/utils/common';
 
 import Event from '../components/Event/Event';
 import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
@@ -11,7 +10,7 @@ import EventSpeaker from '../components/EventSpeaker/EventSpeaker';
 import scheduleData from '../../data/schedule.json';
 import speakersData from '../../data/speakers.json';
 
-import { constructSchedule, getCurrentEventId, isInBrowser } from '../shared/utils/common';
+import { constructSchedule, getCurrentEventId, isInBrowser, getToday } from '../shared/utils/common';
 
 const SCHEDULE = constructSchedule(scheduleData.days, speakersData.all);
 
@@ -19,8 +18,6 @@ export default class SchedulePage extends React.Component {
 
   constructor(props) {
     super(props);
-
-    const getToday = getToday();
 
     this.state = {
       activeDay: SCHEDULE[0].day, // TODO: dynamic

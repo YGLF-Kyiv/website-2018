@@ -18,13 +18,7 @@ export function constructSchedule(schedule, speakers) {
       return {
         ...event,
         speakerData,
-        // anchor: (event.anchor || event.title)
-        //   .replace(/\s/g, '-')
-        //   .replace(/\&/g, 'and')
-        anchor: getAnchor(event, speakerName, index)
-        // anchor: `${event.id}-` + (event.anchor || event.title)
-        //   .replace(/\s/g, '-')
-        //   .replace(/\&/g, 'and')
+        anchor: getAnchor(event, speakerName, event.id)
       };
     });
     return { ...day, events };
@@ -83,8 +77,8 @@ export function getEventByCurrentTime(events, {hour, minute}) {
 }
 
 function getAnchor(event, name, uniq) {
-  if (event.anchor) return event.anchor;
-  if (name) return `${encodeAndReplace(name)}-${event.title.split(/\b/)[0]}`
+  if (event.anchor) return `${event.anchor}-${uniq}`;
+  if (name) return `${encodeAndReplace(name)}-${event.title.split(/\b/)[0]}-${uniq}`
   return `${encodeAndReplace(event.title)}-${uniq}`
 }
 

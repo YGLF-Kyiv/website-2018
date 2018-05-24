@@ -30,9 +30,9 @@ export default class CurrentEvent extends React.Component {
 
   render() {
     const currentEvents = getCurrentEvents(SCHEDULE);
-    const md = new MobileDetect();
+    const md = new MobileDetect(window.navigator.userAgent);
 
-    return (!md.mobile() && currentEvents) && (
+    return (md.mobile() && currentEvents) && (
       <div className="current-event">
         { currentEvents.map((item, index) => {
           const { time, title, anchor, speakerData: { speakerName, company } } = item;
