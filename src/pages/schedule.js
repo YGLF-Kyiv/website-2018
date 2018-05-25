@@ -19,8 +19,10 @@ export default class SchedulePage extends React.Component {
   constructor(props) {
     super(props);
 
+    const activeDay = getToday().day === 25 ? 25 : 24;
+
     this.state = {
-      activeDay: SCHEDULE[0].day, // TODO: dynamic
+      activeDay,
       dayOpaque: true,
       activeSpeaker: null,
       isSticky: false,
@@ -32,6 +34,7 @@ export default class SchedulePage extends React.Component {
     this.hideSpeaker = this.hideSpeaker.bind(this);
     this.onWindowScroll = this.onWindowScroll.bind(this);
     this.getDayElTop = this.getDayElTop.bind(this);
+    this.scrollToActiveDay = this.scrollToActiveDay.bind(this);
   }
 
   componentWillMount() {
@@ -43,7 +46,14 @@ export default class SchedulePage extends React.Component {
   }
 
   componentDidMount() {
+    const today = getToday();
+    const eventIsToday = today.day === 24 || today.day === 25;
+
     isInBrowser() && window.addEventListener('scroll', this.onWindowScroll);
+
+    if (isInBrowser() && !window.location.hash.substr(1) && eventIsToday) {
+      setTimeout(this.scrollToActiveDay, 100);
+    }
   }
 
   componentWillUnmount() {
@@ -77,8 +87,11 @@ export default class SchedulePage extends React.Component {
   }
 
   toggle(activeDay) {
-    this.setState({ activeDay });
-    window.scrollTo(0, window.scrollY + this.getDayElTop(activeDay));
+    this.setState({ activeDay }, this.scrollToActiveDay);
+  }
+
+  scrollToActiveDay() {
+    window.scrollTo(0, window.scrollY + this.getDayElTop(this.state.activeDay));
   }
 
   showSpeaker(speakerData) {
