@@ -28,13 +28,13 @@ export default class InfoBlock extends Component {
             })}
           </FitToRhythm>
           <div className="speakers-intro-block-text-button">
-            <a
-              href={data.actionButton.href}
-              rel="noopener noreferrer"
-              target={data.actionButton.target}
-            >
-              {data.actionButton.text}
-            </a>
+            {/*<a*/}
+              {/*href={data.actionButton.href}*/}
+              {/*rel="noopener noreferrer"*/}
+              {/*target={data.actionButton.target}*/}
+            {/*>*/}
+              {/*{data.actionButton.text}*/}
+            {/*</a>*/}
           </div>
         </div>
       </FitToRhythm>

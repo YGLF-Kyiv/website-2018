@@ -42,17 +42,16 @@ export default class Footer extends React.Component {
               <strong>Find your way</strong>
               <div className="footer-links">
                 <Link to="/">Home</Link>
-                <a
-                  target="_blank"
-                  href={config.ticketsUrl}
-                  rel="noopener noreferrer"
-                  onClick={this.trackClick}
-                >
-                  Buy Tickets
-                </a>
+                {/*<a*/}
+                  {/*target="_blank"*/}
+                  {/*href={config.ticketsUrl}*/}
+                  {/*rel="noopener noreferrer"*/}
+                  {/*onClick={this.trackClick}*/}
+                {/*>*/}
+                  {/*Buy Tickets*/}
+                {/*</a>*/}
                 <Link to="/about">About</Link>
                 <Link to="/speakers">Speakers</Link>
-                {/*<Link to="/#workshops">Workshops</Link>*/}
                 <Link to="/sponsors">Sponsors</Link>
                 <Link to="/diversity">Diversity Tickets</Link>
                 <Link to="/schedule">Schedule</Link>
