@@ -18,7 +18,7 @@ export default class MainLayout extends React.Component {
         <Helmet />
         <div className="app-header">
           <HeaderMenu />
-          <Header />
+          <Header showButton={false} />
           { isInBrowser() && <IntroMovie /> }
         </div>
         <div className="app-body">

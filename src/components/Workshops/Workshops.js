@@ -48,18 +48,18 @@ export default class Workshop extends Component {
               }) }
             </div>
           </FitToRhythm>
-          <BuyTicketsButton
-            href={config.workshopWebpackUrl}
-            eventLabel="Buy Workshop Webpack ticket"
-            eventCategory="purchase"
-            text="Buy Workshop Ticket"
-          />
-          <BuyTicketsButton
-            href={config.workshopWebpackAndConfUrl}
-            eventLabel="Buy Double ticket"
-            eventCategory="purchase"
-            text="Buy Double Ticket"
-          />
+          {/*<BuyTicketsButton*/}
+            {/*href={config.workshopWebpackUrl}*/}
+            {/*eventLabel="Buy Workshop Webpack ticket"*/}
+            {/*eventCategory="purchase"*/}
+            {/*text="Buy Workshop Ticket"*/}
+          {/*/>*/}
+          {/*<BuyTicketsButton*/}
+            {/*href={config.workshopWebpackAndConfUrl}*/}
+            {/*eventLabel="Buy Double ticket"*/}
+            {/*eventCategory="purchase"*/}
+            {/*text="Buy Double Ticket"*/}
+          {/*/>*/}
         </div>
       </FitToRhythm>
     )

@@ -43,7 +43,7 @@ export default class DevDoBlock extends Component {
               dangerouslySetInnerHTML={{__html: description}}
             />
           </div>
-          {button && <BuyTicketsButton text={button} />}
+          {/*{button && <BuyTicketsButton text={button} />}*/}
         </div>
       </FitToRhythm>
     );

@@ -90,6 +90,40 @@ module.exports = {
           "url": "https://www.linkedin.com/in/kate-pozdnysheva-bb79b8bb/"
         }
       ]
+    },
+    {
+      "firstName": "Oleksii",
+      "lastName": "Kirgizov",
+      "position": " ",
+      "imageSrc": "/team/oleksii_kirgizov",
+      "description": "Product Designer. Grew up in woods.",
+      "social": [
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/oleksii_kirgizov"
+        }
+      ]
+    },
+    {
+      "firstName": "Kateryna",
+      "lastName": "Porshnieva",
+      "position": " ",
+      "imageSrc": "/team/kateryna_porshnieva",
+      "description": "Front-end developer with passion about UI/UX design, loves making things, organiser of <a class='simple-link' href='https://www.meetup.com/Kyiv-ReactJS-Meetup/' target='__blank'>@reactkyiv</a> meetup, coffee lover and amateur cook.",
+      "social": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/krambertech"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/krambertech"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.linkedin.com/in/kporshnieva/"
+        }
+      ]
     }
   ]
 };
