@@ -38,6 +38,8 @@ export function getToday() {
 }
 
 export function getActiveDay() {
+  return false;
+
   const today = getToday().day;
   return (today === 24 || today === 25) ? today : false;
 }
